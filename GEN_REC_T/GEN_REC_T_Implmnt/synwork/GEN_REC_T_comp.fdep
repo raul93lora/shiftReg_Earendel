@@ -1,0 +1,25 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\raul.lora\\Documents\\prDUT_1ST_test_rapido\\GEN_REC_T\\GEN_REC_T_Implmnt\\synwork\\GEN_REC_T_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|C:\\Users\\raul.lora\\Documents\\prDUT_1ST_test_rapido\\GEN_REC_T\\|-I|C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\bin64\\c_ver.exe":1731922776
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40.v":1731922780
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\hypermods.v":1731922782
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\umr_capim.v":1731922782
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_objects.v":1731922782
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1731922782
+#CUR:"C:\\Users\\raul.lora\\Documents\\prDUT_1ST_test_rapido\\generator.v":1741794266
+#CUR:"C:\\Users\\raul.lora\\Documents\\prDUT_1ST_test_rapido\\receptor.v":1741790363
+#CUR:"C:\\Users\\raul.lora\\Documents\\prDUT_1ST_test_rapido\\testRapido_TOP.v":1741790425
+0			"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\generator.v" verilog
+1			"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\receptor.v" verilog
+2			"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\testRapido_TOP.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 1 0
+#Dependency Lists(Users Of)
+0 2
+1 2
+2 -1
+#Design Unit to File Association
+module work top 2
+module work receptor 1
+module work generator 0

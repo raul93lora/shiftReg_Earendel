@@ -1,0 +1,2 @@
+@W: CG360 :"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\generator.v":15:15:15:23|Removing wire signal_in, as there is no assignment to it.
+
