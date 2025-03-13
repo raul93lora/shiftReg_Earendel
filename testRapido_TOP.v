@@ -30,6 +30,7 @@ module top(
         	.signal_in(generated_signal),
         	.signal_out(signal_out)
     	);
+
 endmodule
 
 
