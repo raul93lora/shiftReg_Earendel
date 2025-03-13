@@ -1,10 +1,11 @@
 #-- Synopsys, Inc.
 #-- Project file C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_syn.prj
 #project files
-add_file -verilog -lib work "../generator.v"
-add_file -verilog -lib work "../receptor.v"
-add_file -verilog -lib work "../testRapido_TOP.v"
 
+add_file -verilog -lib work "../generator.v" 
+add_file -verilog -lib work "../receptor.v" 
+add_file -verilog -lib work "../testRapido_TOP.v" 
+add_file -verilog -lib work "../fsm_shiftRegs.v" 
 #implementation: "GEN_REC_Implmnt"
 impl -add GEN_REC_Implmnt -type fpga
 
@@ -54,5 +55,5 @@ set_option -write_apr_constraint 1
 project -result_format "edif"
 project -result_file ./GEN_REC_Implmnt/GEN_REC.edf
 project -log_file "./GEN_REC_Implmnt/GEN_REC.srr"
-impl -active "GEN_REC_Implmnt"
+impl -active GEN_REC_Implmnt
 project -run synthesis -clean

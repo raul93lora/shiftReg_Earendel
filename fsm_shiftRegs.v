@@ -5,7 +5,6 @@
 module fsm (
     CLK,       // Reloj del sistema
     RST_N,     // Reset activo bajo
-    start,     // Entrada para iniciar la máquina de estados
     sel_dyn,   // Seleccion registro dinammico
     sel_stat,  // Seleccion registro estatico
     state      // Salida que indica el estado actual (3 bits para 5 estados)
@@ -14,7 +13,6 @@ module fsm (
     // Ports definition
     input wire CLK;
     input wire RST_N;
-    input wire start;
     output reg [2:0] state;
     output reg sel_dyn;
     output reg sel_stat;
