@@ -1,2 +1,3 @@
-@E: CS160 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v":8:1:8:6|Bad or missing port direction for 'SELDYN'
+@E: CG285 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":43:5:43:8|Expecting statement
+@E: CS187 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":74:0:74:8|Expecting endmodule
 

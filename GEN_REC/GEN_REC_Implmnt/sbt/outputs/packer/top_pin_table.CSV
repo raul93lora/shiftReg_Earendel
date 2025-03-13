@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Mar 13 2025 09:41:40
+* File Generated:     Mar 13 2025 09:46:38
 
 * Purpose:            Detailed IO and package pin info
 
@@ -39,7 +39,7 @@ B8, PIO, not used, , , , , , topBank
 B9, PIO, not used, , , , , , rightBank
 C1, PIO, not used, , , , , , leftBank
 C2, PIO, not used, , , , , , leftBank
-C3, PIO, not used, , , , , , leftBank
+C3, PIO, RST_N, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
 C4, PIO_GBIN, not used, , , , , , topBank
 C5, PIO_GBIN, not used, , , , , , topBank
 C6, VCCIO_1, not used, , , , , , rightBank
@@ -55,7 +55,7 @@ D6, PIO, not used, , , , , , rightBank
 D7, PIO, not used, , , , , , rightBank
 D8, PIO_GBIN, not used, , , , , , rightBank
 D9, PIO, not used, , , , , , rightBank
-E1, PIO, SELDYN, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
+E1, PIO, not used, , , , , , leftBank
 E2, PIO, not used, , , , , , leftBank
 E3, PIO_GBIN, not used, , , , , , leftBank
 E4, PIO, SELSTAT, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
@@ -66,7 +66,7 @@ E8, PIO_GBIN, not used, , , , , , rightBank
 E9, VCC, not used, , , , , , UnknownBank
 F1, PIO, not used, , , , , , leftBank
 F2, VCC, not used, , , , , , UnknownBank
-F3, PIO, RST_N, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
+F3, PIO, not used, , , , , , leftBank
 F4, GND, not used, , , , , , UnknownBank
 F5, GND, not used, , , , , , UnknownBank
 F6, GND, not used, , , , , , UnknownBank
@@ -74,7 +74,7 @@ F7, SPI_SS_B, not used, , , , , , bottomBank
 F8, PIO, not used, , , , , , rightBank
 F9, GND, not used, , , , , , UnknownBank
 G1, PIO, not used, , , , , , leftBank
-G2, PIO, not used, , , , , , leftBank
+G2, PIO, signal_out, Output, , SB_LVCMOS, No Pull Up, Simple Output, leftBank
 G3, PIO, not used, , , , , , leftBank
 G4, PIO_GBIN, not used, , , , , , bottomBank
 G5, PIO, not used, , , , , , bottomBank
@@ -83,7 +83,7 @@ G7, SPI_SCK, not used, , , , , , bottomBank
 G8, PIO, not used, , , , , , rightBank
 G9, PIO, not used, , , , , , rightBank
 H1, PIO, not used, , , , , , bottomBank
-H2, PIO, signal_out, Output, , SB_LVCMOS, No Pull Up, Simple Output, leftBank
+H2, PIO, SELDYN, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
 H3, VCCIO_3, not used, , , , , , leftBank
 H4, PIO_GBIN, not used, , , , , , bottomBank
 H5, PIO, not used, , , , , , bottomBank

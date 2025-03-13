@@ -1,153 +1,154 @@
-ble_pack RST_N_ibuf_RNIBJGC_LC_1_10_0 { RST_N_ibuf_RNIBJGC }
-clb_pack LT_1_10 { RST_N_ibuf_RNIBJGC_LC_1_10_0 }
+ble_pack generator_inst1.REGDYN_2_LC_1_9_0 { generator_inst1.REGDYN_RNO[2], generator_inst1.REGDYN[2] }
+ble_pack generator_inst1.REGDYN_1_LC_1_9_1 { generator_inst1.REGDYN_RNO[1], generator_inst1.REGDYN[1] }
+ble_pack generator_inst1.REGDYN_3_LC_1_9_2 { generator_inst1.REGDYN_RNO[3], generator_inst1.REGDYN[3] }
+ble_pack generator_inst1.REGDYN_7_LC_1_9_3 { generator_inst1.REGDYN_RNO[7], generator_inst1.REGDYN[7] }
+ble_pack generator_inst1.REGDYN_5_LC_1_9_4 { generator_inst1.REGDYN_RNO[5], generator_inst1.REGDYN[5] }
+ble_pack generator_inst1.REGDYN_6_LC_1_9_5 { generator_inst1.REGDYN_RNO[6], generator_inst1.REGDYN[6] }
+ble_pack generator_inst1.REGDYN_4_LC_1_9_6 { generator_inst1.REGDYN_RNO[4], generator_inst1.REGDYN[4] }
+ble_pack generator_inst1.REGDYN_0_LC_1_9_7 { SELDYN_ibuf_RNIKHL3_generator_inst1.REGDYN_0_REP_LUT4_0, generator_inst1.REGDYN[0] }
+clb_pack LT_1_9 { generator_inst1.REGDYN_2_LC_1_9_0, generator_inst1.REGDYN_1_LC_1_9_1, generator_inst1.REGDYN_3_LC_1_9_2, generator_inst1.REGDYN_7_LC_1_9_3, generator_inst1.REGDYN_5_LC_1_9_4, generator_inst1.REGDYN_6_LC_1_9_5, generator_inst1.REGDYN_4_LC_1_9_6, generator_inst1.REGDYN_0_LC_1_9_7 }
+set_location LT_1_9 1 9
+ble_pack generator_inst1.REGDYN_11_LC_1_10_0 { generator_inst1.REGDYN_RNO[11], generator_inst1.REGDYN[11] }
+ble_pack generator_inst1.REGDYN_10_LC_1_10_1 { generator_inst1.REGDYN_RNO[10], generator_inst1.REGDYN[10] }
+ble_pack generator_inst1.REGDYN_12_LC_1_10_2 { generator_inst1.REGDYN_RNO[12], generator_inst1.REGDYN[12] }
+ble_pack generator_inst1.REGDYN_13_LC_1_10_3 { generator_inst1.REGDYN_RNO[13], generator_inst1.REGDYN[13] }
+ble_pack generator_inst1.REGDYN_14_LC_1_10_4 { generator_inst1.REGDYN_RNO[14], generator_inst1.REGDYN[14] }
+ble_pack generator_inst1.REGDYN_15_LC_1_10_5 { generator_inst1.REGDYN_RNO[15], generator_inst1.REGDYN[15] }
+ble_pack generator_inst1.REGDYN_9_LC_1_10_6 { generator_inst1.REGDYN_RNO[9], generator_inst1.REGDYN[9] }
+ble_pack generator_inst1.REGDYN_8_LC_1_10_7 { generator_inst1.REGDYN_RNO[8], generator_inst1.REGDYN[8] }
+clb_pack LT_1_10 { generator_inst1.REGDYN_11_LC_1_10_0, generator_inst1.REGDYN_10_LC_1_10_1, generator_inst1.REGDYN_12_LC_1_10_2, generator_inst1.REGDYN_13_LC_1_10_3, generator_inst1.REGDYN_14_LC_1_10_4, generator_inst1.REGDYN_15_LC_1_10_5, generator_inst1.REGDYN_9_LC_1_10_6, generator_inst1.REGDYN_8_LC_1_10_7 }
 set_location LT_1_10 1 10
-ble_pack generator_inst1.signal_out_LC_1_12_0 { generator_inst1.signal_out_RNO, generator_inst1.signal_out }
-ble_pack receptor_inst1.signal_out_LC_1_12_1 { receptor_inst1.signal_out_THRU_LUT4_0, receptor_inst1.signal_out }
-clb_pack LT_1_12 { generator_inst1.signal_out_LC_1_12_0, receptor_inst1.signal_out_LC_1_12_1 }
+ble_pack generator_inst1.signal_out_LC_1_11_0 { generator_inst1.signal_out_RNO, generator_inst1.signal_out }
+ble_pack receptor_inst1.signal_out_LC_1_11_1 { receptor_inst1.signal_out_THRU_LUT4_0, receptor_inst1.signal_out }
+ble_pack generator_inst1.REGDYN8_i_LC_1_11_2 { generator_inst1.REGDYN8_i }
+clb_pack LT_1_11 { generator_inst1.signal_out_LC_1_11_0, receptor_inst1.signal_out_LC_1_11_1, generator_inst1.REGDYN8_i_LC_1_11_2 }
+set_location LT_1_11 1 11
+ble_pack generator_inst1.REGSTAT_86_LC_1_12_0 { generator_inst1.REGSTAT_RNO[86], generator_inst1.REGSTAT[86] }
+ble_pack generator_inst1.REGSTAT_87_LC_1_12_1 { generator_inst1.REGSTAT_RNO[87], generator_inst1.REGSTAT[87] }
+ble_pack generator_inst1.REGSTAT_84_LC_1_12_5 { generator_inst1.REGSTAT_RNO[84], generator_inst1.REGSTAT[84] }
+ble_pack generator_inst1.REGSTAT_85_LC_1_12_7 { generator_inst1.REGSTAT_RNO[85], generator_inst1.REGSTAT[85] }
+clb_pack LT_1_12 { generator_inst1.REGSTAT_86_LC_1_12_0, generator_inst1.REGSTAT_87_LC_1_12_1, generator_inst1.REGSTAT_84_LC_1_12_5, generator_inst1.REGSTAT_85_LC_1_12_7 }
 set_location LT_1_12 1 12
-ble_pack generator_inst1.REGDYN_9_LC_1_13_0 { generator_inst1.REGDYN_9_THRU_LUT4_0, generator_inst1.REGDYN[9] }
-ble_pack generator_inst1.REGDYN_8_LC_1_13_1 { generator_inst1.REGDYN_8_THRU_LUT4_0, generator_inst1.REGDYN[8] }
-ble_pack generator_inst1.REGDYN_12_LC_1_13_2 { generator_inst1.REGDYN_12_THRU_LUT4_0, generator_inst1.REGDYN[12] }
-ble_pack generator_inst1.REGDYN_13_LC_1_13_3 { generator_inst1.REGDYN_13_THRU_LUT4_0, generator_inst1.REGDYN[13] }
-ble_pack generator_inst1.REGDYN_14_LC_1_13_4 { generator_inst1.REGDYN_14_THRU_LUT4_0, generator_inst1.REGDYN[14] }
-ble_pack generator_inst1.REGDYN_15_LC_1_13_5 { generator_inst1.REGDYN_15_THRU_LUT4_0, generator_inst1.REGDYN[15] }
-ble_pack generator_inst1.REGDYN_11_LC_1_13_6 { generator_inst1.REGDYN_11_THRU_LUT4_0, generator_inst1.REGDYN[11] }
-ble_pack generator_inst1.REGDYN_10_LC_1_13_7 { generator_inst1.REGDYN_10_THRU_LUT4_0, generator_inst1.REGDYN[10] }
-clb_pack LT_1_13 { generator_inst1.REGDYN_9_LC_1_13_0, generator_inst1.REGDYN_8_LC_1_13_1, generator_inst1.REGDYN_12_LC_1_13_2, generator_inst1.REGDYN_13_LC_1_13_3, generator_inst1.REGDYN_14_LC_1_13_4, generator_inst1.REGDYN_15_LC_1_13_5, generator_inst1.REGDYN_11_LC_1_13_6, generator_inst1.REGDYN_10_LC_1_13_7 }
+ble_pack generator_inst1.REGSTAT_10_LC_1_13_0 { generator_inst1.REGSTAT_RNO[10], generator_inst1.REGSTAT[10] }
+ble_pack generator_inst1.REGSTAT_7_LC_1_13_1 { generator_inst1.REGSTAT_RNO[7], generator_inst1.REGSTAT[7] }
+ble_pack generator_inst1.REGSTAT_9_LC_1_13_2 { generator_inst1.REGSTAT_RNO[9], generator_inst1.REGSTAT[9] }
+ble_pack generator_inst1.REGSTAT_6_LC_1_13_3 { generator_inst1.REGSTAT_RNO[6], generator_inst1.REGSTAT[6] }
+ble_pack generator_inst1.REGSTAT_8_LC_1_13_5 { generator_inst1.REGSTAT_RNO[8], generator_inst1.REGSTAT[8] }
+ble_pack generator_inst1.REGSTAT_11_LC_1_13_7 { generator_inst1.REGSTAT_RNO[11], generator_inst1.REGSTAT[11] }
+clb_pack LT_1_13 { generator_inst1.REGSTAT_10_LC_1_13_0, generator_inst1.REGSTAT_7_LC_1_13_1, generator_inst1.REGSTAT_9_LC_1_13_2, generator_inst1.REGSTAT_6_LC_1_13_3, generator_inst1.REGSTAT_8_LC_1_13_5, generator_inst1.REGSTAT_11_LC_1_13_7 }
 set_location LT_1_13 1 13
-ble_pack generator_inst1.REGDYN_1_LC_1_14_0 { generator_inst1.REGDYN_1_THRU_LUT4_0, generator_inst1.REGDYN[1] }
-ble_pack generator_inst1.REGDYN_2_LC_1_14_1 { generator_inst1.REGDYN_2_THRU_LUT4_0, generator_inst1.REGDYN[2] }
-ble_pack generator_inst1.REGDYN_3_LC_1_14_2 { generator_inst1.REGDYN_3_THRU_LUT4_0, generator_inst1.REGDYN[3] }
-ble_pack generator_inst1.REGDYN_6_LC_1_14_3 { generator_inst1.REGDYN_6_THRU_LUT4_0, generator_inst1.REGDYN[6] }
-ble_pack generator_inst1.REGDYN_7_LC_1_14_4 { generator_inst1.REGDYN_7_THRU_LUT4_0, generator_inst1.REGDYN[7] }
-ble_pack generator_inst1.REGDYN_5_LC_1_14_5 { generator_inst1.REGDYN_5_THRU_LUT4_0, generator_inst1.REGDYN[5] }
-ble_pack generator_inst1.REGDYN_4_LC_1_14_6 { generator_inst1.REGDYN_4_THRU_LUT4_0, generator_inst1.REGDYN[4] }
-ble_pack generator_inst1.REGDYN_0_LC_1_14_7 { generator_inst1.REGDYN_0_THRU_LUT4_0, generator_inst1.REGDYN[0] }
-clb_pack LT_1_14 { generator_inst1.REGDYN_1_LC_1_14_0, generator_inst1.REGDYN_2_LC_1_14_1, generator_inst1.REGDYN_3_LC_1_14_2, generator_inst1.REGDYN_6_LC_1_14_3, generator_inst1.REGDYN_7_LC_1_14_4, generator_inst1.REGDYN_5_LC_1_14_5, generator_inst1.REGDYN_4_LC_1_14_6, generator_inst1.REGDYN_0_LC_1_14_7 }
+ble_pack generator_inst1.REGSTAT_19_LC_1_14_0 { generator_inst1.REGSTAT_RNO[19], generator_inst1.REGSTAT[19] }
+ble_pack generator_inst1.REGSTAT_12_LC_1_14_1 { generator_inst1.REGSTAT_RNO[12], generator_inst1.REGSTAT[12] }
+ble_pack generator_inst1.REGSTAT_14_LC_1_14_2 { generator_inst1.REGSTAT_RNO[14], generator_inst1.REGSTAT[14] }
+ble_pack generator_inst1.REGSTAT_13_LC_1_14_3 { generator_inst1.REGSTAT_RNO[13], generator_inst1.REGSTAT[13] }
+ble_pack generator_inst1.REGSTAT_18_LC_1_14_4 { generator_inst1.REGSTAT_RNO[18], generator_inst1.REGSTAT[18] }
+ble_pack generator_inst1.REGSTAT_15_LC_1_14_5 { generator_inst1.REGSTAT_RNO[15], generator_inst1.REGSTAT[15] }
+ble_pack generator_inst1.REGSTAT_16_LC_1_14_6 { generator_inst1.REGSTAT_RNO[16], generator_inst1.REGSTAT[16] }
+ble_pack generator_inst1.REGSTAT_17_LC_1_14_7 { generator_inst1.REGSTAT_RNO[17], generator_inst1.REGSTAT[17] }
+clb_pack LT_1_14 { generator_inst1.REGSTAT_19_LC_1_14_0, generator_inst1.REGSTAT_12_LC_1_14_1, generator_inst1.REGSTAT_14_LC_1_14_2, generator_inst1.REGSTAT_13_LC_1_14_3, generator_inst1.REGSTAT_18_LC_1_14_4, generator_inst1.REGSTAT_15_LC_1_14_5, generator_inst1.REGSTAT_16_LC_1_14_6, generator_inst1.REGSTAT_17_LC_1_14_7 }
 set_location LT_1_14 1 14
-ble_pack generator_inst1.REGSTAT_24_LC_1_15_0 { generator_inst1.REGSTAT_24_THRU_LUT4_0, generator_inst1.REGSTAT[24] }
-ble_pack generator_inst1.REGSTAT_26_LC_1_15_2 { generator_inst1.REGSTAT_26_THRU_LUT4_0, generator_inst1.REGSTAT[26] }
-ble_pack generator_inst1.REGSTAT_25_LC_1_15_3 { generator_inst1.REGSTAT_25_THRU_LUT4_0, generator_inst1.REGSTAT[25] }
-ble_pack generator_inst1.REGSTAT_22_LC_1_15_4 { generator_inst1.REGSTAT_22_THRU_LUT4_0, generator_inst1.REGSTAT[22] }
-ble_pack generator_inst1.REGSTAT_23_LC_1_15_5 { generator_inst1.REGSTAT_23_THRU_LUT4_0, generator_inst1.REGSTAT[23] }
-ble_pack generator_inst1.REGSTAT_21_LC_1_15_7 { generator_inst1.REGSTAT_21_THRU_LUT4_0, generator_inst1.REGSTAT[21] }
-clb_pack LT_1_15 { generator_inst1.REGSTAT_24_LC_1_15_0, generator_inst1.REGSTAT_26_LC_1_15_2, generator_inst1.REGSTAT_25_LC_1_15_3, generator_inst1.REGSTAT_22_LC_1_15_4, generator_inst1.REGSTAT_23_LC_1_15_5, generator_inst1.REGSTAT_21_LC_1_15_7 }
+ble_pack generator_inst1.REGSTAT_32_LC_1_15_0 { generator_inst1.REGSTAT_RNO[32], generator_inst1.REGSTAT[32] }
+ble_pack generator_inst1.REGSTAT_34_LC_1_15_1 { generator_inst1.REGSTAT_RNO[34], generator_inst1.REGSTAT[34] }
+ble_pack generator_inst1.REGSTAT_37_LC_1_15_2 { generator_inst1.REGSTAT_RNO[37], generator_inst1.REGSTAT[37] }
+ble_pack generator_inst1.REGSTAT_35_LC_1_15_3 { generator_inst1.REGSTAT_RNO[35], generator_inst1.REGSTAT[35] }
+ble_pack generator_inst1.REGSTAT_36_LC_1_15_4 { generator_inst1.REGSTAT_RNO[36], generator_inst1.REGSTAT[36] }
+ble_pack generator_inst1.REGSTAT_39_LC_1_15_5 { generator_inst1.REGSTAT_RNO[39], generator_inst1.REGSTAT[39] }
+ble_pack generator_inst1.REGSTAT_33_LC_1_15_6 { generator_inst1.REGSTAT_RNO[33], generator_inst1.REGSTAT[33] }
+ble_pack generator_inst1.REGSTAT_38_LC_1_15_7 { generator_inst1.REGSTAT_RNO[38], generator_inst1.REGSTAT[38] }
+clb_pack LT_1_15 { generator_inst1.REGSTAT_32_LC_1_15_0, generator_inst1.REGSTAT_34_LC_1_15_1, generator_inst1.REGSTAT_37_LC_1_15_2, generator_inst1.REGSTAT_35_LC_1_15_3, generator_inst1.REGSTAT_36_LC_1_15_4, generator_inst1.REGSTAT_39_LC_1_15_5, generator_inst1.REGSTAT_33_LC_1_15_6, generator_inst1.REGSTAT_38_LC_1_15_7 }
 set_location LT_1_15 1 15
-ble_pack generator_inst1.REGDYN7_LC_1_17_5 { generator_inst1.REGDYN7 }
-clb_pack LT_1_17 { generator_inst1.REGDYN7_LC_1_17_5 }
+ble_pack generator_inst1.REGSTAT_41_LC_1_16_0 { generator_inst1.REGSTAT_RNO[41], generator_inst1.REGSTAT[41] }
+ble_pack generator_inst1.REGSTAT_40_LC_1_16_1 { generator_inst1.REGSTAT_RNO[40], generator_inst1.REGSTAT[40] }
+ble_pack generator_inst1.REGSTAT_44_LC_1_16_2 { generator_inst1.REGSTAT_RNO[44], generator_inst1.REGSTAT[44] }
+ble_pack generator_inst1.REGSTAT_42_LC_1_16_4 { generator_inst1.REGSTAT_RNO[42], generator_inst1.REGSTAT[42] }
+ble_pack generator_inst1.REGSTAT_43_LC_1_16_5 { generator_inst1.REGSTAT_RNO[43], generator_inst1.REGSTAT[43] }
+ble_pack generator_inst1.REGSTAT_45_LC_1_16_6 { generator_inst1.REGSTAT_RNO[45], generator_inst1.REGSTAT[45] }
+clb_pack LT_1_16 { generator_inst1.REGSTAT_41_LC_1_16_0, generator_inst1.REGSTAT_40_LC_1_16_1, generator_inst1.REGSTAT_44_LC_1_16_2, generator_inst1.REGSTAT_42_LC_1_16_4, generator_inst1.REGSTAT_43_LC_1_16_5, generator_inst1.REGSTAT_45_LC_1_16_6 }
+set_location LT_1_16 1 16
+ble_pack SELDYN_ibuf_RNIKHL3_LC_1_17_3 { SELDYN_ibuf_RNIKHL3 }
+clb_pack LT_1_17 { SELDYN_ibuf_RNIKHL3_LC_1_17_3 }
 set_location LT_1_17 1 17
-ble_pack generator_inst1.REGSTAT_83_LC_2_12_0 { generator_inst1.REGSTAT_83_THRU_LUT4_0, generator_inst1.REGSTAT[83] }
-ble_pack generator_inst1.REGSTAT_84_LC_2_12_2 { generator_inst1.REGSTAT_84_THRU_LUT4_0, generator_inst1.REGSTAT[84] }
-ble_pack generator_inst1.REGSTAT_81_LC_2_12_3 { generator_inst1.REGSTAT_81_THRU_LUT4_0, generator_inst1.REGSTAT[81] }
-ble_pack generator_inst1.REGSTAT_85_LC_2_12_4 { generator_inst1.REGSTAT_85_THRU_LUT4_0, generator_inst1.REGSTAT[85] }
-ble_pack generator_inst1.REGSTAT_87_LC_2_12_5 { generator_inst1.REGSTAT_87_THRU_LUT4_0, generator_inst1.REGSTAT[87] }
-ble_pack generator_inst1.REGSTAT_86_LC_2_12_6 { generator_inst1.REGSTAT_86_THRU_LUT4_0, generator_inst1.REGSTAT[86] }
-ble_pack generator_inst1.REGSTAT_82_LC_2_12_7 { generator_inst1.REGSTAT_82_THRU_LUT4_0, generator_inst1.REGSTAT[82] }
-clb_pack LT_2_12 { generator_inst1.REGSTAT_83_LC_2_12_0, generator_inst1.REGSTAT_84_LC_2_12_2, generator_inst1.REGSTAT_81_LC_2_12_3, generator_inst1.REGSTAT_85_LC_2_12_4, generator_inst1.REGSTAT_87_LC_2_12_5, generator_inst1.REGSTAT_86_LC_2_12_6, generator_inst1.REGSTAT_82_LC_2_12_7 }
+ble_pack RST_N_ibuf_RNIBJGC_LC_1_18_5 { RST_N_ibuf_RNIBJGC }
+clb_pack LT_1_18 { RST_N_ibuf_RNIBJGC_LC_1_18_5 }
+set_location LT_1_18 1 18
+ble_pack generator_inst1.REGSTAT_80_LC_2_12_0 { generator_inst1.REGSTAT_RNO[80], generator_inst1.REGSTAT[80] }
+ble_pack generator_inst1.REGSTAT_82_LC_2_12_1 { generator_inst1.REGSTAT_RNO[82], generator_inst1.REGSTAT[82] }
+ble_pack generator_inst1.REGSTAT_81_LC_2_12_2 { generator_inst1.REGSTAT_RNO[81], generator_inst1.REGSTAT[81] }
+ble_pack generator_inst1.REGSTAT_79_LC_2_12_3 { generator_inst1.REGSTAT_RNO[79], generator_inst1.REGSTAT[79] }
+ble_pack generator_inst1.REGSTAT_83_LC_2_12_4 { generator_inst1.REGSTAT_RNO[83], generator_inst1.REGSTAT[83] }
+clb_pack LT_2_12 { generator_inst1.REGSTAT_80_LC_2_12_0, generator_inst1.REGSTAT_82_LC_2_12_1, generator_inst1.REGSTAT_81_LC_2_12_2, generator_inst1.REGSTAT_79_LC_2_12_3, generator_inst1.REGSTAT_83_LC_2_12_4 }
 set_location LT_2_12 2 12
-ble_pack generator_inst1.REGSTAT_79_LC_2_13_0 { generator_inst1.REGSTAT_79_THRU_LUT4_0, generator_inst1.REGSTAT[79] }
-ble_pack generator_inst1.REGSTAT_77_LC_2_13_1 { generator_inst1.REGSTAT_77_THRU_LUT4_0, generator_inst1.REGSTAT[77] }
-ble_pack generator_inst1.REGSTAT_78_LC_2_13_3 { generator_inst1.REGSTAT_78_THRU_LUT4_0, generator_inst1.REGSTAT[78] }
-ble_pack generator_inst1.REGSTAT_80_LC_2_13_6 { generator_inst1.REGSTAT_80_THRU_LUT4_0, generator_inst1.REGSTAT[80] }
-clb_pack LT_2_13 { generator_inst1.REGSTAT_79_LC_2_13_0, generator_inst1.REGSTAT_77_LC_2_13_1, generator_inst1.REGSTAT_78_LC_2_13_3, generator_inst1.REGSTAT_80_LC_2_13_6 }
+ble_pack generator_inst1.REGSTAT_2_LC_2_13_0 { generator_inst1.REGSTAT_RNO[2], generator_inst1.REGSTAT[2] }
+ble_pack generator_inst1.REGSTAT_5_LC_2_13_2 { generator_inst1.REGSTAT_RNO[5], generator_inst1.REGSTAT[5] }
+ble_pack generator_inst1.REGSTAT_3_LC_2_13_5 { generator_inst1.REGSTAT_RNO[3], generator_inst1.REGSTAT[3] }
+ble_pack generator_inst1.REGSTAT_4_LC_2_13_7 { generator_inst1.REGSTAT_RNO[4], generator_inst1.REGSTAT[4] }
+clb_pack LT_2_13 { generator_inst1.REGSTAT_2_LC_2_13_0, generator_inst1.REGSTAT_5_LC_2_13_2, generator_inst1.REGSTAT_3_LC_2_13_5, generator_inst1.REGSTAT_4_LC_2_13_7 }
 set_location LT_2_13 2 13
-ble_pack generator_inst1.REGSTAT_15_LC_2_14_1 { generator_inst1.REGSTAT_15_THRU_LUT4_0, generator_inst1.REGSTAT[15] }
-ble_pack generator_inst1.REGSTAT_76_LC_2_14_2 { generator_inst1.REGSTAT_76_THRU_LUT4_0, generator_inst1.REGSTAT[76] }
-ble_pack generator_inst1.REGSTAT_74_LC_2_14_3 { generator_inst1.REGSTAT_74_THRU_LUT4_0, generator_inst1.REGSTAT[74] }
-ble_pack generator_inst1.REGSTAT_73_LC_2_14_5 { generator_inst1.REGSTAT_73_THRU_LUT4_0, generator_inst1.REGSTAT[73] }
-ble_pack generator_inst1.REGSTAT_75_LC_2_14_6 { generator_inst1.REGSTAT_75_THRU_LUT4_0, generator_inst1.REGSTAT[75] }
-ble_pack generator_inst1.REGSTAT_14_LC_2_14_7 { generator_inst1.REGSTAT_14_THRU_LUT4_0, generator_inst1.REGSTAT[14] }
-clb_pack LT_2_14 { generator_inst1.REGSTAT_15_LC_2_14_1, generator_inst1.REGSTAT_76_LC_2_14_2, generator_inst1.REGSTAT_74_LC_2_14_3, generator_inst1.REGSTAT_73_LC_2_14_5, generator_inst1.REGSTAT_75_LC_2_14_6, generator_inst1.REGSTAT_14_LC_2_14_7 }
+ble_pack generator_inst1.REGSTAT_25_LC_2_14_0 { generator_inst1.REGSTAT_RNO[25], generator_inst1.REGSTAT[25] }
+ble_pack generator_inst1.REGSTAT_24_LC_2_14_1 { generator_inst1.REGSTAT_RNO[24], generator_inst1.REGSTAT[24] }
+ble_pack generator_inst1.REGSTAT_23_LC_2_14_2 { generator_inst1.REGSTAT_RNO[23], generator_inst1.REGSTAT[23] }
+ble_pack generator_inst1.REGSTAT_0_LC_2_14_3 { generator_inst1.REGSTAT_RNO[0], generator_inst1.REGSTAT[0] }
+ble_pack generator_inst1.REGSTAT_20_LC_2_14_4 { generator_inst1.REGSTAT_RNO[20], generator_inst1.REGSTAT[20] }
+ble_pack generator_inst1.REGSTAT_22_LC_2_14_5 { generator_inst1.REGSTAT_RNO[22], generator_inst1.REGSTAT[22] }
+ble_pack generator_inst1.REGSTAT_21_LC_2_14_6 { generator_inst1.REGSTAT_RNO[21], generator_inst1.REGSTAT[21] }
+ble_pack generator_inst1.REGSTAT_1_LC_2_14_7 { generator_inst1.REGSTAT_RNO[1], generator_inst1.REGSTAT[1] }
+clb_pack LT_2_14 { generator_inst1.REGSTAT_25_LC_2_14_0, generator_inst1.REGSTAT_24_LC_2_14_1, generator_inst1.REGSTAT_23_LC_2_14_2, generator_inst1.REGSTAT_0_LC_2_14_3, generator_inst1.REGSTAT_20_LC_2_14_4, generator_inst1.REGSTAT_22_LC_2_14_5, generator_inst1.REGSTAT_21_LC_2_14_6, generator_inst1.REGSTAT_1_LC_2_14_7 }
 set_location LT_2_14 2 14
-ble_pack generator_inst1.REGSTAT_17_LC_2_15_0 { generator_inst1.REGSTAT_17_THRU_LUT4_0, generator_inst1.REGSTAT[17] }
-ble_pack generator_inst1.REGSTAT_18_LC_2_15_1 { generator_inst1.REGSTAT_18_THRU_LUT4_0, generator_inst1.REGSTAT[18] }
-ble_pack generator_inst1.REGSTAT_47_LC_2_15_2 { generator_inst1.REGSTAT_47_THRU_LUT4_0, generator_inst1.REGSTAT[47] }
-ble_pack generator_inst1.REGSTAT_49_LC_2_15_3 { generator_inst1.REGSTAT_49_THRU_LUT4_0, generator_inst1.REGSTAT[49] }
-ble_pack generator_inst1.REGSTAT_16_LC_2_15_4 { generator_inst1.REGSTAT_16_THRU_LUT4_0, generator_inst1.REGSTAT[16] }
-ble_pack generator_inst1.REGSTAT_48_LC_2_15_5 { generator_inst1.REGSTAT_48_THRU_LUT4_0, generator_inst1.REGSTAT[48] }
-ble_pack generator_inst1.REGSTAT_19_LC_2_15_6 { generator_inst1.REGSTAT_19_THRU_LUT4_0, generator_inst1.REGSTAT[19] }
-ble_pack generator_inst1.REGSTAT_20_LC_2_15_7 { generator_inst1.REGSTAT_20_THRU_LUT4_0, generator_inst1.REGSTAT[20] }
-clb_pack LT_2_15 { generator_inst1.REGSTAT_17_LC_2_15_0, generator_inst1.REGSTAT_18_LC_2_15_1, generator_inst1.REGSTAT_47_LC_2_15_2, generator_inst1.REGSTAT_49_LC_2_15_3, generator_inst1.REGSTAT_16_LC_2_15_4, generator_inst1.REGSTAT_48_LC_2_15_5, generator_inst1.REGSTAT_19_LC_2_15_6, generator_inst1.REGSTAT_20_LC_2_15_7 }
+ble_pack generator_inst1.REGSTAT_30_LC_2_15_0 { generator_inst1.REGSTAT_RNO[30], generator_inst1.REGSTAT[30] }
+ble_pack generator_inst1.REGSTAT_27_LC_2_15_1 { generator_inst1.REGSTAT_RNO[27], generator_inst1.REGSTAT[27] }
+ble_pack generator_inst1.REGSTAT_28_LC_2_15_2 { generator_inst1.REGSTAT_RNO[28], generator_inst1.REGSTAT[28] }
+ble_pack generator_inst1.REGSTAT_29_LC_2_15_3 { generator_inst1.REGSTAT_RNO[29], generator_inst1.REGSTAT[29] }
+ble_pack generator_inst1.REGSTAT_26_LC_2_15_4 { generator_inst1.REGSTAT_RNO[26], generator_inst1.REGSTAT[26] }
+ble_pack generator_inst1.REGSTAT_31_LC_2_15_5 { generator_inst1.REGSTAT_RNO[31], generator_inst1.REGSTAT[31] }
+clb_pack LT_2_15 { generator_inst1.REGSTAT_30_LC_2_15_0, generator_inst1.REGSTAT_27_LC_2_15_1, generator_inst1.REGSTAT_28_LC_2_15_2, generator_inst1.REGSTAT_29_LC_2_15_3, generator_inst1.REGSTAT_26_LC_2_15_4, generator_inst1.REGSTAT_31_LC_2_15_5 }
 set_location LT_2_15 2 15
-ble_pack generator_inst1.REGSTAT_33_LC_2_16_0 { generator_inst1.REGSTAT_33_THRU_LUT4_0, generator_inst1.REGSTAT[33] }
-ble_pack generator_inst1.REGSTAT_28_LC_2_16_1 { generator_inst1.REGSTAT_28_THRU_LUT4_0, generator_inst1.REGSTAT[28] }
-ble_pack generator_inst1.REGSTAT_29_LC_2_16_3 { generator_inst1.REGSTAT_29_THRU_LUT4_0, generator_inst1.REGSTAT[29] }
-ble_pack generator_inst1.REGSTAT_30_LC_2_16_4 { generator_inst1.REGSTAT_30_THRU_LUT4_0, generator_inst1.REGSTAT[30] }
-ble_pack generator_inst1.REGSTAT_31_LC_2_16_5 { generator_inst1.REGSTAT_31_THRU_LUT4_0, generator_inst1.REGSTAT[31] }
-ble_pack generator_inst1.REGSTAT_32_LC_2_16_6 { generator_inst1.REGSTAT_32_THRU_LUT4_0, generator_inst1.REGSTAT[32] }
-ble_pack generator_inst1.REGSTAT_27_LC_2_16_7 { generator_inst1.REGSTAT_27_THRU_LUT4_0, generator_inst1.REGSTAT[27] }
-clb_pack LT_2_16 { generator_inst1.REGSTAT_33_LC_2_16_0, generator_inst1.REGSTAT_28_LC_2_16_1, generator_inst1.REGSTAT_29_LC_2_16_3, generator_inst1.REGSTAT_30_LC_2_16_4, generator_inst1.REGSTAT_31_LC_2_16_5, generator_inst1.REGSTAT_32_LC_2_16_6, generator_inst1.REGSTAT_27_LC_2_16_7 }
+ble_pack generator_inst1.REGSTAT_51_LC_2_16_0 { generator_inst1.REGSTAT_RNO[51], generator_inst1.REGSTAT[51] }
+ble_pack generator_inst1.REGSTAT_47_LC_2_16_1 { generator_inst1.REGSTAT_RNO[47], generator_inst1.REGSTAT[47] }
+ble_pack generator_inst1.REGSTAT_53_LC_2_16_2 { generator_inst1.REGSTAT_RNO[53], generator_inst1.REGSTAT[53] }
+ble_pack generator_inst1.REGSTAT_52_LC_2_16_3 { generator_inst1.REGSTAT_RNO[52], generator_inst1.REGSTAT[52] }
+ble_pack generator_inst1.REGSTAT_46_LC_2_16_4 { generator_inst1.REGSTAT_RNO[46], generator_inst1.REGSTAT[46] }
+ble_pack generator_inst1.REGSTAT_49_LC_2_16_5 { generator_inst1.REGSTAT_RNO[49], generator_inst1.REGSTAT[49] }
+ble_pack generator_inst1.REGSTAT_48_LC_2_16_6 { generator_inst1.REGSTAT_RNO[48], generator_inst1.REGSTAT[48] }
+ble_pack generator_inst1.REGSTAT_50_LC_2_16_7 { generator_inst1.REGSTAT_RNO[50], generator_inst1.REGSTAT[50] }
+clb_pack LT_2_16 { generator_inst1.REGSTAT_51_LC_2_16_0, generator_inst1.REGSTAT_47_LC_2_16_1, generator_inst1.REGSTAT_53_LC_2_16_2, generator_inst1.REGSTAT_52_LC_2_16_3, generator_inst1.REGSTAT_46_LC_2_16_4, generator_inst1.REGSTAT_49_LC_2_16_5, generator_inst1.REGSTAT_48_LC_2_16_6, generator_inst1.REGSTAT_50_LC_2_16_7 }
 set_location LT_2_16 2 16
-ble_pack generator_inst1.REGSTAT_11_LC_3_13_0 { generator_inst1.REGSTAT_11_THRU_LUT4_0, generator_inst1.REGSTAT[11] }
-ble_pack generator_inst1.REGSTAT_12_LC_3_13_1 { generator_inst1.REGSTAT_12_THRU_LUT4_0, generator_inst1.REGSTAT[12] }
-ble_pack generator_inst1.REGSTAT_7_LC_3_13_2 { generator_inst1.REGSTAT_7_THRU_LUT4_0, generator_inst1.REGSTAT[7] }
-ble_pack generator_inst1.REGSTAT_6_LC_3_13_3 { generator_inst1.REGSTAT_6_THRU_LUT4_0, generator_inst1.REGSTAT[6] }
-ble_pack generator_inst1.REGSTAT_10_LC_3_13_5 { generator_inst1.REGSTAT_10_THRU_LUT4_0, generator_inst1.REGSTAT[10] }
-ble_pack generator_inst1.REGSTAT_8_LC_3_13_6 { generator_inst1.REGSTAT_8_THRU_LUT4_0, generator_inst1.REGSTAT[8] }
-ble_pack generator_inst1.REGSTAT_9_LC_3_13_7 { generator_inst1.REGSTAT_9_THRU_LUT4_0, generator_inst1.REGSTAT[9] }
-clb_pack LT_3_13 { generator_inst1.REGSTAT_11_LC_3_13_0, generator_inst1.REGSTAT_12_LC_3_13_1, generator_inst1.REGSTAT_7_LC_3_13_2, generator_inst1.REGSTAT_6_LC_3_13_3, generator_inst1.REGSTAT_10_LC_3_13_5, generator_inst1.REGSTAT_8_LC_3_13_6, generator_inst1.REGSTAT_9_LC_3_13_7 }
+ble_pack generator_inst1.REGSTAT_76_LC_3_13_0 { generator_inst1.REGSTAT_RNO[76], generator_inst1.REGSTAT[76] }
+ble_pack generator_inst1.REGSTAT_77_LC_3_13_1 { generator_inst1.REGSTAT_RNO[77], generator_inst1.REGSTAT[77] }
+ble_pack generator_inst1.REGSTAT_78_LC_3_13_2 { generator_inst1.REGSTAT_RNO[78], generator_inst1.REGSTAT[78] }
+ble_pack generator_inst1.REGSTAT_75_LC_3_13_4 { generator_inst1.REGSTAT_RNO[75], generator_inst1.REGSTAT[75] }
+ble_pack generator_inst1.REGSTAT_74_LC_3_13_7 { generator_inst1.REGSTAT_RNO[74], generator_inst1.REGSTAT[74] }
+clb_pack LT_3_13 { generator_inst1.REGSTAT_76_LC_3_13_0, generator_inst1.REGSTAT_77_LC_3_13_1, generator_inst1.REGSTAT_78_LC_3_13_2, generator_inst1.REGSTAT_75_LC_3_13_4, generator_inst1.REGSTAT_74_LC_3_13_7 }
 set_location LT_3_13 3 13
-ble_pack generator_inst1.REGSTAT_62_LC_3_14_0 { generator_inst1.REGSTAT_62_THRU_LUT4_0, generator_inst1.REGSTAT[62] }
-ble_pack generator_inst1.REGSTAT_64_LC_3_14_1 { generator_inst1.REGSTAT_64_THRU_LUT4_0, generator_inst1.REGSTAT[64] }
-ble_pack generator_inst1.REGSTAT_63_LC_3_14_2 { generator_inst1.REGSTAT_63_THRU_LUT4_0, generator_inst1.REGSTAT[63] }
-ble_pack generator_inst1.REGSTAT_60_LC_3_14_3 { generator_inst1.REGSTAT_60_THRU_LUT4_0, generator_inst1.REGSTAT[60] }
-ble_pack generator_inst1.REGSTAT_72_LC_3_14_4 { generator_inst1.REGSTAT_72_THRU_LUT4_0, generator_inst1.REGSTAT[72] }
-ble_pack generator_inst1.REGSTAT_61_LC_3_14_5 { generator_inst1.REGSTAT_61_THRU_LUT4_0, generator_inst1.REGSTAT[61] }
-ble_pack generator_inst1.REGSTAT_13_LC_3_14_6 { generator_inst1.REGSTAT_13_THRU_LUT4_0, generator_inst1.REGSTAT[13] }
-ble_pack generator_inst1.REGSTAT_65_LC_3_14_7 { generator_inst1.REGSTAT_65_THRU_LUT4_0, generator_inst1.REGSTAT[65] }
-clb_pack LT_3_14 { generator_inst1.REGSTAT_62_LC_3_14_0, generator_inst1.REGSTAT_64_LC_3_14_1, generator_inst1.REGSTAT_63_LC_3_14_2, generator_inst1.REGSTAT_60_LC_3_14_3, generator_inst1.REGSTAT_72_LC_3_14_4, generator_inst1.REGSTAT_61_LC_3_14_5, generator_inst1.REGSTAT_13_LC_3_14_6, generator_inst1.REGSTAT_65_LC_3_14_7 }
+ble_pack generator_inst1.REGSTAT_68_LC_3_14_1 { generator_inst1.REGSTAT_RNO[68], generator_inst1.REGSTAT[68] }
+ble_pack generator_inst1.REGSTAT_71_LC_3_14_2 { generator_inst1.REGSTAT_RNO[71], generator_inst1.REGSTAT[71] }
+ble_pack generator_inst1.REGSTAT_73_LC_3_14_3 { generator_inst1.REGSTAT_RNO[73], generator_inst1.REGSTAT[73] }
+ble_pack generator_inst1.REGSTAT_67_LC_3_14_4 { generator_inst1.REGSTAT_RNO[67], generator_inst1.REGSTAT[67] }
+ble_pack generator_inst1.REGSTAT_70_LC_3_14_5 { generator_inst1.REGSTAT_RNO[70], generator_inst1.REGSTAT[70] }
+ble_pack generator_inst1.REGSTAT_69_LC_3_14_6 { generator_inst1.REGSTAT_RNO[69], generator_inst1.REGSTAT[69] }
+ble_pack generator_inst1.REGSTAT_72_LC_3_14_7 { generator_inst1.REGSTAT_RNO[72], generator_inst1.REGSTAT[72] }
+clb_pack LT_3_14 { generator_inst1.REGSTAT_68_LC_3_14_1, generator_inst1.REGSTAT_71_LC_3_14_2, generator_inst1.REGSTAT_73_LC_3_14_3, generator_inst1.REGSTAT_67_LC_3_14_4, generator_inst1.REGSTAT_70_LC_3_14_5, generator_inst1.REGSTAT_69_LC_3_14_6, generator_inst1.REGSTAT_72_LC_3_14_7 }
 set_location LT_3_14 3 14
-ble_pack generator_inst1.REGSTAT_55_LC_3_15_0 { generator_inst1.REGSTAT_55_THRU_LUT4_0, generator_inst1.REGSTAT[55] }
-ble_pack generator_inst1.REGSTAT_50_LC_3_15_1 { generator_inst1.REGSTAT_50_THRU_LUT4_0, generator_inst1.REGSTAT[50] }
-ble_pack generator_inst1.REGSTAT_51_LC_3_15_3 { generator_inst1.REGSTAT_51_THRU_LUT4_0, generator_inst1.REGSTAT[51] }
-ble_pack generator_inst1.REGSTAT_52_LC_3_15_4 { generator_inst1.REGSTAT_52_THRU_LUT4_0, generator_inst1.REGSTAT[52] }
-ble_pack generator_inst1.REGSTAT_54_LC_3_15_5 { generator_inst1.REGSTAT_54_THRU_LUT4_0, generator_inst1.REGSTAT[54] }
-ble_pack generator_inst1.REGSTAT_53_LC_3_15_7 { generator_inst1.REGSTAT_53_THRU_LUT4_0, generator_inst1.REGSTAT[53] }
-clb_pack LT_3_15 { generator_inst1.REGSTAT_55_LC_3_15_0, generator_inst1.REGSTAT_50_LC_3_15_1, generator_inst1.REGSTAT_51_LC_3_15_3, generator_inst1.REGSTAT_52_LC_3_15_4, generator_inst1.REGSTAT_54_LC_3_15_5, generator_inst1.REGSTAT_53_LC_3_15_7 }
+ble_pack generator_inst1.REGSTAT_64_LC_3_15_0 { generator_inst1.REGSTAT_RNO[64], generator_inst1.REGSTAT[64] }
+ble_pack generator_inst1.REGSTAT_60_LC_3_15_1 { generator_inst1.REGSTAT_RNO[60], generator_inst1.REGSTAT[60] }
+ble_pack generator_inst1.REGSTAT_63_LC_3_15_2 { generator_inst1.REGSTAT_RNO[63], generator_inst1.REGSTAT[63] }
+ble_pack generator_inst1.REGSTAT_62_LC_3_15_3 { generator_inst1.REGSTAT_RNO[62], generator_inst1.REGSTAT[62] }
+ble_pack generator_inst1.REGSTAT_61_LC_3_15_4 { generator_inst1.REGSTAT_RNO[61], generator_inst1.REGSTAT[61] }
+ble_pack generator_inst1.REGSTAT_66_LC_3_15_5 { generator_inst1.REGSTAT_RNO[66], generator_inst1.REGSTAT[66] }
+ble_pack generator_inst1.REGSTAT_65_LC_3_15_6 { generator_inst1.REGSTAT_RNO[65], generator_inst1.REGSTAT[65] }
+clb_pack LT_3_15 { generator_inst1.REGSTAT_64_LC_3_15_0, generator_inst1.REGSTAT_60_LC_3_15_1, generator_inst1.REGSTAT_63_LC_3_15_2, generator_inst1.REGSTAT_62_LC_3_15_3, generator_inst1.REGSTAT_61_LC_3_15_4, generator_inst1.REGSTAT_66_LC_3_15_5, generator_inst1.REGSTAT_65_LC_3_15_6 }
 set_location LT_3_15 3 15
-ble_pack generator_inst1.REGSTAT_43_LC_3_16_1 { generator_inst1.REGSTAT_43_THRU_LUT4_0, generator_inst1.REGSTAT[43] }
-ble_pack generator_inst1.REGSTAT_44_LC_3_16_2 { generator_inst1.REGSTAT_44_THRU_LUT4_0, generator_inst1.REGSTAT[44] }
-ble_pack generator_inst1.REGSTAT_45_LC_3_16_3 { generator_inst1.REGSTAT_45_THRU_LUT4_0, generator_inst1.REGSTAT[45] }
-ble_pack generator_inst1.REGSTAT_46_LC_3_16_4 { generator_inst1.REGSTAT_46_THRU_LUT4_0, generator_inst1.REGSTAT[46] }
-ble_pack generator_inst1.REGSTAT_34_LC_3_16_6 { generator_inst1.REGSTAT_34_THRU_LUT4_0, generator_inst1.REGSTAT[34] }
-clb_pack LT_3_16 { generator_inst1.REGSTAT_43_LC_3_16_1, generator_inst1.REGSTAT_44_LC_3_16_2, generator_inst1.REGSTAT_45_LC_3_16_3, generator_inst1.REGSTAT_46_LC_3_16_4, generator_inst1.REGSTAT_34_LC_3_16_6 }
+ble_pack generator_inst1.REGSTAT_57_LC_3_16_0 { generator_inst1.REGSTAT_RNO[57], generator_inst1.REGSTAT[57] }
+ble_pack generator_inst1.REGSTAT_55_LC_3_16_1 { generator_inst1.REGSTAT_RNO[55], generator_inst1.REGSTAT[55] }
+ble_pack generator_inst1.REGSTAT_58_LC_3_16_2 { generator_inst1.REGSTAT_RNO[58], generator_inst1.REGSTAT[58] }
+ble_pack generator_inst1.REGSTAT_59_LC_3_16_3 { generator_inst1.REGSTAT_RNO[59], generator_inst1.REGSTAT[59] }
+ble_pack generator_inst1.REGSTAT_54_LC_3_16_6 { generator_inst1.REGSTAT_RNO[54], generator_inst1.REGSTAT[54] }
+ble_pack generator_inst1.REGSTAT_56_LC_3_16_7 { generator_inst1.REGSTAT_RNO[56], generator_inst1.REGSTAT[56] }
+clb_pack LT_3_16 { generator_inst1.REGSTAT_57_LC_3_16_0, generator_inst1.REGSTAT_55_LC_3_16_1, generator_inst1.REGSTAT_58_LC_3_16_2, generator_inst1.REGSTAT_59_LC_3_16_3, generator_inst1.REGSTAT_54_LC_3_16_6, generator_inst1.REGSTAT_56_LC_3_16_7 }
 set_location LT_3_16 3 16
-ble_pack generator_inst1.REGSTAT_0_LC_4_13_1 { generator_inst1.REGSTAT_0_THRU_LUT4_0, generator_inst1.REGSTAT[0] }
-ble_pack generator_inst1.REGSTAT_2_LC_4_13_2 { generator_inst1.REGSTAT_2_THRU_LUT4_0, generator_inst1.REGSTAT[2] }
-ble_pack generator_inst1.REGSTAT_3_LC_4_13_3 { generator_inst1.REGSTAT_3_THRU_LUT4_0, generator_inst1.REGSTAT[3] }
-ble_pack generator_inst1.REGSTAT_5_LC_4_13_4 { generator_inst1.REGSTAT_5_THRU_LUT4_0, generator_inst1.REGSTAT[5] }
-ble_pack generator_inst1.REGSTAT_1_LC_4_13_5 { generator_inst1.REGSTAT_1_THRU_LUT4_0, generator_inst1.REGSTAT[1] }
-ble_pack generator_inst1.REGSTAT_4_LC_4_13_7 { generator_inst1.REGSTAT_4_THRU_LUT4_0, generator_inst1.REGSTAT[4] }
-clb_pack LT_4_13 { generator_inst1.REGSTAT_0_LC_4_13_1, generator_inst1.REGSTAT_2_LC_4_13_2, generator_inst1.REGSTAT_3_LC_4_13_3, generator_inst1.REGSTAT_5_LC_4_13_4, generator_inst1.REGSTAT_1_LC_4_13_5, generator_inst1.REGSTAT_4_LC_4_13_7 }
-set_location LT_4_13 4 13
-ble_pack generator_inst1.REGSTAT_66_LC_4_14_0 { generator_inst1.REGSTAT_66_THRU_LUT4_0, generator_inst1.REGSTAT[66] }
-ble_pack generator_inst1.REGSTAT_67_LC_4_14_1 { generator_inst1.REGSTAT_67_THRU_LUT4_0, generator_inst1.REGSTAT[67] }
-ble_pack generator_inst1.REGSTAT_69_LC_4_14_3 { generator_inst1.REGSTAT_69_THRU_LUT4_0, generator_inst1.REGSTAT[69] }
-ble_pack generator_inst1.REGSTAT_71_LC_4_14_4 { generator_inst1.REGSTAT_71_THRU_LUT4_0, generator_inst1.REGSTAT[71] }
-ble_pack generator_inst1.REGSTAT_70_LC_4_14_5 { generator_inst1.REGSTAT_70_THRU_LUT4_0, generator_inst1.REGSTAT[70] }
-ble_pack generator_inst1.REGSTAT_68_LC_4_14_6 { generator_inst1.REGSTAT_68_THRU_LUT4_0, generator_inst1.REGSTAT[68] }
-clb_pack LT_4_14 { generator_inst1.REGSTAT_66_LC_4_14_0, generator_inst1.REGSTAT_67_LC_4_14_1, generator_inst1.REGSTAT_69_LC_4_14_3, generator_inst1.REGSTAT_71_LC_4_14_4, generator_inst1.REGSTAT_70_LC_4_14_5, generator_inst1.REGSTAT_68_LC_4_14_6 }
-set_location LT_4_14 4 14
-ble_pack generator_inst1.REGSTAT_56_LC_4_15_0 { generator_inst1.REGSTAT_56_THRU_LUT4_0, generator_inst1.REGSTAT[56] }
-ble_pack generator_inst1.REGSTAT_57_LC_4_15_1 { generator_inst1.REGSTAT_57_THRU_LUT4_0, generator_inst1.REGSTAT[57] }
-ble_pack generator_inst1.REGSTAT_36_LC_4_15_2 { generator_inst1.REGSTAT_36_THRU_LUT4_0, generator_inst1.REGSTAT[36] }
-ble_pack generator_inst1.REGSTAT_38_LC_4_15_4 { generator_inst1.REGSTAT_38_THRU_LUT4_0, generator_inst1.REGSTAT[38] }
-ble_pack generator_inst1.REGSTAT_58_LC_4_15_5 { generator_inst1.REGSTAT_58_THRU_LUT4_0, generator_inst1.REGSTAT[58] }
-ble_pack generator_inst1.REGSTAT_59_LC_4_15_6 { generator_inst1.REGSTAT_59_THRU_LUT4_0, generator_inst1.REGSTAT[59] }
-ble_pack generator_inst1.REGSTAT_37_LC_4_15_7 { generator_inst1.REGSTAT_37_THRU_LUT4_0, generator_inst1.REGSTAT[37] }
-clb_pack LT_4_15 { generator_inst1.REGSTAT_56_LC_4_15_0, generator_inst1.REGSTAT_57_LC_4_15_1, generator_inst1.REGSTAT_36_LC_4_15_2, generator_inst1.REGSTAT_38_LC_4_15_4, generator_inst1.REGSTAT_58_LC_4_15_5, generator_inst1.REGSTAT_59_LC_4_15_6, generator_inst1.REGSTAT_37_LC_4_15_7 }
-set_location LT_4_15 4 15
-ble_pack generator_inst1.REGSTAT_39_LC_4_16_0 { generator_inst1.REGSTAT_39_THRU_LUT4_0, generator_inst1.REGSTAT[39] }
-ble_pack generator_inst1.REGSTAT_42_LC_4_16_2 { generator_inst1.REGSTAT_42_THRU_LUT4_0, generator_inst1.REGSTAT[42] }
-ble_pack generator_inst1.REGSTAT_40_LC_4_16_4 { generator_inst1.REGSTAT_40_THRU_LUT4_0, generator_inst1.REGSTAT[40] }
-ble_pack generator_inst1.REGSTAT_41_LC_4_16_5 { generator_inst1.REGSTAT_41_THRU_LUT4_0, generator_inst1.REGSTAT[41] }
-ble_pack generator_inst1.REGSTAT_35_LC_4_16_6 { generator_inst1.REGSTAT_35_THRU_LUT4_0, generator_inst1.REGSTAT[35] }
-clb_pack LT_4_16 { generator_inst1.REGSTAT_39_LC_4_16_0, generator_inst1.REGSTAT_42_LC_4_16_2, generator_inst1.REGSTAT_40_LC_4_16_4, generator_inst1.REGSTAT_41_LC_4_16_5, generator_inst1.REGSTAT_35_LC_4_16_6 }
-set_location LT_4_16 4 16
-set_location generator_inst1.REGDYN7_g_gb 0 17
 set_location RST_N_ibuf_RNIBJGC_0 0 16
-set_io signal_out H2
+set_location SELDYN_ibuf_RNIKHL3_0 0 17
+set_io signal_out G2
 set_io CLK D3
 set_io SELSTAT E4
-set_io SELDYN E1
-set_io RST_N F3
+set_io SELDYN H2
+set_io RST_N C3

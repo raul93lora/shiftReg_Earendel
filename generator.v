@@ -40,6 +40,10 @@ module generator(
 	        REGDYN <= {REGDYN[SIZESRDYN-2:0], 1'b0};  
 	    end else if (SELSTAT == 1'b1) begin
 	        REGSTAT <= {REGSTAT[SIZESRSTAT-2:0], 1'b0};  
+	    end else begin
+	        REGDYN <= DYN_in;
+	        REGSTAT <= STAT_in;
+	
 	    end
 	end
 

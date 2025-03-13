@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Mar 13 2025 09:41:41
+* File Generated:     Mar 13 2025 09:46:39
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 0 seconds
+    Runtime: 1 seconds
 
 Device Info:
 ------------
@@ -28,7 +28,7 @@ Device Info:
 Design statistics:
 ------------------
     FFs:                  106
-    LUTs:                 108
+    LUTs:                 109
     RAMs:                 0
     IOBs:                 5
     GBs:                  3
@@ -37,8 +37,8 @@ Design statistics:
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 108/7680
-        Combinational Logic Cells: 2        out of   7680      0.0260417%
+    Total Logic Cells: 109/7680
+        Combinational Logic Cells: 3        out of   7680      0.0390625%
         Sequential Logic Cells:    106      out of   7680      1.38021%
         Logic Tiles:               19       out of   960       1.97917%
     Registers: 
@@ -65,23 +65,23 @@ Detailed I/O Info:
     Input Pins: 
     Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name 
     ----------  ---------  -----------  -------  -------  -----------    ----------- 
+    C3          Input      SB_LVCMOS    No       3        Simple Input   RST_N       
     D3          Input      SB_LVCMOS    No       3        Simple Input   CLK         
-    E1          Input      SB_LVCMOS    No       3        Simple Input   SELDYN      
     E4          Input      SB_LVCMOS    No       3        Simple Input   SELSTAT     
-    F3          Input      SB_LVCMOS    No       3        Simple Input   RST_N       
+    H2          Input      SB_LVCMOS    No       3        Simple Input   SELDYN      
 
     Output Pins: 
     Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name 
     ----------  ---------  -----------  -------  -------  -----------    ----------- 
-    H2          Output     SB_LVCMOS    No       3        Simple Output  signal_out  
+    G2          Output     SB_LVCMOS    No       3        Simple Output  signal_out  
 
 Detailed Global Buffer Info:
 ----------------------------
-    Buffer Number  IO Bank  Driven By  Fanout  Signal Name                
-    -------------  -------  ---------  ------  -----------                
-    4              3        IO         106     CLK_c_g                    
-    3              3                   88      generator_inst1.REGDYN7_g  
-    6              3                   106     RST_N_c_i_g                
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name   
+    -------------  -------  ---------  ------  -----------   
+    4              3        IO         106     CLK_c_g       
+    6              3                   106     RST_N_c_i_g   
+    3              3                   88      SELDYN_c_i_g  
 
 
 Router Summary:
@@ -91,8 +91,9 @@ Router Summary:
 
 Routing Resource Utilization:
 -----------------------------
-              Local line of tile      395 out of 146184      0.270207%
-                          Span 4       17 out of  29696      0.0572468%
+              Local line of tile      514 out of 146184      0.351612%
+                          Span 4       20 out of  29696      0.0673491%
+                         Span 12        2 out of   5632      0.0355114%
                   Global network        3 out of      8      37.5%
       Vertical Inter-LUT Connect        0 out of   6720      0%
 
