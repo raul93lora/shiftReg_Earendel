@@ -1,3 +1,2 @@
-@E: CG285 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":43:5:43:8|Expecting statement
-@E: CS187 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":74:0:74:8|Expecting endmodule
+@E: CG906 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":41:13:41:23|Reference to unknown variable clk.
 

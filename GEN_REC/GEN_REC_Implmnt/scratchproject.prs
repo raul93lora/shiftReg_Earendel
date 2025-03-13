@@ -6,6 +6,7 @@
 add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_Earendel/generator.v"
 add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_Earendel/receptor.v"
 add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_Earendel/testRapido_TOP.v"
+add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_Earendel/fsm_shiftRegs.v"
 
 
 

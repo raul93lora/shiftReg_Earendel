@@ -1,4 +1,4 @@
-# Thu Mar 13 09:52:10 2025
+# Thu Mar 13 11:50:45 2025
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -12,13 +12,13 @@ Printing clock  summary report in "C:\Users\raul.lora\Documents\shiftReg_Earende
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
@@ -26,7 +26,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
-syn_allowed_resources : blockrams=32  set on top level netlist top
+syn_allowed_resources : blockrams=32  set on top level netlist fsm
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
@@ -38,16 +38,23 @@ Clock Summary
 Start       Requested     Requested     Clock        Clock                     Clock
 Clock       Frequency     Period        Type         Group                     Load 
 ------------------------------------------------------------------------------------
-top|CLK     595.2 MHz     1.680         inferred     Autoconstr_clkgroup_0     106  
+fsm|CLK     348.5 MHz     2.869         inferred     Autoconstr_clkgroup_0     12   
 ====================================================================================
 
-@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendel\generator.v":63:1:63:6|Found inferred clock top|CLK which controls 106 sequential elements including generator_inst1.signal_out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendel\fsm_shiftregs.v":46:4:46:9|Found inferred clock fsm|CLK which controls 12 sequential elements including current_state[4:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
+Encoding state machine current_state[4:0] (in view: work.fsm(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
 None
 None
 
@@ -58,6 +65,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 13 09:52:11 2025
+# Thu Mar 13 11:50:45 2025
 
 ###########################################################]

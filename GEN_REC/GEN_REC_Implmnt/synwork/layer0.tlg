@@ -1,8 +1,14 @@
-Selecting top level module top
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":6:7:6:15|Synthesizing module generator in library work.
+Selecting top level module fsm
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":5:7:5:9|Synthesizing module fsm in library work.
 
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":22:12:22:20|Removing wire signal_in, as there is no assignment to it.
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\receptor.v":6:7:6:14|Synthesizing module receptor in library work.
-
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v":5:7:5:9|Synthesizing module top in library work.
-
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":136:4:136:9|Pruning unused register counterDYN[6:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":125:4:125:9|Pruning unused register counter2[5:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":67:4:67:9|Pruning unused register state[2:0]. Make sure that there are no unused intermediate registers.
+@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":46:4:46:9|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100

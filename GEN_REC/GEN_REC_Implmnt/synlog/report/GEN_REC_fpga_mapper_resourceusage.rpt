@@ -1,15 +1,11 @@
 ---------------------------------------
-Resource Usage Report for top 
+Resource Usage Report for fsm 
 
 Mapping to part: ice40lp8kcm81
 Cell usage:
-GND             2 uses
-SB_DFFER        50 uses
-SB_DFFES        54 uses
-SB_DFFR         2 uses
-SB_GB           2 uses
-VCC             2 uses
-SB_LUT4         107 uses
+SB_DFFR         11 uses
+SB_DFFS         1 use
+SB_LUT4         13 uses
 
 I/O ports: 5
 I/O primitives: 5
@@ -17,11 +13,11 @@ SB_GB_IO       1 use
 SB_IO          4 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   106 (1%)
+Register bits not including I/Os:   12 (0%)
 
 @S |Mapping Summary:
-Total  LUTs: 107 (1%)
+Total  LUTs: 13 (0%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 107 = 107 
+Distribution of All Consumed Luts 13 = 13 
 

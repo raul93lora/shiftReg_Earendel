@@ -1,2 +1,4 @@
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":22:12:22:20|Removing wire signal_in, as there is no assignment to it.
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":136:4:136:9|Pruning unused register counterDYN[6:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":125:4:125:9|Pruning unused register counter2[5:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":67:4:67:9|Pruning unused register state[2:0]. Make sure that there are no unused intermediate registers.
 
