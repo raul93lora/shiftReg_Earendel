@@ -1,20 +1,20 @@
 <html><body><samp><pre>
-<!@TC:1741854735>
+<!@TC:1741855281>
 #Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
 #install: C:\lscc\iCEcube2.2020.12\synpbase
 #OS: Windows 8 6.2
 #Hostname: NB-ADM-01
 
-# Thu Mar 13 09:32:15 2025
+# Thu Mar 13 09:41:21 2025
 
 #Implementation: GEN_REC_Implmnt
 
 <a name=compilerReport1></a>Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
-@N: : <!@TM:1741854735> | Running in 64-bit mode 
+@N: : <!@TM:1741855281> | Running in 64-bit mode 
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
 <a name=compilerReport2></a>Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
-@N: : <!@TM:1741854735> | Running in 64-bit mode 
+@N: : <!@TM:1741855281> | Running in 64-bit mode 
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
@@ -23,17 +23,538 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v" (library work)
-<a name=error3></a><font color=red>@E:<a href="@E:CS187:@XP_HELP">CS187</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v:41:5:41:9:@E:CS187:@XP_MSG">generator.v(41)</a><!@TM:1741854735> | Expecting endmodule</font>
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\receptor.v" (library work)
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v" (library work)
-1 syntax errors
+Verilog syntax check successful!
+Selecting top level module top
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v:6:7:6:16:@N:CG364:@XP_MSG">generator.v(6)</a><!@TM:1741855281> | Synthesizing module generator in library work.
+
+<font color=#A52A2A>@W:<a href="@W:CG360:@XP_HELP">CG360</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v:22:12:22:21:@W:CG360:@XP_MSG">generator.v(22)</a><!@TM:1741855281> | Removing wire signal_in, as there is no assignment to it.</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\receptor.v:6:7:6:15:@N:CG364:@XP_MSG">receptor.v(6)</a><!@TM:1741855281> | Synthesizing module receptor in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v:5:7:5:10:@N:CG364:@XP_MSG">testRapido_TOP.v(5)</a><!@TM:1741855281> | Synthesizing module top in library work.
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 13 09:32:15 2025
+
+Process completed successfully.
+# Thu Mar 13 09:41:21 2025
+
+###########################################################]
+<a name=compilerReport3></a>Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
+@N: : <!@TM:1741855281> | Running in 64-bit mode 
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v:5:7:5:10:@N:NF107:@XP_MSG">testRapido_TOP.v(5)</a><!@TM:1741855281> | Selected library: work cell: top view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v:5:7:5:10:@N:NF107:@XP_MSG">testRapido_TOP.v(5)</a><!@TM:1741855281> | Selected library: work cell: top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 13 09:41:21 2025
 
 ###########################################################]
 @END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 13 09:32:15 2025
+
+Process completed successfully.
+# Thu Mar 13 09:41:21 2025
+
+###########################################################]
+<a name=compilerReport4></a>Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
+@N: : <!@TM:1741855282> | Running in 64-bit mode 
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v:5:7:5:10:@N:NF107:@XP_MSG">testRapido_TOP.v(5)</a><!@TM:1741855282> | Selected library: work cell: top view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v:5:7:5:10:@N:NF107:@XP_MSG">testRapido_TOP.v(5)</a><!@TM:1741855282> | Selected library: work cell: top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Mar 13 09:41:22 2025
+
+###########################################################]
+Pre-mapping Report
+
+# Thu Mar 13 09:41:23 2025
+
+<a name=mapperReport5></a>Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1741855284> | No constraint file specified. 
+Linked File: <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt:@XP_FILE">GEN_REC_scck.rpt</a>
+Printing clock  summary report in "C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt" file 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1741855284> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1741855284> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=32  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+
+<a name=mapperReport6></a>Clock Summary</a>
+*****************
+
+Start       Requested     Requested     Clock        Clock                     Clock
+Clock       Frequency     Period        Type         Group                     Load 
+------------------------------------------------------------------------------------
+top|CLK     595.2 MHz     1.680         inferred     Autoconstr_clkgroup_0     106  
+====================================================================================
+
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\generator.v:59:1:59:7:@W:MT529:@XP_MSG">generator.v(59)</a><!@TM:1741855284> | Found inferred clock top|CLK which controls 106 sequential elements including generator_inst1.signal_out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+
+Finished Pre Mapping Phase.
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1741855284> | Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap. 
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar 13 09:41:24 2025
+
+###########################################################]
+Map & Optimize Report
+
+# Thu Mar 13 09:41:24 2025
+
+<a name=mapperReport7></a>Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1741855285> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1741855285> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 100MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1741855285> | Auto Constrain mode is enabled 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -0.58ns		   3 /       106
+
+
+
+@N:<a href="@N:FX1016:@XP_HELP">FX1016</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\testrapido_top.v:6:1:6:4:@N:FX1016:@XP_MSG">testrapido_top.v(6)</a><!@TM:1741855285> | SB_GB_IO inserted on the port CLK.
+@N:<a href="@N:FX1017:@XP_HELP">FX1017</a> : <!@TM:1741855285> | SB_GB inserted on the net RST_N_c_i. 
+@N:<a href="@N:FX1017:@XP_HELP">FX1017</a> : <!@TM:1741855285> | SB_GB inserted on the net generator_inst1.REGDYN7. 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+<a name=clockReport8></a>#### START OF CLOCK OPTIMIZATION REPORT #####[</a>
+
+1 non-gated/non-generated clock tree(s) driving 106 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+================================ Non-Gated/Non-Generated Clocks =================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance          
+-------------------------------------------------------------------------------------------------
+<a href="@|S:CLK_ibuf_gb_io@|E:receptor_inst1.signal_out@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001  @XP_NAMES_BY_PROP">ClockId0001 </a>       CLK_ibuf_gb_io      SB_GB_IO               106        receptor_inst1.signal_out
+=================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 133MB)
+
+Writing Analyst data base C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 133MB)
+
+Writing EDIF Netlist and constraint files
+@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1741855285> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
+@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1741855285> | Synopsys Constraint File capacitance units using default value of 1pF  
+@N:<a href="@N:FX1056:@XP_HELP">FX1056</a> : <!@TM:1741855285> | Writing EDF file: C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.edf 
+L-2016.09L+ice40
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1741855285> | Found inferred clock top|CLK with period 3.92ns. Please declare a user-defined clock on object "p:CLK"</font> 
+
+
+<a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
+# Timing Report written on Thu Mar 13 09:41:25 2025
+#
+
+
+Top view:               top
+Requested Frequency:    254.9 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1741855285> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1741855285> | Clock constraints include only register-to-register paths associated with each individual clock. 
+
+
+
+<a name=performanceSummary10></a>Performance Summary</a>
+*******************
+
+
+Worst slack in design: -0.692
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+top|CLK            254.9 MHz     216.7 MHz     3.923         4.615         -0.692     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+<a name=clockRelationships11></a>Clock Relationships</a>
+*******************
+
+Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+top|CLK   top|CLK  |  3.923       -0.692  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+<a name=interfaceInfo12></a>Interface Information </a>
+*********************
+
+No IO constraint found
+
+
+
+====================================
+<a name=clockReport13></a>Detailed Report for Clock: top|CLK</a>
+====================================
+
+
+
+<a name=startingSlack14></a>Starting Points with Worst Slack</a>
+********************************
+
+                                Starting                                           Arrival           
+Instance                        Reference     Type         Pin     Net             Time        Slack 
+                                Clock                                                                
+-----------------------------------------------------------------------------------------------------
+generator_inst1.REGDYN[15]      top|CLK       SB_DFFES     Q       REGDYN[15]      0.796       -0.692
+generator_inst1.REGSTAT[87]     top|CLK       SB_DFFER     Q       REGSTAT[87]     0.796       -0.599
+generator_inst1.REGDYN[0]       top|CLK       SB_DFFES     Q       REGDYN[0]       0.796       0.404 
+generator_inst1.REGDYN[1]       top|CLK       SB_DFFER     Q       REGDYN[1]       0.796       0.404 
+generator_inst1.REGDYN[2]       top|CLK       SB_DFFES     Q       REGDYN[2]       0.796       0.404 
+generator_inst1.REGDYN[3]       top|CLK       SB_DFFES     Q       REGDYN[3]       0.796       0.404 
+generator_inst1.REGDYN[4]       top|CLK       SB_DFFER     Q       REGDYN[4]       0.796       0.404 
+generator_inst1.REGDYN[5]       top|CLK       SB_DFFER     Q       REGDYN[5]       0.796       0.404 
+generator_inst1.REGDYN[6]       top|CLK       SB_DFFES     Q       REGDYN[6]       0.796       0.404 
+generator_inst1.REGDYN[7]       top|CLK       SB_DFFES     Q       REGDYN[7]       0.796       0.404 
+=====================================================================================================
+
+
+<a name=endingSlack15></a>Ending Points with Worst Slack</a>
+******************************
+
+                               Starting                                          Required           
+Instance                       Reference     Type         Pin     Net            Time         Slack 
+                               Clock                                                                
+----------------------------------------------------------------------------------------------------
+generator_inst1.signal_out     top|CLK       SB_DFFR      D       signal_aux     3.768        -0.692
+generator_inst1.REGDYN[1]      top|CLK       SB_DFFER     D       REGDYN[0]      3.768        0.404 
+generator_inst1.REGDYN[2]      top|CLK       SB_DFFES     D       REGDYN[1]      3.768        0.404 
+generator_inst1.REGDYN[3]      top|CLK       SB_DFFES     D       REGDYN[2]      3.768        0.404 
+generator_inst1.REGDYN[4]      top|CLK       SB_DFFER     D       REGDYN[3]      3.768        0.404 
+generator_inst1.REGDYN[5]      top|CLK       SB_DFFER     D       REGDYN[4]      3.768        0.404 
+generator_inst1.REGDYN[6]      top|CLK       SB_DFFES     D       REGDYN[5]      3.768        0.404 
+generator_inst1.REGDYN[7]      top|CLK       SB_DFFES     D       REGDYN[6]      3.768        0.404 
+generator_inst1.REGDYN[8]      top|CLK       SB_DFFES     D       REGDYN[7]      3.768        0.404 
+generator_inst1.REGDYN[9]      top|CLK       SB_DFFES     D       REGDYN[8]      3.768        0.404 
+====================================================================================================
+
+
+
+<a name=worstPaths16></a>Worst Path Information</a>
+<a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.srr:srsfC:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.srs:fp:20431:21025:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      3.923
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.768
+
+    - Propagation time:                      4.460
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.692
+
+    Number of logic level(s):                1
+    Starting point:                          generator_inst1.REGDYN[15] / Q
+    Ending point:                            generator_inst1.signal_out / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+generator_inst1.REGDYN[15]         SB_DFFES     Q        Out     0.796     0.796       -         
+REGDYN[15]                         Net          -        -       1.599     -           1         
+generator_inst1.signal_out_RNO     SB_LUT4      I2       In      -         2.395       -         
+generator_inst1.signal_out_RNO     SB_LUT4      O        Out     0.558     2.953       -         
+signal_aux                         Net          -        -       1.507     -           1         
+generator_inst1.signal_out         SB_DFFR      D        In      -         4.460       -         
+=================================================================================================
+Total path delay (propagation time + setup) of 4.615 is 1.509(32.7%) logic and 3.106(67.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      3.923
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.768
+
+    - Propagation time:                      4.367
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.599
+
+    Number of logic level(s):                1
+    Starting point:                          generator_inst1.REGSTAT[87] / Q
+    Ending point:                            generator_inst1.signal_out / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+generator_inst1.REGSTAT[87]        SB_DFFER     Q        Out     0.796     0.796       -         
+REGSTAT[87]                        Net          -        -       1.599     -           1         
+generator_inst1.signal_out_RNO     SB_LUT4      I3       In      -         2.395       -         
+generator_inst1.signal_out_RNO     SB_LUT4      O        Out     0.465     2.860       -         
+signal_aux                         Net          -        -       1.507     -           1         
+generator_inst1.signal_out         SB_DFFR      D        In      -         4.367       -         
+=================================================================================================
+Total path delay (propagation time + setup) of 4.522 is 1.416(31.3%) logic and 3.106(68.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      3.923
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.768
+
+    - Propagation time:                      3.364
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.404
+
+    Number of logic level(s):                0
+    Starting point:                          generator_inst1.REGDYN[0] / Q
+    Ending point:                            generator_inst1.REGDYN[1] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+generator_inst1.REGDYN[0]     SB_DFFES     Q        Out     0.796     0.796       -         
+REGDYN[0]                     Net          -        -       2.568     -           1         
+generator_inst1.REGDYN[1]     SB_DFFER     D        In      -         3.364       -         
+============================================================================================
+Total path delay (propagation time + setup) of 3.519 is 0.951(27.0%) logic and 2.568(73.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      3.923
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.768
+
+    - Propagation time:                      3.364
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.404
+
+    Number of logic level(s):                0
+    Starting point:                          generator_inst1.REGDYN[1] / Q
+    Ending point:                            generator_inst1.REGDYN[2] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+generator_inst1.REGDYN[1]     SB_DFFER     Q        Out     0.796     0.796       -         
+REGDYN[1]                     Net          -        -       2.568     -           1         
+generator_inst1.REGDYN[2]     SB_DFFES     D        In      -         3.364       -         
+============================================================================================
+Total path delay (propagation time + setup) of 3.519 is 0.951(27.0%) logic and 2.568(73.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      3.923
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.768
+
+    - Propagation time:                      3.364
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.404
+
+    Number of logic level(s):                0
+    Starting point:                          generator_inst1.REGDYN[2] / Q
+    Ending point:                            generator_inst1.REGDYN[3] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+generator_inst1.REGDYN[2]     SB_DFFES     Q        Out     0.796     0.796       -         
+REGDYN[2]                     Net          -        -       2.568     -           1         
+generator_inst1.REGDYN[3]     SB_DFFES     D        In      -         3.364       -         
+============================================================================================
+Total path delay (propagation time + setup) of 3.519 is 0.951(27.0%) logic and 2.568(73.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+---------------------------------------
+<a name=resourceUsage17></a>Resource Usage Report for top </a>
+
+Mapping to part: ice40lp8kcm81
+Cell usage:
+GND             2 uses
+SB_DFFER        50 uses
+SB_DFFES        54 uses
+SB_DFFR         2 uses
+SB_GB           2 uses
+VCC             2 uses
+SB_LUT4         3 uses
+
+I/O ports: 5
+I/O primitives: 5
+SB_GB_IO       1 use
+SB_IO          4 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   106 (1%)
+Total load per clock:
+   top|CLK: 1
+
+@S |Mapping Summary:
+Total  LUTs: 3 (0%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 3 = 3 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 27MB peak: 133MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Mar 13 09:41:25 2025
 
 ###########################################################]
 

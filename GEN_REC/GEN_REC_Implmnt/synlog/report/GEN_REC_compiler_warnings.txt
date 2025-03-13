@@ -1,0 +1,2 @@
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":22:12:22:20|Removing wire signal_in, as there is no assignment to it.
+

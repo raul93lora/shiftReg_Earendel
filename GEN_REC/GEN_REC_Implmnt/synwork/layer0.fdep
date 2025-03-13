@@ -5,9 +5,9 @@
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\umr_capim.v":1731922782
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_objects.v":1731922782
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1731922782
-#CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_Earendel\\generator.v":1741854732
+#CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_Earendel\\generator.v":1741854987
 #CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_Earendel\\receptor.v":1741795457
-#CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_Earendel\\testRapido_TOP.v":1741851179
+#CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_Earendel\\testRapido_TOP.v":1741855272
 #numinternalfiles:5
 #defaultlanguage:verilog
 0			"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v" verilog
@@ -16,11 +16,12 @@
 #Dependency Lists(Uses List)
 0 -1
 1 -1
-2 1
+2 0 1
 #Dependency Lists(Users Of)
-0 -1
+0 2
 1 2
 2 -1
 #Design Unit to File Association
+module work generator 0
 module work receptor 1
 module work top 2

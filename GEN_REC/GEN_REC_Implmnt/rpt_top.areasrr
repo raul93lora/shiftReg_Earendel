@@ -1,0 +1,74 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40LP8KCM81 (Lattice)
+
+-------------------------------------------------------------------
+########   Utilization report for  Top level view:   top   ########
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     106                100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block top:	106 (86.89 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     3                  100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block top:	3 (2.46 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     7                  100 %                
+=================================================
+Total IO PADS in the block top:	7 (5.74 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   generator   ########
+Instance path:   top.generator                                 
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     105                99.1 %               
+==================================================
+Total SEQUENTIAL ELEMENTS in the block top.generator:	105 (86.07 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     2                  66.7 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block top.generator:	2 (1.64 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     1                  14.3 %               
+=================================================
+Total IO PADS in the block top.generator:	1 (0.82 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   receptor   ########
+Instance path:   top.receptor                                 
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     1                  0.9430 %             
+==================================================
+Total SEQUENTIAL ELEMENTS in the block top.receptor:	1 (0.82 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

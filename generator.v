@@ -22,7 +22,7 @@ module generator(
 	input wire signal_in;
 	input wire SELDYN;
 	input wire SELSTAT;
-	wire signal_aux;
+	reg signal_aux;
 	output reg signal_out;
 	wire [SIZESRDYN-1:0] DYN_in;     // Valor dinámico 
 	wire [SIZESRSTAT-1:0] STAT_in;   // Valor estático
@@ -32,17 +32,17 @@ module generator(
 	// Proceso para que los registros tomen el valor correspondiente en el reset asincrono
 	// Después en cada ciclo, dependiendo de la seleccion debe ir moviéndose el valor
 	// Entiendo que tanto SELDYN como SELSTAT tienen que estar a '1' tanto tiempo como bits indique el tamaño del registro
-	always @(posedge CLK or negedge RST_N)
-	begin
-	if(!RST_N) 
-		REGDYN <= DYN_in;
-		REGSTAT <= STAT_in;
-	end else if(SELDYN == 1'b1) begin
-		REGDYN <= {REGDYN[SIZESRDYN-2:0,1'b0]};	// Desplazo a la izquierda y por la derecha relleno con ceros
-       end else if(SELSTAT == 1'b1) begin
-		REGSTAT <= {REGSTAT[SIZESRSTAT-2:0,1'b0]};	// Desplazo a la izquierda y por la derecha relleno con ceros
+	always @(posedge CLK or negedge RST_N) begin
+	    if (!RST_N) begin
+	        REGDYN <= DYN_in;
+	        REGSTAT <= STAT_in;
+	    end else if (SELDYN == 1'b1) begin
+	        REGDYN <= {REGDYN[SIZESRDYN-2:0], 1'b0};  
+	    end else if (SELSTAT == 1'b1) begin
+	        REGSTAT <= {REGSTAT[SIZESRSTAT-2:0], 1'b0};  
+	    end
 	end
-	end
+
 
 	// Output Mux
 	always @ (*) begin
