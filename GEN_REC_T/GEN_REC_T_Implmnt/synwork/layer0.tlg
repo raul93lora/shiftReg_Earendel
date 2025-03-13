@@ -1,8 +1,0 @@
-Selecting top level module top
-@N: CG364 :"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\generator.v":6:7:6:15|Synthesizing module generator in library work.
-
-@W: CG360 :"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\generator.v":15:15:15:23|Removing wire signal_in, as there is no assignment to it.
-@N: CG364 :"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\receptor.v":6:7:6:14|Synthesizing module receptor in library work.
-
-@N: CG364 :"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\testRapido_TOP.v":5:7:5:9|Synthesizing module top in library work.
-

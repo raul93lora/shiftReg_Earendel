@@ -1,2 +1,0 @@
-@E: CS179 :"C:\Users\raul.lora\Documents\prDUT_1ST_test_rapido\generator.v":58:11:58:17|Assignment target REGSTAT must be a net type
-

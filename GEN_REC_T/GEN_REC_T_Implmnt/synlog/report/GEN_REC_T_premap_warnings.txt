@@ -1,1 +1,0 @@
-@W: MT529 :"c:\users\raul.lora\documents\prdut_1st_test_rapido\generator.v":19:4:19:9|Found inferred clock top|CLK which controls 26 sequential elements including generator_inst1.counter[23:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
