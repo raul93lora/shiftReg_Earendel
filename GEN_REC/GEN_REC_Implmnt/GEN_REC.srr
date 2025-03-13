@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: NB-ADM-01
 
-# Thu Mar 13 09:26:44 2025
+# Thu Mar 13 09:32:15 2025
 
 #Implementation: GEN_REC_Implmnt
 
@@ -21,17 +21,16 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v" (library work)
-@E: CG285 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":40:1:40:4|Expecting statement
-@E: CS187 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":77:0:77:8|Expecting endmodule
+@E: CS187 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":41:5:41:8|Expecting endmodule
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\receptor.v" (library work)
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\testRapido_TOP.v" (library work)
-2 syntax errors
+1 syntax errors
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 13 09:26:44 2025
+# Thu Mar 13 09:32:15 2025
 
 ###########################################################]
 @END
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 13 09:26:44 2025
+# Thu Mar 13 09:32:15 2025
 
 ###########################################################]

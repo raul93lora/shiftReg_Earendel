@@ -1,3 +1,2 @@
-@E: CG285 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":40:1:40:4|Expecting statement
-@E: CS187 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":77:0:77:8|Expecting endmodule
+@E: CS187 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":41:5:41:8|Expecting endmodule
 
