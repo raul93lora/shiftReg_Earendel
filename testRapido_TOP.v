@@ -5,6 +5,8 @@
 module top(
 	CLK,		// Reloj del sistema
 	RST_N,		// Reset asíncrono activo en bajo
+	dynamicReg,	// Registro dinamico entrada
+	staticReg,	// Registro estatico entrada
 	DYNLATCH,	// LATCH para el registro dinamico
 	STATLATCH,	// LATCH para el registro estatico
 	signal_out	// Salida final de la señal
@@ -20,6 +22,8 @@ module top(
 	wire SELDYN;
 	wire SELSTAT;
     	output wire signal_out;		// A ver, esta señal es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
+	input wire [SIZESRDYN-1:0] dynamicReg;
+	input wire [SIZERSTAT-1:0] staticReg;
 	output reg [SIZESRDYN-1:0] DYNLATCH;
 	output reg [SIZESRSTAT-1:0] STATLATCH;
     	wire generated_signal;
@@ -29,10 +33,10 @@ module top(
         	.RST_N(RST_N),
 	 	.SELDYN (SELDYN),
         	.SELSTAT (SELSTAT),
-		.DYNREG (),
-		.STATREG (),
-		.DYNLATCH (),
-		.STATLATCH (),
+		.DYNREG (dynamicReg),
+		.STATREG (staticReg),
+		.DYNLATCH (DYNLATCH),
+		.STATLATCH (STATLATCH),
         	.signal_out(generated_signal)
     	);
 
@@ -53,19 +57,6 @@ module top(
 
 endmodule
 
-
-
-module generator(
-    CLK,        // Reloj del sistema
-    RST_N,      // Reset asíncrono activo en bajo
-    SELDYN,	 // Seleccion registro dinamico
-    SELSTAT,    // Seleccion registro estatico
-    DYNREG,	  // Registro dinamico -- input
-    STATREG,    // Registro estatico -- input
-    DYNLATCH,   // Registro Latch para la salida dinamico
-    STATLATCH,  // Registro Latch para la salida estatico
-    signal_out  // Señal cuadrada de salida
-);
 
 
 

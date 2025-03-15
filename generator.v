@@ -44,36 +44,23 @@ module generator(
 	    if (!RST_N) begin
 	        REGDYN <= DYN_in;
 	        REGSTAT <= STAT_in;
-	    end else if (SELDYN == 1'b1) begin
+	    end else if ((SELDYN == 1'b1) && (SELSTAT == 1'b0)) begin		// Se asigna al latch estatico
 	        REGDYN <= {REGDYN[SIZESRDYN-2:0], 1'b0};  
-		 STATLATCH <= STATREG;
-	    end else if (SELSTAT == 1'b1) begin
+		 STATLATCH <= STATREG;	
+		 signal_aux <= REGSTAT[SIZESRSTAT-1];
+	    end else if ((SELSTAT == 1'b1) && (SELDYN == 1'b0)) begin		// Se asignal al latch dinamico
 	        REGSTAT <= {REGSTAT[SIZESRSTAT-2:0], 1'b0};
-  		 DYNLATCH <= DYNREG;  
+  		 DYNLATCH <= DYNREG;  	
+		 signal_aux <= REGDYN[SIZESRDYN-1];
 	    end else begin
 	        REGDYN <= DYN_in;
 	        REGSTAT <= STAT_in;	
+		 signal_aux <= 1'b0;
 	    end
 	end
 
-	// Output Mux
-	always @ (*) begin
-	case({SELDYN,SELSTAT})
-		2'b00: signal_aux <= 1'b0;
-		2'b01: signal_aux <= REGDYN[SIZESRDYN-1];
-		2'b10: signal_aux <= REGSTAT[SIZESRSTAT-1];
-		2'b11: signal_aux <= 1'b0;
-		default: signal_aux <= 1'b0;
-	endcase
-	end
-
 	// Asignar salida a signal_out
-	always @(posedge CLK or negedge RST_N) begin
-	if(!RST_N) 
-		signal_out <= 1'b0;
-	else
-		signal_out <= signal_aux;
-	end
+	assign signal_out = signal_aux;
 
 	// Mapping registers dynamic and static
 	assign DYN_in[SIZESRDYN-1:0] = 16'hABCD;
