@@ -10,6 +10,11 @@ module fsm (
     en_fin		// Señal indicando que ya se ha cargado el registro de configuracion dinamico
 );
 
+    // Parameters definition
+    parameter SIZESRSTAT = 88; 		// Static shift register length 
+    parameter SIZESRDYN = 16; 		// Dynamic shift register length
+    parameter SIZEADDRMUX = 7; 		// ADDR MUX length
+
     // Ports definition
     input wire CLK;
     input wire RST_N;
@@ -29,15 +34,15 @@ module fsm (
     parameter N_CYCLES_S1 = 8;  						// Numero de ciclos de reloj para esperar en WAIT_1
 
     // Definicion del numero de ciclos para esperar en WAIT_2
-    parameter N_CYCLES_S2 = 32;  						// Numero de ciclos de reloj para esperar en WAIT_2
+    parameter N_CYCLES_S2 = 128;  						// Numero de ciclos de reloj para esperar en WAIT_2
 
     // Definicion del numero de ciclos para esperar en SEL_DYN
-    parameter N_CYCLES_SDYN = 64;  						// Numero de ciclos de reloj para esperar en WAIT_2
+    parameter N_CYCLES_SDYN = 16;  						// Numero de ciclos de reloj para esperar en SEL_DYN (tamaño del registro)
 
     // Contador para esperar n ciclos en WAIT_1
-    reg [3:0] counter; 							// Contador de 4 bits (hasta 15 ciclos)
-    reg [5:0] counter2;							// Contador de 6 bits (hasta 64 ciclos)
-    reg [6:0] counterDYN;							// Contador de 7 bits (hasta 128 ciclos)
+    reg [3:0] counter; 							// Contador de 4 bits (hasta 16 ciclos)
+    reg [7:0] counter2;							// Contador de 8 bits (hasta 128 ciclos)
+    reg [3:0] counterDYN;							// Contador de 4 bits (hasta 16 ciclos)
 
     // Estado actual y siguiente
     reg [2:0] current_state, next_state;
@@ -54,12 +59,12 @@ module fsm (
     // Logica de transicion de estados (determinacion del siguiente estado)
     always @(*) begin
         case (current_state)
-            IDLE: next_state = WAIT_1;						// Desde IDLE paso a WAIT_1 directamente
-            WAIT_1: next_state = (counter == N_CYCLES_S1) ? SEL_DYN : WAIT_1; 	// Esperar N_CYCLES_S1 en WAIT_1
-            SEL_DYN: next_state = DYN_LATCH;					// De SEL_DYN a DYN_LATCH
-            DYN_LATCH: next_state = WAIT_2;						// De DYN_LATCH a WAIT_2
-            WAIT_2: next_state = (counter == N_CYCLES_S2) ? IDLE : WAIT_2;	// Esperar N_CYCLES_S2 en WAIT_2
-            default: next_state = IDLE;						// Default: Vuelve a IDLE
+            IDLE: next_state = WAIT_1;							// Desde IDLE paso a WAIT_1 directamente
+            WAIT_1: next_state = (counter == N_CYCLES_S1) ? SEL_DYN : WAIT_1; 		// Esperar N_CYCLES_S1 en WAIT_1
+            SEL_DYN: next_state = (counterDYN == SIZESRDYN-1) ? DYN_LATCH : SEL_DYN;	// De SEL_DYN a DYN_LATCH cuando se desplazan todos los bits
+            DYN_LATCH: next_state = WAIT_2;							// De DYN_LATCH a WAIT_2
+            WAIT_2: next_state = (counter2 == N_CYCLES_S2) ? IDLE : WAIT_2;		// Esperar N_CYCLES_S2 en WAIT_2
+            default: next_state = IDLE;							// Default: Vuelve a IDLE
         endcase
     end
 
