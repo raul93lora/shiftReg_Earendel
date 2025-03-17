@@ -24,7 +24,7 @@ module top(
     	input wire RST_N;
 	wire SELDYN;
 	wire SELSTAT;
-    	output wire signal_out;		// A ver, esta señal es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
+    	output wire [SIZESRDYN-1:0] signal_out;     // A ver, esta señal es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
 	input wire [SIZESRDYN-1:0] dynamicReg;
 	input wire [SIZERSTAT-1:0] staticReg;
 	output reg [SIZESRDYN-1:0] DYNLATCH;
@@ -47,6 +47,7 @@ module top(
     	receptor receptor_inst1 (
         	.CLK(CLK),
         	.RST_N(RST_N),
+		.enable(enable),
         	.signal_in(generated_signal),
         	.signal_out(signal_out)
     	);

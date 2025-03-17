@@ -2,44 +2,71 @@
 
 module receptor_tb;
 
-    // Señales del testbench
+    // Parametros para el testbench
+    parameter SIZESREG = 16;   // Tamaño del registro de desplazamiento (debe coincidir con el módulo)
+    
+    // Señales de entrada
     reg CLK;
     reg RST_N;
+    reg enable;
     reg signal_in;
-    wire signal_out;
-
-    // Instancia del módulo receptor
-    receptor uut (
+    
+    // Señales de salida
+    wire [SIZESREG-1:0] output_reg;
+    
+    // Instanciación del módulo receptor
+    receptor #(.SIZESREG(SIZESREG)) uut (
         .CLK(CLK),
         .RST_N(RST_N),
+        .enable(enable),
         .signal_in(signal_in),
-        .signal_out(signal_out)
+        .output_reg(output_reg)
     );
-
-    // Generación del reloj (frecuencia de 10 MHz => período de 100 ns)
-    always #50 CLK = ~CLK;
-
-    // Secuencia de prueba
+    
+    // Generación del reloj
+    always begin
+        #5 CLK = ~CLK;  // Periodo de reloj de 10 ns
+    end
+    
+    // Inicialización y secuencia de pruebas
     initial begin
-        // Inicialización
+        // Inicialización de señales
         CLK = 0;
         RST_N = 0;
+        enable = 0;
         signal_in = 0;
-
-        // Reset durante 150 ns
-        #150;
-        RST_N = 1;
         
-        // Aplicar estímulos
-        #100 signal_in = 1;
-        #100 signal_in = 0;
-        #100 signal_in = 1;
-        #100 signal_in = 1;
-        #100 signal_in = 0;
-
-        // Finaliza la simulación
-        #500;
-        $stop;
+        // Reset del sistema
+        #10 RST_N = 1;  // Después de 10 ns, activar el reset
+        
+        // Prueba 1: Aplicar desplazamiento con enable
+        #10 enable = 1;   // Activar el registro de desplazamiento
+        signal_in = 1;    // Primer bit
+        #10 signal_in = 0;  // Segundo bit
+        #10 signal_in = 1;  // Tercer bit
+        #10 signal_in = 0;  // Cuarto bit
+        #10 signal_in = 1;  // Quinto bit
+        #10 signal_in = 0;  // Sexto bit
+        #10 signal_in = 1;  // Séptimo bit
+        #10 signal_in = 0;  // Octavo bit
+        
+        // Prueba 2: Deshabilitar el desplazamiento y volcar a salida
+        #10 enable = 0;   // Desactivar el registro de desplazamiento
+        #10;  // Esperar un ciclo
+        
+        // Observamos la salida del registro
+        
+        // Prueba 3: Reset asíncrono
+        #10 RST_N = 0;   // Hacer reset
+        #10 RST_N = 1;   // Reset fuera
+        
+        // Terminar simulación
+        #10 $finish;
     end
 
+    // Monitor para ver los valores de las señales
+    initial begin
+        $monitor("At time %t, signal_in = %b, output_reg = %b", $time, signal_in, output_reg);
+    end
+    
 endmodule
