@@ -9,20 +9,118 @@ z2
 !i10f 100
 cModel Technology
 dC:/lscc/iCEcube2.2020.12/modeltech/win32loem
+vfsm
+!s110 1742213277
+!i10b 1
+!s100 b^olKPSka^KQlSH^dY<PS1
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ile5kO4n2`;[`BjWUS;U7C0
+Z1 dC:/Users/raul.lora/Documents/shiftReg_Earendel/simulation
+w1742213031
+Z2 8fsm_shiftRegs.v
+Z3 Ffsm_shiftRegs.v
+!i122 21
+Z4 L0 5 158
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OT;L;2020.3;71
+r1
+!s85 0
+31
+!s108 1742213277.000000
+Z7 !s107 fsm_shiftRegs.v|
+Z8 !s90 -reportprogress|300|fsm_shiftRegs.v|
+!s101 -O0
+!i113 1
+o-O0
+Z9 tCvgOpt 0
+vfsm_shiftRegs
+!s110 1742214425
+!i10b 1
+!s100 lS=e:5gXP_94]D=K5WZ[^3
+R0
+I7a455^4MXVdnoWL8DGlB72
+R1
+w1742213729
+R2
+R3
+!i122 29
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1742214425.000000
+R7
+R8
+!s101 -O0
+!i113 1
+o-O0
+R9
+nfsm_shift@regs
+vfsm_shiftRegs_tb
+!s110 1742219644
+!i10b 1
+!s100 El0@NHIiO`HjdTAzl==8Z0
+R0
+I`@dFPnT;NkGMEWT4GG_^E2
+R1
+w1742215140
+Z10 8fsm_shiftRegs_tb.v
+Z11 Ffsm_shiftRegs_tb.v
+!i122 32
+L0 3 59
+R5
+R6
+r1
+!s85 0
+31
+!s108 1742219644.000000
+Z12 !s107 fsm_shiftRegs_tb.v|
+Z13 !s90 -reportprogress|300|fsm_shiftRegs_tb.v|
+!s101 -O0
+!i113 1
+o-O0
+R9
+nfsm_shift@regs_tb
+vfsm_tb
+!s110 1742213580
+!i10b 1
+!s100 PUUFjhT];?`_Q5a[k9[I=3
+R0
+I3coUaF3JV>V9><V]C6mX32
+R1
+w1742213560
+R10
+R11
+!i122 22
+L0 3 54
+R5
+R6
+r1
+!s85 0
+31
+!s108 1742213580.000000
+R12
+R13
+!s101 -O0
+!i113 1
+o-O0
+R9
 vgenerator
 !s110 1742211084
 !i10b 1
 !s100 LPccJ9NV_GUUbNkZg4I<m3
-Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+R0
 I_bk:AA<DR6;Wd7dbNWFLl0
-Z1 dC:/Users/raul.lora/Documents/shiftReg_Earendel/simulation
+R1
 w1742210656
 8generator.v
 Fgenerator.v
 !i122 15
 L0 6 62
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 OT;L;2020.3;71
+R5
+R6
 r1
 !s85 0
 31
@@ -32,7 +130,7 @@ r1
 !s101 -O0
 !i113 1
 o-O0
-Z4 tCvgOpt 0
+R9
 vgenerator_tb
 !s110 1742211699
 !i10b 1
@@ -45,8 +143,8 @@ w1742211691
 Fgenerator_tb.v
 !i122 20
 L0 3 87
-R2
-R3
+R5
+R6
 r1
 !s85 0
 31
@@ -56,7 +154,7 @@ r1
 !s101 -O0
 !i113 1
 o-O0
-R4
+R9
 vreceptor
 !s110 1742208389
 !i10b 1
@@ -69,8 +167,8 @@ w1742207414
 Freceptor.v
 !i122 9
 L0 7 34
-R2
-R3
+R5
+R6
 r1
 !s85 0
 31
@@ -80,7 +178,7 @@ r1
 !s101 -O0
 !i113 1
 o-O0
-R4
+R9
 vreceptor_tb
 !s110 1742208394
 !i10b 1
@@ -93,8 +191,8 @@ w1742208300
 Freceptor_tb.v
 !i122 10
 L0 3 74
-R2
-R3
+R5
+R6
 r1
 !s85 0
 31
@@ -104,4 +202,4 @@ r1
 !s101 -O0
 !i113 1
 o-O0
-R4
+R9

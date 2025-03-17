@@ -2,7 +2,7 @@
 * FSM shift registers
 */
 
-module fsm (
+module fsm_shiftRegs (
     CLK,		// Reloj del sistema
     RST_N,		// Reset activo bajo
     sel_dyn,		// Seleccion registro dinamico

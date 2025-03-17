@@ -2,7 +2,7 @@
 * FSM shift registers
 */
 
-module fsm (
+module fsm_shiftRegs (
     CLK,		// Reloj del sistema
     RST_N,		// Reset activo bajo
     sel_dyn,		// Seleccion registro dinamico
@@ -23,6 +23,7 @@ module fsm (
     output reg sel_dyn;
     output reg sel_stat;
     output reg en_fin;
+    output reg signal_out;
 
     // Parameters definition -- Definicion de los estados (5 estados)
     parameter IDLE = 3'b000;
