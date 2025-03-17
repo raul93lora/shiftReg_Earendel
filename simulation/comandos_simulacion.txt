@@ -1,0 +1,5 @@
+vlog archivo.v archivo_tb.v
+
+vsim work.archivo_tb
+
+add wave -r /archivo_tb/uut/*
