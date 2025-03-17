@@ -4,8 +4,8 @@
 
 add_file -verilog -lib work "../generator.v" 
 add_file -verilog -lib work "../receptor.v" 
-add_file -verilog -lib work "../testRapido_TOP.v" 
 add_file -verilog -lib work "../fsm_shiftRegs.v" 
+add_file -verilog -lib work "../top.v" 
 #implementation: "GEN_REC_Implmnt"
 impl -add GEN_REC_Implmnt -type fpga
 
