@@ -11,8 +11,7 @@ module generator_tb;
     reg RST_N;
     reg SELDYN;
     reg SELSTAT;
-    reg [SIZESRDYN-1:0] DYNREG;
-    reg [SIZESRSTAT-1:0] STATREG;
+    reg signal_in;
 
     // Señales de salida
     wire [SIZESRDYN-1:0] DYNLATCH;
@@ -25,10 +24,9 @@ module generator_tb;
         .RST_N(RST_N),
         .SELDYN(SELDYN),
         .SELSTAT(SELSTAT),
-        .DYNREG(DYNREG),
-        .STATREG(STATREG),
         .DYNLATCH(DYNLATCH),
         .STATLATCH(STATLATCH),
+	.signal_in(signal_in),
         .signal_out(signal_out)
     );
 
@@ -44,8 +42,7 @@ module generator_tb;
         RST_N = 0;
         SELDYN = 0;
         SELSTAT = 0;
-        DYNREG = 16'hABCD;
-        STATREG = 88'h123456789ABCDEF1234567;
+	signal_in = 0;
 
         // Aplicar reset asíncrono
         #10 RST_N = 1;  // Activar el reset después de 10 ns
@@ -53,12 +50,28 @@ module generator_tb;
         #10 RST_N = 1;  // Volver a activar el reset
 
         // Test para SELDYN y SELSTAT
-        #20 SELDYN = 1; SELSTAT = 0;  // Selecciona el registro dinámico
-        #100 SELDYN = 0; SELSTAT = 1; // Selecciona el registro estático
+        #20 SELDYN = 1; SELSTAT = 0; signal_in = 1;  // Selecciona el registro dinámico y añado primer bit
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 0;
+	#10 signal_in = 1;
+
+	#10 SELDYN = 0; SELSTAT = 1; // Selecciona el registro estático y termino secuencia dinamica
 
         // Cambiar valores de los registros dinámicos y estáticos
-        #50 DYNREG = 16'h5678; // Cambiar valor de registro dinámico
-        #50 STATREG = 88'hA1B2C3D4E5F67890ABCDE1; // Cambiar valor de registro estático
+        //#50 DYNREG = 16'h5678; // Cambiar valor de registro dinámico
+        //#50 STATREG = 88'hA1B2C3D4E5F67890ABCDE1; // Cambiar valor de registro estático
 
         // Simulación de transición de registros
         #100 SELDYN = 1; SELSTAT = 0;

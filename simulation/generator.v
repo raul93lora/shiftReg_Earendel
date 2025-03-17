@@ -8,10 +8,9 @@ module generator(
     RST_N,      // Reset asíncrono activo en bajo
     SELDYN,	 // Seleccion registro dinamico
     SELSTAT,    // Seleccion registro estatico
-    DYNREG,	  // Registro dinamico -- input
-    STATREG,    // Registro estatico -- input
     DYNLATCH,   // Registro Latch para la salida dinamico
     STATLATCH,  // Registro Latch para la salida estatico
+    signal_in,	  // Señal de entrada 
     signal_out  // Señal cuadrada de salida
 );
 
@@ -25,8 +24,7 @@ module generator(
 	input wire RST_N;
 	input wire SELDYN;
 	input wire SELSTAT;
-	input wire [SIZESRDYN-1:0] DYNREG;
-	input wire [SIZESRSTAT-1:0] STATREG;
+	input wire signal_in;
 	output reg [SIZESRDYN-1:0] DYNLATCH;
 	output reg [SIZESRSTAT-1:0] STATLATCH;
 	reg signal_aux;
@@ -43,14 +41,15 @@ module generator(
 	    if (!RST_N) begin
 	        REGDYN <= DYN_in;
 	        REGSTAT <= STAT_in;
+		 signal_aux <= 1'b0;
 	    end else if ((SELDYN == 1'b1) && (SELSTAT == 1'b0)) begin		// Se asigna al latch estatico
-	        REGDYN <= {REGDYN[SIZESRDYN-2:0], 1'b0};  
-		 STATLATCH <= STATREG;	
-		 signal_aux <= REGSTAT[SIZESRSTAT-1];
-	    end else if ((SELSTAT == 1'b1) && (SELDYN == 1'b0)) begin		// Se asignal al latch dinamico
-	        REGSTAT <= {REGSTAT[SIZESRSTAT-2:0], 1'b0};
-  		 DYNLATCH <= DYNREG;  	
-		 signal_aux <= REGDYN[SIZESRDYN-1];
+	        REGDYN <= {REGDYN[SIZESRDYN-2:0], signal_in};  
+		 STATLATCH <= REGSTAT;	
+		 signal_aux <= signal_in;						// Saco también hacia fuera el bit que me está llegando
+	    end else if ((SELSTAT == 1'b1) && (SELDYN == 1'b0)) begin		// Se asigna al latch dinamico
+	        REGSTAT <= {REGSTAT[SIZESRSTAT-2:0], signal_in};
+  		 DYNLATCH <= REGDYN;  	
+		 signal_aux <= signal_in;						// Saco también hacia fuera el bit que me está llegando
 	    end else begin
 	        REGDYN <= DYN_in;
 	        REGSTAT <= STAT_in;	
