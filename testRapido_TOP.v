@@ -25,7 +25,7 @@ module top(
 	wire SELDYN;
 	wire SELSTAT;
     	output wire [SIZESRDYN-1:0] signal_out;     // A ver, esta señal es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
-	input wire [SIZESRDYN-1:0] dynamicReg;
+	wire [SIZESRDYN-1:0] dynamicReg;
 	input wire [SIZERSTAT-1:0] staticReg;
 	output reg [SIZESRDYN-1:0] DYNLATCH;
 	output reg [SIZESRSTAT-1:0] STATLATCH;
@@ -44,14 +44,7 @@ module top(
         	.signal_out(generated_signal)
     	);
 
-    	receptor receptor_inst1 (
-        	.CLK(CLK),
-        	.RST_N(RST_N),
-		.enable(enable),
-        	.signal_in(generated_signal),
-        	.signal_out(signal_out)
-    	);
-
+	// * Dependiendo de si David me da el LSb o MSb, hay que cambiar la manera de recibirlo
 	fsm_shiftRegs fsm_shiftRegs_inst1 (
 		.CLK(CLK),
 		.RST_N(RST_N),
@@ -61,7 +54,7 @@ module top(
 	);
 
 	// Mapping registers dynamic and static INPUTS -- this has to be changed to receive from uC -- serialized
-	assign dynamicReg[SIZESRDYN-1:0] = 16'h1234;
+	//assign dynamicReg[SIZESRDYN-1:0] = 16'h1234;
 	assign staticReg[SIZESRSTAT-1:0] = 88'hABCDEF123456789ABCDEF1;
 
 endmodule

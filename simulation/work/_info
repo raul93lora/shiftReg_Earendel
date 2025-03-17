@@ -27,12 +27,12 @@ r1
 !s85 0
 31
 Z5 !s108 1742206272.000000
-!s107 generator_tb.v|generator.v|
-Z6 !s90 -reportprogress|300|generator.v|generator_tb.v|
+Z6 !s107 generator_tb.v|generator.v|
+Z7 !s90 -reportprogress|300|generator.v|generator_tb.v|
 !s101 -O0
 !i113 1
 o-O0
-Z7 tCvgOpt 0
+Z8 tCvgOpt 0
 vgenerator_tb
 R0
 !i10b 1
@@ -44,64 +44,64 @@ w1742205861
 8generator_tb.v
 Fgenerator_tb.v
 !i122 5
-L0 3 74
+Z9 L0 3 74
 R3
 R4
 r1
 !s85 0
 31
 R5
-Z8 !s107 generator_tb.v|generator.v|
 R6
+R7
 !s101 -O0
 !i113 1
 o-O0
-R7
+R8
 vreceptor
-!s110 1742205101
+!s110 1742208389
 !i10b 1
-!s100 QVBAaMGam4DFeA<[UX;=U0
+!s100 FVhL;KF8;8ni18;2I]NF83
 R1
-IoFNA=U6TY_2YRAeU0TWId3
+IYPzm3ODQ68dlXgaN0_UJ31
 R2
-w1741795457
-8C:/Users/raul.lora/Documents/shiftReg_Earendel/simulation/receptor.v
-FC:/Users/raul.lora/Documents/shiftReg_Earendel/simulation/receptor.v
-!i122 2
-L0 6 24
+w1742207414
+8receptor.v
+Freceptor.v
+!i122 9
+L0 7 34
 R3
 R4
 r1
 !s85 0
 31
-!s108 1742205101.000000
-!s107 C:/Users/raul.lora/Documents/shiftReg_Earendel/simulation/receptor.v|
-!s90 -reportprogress|300|-O0|C:/Users/raul.lora/Documents/shiftReg_Earendel/simulation/receptor.v|
+!s108 1742208389.000000
+!s107 receptor.v|
+!s90 -reportprogress|300|receptor.v|
 !s101 -O0
 !i113 1
 o-O0
-R7
+R8
 vreceptor_tb
-!s110 1742205095
+!s110 1742208394
 !i10b 1
-!s100 ?>VQSlg?IOEUgSK1E4=>41
+!s100 D=IckAXc[i[ODicP1TLi10
 R1
-IU=1a2hn??fPN87g9Y3dbn0
+I?j6obRJKCmV`^23cc8oTZ1
 R2
-w1742204787
-8C:/Users/raul.lora/Documents/shiftReg_Earendel/simulation/receptor_tb.v
-FC:/Users/raul.lora/Documents/shiftReg_Earendel/simulation/receptor_tb.v
-!i122 1
-L0 3 43
+w1742208300
+8receptor_tb.v
+Freceptor_tb.v
+!i122 10
+R9
 R3
 R4
 r1
 !s85 0
 31
-!s108 1742205095.000000
-!s107 C:/Users/raul.lora/Documents/shiftReg_Earendel/simulation/receptor_tb.v|
-!s90 -reportprogress|300|-O0|C:/Users/raul.lora/Documents/shiftReg_Earendel/simulation/receptor_tb.v|
+!s108 1742208394.000000
+!s107 receptor_tb.v|
+!s90 -reportprogress|300|receptor_tb.v|
 !s101 -O0
 !i113 1
 o-O0
-R7
+R8

@@ -13,6 +13,7 @@ module receptor_tb;
     
     // Señales de salida
     wire [SIZESREG-1:0] output_reg;
+    wire [15:0] shift_reg_monitor;  // Copia de la señal interna
     
     // Instanciación del módulo receptor
     receptor #(.SIZESREG(SIZESREG)) uut (
@@ -22,6 +23,9 @@ module receptor_tb;
         .signal_in(signal_in),
         .output_reg(output_reg)
     );
+
+    // Asignación para monitorizar shift_reg
+    assign shift_reg_monitor = uut.shift_reg;  // Coger la señal interna shift_reg
     
     // Generación del reloj
     always begin
