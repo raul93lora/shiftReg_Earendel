@@ -19,7 +19,6 @@ module fsm_shiftRegs (
     // Ports definition
     input wire CLK;
     input wire RST_N;
-    reg [2:0] state;
     output reg sel_dyn;
     output reg sel_stat;
     output reg en_fin;
@@ -36,7 +35,7 @@ module fsm_shiftRegs (
     parameter N_CYCLES_S1 = 8;  						// Numero de ciclos de reloj para esperar en WAIT_1
 
     // Definicion del numero de ciclos para esperar en WAIT_2
-    parameter N_CYCLES_S2 = 128;  						// Numero de ciclos de reloj para esperar en WAIT_2
+    parameter N_CYCLES_S2 = 20;  						// Numero de ciclos de reloj para esperar en WAIT_2
 
     // Definicion del numero de ciclos para esperar en SEL_DYN
     parameter N_CYCLES_SDYN = 16;  						// Numero de ciclos de reloj para esperar en SEL_DYN (tamaño del registro)
@@ -50,8 +49,7 @@ module fsm_shiftRegs (
     reg [2:0] current_state, next_state;
 
     // Registro para almacenar la secuencia de bits 0x8001
-    reg [15:0] bit_sequence;  // Almacenamos 16 bits, 0x8001 en binario sería: 1000...0001
-    reg [3:0] shift_counter;  // Contador para controlar el desplazamiento de bits
+    reg [15:0] bit_sequence;  						// Almacenamos 16 bits, 0x8001 en binario sería: 1000...0001
 
     // LÃ³gica de transiciÃ³n de estados (cambiar el estado)
     always @(posedge CLK or negedge RST_N) begin
@@ -74,11 +72,6 @@ module fsm_shiftRegs (
         endcase
     end
 
-    // Salida: mostrar el estado actual
-    always @(posedge CLK) begin
-        state <= current_state;
-    end
-
     // Logica para asignar valores a las salidas
     always @(posedge CLK or negedge RST_N) begin
         if (!RST_N) begin
@@ -91,6 +84,8 @@ module fsm_shiftRegs (
                     sel_dyn <= 0; 						// En IDLE, sel_dyn toma el valor 0
                     sel_stat <= 0; 						// En IDLE, sel_stat toma el valor 0
 		      en_fin <= 0;						// En IDLE, en_fin toma el valor 0
+    		      // Asignamos a secuencia el valor que quiero para el registro dinamico
+    		      bit_sequence[SIZESRDYN-1:0] <= 16'h1234;
                 end
                 WAIT_1: begin
                     sel_dyn <= 0; 						// En WAIT_1, sel_dyn toma el valor 0
@@ -102,9 +97,8 @@ module fsm_shiftRegs (
                     sel_stat <= 0; 						// En SEL_DYN, sel_stat toma el valor 0
 		      en_fin <= 0;						// En SEL_DYN, en_fin toma el valor 0
                     // Desplazamos la secuencia y actualizamos la señal de salida
-                    signal_out <= bit_sequence[SIZESRDYN]; 		// El bit más significativo de la secuencia
-                    bit_sequence <= {bit_sequence[SIZESRDYN-2:0], 1'b0}; // Desplazamos la secuencia a la derecha
-                    shift_counter <= shift_counter + 1;
+                    signal_out <= bit_sequence[SIZESRDYN-1]; 		// El bit más significativo de la secuencia
+                    bit_sequence <= {bit_sequence[SIZESRDYN-2:0], 1'b0}; // Desplazamos la secuencia a la izquierda
                 end
                 DYN_LATCH: begin
                     sel_dyn <= 0; 						// En DYN_LATCH, sel_dyn toma el valor 0
@@ -157,7 +151,6 @@ module fsm_shiftRegs (
             counterDYN <= 0; 							// Reset del contador cuando no estamos en SEL_DYN
         end
     end
-
 
 endmodule
 

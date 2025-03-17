@@ -2,7 +2,7 @@
 
 module fsm_shiftRegs_tb;
 
-    // Definicion de las señales de prueba
+    // Definición de las señales de prueba
     reg CLK;
     reg RST_N;
     wire sel_dyn;
@@ -10,11 +10,8 @@ module fsm_shiftRegs_tb;
     wire en_fin;
     wire signal_out;
 
-    // Parámetros del testbench
-    //parameter PERIOD = 10;  // Periodo del reloj (10 ns)
-
-    // Instanciamos el módulo fsm
-    fsm #(
+    // Instancia del módulo fsm_shiftRegs
+    fsm_shiftRegs #(
         .SIZESRSTAT(88),
         .SIZESRDYN(16),
         .SIZEADDRMUX(7)
@@ -24,38 +21,36 @@ module fsm_shiftRegs_tb;
         .sel_dyn(sel_dyn),
         .sel_stat(sel_stat),
         .en_fin(en_fin),
-	.signal_out(signal_out)
+        .signal_out(signal_out)
     );
 
-    // Generador de reloj
+    // Generador de reloj (10 ns de periodo -> 5 ns alto, 5 ns bajo)
     always begin
-        #5 CLK = ~CLK;  // Genera un reloj con periodo de 10 ns
+        #5 CLK = ~CLK;
     end
 
     // Proceso de inicialización y estímulos
     initial begin
+        // Inicialización de señales
+        CLK = 0;
+        RST_N = 0;
+
         // Aplicar reset asíncrono
-	CLK = 0; 
-	RST_N = 0;
-        #10 RST_N = 1;  // Activar el reset después de 10 ns
-        #10 RST_N = 0;  // Desactivar el reset después de otros 10 ns
+        #10 RST_N = 1;  // Activar el reset
+        #10 RST_N = 0;  // Desactivar el reset
         #10 RST_N = 1;  // Volver a activar el reset
 
-        // Estímulos de prueba (ejecución de los estados)
-        #600;  // Esperamos 100 ns antes de terminar la simulación
-        $stop;  // Detenemos la simulación
+        // Esperar suficiente tiempo para ver la FSM en acción
+        #1000;
+
+        // Finalizar la simulación
+        $finish;
     end
 
-    // Monitor para ver las señales de salida
+    // Monitor de señales
     initial begin
-        $monitor("Time = %0t, RST_N = %b, sel_dyn = %b, sel_stat = %b, en_fin = %b", 
+        $monitor("Time = %0t, RST_N = %b, sel_dyn = %b, sel_stat = %b, en_fin = %b, signal_out = %b", 
                  $time, RST_N, sel_dyn, sel_stat, en_fin, signal_out);
-    end
-
-    // Agregar las señales a la ventana de formas de onda
-    initial begin
-        $dumpfile("fsm_shiftRegs_tb.vcd");  // Nombre del archivo de salida para el archivo VCD
-        $dumpvars(0, fsm_shiftRegs_tb);     // Agregar todas las señales del testbench al archivo VCD
     end
 
 endmodule

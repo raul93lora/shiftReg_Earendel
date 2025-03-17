@@ -66,12 +66,7 @@ module generator_tb;
 	#10 signal_in = 0;
 	#10 signal_in = 0;
 	#10 signal_in = 1;
-
 	#10 SELDYN = 0; SELSTAT = 1; // Selecciona el registro estático y termino secuencia dinamica
-
-        // Cambiar valores de los registros dinámicos y estáticos
-        //#50 DYNREG = 16'h5678; // Cambiar valor de registro dinámico
-        //#50 STATREG = 88'hA1B2C3D4E5F67890ABCDE1; // Cambiar valor de registro estático
 
         // Simulación de transición de registros
         #100 SELDYN = 1; SELSTAT = 0;

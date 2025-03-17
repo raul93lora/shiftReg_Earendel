@@ -20,68 +20,68 @@ w1742213031
 Z2 8fsm_shiftRegs.v
 Z3 Ffsm_shiftRegs.v
 !i122 21
-Z4 L0 5 158
-Z5 VDg1SIo80bB@j0V0VzS_@n1
-Z6 OT;L;2020.3;71
+L0 5 158
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OT;L;2020.3;71
 r1
 !s85 0
 31
 !s108 1742213277.000000
-Z7 !s107 fsm_shiftRegs.v|
-Z8 !s90 -reportprogress|300|fsm_shiftRegs.v|
+!s107 fsm_shiftRegs.v|
+!s90 -reportprogress|300|fsm_shiftRegs.v|
 !s101 -O0
 !i113 1
 o-O0
-Z9 tCvgOpt 0
+Z6 tCvgOpt 0
 vfsm_shiftRegs
-!s110 1742214425
+Z7 !s110 1742223446
 !i10b 1
-!s100 lS=e:5gXP_94]D=K5WZ[^3
+!s100 b8J4kc`c_FI5Ij1m6T8_f2
 R0
-I7a455^4MXVdnoWL8DGlB72
+I?;??4MLAAcBY;1g1z_=X=0
 R1
-w1742213729
+w1742223418
 R2
 R3
-!i122 29
+!i122 46
+L0 5 151
 R4
 R5
-R6
 r1
 !s85 0
 31
-!s108 1742214425.000000
-R7
-R8
+Z8 !s108 1742223446.000000
+!s107 fsm_shiftRegs_tb.v|fsm_shiftRegs.v|
+Z9 !s90 -reportprogress|300|fsm_shiftRegs.v|fsm_shiftRegs_tb.v|
 !s101 -O0
 !i113 1
 o-O0
-R9
+R6
 nfsm_shift@regs
 vfsm_shiftRegs_tb
-!s110 1742219644
+R7
 !i10b 1
-!s100 El0@NHIiO`HjdTAzl==8Z0
+!s100 :?WmY;:Z;Q^1[;ldmO`Qo2
 R0
-I`@dFPnT;NkGMEWT4GG_^E2
+I716To_DnMQWdO>7XMJLa<0
 R1
-w1742215140
+w1742222231
 Z10 8fsm_shiftRegs_tb.v
 Z11 Ffsm_shiftRegs_tb.v
-!i122 32
-L0 3 59
+!i122 46
+Z12 L0 3 54
+R4
 R5
-R6
 r1
 !s85 0
 31
-!s108 1742219644.000000
-Z12 !s107 fsm_shiftRegs_tb.v|
-Z13 !s90 -reportprogress|300|fsm_shiftRegs_tb.v|
+R8
+Z13 !s107 fsm_shiftRegs_tb.v|fsm_shiftRegs.v|
+R9
 !s101 -O0
 !i113 1
 o-O0
-R9
+R6
 nfsm_shift@regs_tb
 vfsm_tb
 !s110 1742213580
@@ -94,19 +94,19 @@ w1742213560
 R10
 R11
 !i122 22
-L0 3 54
+R12
+R4
 R5
-R6
 r1
 !s85 0
 31
 !s108 1742213580.000000
-R12
-R13
+!s107 fsm_shiftRegs_tb.v|
+!s90 -reportprogress|300|fsm_shiftRegs_tb.v|
 !s101 -O0
 !i113 1
 o-O0
-R9
+R6
 vgenerator
 !s110 1742211084
 !i10b 1
@@ -119,8 +119,8 @@ w1742210656
 Fgenerator.v
 !i122 15
 L0 6 62
+R4
 R5
-R6
 r1
 !s85 0
 31
@@ -130,7 +130,7 @@ r1
 !s101 -O0
 !i113 1
 o-O0
-R9
+R6
 vgenerator_tb
 !s110 1742211699
 !i10b 1
@@ -143,8 +143,8 @@ w1742211691
 Fgenerator_tb.v
 !i122 20
 L0 3 87
+R4
 R5
-R6
 r1
 !s85 0
 31
@@ -154,7 +154,7 @@ r1
 !s101 -O0
 !i113 1
 o-O0
-R9
+R6
 vreceptor
 !s110 1742208389
 !i10b 1
@@ -167,8 +167,8 @@ w1742207414
 Freceptor.v
 !i122 9
 L0 7 34
+R4
 R5
-R6
 r1
 !s85 0
 31
@@ -178,7 +178,7 @@ r1
 !s101 -O0
 !i113 1
 o-O0
-R9
+R6
 vreceptor_tb
 !s110 1742208394
 !i10b 1
@@ -191,8 +191,8 @@ w1742208300
 Freceptor_tb.v
 !i122 10
 L0 3 74
+R4
 R5
-R6
 r1
 !s85 0
 31
@@ -202,4 +202,4 @@ r1
 !s101 -O0
 !i113 1
 o-O0
-R9
+R6
