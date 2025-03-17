@@ -7,7 +7,8 @@ module fsm (
     RST_N,		// Reset activo bajo
     sel_dyn,		// Seleccion registro dinamico
     sel_stat,		// Seleccion registro estatico
-    en_fin		// Señal indicando que ya se ha cargado el registro de configuracion dinamico
+    en_fin,		// Señal indicando que ya se ha cargado el registro de configuracion dinamico
+    signal_out		// Señal de salida de un bit
 );
 
     // Parameters definition
