@@ -8,7 +8,7 @@ module top(
 	DYNLATCH,	// LATCH para el registro dinamico, es salida
 	STATLATCH,	// LATCH para el registro estatico, es salida
 	ENFIN,		// Señal de salida que indica que se ha completado el registro dinamico
-	signal_out	// Salida final de la señal
+	generated_signal	// Salida final de la señal
 );
 
 	// Parameters definition
@@ -19,28 +19,29 @@ module top(
 	wire [SIZESRDYN-1:0] dynamicReg;    		// Valor dinámico 
 	wire [SIZESRSTAT-1:0] staticReg;    		// Valor estático
 
+	wire signal_out_fsm;				// Señal de 1 bit que sale de la maquina de estados
+
 	// Ports definition
     	input wire CLK;
     	input wire RST_N;
 	wire SELDYN;
 	wire SELSTAT;
-    	output wire [SIZESRDYN-1:0] signal_out;     // A ver, esta señal es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
-	wire [SIZESRDYN-1:0] dynamicReg;
-	input wire [SIZERSTAT-1:0] staticReg;
-	output reg [SIZESRDYN-1:0] DYNLATCH;
-	output reg [SIZESRSTAT-1:0] STATLATCH;
-    	wire generated_signal;
-	output reg ENFIN;
+    	//output wire [SIZESRDYN-1:0] signal_out;     // A ver, esta señal es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
+	//wire [SIZESRDYN-1:0] dynamicReg;
+	//input wire [SIZESRSTAT-1:0] staticReg;
+	output wire [SIZESRDYN-1:0] DYNLATCH;
+	output wire [SIZESRSTAT-1:0] STATLATCH;
+    	output wire generated_signal;
+	output wire ENFIN;
     
     	generator generator_inst1 (
         	.CLK(CLK),
         	.RST_N(RST_N),
 	 	.SELDYN (SELDYN),
         	.SELSTAT (SELSTAT),
-		.DYNREG (dynamicReg),
-		.STATREG (staticReg),
 		.DYNLATCH (DYNLATCH),
 		.STATLATCH (STATLATCH),
+		.signal_in (signal_out_fsm),
         	.signal_out(generated_signal)
     	);
 
@@ -50,7 +51,8 @@ module top(
 		.RST_N(RST_N),
 		.sel_dyn(SELDYN),
 		.sel_stat(SELSTAT),
-		.en_fin(ENFIN)
+		.en_fin(ENFIN),
+		.signal_out(signal_out_fsm)
 	);
 
 	// Mapping registers dynamic and static INPUTS -- this has to be changed to receive from uC -- serialized

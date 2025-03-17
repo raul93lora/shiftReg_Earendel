@@ -5,7 +5,7 @@ module top_tb;
     // Señales de prueba
     reg CLK;
     reg RST_N;
-    wire [15:0] signal_out;
+    wire generated_signal;
     wire [15:0] DYNLATCH;
     wire [87:0] STATLATCH;
     wire ENFIN;
@@ -17,7 +17,7 @@ module top_tb;
         .DYNLATCH(DYNLATCH),
         .STATLATCH(STATLATCH),
         .ENFIN(ENFIN),
-        .signal_out(signal_out)
+        .generated_signal(generated_signal)
     );
 
     // Generador de reloj

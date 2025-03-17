@@ -2,4 +2,5 @@ vlog archivo.v archivo_tb.v
 
 vsim work.archivo_tb
 
+// Para añadir todas las señales internas y externas del modulo, si usas este comando, no las añadas a mano
 add wave -r /archivo_tb/uut/*
