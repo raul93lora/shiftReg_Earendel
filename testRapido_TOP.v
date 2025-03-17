@@ -12,12 +12,12 @@ module top(
 );
 
 	// Parameters definition
-	parameter SIZESRSTAT = 88; 		// Static shift register length 
-	parameter SIZESRDYN = 16; 		// Dynamic shift register length
+	parameter SIZESRSTAT = 88; 			// Static shift register length 
+	parameter SIZESRDYN = 16; 			// Dynamic shift register length
 
 	// Pongo los registros de entrada como wire, habria que cambiarlo para recibirlo del uC
-	wire [SIZESRDYN-1:0] dynamicReg;    // Valor dinámico 
-	wire [SIZESRSTAT-1:0] staticReg;    // Valor estático
+	wire [SIZESRDYN-1:0] dynamicReg;    		// Valor dinámico 
+	wire [SIZESRSTAT-1:0] staticReg;    		// Valor estático
 
 	// Ports definition
     	input wire CLK;
