@@ -16,7 +16,9 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v" (library work)
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v" (library work)
 Verilog syntax check successful!
-File C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module top
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":6:7:6:15|Synthesizing module generator in library work.
 
@@ -28,9 +30,10 @@ Selecting top level module top
 @A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Feedback mux created for signal bit_sequence[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Register bit bit_sequence[0] is always 0.
 @W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Pruning register bit 0 of bit_sequence[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":16:7:16:9|Synthesizing module top in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":5:7:5:9|Synthesizing module top in library work.
 
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":28:22:28:31|Removing wire dynamicReg, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":17:22:17:31|Removing wire dynamicReg, as there is no assignment to it.
+@W: CG133 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":25:12:25:17|Object selDin is declared but not assigned. Either assign a value or remove the declaration.
 @N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Register bit bit_sequence[1] is always 0.
 @W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Pruning register bit 1 of bit_sequence[15:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":55:4:55:9|Trying to extract state machine for register current_state.
@@ -42,25 +45,25 @@ State machine has 5 reachable states with original encodings of:
    011
    100
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 08:30:05 2025
+# Tue Mar 18 09:12:43 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
 @N|Running in 64-bit mode
-@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":16:7:16:9|Selected library: work cell: top view verilog as top level
-@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":16:7:16:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 08:30:05 2025
+# Tue Mar 18 09:12:43 2025
 
 ###########################################################]
 @END
@@ -70,6 +73,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 08:30:05 2025
+# Tue Mar 18 09:12:43 2025
 
 ###########################################################]

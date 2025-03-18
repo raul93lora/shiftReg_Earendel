@@ -11,16 +11,16 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     40                 100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top:	40 (36.36 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top:	40 (37.04 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       52                 100 %                
+LUTS       50                 100 %                
 CARRYS     7                  100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block top:	59 (53.64 % Utilization)
+Total COMBINATIONAL LOGIC in the block top:	57 (52.78 % Utilization)
 
 
 IO PADS
@@ -28,7 +28,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 PADS     5                  100 %                
 =================================================
-Total IO PADS in the block top:	5 (4.55 % Utilization)
+Total IO PADS in the block top:	5 (4.63 % Utilization)
 
 -------------------------------------------------------------------
 ########   Utilization report for  cell:   fsm_shiftRegs   ########
@@ -40,16 +40,16 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     39                 97.5 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top.fsm_shiftRegs:	39 (35.45 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.fsm_shiftRegs:	39 (36.11 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       50                 96.2 %               
+LUTS       48                 96 %                 
 CARRYS     7                  100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block top.fsm_shiftRegs:	57 (51.82 % Utilization)
+Total COMBINATIONAL LOGIC in the block top.fsm_shiftRegs:	55 (50.93 % Utilization)
 
 ---------------------------------------------------------------
 ########   Utilization report for  cell:   generator   ########
@@ -61,15 +61,15 @@ Name      Total elements     Utilization     Notes
 --------------------------------------------------
 FLOPS     1                  2.5 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top.generator:	1 (0.91 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.generator:	1 (0.93 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-LUTS     1                  1.92 %               
+LUTS     1                  2 %                  
 =================================================
-Total COMBINATIONAL LOGIC in the block top.generator:	1 (0.91 % Utilization)
+Total COMBINATIONAL LOGIC in the block top.generator:	1 (0.93 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

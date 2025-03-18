@@ -1,0 +1,19 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2020.12.27943
+
+# File Generated:     Mar 18 2025 09:12:29
+
+# Family & Device:    iCE40LP8K
+
+# Package:            CM81
+
+# ##############################################################################
+
+###IOSet List 3
+set_io ENdin A9
+set_io RST_N C9
+set_io generated_signal B8
+

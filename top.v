@@ -5,7 +5,7 @@
 module top(
 	CLK,		// Reloj del sistema
 	RST_N,		// Reset asíncrono activo en bajo
-	ENFIN,		// Señal de salida que indica que se ha completado el registro dinamico
+	ENdin,		// Señal de salida que indica que se ha completado el registro dinamico
 	generated_signal	// Salida final de la señal
 );
 
@@ -22,6 +22,7 @@ module top(
 	// Ports definition
     	input wire CLK;
     	input wire RST_N;
+	output reg selDin;
 	wire SELDYN;
 	wire SELSTAT;
     	//output wire [SIZESRDYN-1:0] signal_out;     // A ver, esta señal es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
@@ -35,7 +36,7 @@ module top(
 	wire [SIZESRDYN-1:0] DYNLATCH;
 	wire [SIZESRSTAT-1:0] STATLATCH;
     	output wire generated_signal;
-	output wire ENFIN;
+	output wire ENdin;
     
     	generator generator_inst1 (
         	.CLK(CLK),
@@ -54,7 +55,7 @@ module top(
 		.RST_N(RST_N),
 		.sel_dyn(SELDYN),
 		.sel_stat(SELSTAT),
-		.en_fin(ENFIN),
+		.en_fin(ENdin),
 		.signal_out(signal_out_fsm)
 	);
 

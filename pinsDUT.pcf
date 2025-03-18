@@ -7,7 +7,9 @@
 set_io --warn-noport generated_signal B8
 
 # BANK 1
-set_io --warn-noport RST_N A9
+set_io --warn-noport RST_N C9
+
+set_io --warn-noport enDin A9
 
 
 # BANK 3

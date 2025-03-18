@@ -7,7 +7,7 @@ module fsm_shiftRegs (
     RST_N,		// Reset activo bajo
     sel_dyn,		// Seleccion registro dinamico
     sel_stat,		// Seleccion registro estatico
-    en_fin,		// Señal indicando que ya se ha cargado el registro de configuracion dinamico
+    en_fin,		// Señal indicando cuando se está escribiendo el registro dinamico
     signal_out		// Señal de salida de un bit
 );
 
@@ -95,7 +95,7 @@ module fsm_shiftRegs (
                 SEL_DYN: begin
                     sel_dyn <= 1; 						// En SEL_DYN, sel_dyn toma el valor 1
                     sel_stat <= 0; 						// En SEL_DYN, sel_stat toma el valor 0
-		      en_fin <= 0;						// En SEL_DYN, en_fin toma el valor 0
+		      en_fin <= 1;						// En SEL_DYN, en_fin toma el valor 0
                     // Desplazamos la secuencia y actualizamos la señal de salida
                     signal_out <= bit_sequence[SIZESRDYN-1]; 		// El bit más significativo de la secuencia
                     bit_sequence <= {bit_sequence[SIZESRDYN-2:0], 1'b0}; // Desplazamos la secuencia a la izquierda
@@ -104,11 +104,15 @@ module fsm_shiftRegs (
                     sel_dyn <= 0; 						// En DYN_LATCH, sel_dyn toma el valor 0
                     sel_stat <= 1; 						// En DYN_LATCH, sel_stat toma el valor 1
 		      en_fin <= 0;						// En DYN_LATCH, en_fin toma el valor 0
+		     // Cambio aqui para corroborar que no me va a cambiar el estado de la salida
+                    bit_sequence <= {bit_sequence[SIZESRDYN-2:0], 1'b0}; // Desplazamos la secuencia a la izquierda
                 end
                 WAIT_2: begin
                     sel_dyn <= 1; 						// En WAIT_2, sel_dyn toma el valor 1
                     sel_stat <= 0; 						// En WAIT_2, sel_stat toma el valor 0
-		      en_fin <= 1;						// En WAIT_2, en_fin toma el valor 1 porque ya se ha cargado el valor del dinamico
+		      en_fin <= 0;						// En WAIT_2, en_fin toma el valor 1 porque ya se ha cargado el valor del dinamico
+		     // Cambio aqui para corroborar que no me va a cambiar el estado de la salida
+                    bit_sequence <= {bit_sequence[SIZESRDYN-2:0], 1'b0}; // Desplazamos la secuencia a la izquierda
                 end
                 default: begin
                     sel_dyn <= 0; 						// Default

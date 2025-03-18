@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\run_options.txt
-#--  Written on Tue Mar 18 08:30:05 2025
+#--  Written on Tue Mar 18 09:12:42 2025
 
 
 #project files

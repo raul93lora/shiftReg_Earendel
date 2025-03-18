@@ -1,8 +1,8 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MT206 |Auto Constrain mode is enabled
-@N: MO231 :"c:\users\raul.lora\documents\shiftreg_earendel\fsm_shiftregs.v":134:4:134:9|Found counter in view:work.fsm_shiftRegs(verilog) instance counter2[7:0] 
-@N: FX1016 :"c:\users\raul.lora\documents\shiftreg_earendel\top.v":17:1:17:3|SB_GB_IO inserted on the port CLK.
+@N: MO231 :"c:\users\raul.lora\documents\shiftreg_earendel\fsm_shiftregs.v":138:4:138:9|Found counter in view:work.fsm_shiftRegs(verilog) instance counter2[7:0] 
+@N: FX1016 :"c:\users\raul.lora\documents\shiftreg_earendel\top.v":6:1:6:3|SB_GB_IO inserted on the port CLK.
 @N: FX1017 :|SB_GB inserted on the net RST_N_c_i.
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 

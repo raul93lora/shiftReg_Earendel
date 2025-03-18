@@ -1,0 +1,7 @@
+[VIC]
+fsm_shiftRegs_inst1.counterDYN_RNO_0Z0Z_3_cascade_=ltout:in2
+fsm_shiftRegs_inst1.counter_RNO_0Z0Z_2_cascade_=ltout:in2
+fsm_shiftRegs_inst1.counter_RNO_0Z0Z_3_cascade_=ltout:in2
+fsm_shiftRegs_inst1.current_state_RNO_0Z0Z_0_cascade_=ltout:in0
+fsm_shiftRegs_inst1.current_state_RNO_0Z0Z_2_cascade_=ltout:in2
+fsm_shiftRegs_inst1.current_state_ns_a3_7_4_0_cascade_=ltout:in2
