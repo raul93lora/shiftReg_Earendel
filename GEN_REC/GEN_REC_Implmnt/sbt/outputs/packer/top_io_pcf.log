@@ -1,0 +1,4 @@
+OUTPUT generated_signal 	 location (30, 33, 1) 	 B8 	 
+INPUT  RST_N 	 location (33, 21, 1) 	 C9 	 
+OUTPUT ENdin 	 location (33, 4, 1) 	 A9 	 
+INPUT  CLK 	 location (0, 17, 0) 	 D3 	 

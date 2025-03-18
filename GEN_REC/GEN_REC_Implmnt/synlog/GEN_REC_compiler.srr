@@ -16,24 +16,26 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v" (library work)
 @I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v" (library work)
 Verilog syntax check successful!
+File C:\Users\raul.lora\Documents\shiftReg_Earendel\receptor.v changed - recompiling
+File C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v changed - recompiling
 File C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":6:7:6:15|Synthesizing module generator in library work.
 
 @A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":40:1:40:6|Feedback mux created for signal STATLATCH[87:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":40:1:40:6|Feedback mux created for signal DYNLATCH[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":5:7:5:19|Synthesizing module fsm_shiftRegs in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":4:7:4:19|Synthesizing module fsm_shiftRegs in library work.
 
-@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Feedback mux created for signal signal_out. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Feedback mux created for signal bit_sequence[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Register bit bit_sequence[0] is always 0.
-@W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Pruning register bit 0 of bit_sequence[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Feedback mux created for signal signal_out. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Feedback mux created for signal bit_sequence[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Register bit bit_sequence[0] is always 0.
+@W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Pruning register bit 0 of bit_sequence[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":5:7:5:9|Synthesizing module top in library work.
 
 @W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":17:22:17:31|Removing wire dynamicReg, as there is no assignment to it.
-@N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Register bit bit_sequence[1] is always 0.
-@W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Pruning register bit 1 of bit_sequence[15:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":55:4:55:9|Trying to extract state machine for register current_state.
+@N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Register bit bit_sequence[1] is always 0.
+@W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Pruning register bit 1 of bit_sequence[15:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":54:4:54:9|Trying to extract state machine for register current_state.
 Extracted state machine for register current_state
 State machine has 5 reachable states with original encodings of:
    000
@@ -47,7 +49,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 10:13:25 2025
+# Tue Mar 18 11:05:53 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -60,7 +62,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 10:13:25 2025
+# Tue Mar 18 11:05:53 2025
 
 ###########################################################]
 @END
@@ -70,6 +72,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 10:13:25 2025
+# Tue Mar 18 11:05:53 2025
 
 ###########################################################]
