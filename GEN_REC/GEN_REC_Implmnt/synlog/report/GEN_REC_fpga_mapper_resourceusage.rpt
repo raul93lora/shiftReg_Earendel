@@ -5,7 +5,7 @@ Mapping to part: ice40lp8kcm81
 Cell usage:
 GND             2 uses
 SB_CARRY        7 uses
-SB_DFF          1 use
+SB_DFF          2 uses
 SB_DFFE         14 uses
 SB_DFFR         24 uses
 SB_DFFS         1 use
@@ -19,7 +19,7 @@ SB_GB_IO       1 use
 SB_IO          3 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   40 (0%)
+Register bits not including I/Os:   41 (0%)
 
 @S |Mapping Summary:
 Total  LUTs: 50 (0%)

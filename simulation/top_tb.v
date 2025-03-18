@@ -12,7 +12,7 @@ module top_tb;
     top uut (
         .CLK(CLK),
         .RST_N(RST_N),
-        .generated_signal(generated_signal)
+        .generated_signal(generated_signal),
         .ENdin(ENdin)
     );
 
@@ -25,7 +25,7 @@ module top_tb;
     initial begin
         // Inicialización
         CLK = 0;
-        //RST_N = 0;
+        RST_N = 0;
         #124 RST_N = 1; // Liberar el reset después de 124 ns
 
         // Simulación por un tiempo suficiente
@@ -35,7 +35,7 @@ module top_tb;
 
     // Monitor para ver las señales de salida
     initial begin
-        $monitor("Time = %0t | RST_N = %b | generated_signal = %b | ENdin = %b, 
+        $monitor("Time = %0t | RST_N = %b | generated_signal = %b | ENdin = %b", 
                  $time, RST_N, generated_signal, ENdin);
     end
 

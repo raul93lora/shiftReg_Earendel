@@ -1,5 +1,4 @@
 @W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Pruning register bit 0 of bit_sequence[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":17:22:17:31|Removing wire dynamicReg, as there is no assignment to it.
-@W: CG133 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":25:12:25:17|Object selDin is declared but not assigned. Either assign a value or remove the declaration.
 @W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":76:4:76:9|Pruning register bit 1 of bit_sequence[15:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 

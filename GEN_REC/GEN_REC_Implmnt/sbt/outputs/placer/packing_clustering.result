@@ -38,7 +38,8 @@ ble_pack fsm_shiftRegs_inst1.signal_out_LC_48 {fsm_shiftRegs_inst1.signal_out, f
 ble_pack RST_N_ibuf_RNIBJGC_LC_0 {RST_N_ibuf_RNIBJGC}
 ble_pack fsm_shiftRegs_inst1.current_state_RNI7RPG[1]_LC_35 {fsm_shiftRegs_inst1.current_state_RNI7RPG[1]}
 ble_pack fsm_shiftRegs_inst1.current_state_RNO_1[2]_LC_43 {fsm_shiftRegs_inst1.current_state_RNO_1[2]}
-clb_pack PLB_4 {fsm_shiftRegs_inst1.signal_out_LC_48, RST_N_ibuf_RNIBJGC_LC_0, fsm_shiftRegs_inst1.current_state_RNI7RPG[1]_LC_35, fsm_shiftRegs_inst1.current_state_RNO_1[2]_LC_43}
+ble_pack enableDin_aux_LC_50 {enableDin_aux, enableDin_aux_THRU_LUT4_0}
+clb_pack PLB_4 {fsm_shiftRegs_inst1.signal_out_LC_48, RST_N_ibuf_RNIBJGC_LC_0, fsm_shiftRegs_inst1.current_state_RNI7RPG[1]_LC_35, fsm_shiftRegs_inst1.current_state_RNO_1[2]_LC_43, enableDin_aux_LC_50}
 ble_pack fsm_shiftRegs_inst1.bit_sequence[10]_LC_1 {fsm_shiftRegs_inst1.bit_sequence[10], fsm_shiftRegs_inst1.bit_sequence_RNO[10]}
 ble_pack fsm_shiftRegs_inst1.bit_sequence[11]_LC_2 {fsm_shiftRegs_inst1.bit_sequence[11], fsm_shiftRegs_inst1.bit_sequence_RNO[11]}
 ble_pack fsm_shiftRegs_inst1.bit_sequence[12]_LC_3 {fsm_shiftRegs_inst1.bit_sequence[12], fsm_shiftRegs_inst1.bit_sequence_RNO[12]}
@@ -53,9 +54,9 @@ ble_pack fsm_shiftRegs_inst1.bit_sequence[4]_LC_8 {fsm_shiftRegs_inst1.bit_seque
 ble_pack fsm_shiftRegs_inst1.bit_sequence[5]_LC_9 {fsm_shiftRegs_inst1.bit_sequence[5], fsm_shiftRegs_inst1.bit_sequence_RNO[5]}
 ble_pack fsm_shiftRegs_inst1.bit_sequence[6]_LC_10 {fsm_shiftRegs_inst1.bit_sequence[6], fsm_shiftRegs_inst1.bit_sequence_RNO[6]}
 ble_pack fsm_shiftRegs_inst1.bit_sequence[7]_LC_11 {fsm_shiftRegs_inst1.bit_sequence[7], fsm_shiftRegs_inst1.bit_sequence_RNO[7]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[2]_LC_50 {fsm_shiftRegs_inst1.bit_sequence[2], fsm_shiftRegs_inst1.bit_sequence_2_THRU_LUT4_0}
-clb_pack PLB_6 {fsm_shiftRegs_inst1.bit_sequence[3]_LC_7, fsm_shiftRegs_inst1.bit_sequence[4]_LC_8, fsm_shiftRegs_inst1.bit_sequence[5]_LC_9, fsm_shiftRegs_inst1.bit_sequence[6]_LC_10, fsm_shiftRegs_inst1.bit_sequence[7]_LC_11, fsm_shiftRegs_inst1.bit_sequence[2]_LC_50}
+ble_pack fsm_shiftRegs_inst1.bit_sequence[2]_LC_51 {fsm_shiftRegs_inst1.bit_sequence[2], fsm_shiftRegs_inst1.bit_sequence_2_THRU_LUT4_0}
+clb_pack PLB_6 {fsm_shiftRegs_inst1.bit_sequence[3]_LC_7, fsm_shiftRegs_inst1.bit_sequence[4]_LC_8, fsm_shiftRegs_inst1.bit_sequence[5]_LC_9, fsm_shiftRegs_inst1.bit_sequence[6]_LC_10, fsm_shiftRegs_inst1.bit_sequence[7]_LC_11, fsm_shiftRegs_inst1.bit_sequence[2]_LC_51}
 ble_pack fsm_shiftRegs_inst1.current_state[3]_LC_45 {fsm_shiftRegs_inst1.current_state[3], fsm_shiftRegs_inst1.current_state_RNO[3]}
-ble_pack fsm_shiftRegs_inst1.sel_stat_LC_52 {fsm_shiftRegs_inst1.sel_stat, fsm_shiftRegs_inst1.sel_stat_THRU_LUT4_0}
-ble_pack fsm_shiftRegs_inst1.en_fin_LC_51 {fsm_shiftRegs_inst1.en_fin, fsm_shiftRegs_inst1.en_fin_THRU_LUT4_0}
-clb_pack PLB_7 {fsm_shiftRegs_inst1.current_state[3]_LC_45, fsm_shiftRegs_inst1.sel_stat_LC_52, fsm_shiftRegs_inst1.en_fin_LC_51}
+ble_pack fsm_shiftRegs_inst1.sel_stat_LC_53 {fsm_shiftRegs_inst1.sel_stat, fsm_shiftRegs_inst1.sel_stat_THRU_LUT4_0}
+ble_pack fsm_shiftRegs_inst1.en_fin_LC_52 {fsm_shiftRegs_inst1.en_fin, fsm_shiftRegs_inst1.en_fin_THRU_LUT4_0}
+clb_pack PLB_7 {fsm_shiftRegs_inst1.current_state[3]_LC_45, fsm_shiftRegs_inst1.sel_stat_LC_53, fsm_shiftRegs_inst1.en_fin_LC_52}

@@ -9,9 +9,9 @@ Part:			ICE40LP8KCM81 (Lattice)
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     40                 100 %                
+FLOPS     41                 100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top:	40 (37.04 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top:	41 (37.61 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -20,7 +20,7 @@ Name       Total elements     Utilization     Notes
 LUTS       50                 100 %                
 CARRYS     7                  100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block top:	57 (52.78 % Utilization)
+Total COMBINATIONAL LOGIC in the block top:	57 (52.29 % Utilization)
 
 
 IO PADS
@@ -28,7 +28,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 PADS     5                  100 %                
 =================================================
-Total IO PADS in the block top:	5 (4.63 % Utilization)
+Total IO PADS in the block top:	5 (4.59 % Utilization)
 
 -------------------------------------------------------------------
 ########   Utilization report for  cell:   fsm_shiftRegs   ########
@@ -38,9 +38,9 @@ Instance path:   top.fsm_shiftRegs
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     39                 97.5 %               
+FLOPS     39                 95.1 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top.fsm_shiftRegs:	39 (36.11 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.fsm_shiftRegs:	39 (35.78 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -49,7 +49,7 @@ Name       Total elements     Utilization     Notes
 LUTS       48                 96 %                 
 CARRYS     7                  100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block top.fsm_shiftRegs:	55 (50.93 % Utilization)
+Total COMBINATIONAL LOGIC in the block top.fsm_shiftRegs:	55 (50.46 % Utilization)
 
 ---------------------------------------------------------------
 ########   Utilization report for  cell:   generator   ########
@@ -59,9 +59,9 @@ Instance path:   top.generator
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     1                  2.5 %                
+FLOPS     1                  2.44 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top.generator:	1 (0.93 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.generator:	1 (0.92 % Utilization)
 
 
 COMBINATIONAL LOGIC
@@ -69,7 +69,7 @@ Name     Total elements     Utilization     Notes
 -------------------------------------------------
 LUTS     1                  2 %                  
 =================================================
-Total COMBINATIONAL LOGIC in the block top.generator:	1 (0.93 % Utilization)
+Total COMBINATIONAL LOGIC in the block top.generator:	1 (0.92 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

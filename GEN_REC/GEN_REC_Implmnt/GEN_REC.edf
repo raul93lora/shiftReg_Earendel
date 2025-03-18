@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2025 3 18 9 12 46)
+      (timeStamp 2025 3 18 10 13 29)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09L+ice40, mapper maplat, Build 1612R"))
      )
@@ -174,7 +174,7 @@
          (interface
            (port SELDYN (direction OUTPUT))
            (port SELSTAT (direction OUTPUT))
-           (port ENdin_c (direction OUTPUT))
+           (port enable_din (direction OUTPUT))
            (port RST_N_c_i_g (direction INPUT))
            (port CLK_c_g (direction INPUT))
            (port signal_out_fsm (direction OUTPUT))
@@ -1030,9 +1030,9 @@
            (portRef R (instanceRef counter_1))
            (portRef R (instanceRef counter_0))
           ))
-          (net (rename endin_c "ENdin_c") (joined
+          (net enable_din (joined
            (portRef Q (instanceRef en_fin))
-           (portRef ENdin_c)
+           (portRef enable_din)
           ))
           (net (rename selstat "SELSTAT") (joined
            (portRef Q (instanceRef sel_stat))
@@ -1148,6 +1148,8 @@
            (property NEG_TRIGGER (string "0"))
            (property PIN_TYPE (string "011001"))
           )
+          (instance enableDin_aux (viewRef PRIM (cellRef SB_DFF (libraryRef sb_ice)))
+          )
           (instance generator_inst1 (viewRef netlist (cellRef generator))
           )
           (instance fsm_shiftRegs_inst1 (viewRef netlist (cellRef fsm_shiftRegs))
@@ -1165,6 +1167,10 @@
           (net signal_out_fsm (joined
            (portRef signal_out_fsm (instanceRef fsm_shiftRegs_inst1))
            (portRef signal_out_fsm (instanceRef generator_inst1))
+          ))
+          (net enable_din (joined
+           (portRef enable_din (instanceRef fsm_shiftRegs_inst1))
+           (portRef D (instanceRef enableDin_aux))
           ))
           (net (rename GNDZ0 "GND") (joined
            (portRef Y (instanceRef GND))
@@ -1186,7 +1192,7 @@
            (portRef RST_N)
           ))
           (net ENdin_c (joined
-           (portRef ENdin_c (instanceRef fsm_shiftRegs_inst1))
+           (portRef Q (instanceRef enableDin_aux))
            (portRef D_OUT_0 (instanceRef ENdin_obuf))
           ))
           (net (rename endin "ENdin") (joined
@@ -1209,6 +1215,7 @@
            (portRef GLOBAL_BUFFER_OUTPUT (instanceRef CLK_ibuf_gb_io))
            (portRef CLK_c_g (instanceRef fsm_shiftRegs_inst1))
            (portRef CLK_c_g (instanceRef generator_inst1))
+           (portRef C (instanceRef enableDin_aux))
           ))
           (net RST_N_c_i_g (joined
            (portRef GLOBAL_BUFFER_OUTPUT (instanceRef RST_N_ibuf_RNIBJGC_0))

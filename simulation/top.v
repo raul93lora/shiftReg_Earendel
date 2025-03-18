@@ -22,7 +22,6 @@ module top(
 	// Ports definition
     	input wire CLK;
     	input wire RST_N;
-	output reg selDin;
 	wire SELDYN;
 	wire SELSTAT;
     	//output wire [SIZESRDYN-1:0] signal_out;     // A ver, esta se�al es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
@@ -37,7 +36,17 @@ module top(
 	wire [SIZESRSTAT-1:0] STATLATCH;
     	output wire generated_signal;
 	output wire ENdin;
+	wire enable_din;
+	reg enableDin_aux;
+
+	assign ENdin = enableDin_aux;
+
+    	// Lógica de transición de estados (cambiar el estado)
+    	always @(posedge CLK) begin
+        	enableDin_aux <= enable_din;
+    	end
     
+	// Instancias
     	generator generator_inst1 (
         	.CLK(CLK),
         	.RST_N(RST_N),
@@ -55,7 +64,7 @@ module top(
 		.RST_N(RST_N),
 		.sel_dyn(SELDYN),
 		.sel_stat(SELSTAT),
-		.en_fin(ENdin),
+		.en_fin(enable_din),
 		.signal_out(signal_out_fsm)
 	);
 
