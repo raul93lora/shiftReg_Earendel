@@ -1,7 +1,6 @@
 /* Raul Lora Rivera - v1 - FSM señales de seleccion registros estatico y dinamico
 * FSM shift registers
 */
-
 module fsm_shiftRegs (
     CLK,		// Reloj del sistema
     RST_N,		// Reset activo bajo
@@ -51,7 +50,7 @@ module fsm_shiftRegs (
     // Registro para almacenar la secuencia de bits 0x8001
     reg [15:0] bit_sequence;  						// Almacenamos 16 bits, 0x8001 en binario ser�a: 1000...0001
 
-    // Lógica de transición de estados (cambiar el estado)
+    // Logica de transición de estados (cambiar el estado)
     always @(posedge CLK or negedge RST_N) begin
         if (!RST_N) begin
             current_state <= IDLE; 						// Al reset, se va al estado IDLE

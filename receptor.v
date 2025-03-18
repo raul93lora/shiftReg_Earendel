@@ -3,7 +3,6 @@
 * Registro de desplazamiento con enable y vuelco a salida
 *
 */
-
 module receptor(
     CLK,           // Reloj del sistema
     RST_N,         // Reset asíncrono activo en bajo

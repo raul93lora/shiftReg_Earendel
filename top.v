@@ -3,9 +3,9 @@
 * TOP.v
 */
 module top(
-	CLK,		// Reloj del sistema
-	RST_N,		// Reset asíncrono activo en bajo
-	ENdin,		// Señal de salida que indica que se ha completado el registro dinamico
+	CLK,			// Reloj del sistema
+	RST_N,			// Reset asíncrono activo en bajo
+	ENdin,			// Señal de salida que indica que se ha completado el registro dinamico
 	generated_signal	// Salida final de la señal
 );
 
@@ -24,13 +24,7 @@ module top(
     	input wire RST_N;
 	wire SELDYN;
 	wire SELSTAT;
-    	//output wire [SIZESRDYN-1:0] signal_out;     // A ver, esta señal es wire porque teoricamente tiene que ir del generator al receptor, pero si no deberia ser reg
-	//wire [SIZESRDYN-1:0] dynamicReg;
-	//input wire [SIZESRSTAT-1:0] staticReg;
-	/*
-	output wire [SIZESRDYN-1:0] DYNLATCH;
-	output wire [SIZESRSTAT-1:0] STATLATCH;
-	*/
+
 	// Pongo DYNLATCH y STATLATCH como wire, en vez de como output, ya que si no hay que asignar todos los bits de cada uno a los pines .pcf correspondientes 
 	wire [SIZESRDYN-1:0] DYNLATCH;
 	wire [SIZESRSTAT-1:0] STATLATCH;
@@ -41,7 +35,7 @@ module top(
 
 	assign ENdin = enableDin_aux;
 
-    	// LÃ³gica de transiciÃ³n de estados (cambiar el estado)
+    	// Logica de transicion de estados (cambiar el estado)
     	always @(posedge CLK) begin
         	enableDin_aux <= enable_din;
     	end
