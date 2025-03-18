@@ -1,1 +1,1 @@
-CKID0001:@|S:CLK_ibuf_gb_io@|E:counter[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0001:@|S:CLK_ibuf_gb_io@|E:fsm_shiftRegs_inst1.counter2[7]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 

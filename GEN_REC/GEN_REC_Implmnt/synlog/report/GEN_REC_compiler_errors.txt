@@ -1,2 +1,2 @@
-@E: CG906 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":41:13:41:23|Reference to unknown variable clk.
+@E: CS179 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":61:8:61:17|Assignment target signal_out must be a net type
 

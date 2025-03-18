@@ -28,7 +28,7 @@ module generator(
 	output reg [SIZESRDYN-1:0] DYNLATCH;
 	output reg [SIZESRSTAT-1:0] STATLATCH;
 	reg signal_aux;
-	output reg signal_out;
+	output wire signal_out;
 	wire [SIZESRDYN-1:0] DYN_in;     	// Valor dinámico 
 	wire [SIZESRSTAT-1:0] STAT_in;   	// Valor estático
 	reg [SIZESRDYN-1:0] REGDYN;      	// Registro dinámico 

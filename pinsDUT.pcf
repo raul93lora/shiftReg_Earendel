@@ -4,7 +4,7 @@
 ###############################################################################
 
 # BANK 0
-set_io --warn-noport signal_out B8
+set_io --warn-noport generated_signal B8
 
 # BANK 1
 set_io --warn-noport RST_N A9
