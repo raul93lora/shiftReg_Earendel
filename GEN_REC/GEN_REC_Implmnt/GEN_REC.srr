@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: NB-ADM-01
 
-# Wed Mar 19 09:14:20 2025
+# Wed Mar 19 11:23:27 2025
 
 #Implementation: GEN_REC_Implmnt
 
@@ -24,6 +24,7 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v" (library work)
 @I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v" (library work)
 Verilog syntax check successful!
+File C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":8:7:8:33|Synthesizing module config_register_latched_dec in library work.
 
@@ -32,7 +33,6 @@ Selecting top level module top
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":4:7:4:14|Synthesizing module fsm_ctrl in library work.
 
 @W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":132:5:132:10|Pruning unused register counter_stat[6:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Pruning unused register counter_din[3:0]. Make sure that there are no unused intermediate registers.
 @W: CL265 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":68:1:68:6|Removing unused bit 88 of bit_sequence_stat[88:0]. Either assign all bits or reduce the width of the signal.
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Synthesizing module top in library work.
 
@@ -41,19 +41,25 @@ Selecting top level module top
 @W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":26:22:26:29|Removing wire DYNLATCH, as there is no assignment to it.
 @W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":27:23:27:31|Removing wire STATLATCH, as there is no assignment to it.
 @W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":35:6:35:16|Removing wire ref_elec_en, as there is no assignment to it.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":110:5:110:10|Optimizing register bit counter_idle[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":110:5:110:10|Optimizing register bit counter_idle[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":110:5:110:10|Optimizing register bit counter_idle[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":110:5:110:10|Optimizing register bit counter_idle[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":110:5:110:10|Optimizing register bit counter_idle[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":110:5:110:10|Pruning register bits 9 to 5 of counter_idle[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":49:5:49:10|Trying to extract state machine for register current_state.
 Extracted state machine for register current_state
-State machine has 2 reachable states with original encodings of:
+State machine has 3 reachable states with original encodings of:
    000
    001
-@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":68:1:68:6|Pruning unused register bit_sequence_stat[87:0]. Make sure that there are no unused intermediate registers.
+   010
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Mar 19 09:14:20 2025
+# Wed Mar 19 11:23:28 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -66,7 +72,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Mar 19 09:14:21 2025
+# Wed Mar 19 11:23:28 2025
 
 ###########################################################]
 @END
@@ -76,7 +82,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Mar 19 09:14:21 2025
+# Wed Mar 19 11:23:28 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -90,12 +96,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Mar 19 09:14:22 2025
+# Wed Mar 19 11:23:29 2025
 
 ###########################################################]
 Pre-mapping Report
 
-# Wed Mar 19 09:14:24 2025
+# Wed Mar 19 11:23:29 2025
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -163,7 +169,7 @@ Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=32  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 
 
@@ -174,21 +180,21 @@ Start                           Requested     Requested     Clock               
 Clock                           Frequency     Period        Type                       Group                     Load 
 ----------------------------------------------------------------------------------------------------------------------
 fsm_ctrl|SCLK_derived_clock     1.0 MHz       1000.000      derived (from top|CLK)     Autoconstr_clkgroup_0     104  
-top|CLK                         1.0 MHz       1000.000      inferred                   Autoconstr_clkgroup_0     31   
+top|CLK                         1.0 MHz       1000.000      inferred                   Autoconstr_clkgroup_0     119  
 ======================================================================================================================
 
-@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":49:5:49:10|Found inferred clock top|CLK which controls 31 sequential elements including fsm_ctrl_inst1.current_state[1:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":49:5:49:10|Found inferred clock top|CLK which controls 119 sequential elements including fsm_ctrl_inst1.current_state[2:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
-Encoding state machine current_state[1:0] (in view: work.fsm_ctrl(verilog))
+Encoding state machine current_state[2:0] (in view: work.fsm_ctrl(verilog))
 original code -> new code
-   000 -> 0
-   001 -> 1
-@N: MO225 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":49:5:49:10|There are no possible illegal states for state machine current_state[1:0] (in view: work.fsm_ctrl(verilog)); safe FSM implementation is not required.
+   000 -> 00
+   001 -> 01
+   010 -> 10
 None
 None
 
@@ -196,39 +202,39 @@ Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Mar 19 09:14:24 2025
+# Wed Mar 19 11:23:30 2025
 
 ###########################################################]
 Map & Optimize Report
 
-# Wed Mar 19 09:14:24 2025
+# Wed Mar 19 11:23:30 2025
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 Product Version L-2016.09L+ice40
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 100MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -236,59 +242,58 @@ Available hyper_sources - for debug and ip models
 
 @N: MT206 |Auto Constrain mode is enabled
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
 
-Encoding state machine current_state[1:0] (in view: work.fsm_ctrl(verilog))
+Encoding state machine current_state[2:0] (in view: work.fsm_ctrl(verilog))
 original code -> new code
-   000 -> 0
-   001 -> 1
-@N: MO225 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":49:5:49:10|There are no possible illegal states for state machine current_state[1:0] (in view: work.fsm_ctrl(verilog)); safe FSM implementation is not required.
-@N: MO231 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":110:5:110:10|Found counter in view:work.fsm_ctrl(verilog) instance counter_idle[9:0] 
-@W: BN132 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":68:1:68:6|Removing instance fsm_ctrl_inst1.bit_sequence_din[0] because it is equivalent to instance fsm_ctrl_inst1.SEL. To keep the instance, apply constraint syn_preserve=1 on the instance.
+   000 -> 00
+   001 -> 01
+   010 -> 10
+@N: MO231 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":110:5:110:10|Found counter in view:work.fsm_ctrl(verilog) instance counter_idle[4:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 134MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    -1.56ns		  48 /       133
-   2		0h:00m:00s		    -1.56ns		  48 /       133
-   3		0h:00m:00s		    -0.81ns		  48 /       133
+   1		0h:00m:01s		    -1.56ns		 132 /       222
+   2		0h:00m:01s		    -1.56ns		 132 /       222
+
+   3		0h:00m:01s		    -1.56ns		 141 /       222
 
 
-
-   4		0h:00m:00s		    -0.52ns		  48 /       133
 @N: FX1016 :"c:\users\raul.lora\documents\shiftreg_earendeltest\top.v":6:1:6:3|SB_GB_IO inserted on the port CLK.
 @N: FX1017 :|SB_GB inserted on the net RST_N_c_i.
-@N: FX1017 :|SB_GB inserted on the net N_215.
+@N: FX1017 :|SB_GB inserted on the net N_218.
+@N: FX1017 :|SB_GB inserted on the net fsm_ctrl_inst1.current_state_i[0].
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 134MB)
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 134MB)
 
 @N: MT611 :|Automatically generated clock fsm_ctrl|SCLK_derived_clock is not used and is being removed
 
@@ -298,25 +303,25 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 133 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 222 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 104 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =================================== Non-Gated/Non-Generated Clocks ===================================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance               
 ------------------------------------------------------------------------------------------------------
-@K:CKID0001       CLK_ibuf_gb_io      SB_GB_IO               133        fsm_ctrl_inst1.counter_idle[9]
+@K:CKID0001       CLK_ibuf_gb_io      SB_GB_IO               222        fsm_ctrl_inst1.counter_idle[4]
 ======================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 133MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 107MB peak: 134MB)
 
 Writing Analyst data base C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 130MB peak: 133MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 134MB)
 
 Writing EDIF Netlist and constraint files
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
@@ -324,21 +329,21 @@ Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.edf
 L-2016.09L+ice40
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 133MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 134MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 134MB)
 
-@W: MT420 |Found inferred clock top|CLK with period 5.68ns. Please declare a user-defined clock on object "p:CLK"
+@W: MT420 |Found inferred clock top|CLK with period 7.38ns. Please declare a user-defined clock on object "p:CLK"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Mar 19 09:14:26 2025
+# Timing Report written on Wed Mar 19 11:23:32 2025
 #
 
 
 Top view:               top
-Requested Frequency:    176.2 MHz
+Requested Frequency:    135.5 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -352,12 +357,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -1.002
+Worst slack in design: -1.302
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock                
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
 ------------------------------------------------------------------------------------------------------------------------
-top|CLK            176.2 MHz     149.7 MHz     5.677         6.679         -1.002     inferred     Autoconstr_clkgroup_0
+top|CLK            135.5 MHz     115.2 MHz     7.378         8.680         -1.302     inferred     Autoconstr_clkgroup_0
 ========================================================================================================================
 
 
@@ -371,7 +376,7 @@ Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  f
 ----------------------------------------------------------------------------------------------------------
 Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ----------------------------------------------------------------------------------------------------------
-top|CLK   top|CLK  |  5.677       -1.002  |  No paths    -      |  No paths    -      |  No paths    -    
+top|CLK   top|CLK  |  7.378       -1.302  |  No paths    -      |  No paths    -      |  No paths    -    
 ==========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -394,41 +399,41 @@ Detailed Report for Clock: top|CLK
 Starting Points with Worst Slack
 ********************************
 
-                                   Starting                                               Arrival           
-Instance                           Reference     Type         Pin     Net                 Time        Slack 
-                                   Clock                                                                    
-------------------------------------------------------------------------------------------------------------
-fsm_ctrl_inst1.counter_idle[3]     top|CLK       SB_DFFER     Q       counter_idle[3]     0.796       -1.002
-fsm_ctrl_inst1.counter_idle[0]     top|CLK       SB_DFFER     Q       counter_idle[0]     0.796       -0.971
-fsm_ctrl_inst1.counter_idle[5]     top|CLK       SB_DFFER     Q       counter_idle[5]     0.796       -0.929
-fsm_ctrl_inst1.counter_idle[1]     top|CLK       SB_DFFER     Q       counter_idle[1]     0.796       -0.898
-fsm_ctrl_inst1.counter_idle[6]     top|CLK       SB_DFFER     Q       counter_idle[6]     0.796       -0.898
-fsm_ctrl_inst1.counter_idle[4]     top|CLK       SB_DFFER     Q       counter_idle[4]     0.796       -0.878
-fsm_ctrl_inst1.counter_idle[2]     top|CLK       SB_DFFER     Q       counter_idle[2]     0.796       -0.867
-fsm_ctrl_inst1.counter_idle[7]     top|CLK       SB_DFFER     Q       counter_idle[7]     0.796       -0.816
-fsm_ctrl_inst1.counter_idle[8]     top|CLK       SB_DFFER     Q       counter_idle[8]     0.796       -0.805
-fsm_ctrl_inst1.counter_idle[9]     top|CLK       SB_DFFER     Q       counter_idle[9]     0.796       -0.774
-============================================================================================================
+                                    Starting                                               Arrival           
+Instance                            Reference     Type        Pin     Net                  Time        Slack 
+                                    Clock                                                                    
+-------------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[0]      top|CLK       SB_DFFR     Q       counter_idle[0]      0.796       -1.302
+fsm_ctrl_inst1.counter_idle[1]      top|CLK       SB_DFFR     Q       counter_idle[1]      0.796       -1.230
+fsm_ctrl_inst1.counter_din[1]       top|CLK       SB_DFFR     Q       counter_din[1]       0.796       -1.199
+fsm_ctrl_inst1.counter_idle[3]      top|CLK       SB_DFFR     Q       counter_idle[3]      0.796       -1.199
+fsm_ctrl_inst1.counter_din[2]       top|CLK       SB_DFFR     Q       counter_din[2]       0.796       -1.126
+fsm_ctrl_inst1.counter_idle[2]      top|CLK       SB_DFFR     Q       counter_idle[2]      0.796       -1.126
+fsm_ctrl_inst1.counter_idle[4]      top|CLK       SB_DFFR     Q       counter_idle[4]      0.796       -1.106
+fsm_ctrl_inst1.counter_din[3]       top|CLK       SB_DFFR     Q       counter_din[3]       0.796       -1.095
+fsm_ctrl_inst1.current_state[0]     top|CLK       SB_DFFR     Q       current_state[0]     0.796       -1.002
+fsm_ctrl_inst1.counter_din[0]       top|CLK       SB_DFFR     Q       counter_din[0]       0.796       0.699 
+=============================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                    Starting                                                 Required           
-Instance                            Reference     Type         Pin     Net                   Time         Slack 
-                                    Clock                                                                       
-----------------------------------------------------------------------------------------------------------------
-fsm_ctrl_inst1.current_state[0]     top|CLK       SB_DFFR      D       current_state         5.522        -1.002
-fsm_ctrl_inst1.counter_idle[0]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-fsm_ctrl_inst1.counter_idle[1]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-fsm_ctrl_inst1.counter_idle[2]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-fsm_ctrl_inst1.counter_idle[3]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-fsm_ctrl_inst1.counter_idle[4]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-fsm_ctrl_inst1.counter_idle[5]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-fsm_ctrl_inst1.counter_idle[6]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-fsm_ctrl_inst1.counter_idle[7]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-fsm_ctrl_inst1.counter_idle[8]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
-================================================================================================================
+                                               Starting                                               Required           
+Instance                                       Reference     Type         Pin     Net                 Time         Slack 
+                                               Clock                                                                     
+-------------------------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.current_state[0]                top|CLK       SB_DFFR      D       N_87_0              7.223        -1.302
+fsm_ctrl_inst1.counter_idle[0]                 top|CLK       SB_DFFR      D       counter_idle_0      7.223        -1.199
+fsm_ctrl_inst1.counter_idle[4]                 top|CLK       SB_DFFR      D       counter_idle_4      7.223        0.223 
+fsm_ctrl_inst1.counter_idle[3]                 top|CLK       SB_DFFR      D       counter_idle_3      7.223        0.423 
+fsm_ctrl_inst1.counter_idle[2]                 top|CLK       SB_DFFR      D       counter_idle_2      7.223        0.623 
+fsm_ctrl_inst1.counter_idle[1]                 top|CLK       SB_DFFR      D       counter_idle_1      7.223        0.699 
+fsm_ctrl_inst1.counter_din[3]                  top|CLK       SB_DFFR      D       N_71_0              7.223        0.731 
+fsm_ctrl_inst1.current_state[1]                top|CLK       SB_DFFR      D       current_state       7.223        0.824 
+config_register_latched_dec_inst1.DYNSR[0]     top|CLK       SB_DFFER     E       DYNSR_cnv_ns[0]     7.378        0.927 
+config_register_latched_dec_inst1.DYNSR[1]     top|CLK       SB_DFFER     E       DYNSR_cnv_ns[0]     7.378        0.927 
+=========================================================================================================================
 
 
 
@@ -437,167 +442,182 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      5.677
+      Requested Period:                      7.378
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.522
+    = Required time:                         7.223
 
-    - Propagation time:                      6.524
+    - Propagation time:                      8.525
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.002
+    = Slack (critical) :                     -1.302
 
-    Number of logic level(s):                2
-    Starting point:                          fsm_ctrl_inst1.counter_idle[3] / Q
-    Ending point:                            fsm_ctrl_inst1.current_state[0] / D
-    The start point is clocked by            top|CLK [rising] on pin C
-    The end   point is clocked by            top|CLK [rising] on pin C
-
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-fsm_ctrl_inst1.counter_idle[3]            SB_DFFER     Q        Out     0.796     0.796       -         
-counter_idle[3]                           Net          -        -       1.599     -           4         
-fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4      I0       In      -         2.395       -         
-fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4      O        Out     0.661     3.056       -         
-current_state_11_0_a2_5                   Net          -        -       1.371     -           1         
-fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      I1       In      -         4.427       -         
-fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      O        Out     0.589     5.017       -         
-current_state                             Net          -        -       1.507     -           1         
-fsm_ctrl_inst1.current_state[0]           SB_DFFR      D        In      -         6.524       -         
-========================================================================================================
-Total path delay (propagation time + setup) of 6.679 is 2.202(33.0%) logic and 4.477(67.0%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 2: 
-      Requested Period:                      5.677
-    - Setup time:                            0.155
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.522
-
-    - Propagation time:                      6.492
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.971
-
-    Number of logic level(s):                2
+    Number of logic level(s):                3
     Starting point:                          fsm_ctrl_inst1.counter_idle[0] / Q
     Ending point:                            fsm_ctrl_inst1.current_state[0] / D
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-fsm_ctrl_inst1.counter_idle[0]            SB_DFFER     Q        Out     0.796     0.796       -         
-counter_idle[0]                           Net          -        -       1.599     -           3         
-fsm_ctrl_inst1.current_state_RNO_1[0]     SB_LUT4      I0       In      -         2.395       -         
-fsm_ctrl_inst1.current_state_RNO_1[0]     SB_LUT4      O        Out     0.661     3.056       -         
-current_state_11_0_a2_6                   Net          -        -       1.371     -           1         
-fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      I2       In      -         4.427       -         
-fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      O        Out     0.558     4.986       -         
-current_state                             Net          -        -       1.507     -           1         
-fsm_ctrl_inst1.current_state[0]           SB_DFFR      D        In      -         6.492       -         
-========================================================================================================
-Total path delay (propagation time + setup) of 6.648 is 2.171(32.7%) logic and 4.477(67.3%) route.
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                      Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[0]            SB_DFFR     Q        Out     0.796     0.796       -         
+counter_idle[0]                           Net         -        -       1.599     -           3         
+fsm_ctrl_inst1.current_state_RNO_2[0]     SB_LUT4     I0       In      -         2.395       -         
+fsm_ctrl_inst1.current_state_RNO_2[0]     SB_LUT4     O        Out     0.661     3.056       -         
+current_state_RNO_2[0]                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4     I2       In      -         4.427       -         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4     O        Out     0.558     4.986       -         
+N_93_0                                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4     I0       In      -         6.356       -         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4     O        Out     0.661     7.018       -         
+N_87_0                                    Net         -        -       1.507     -           1         
+fsm_ctrl_inst1.current_state[0]           SB_DFFR     D        In      -         8.525       -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 8.680 is 2.832(32.6%) logic and 5.848(67.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
-Path information for path number 3: 
-      Requested Period:                      5.677
+Path information for path number 2: 
+      Requested Period:                      7.378
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.522
+    = Required time:                         7.223
 
-    - Propagation time:                      6.451
+    - Propagation time:                      8.453
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.929
+    = Slack (non-critical) :                 -1.230
 
-    Number of logic level(s):                2
-    Starting point:                          fsm_ctrl_inst1.counter_idle[5] / Q
+    Number of logic level(s):                3
+    Starting point:                          fsm_ctrl_inst1.counter_idle[1] / Q
     Ending point:                            fsm_ctrl_inst1.current_state[0] / D
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-fsm_ctrl_inst1.counter_idle[5]            SB_DFFER     Q        Out     0.796     0.796       -         
-counter_idle[5]                           Net          -        -       1.599     -           4         
-fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4      I1       In      -         2.395       -         
-fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4      O        Out     0.589     2.984       -         
-current_state_11_0_a2_5                   Net          -        -       1.371     -           1         
-fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      I1       In      -         4.355       -         
-fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      O        Out     0.589     4.944       -         
-current_state                             Net          -        -       1.507     -           1         
-fsm_ctrl_inst1.current_state[0]           SB_DFFR      D        In      -         6.451       -         
-========================================================================================================
-Total path delay (propagation time + setup) of 6.606 is 2.129(32.2%) logic and 4.477(67.8%) route.
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                      Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[1]            SB_DFFR     Q        Out     0.796     0.796       -         
+counter_idle[1]                           Net         -        -       1.599     -           8         
+fsm_ctrl_inst1.current_state_RNO_2[0]     SB_LUT4     I1       In      -         2.395       -         
+fsm_ctrl_inst1.current_state_RNO_2[0]     SB_LUT4     O        Out     0.589     2.984       -         
+current_state_RNO_2[0]                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4     I2       In      -         4.355       -         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4     O        Out     0.558     4.913       -         
+N_93_0                                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4     I0       In      -         6.284       -         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4     O        Out     0.661     6.946       -         
+N_87_0                                    Net         -        -       1.507     -           1         
+fsm_ctrl_inst1.current_state[0]           SB_DFFR     D        In      -         8.453       -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 8.608 is 2.760(32.1%) logic and 5.848(67.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      7.378
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         7.223
+
+    - Propagation time:                      8.422
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.199
+
+    Number of logic level(s):                3
+    Starting point:                          fsm_ctrl_inst1.counter_din[1] / Q
+    Ending point:                            fsm_ctrl_inst1.current_state[0] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                      Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_din[1]             SB_DFFR     Q        Out     0.796     0.796       -         
+counter_din[1]                            Net         -        -       1.599     -           5         
+fsm_ctrl_inst1.current_state_RNO_3[0]     SB_LUT4     I0       In      -         2.395       -         
+fsm_ctrl_inst1.current_state_RNO_3[0]     SB_LUT4     O        Out     0.661     3.056       -         
+current_state_RNO_3[0]                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO_1[0]     SB_LUT4     I2       In      -         4.427       -         
+fsm_ctrl_inst1.current_state_RNO_1[0]     SB_LUT4     O        Out     0.558     4.986       -         
+current_state_RNO_1[0]                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4     I1       In      -         6.356       -         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4     O        Out     0.558     6.915       -         
+N_87_0                                    Net         -        -       1.507     -           1         
+fsm_ctrl_inst1.current_state[0]           SB_DFFR     D        In      -         8.422       -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 8.577 is 2.729(31.8%) logic and 5.848(68.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
-      Requested Period:                      5.677
-    - Setup time:                            0.000
+      Requested Period:                      7.378
+    - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.677
+    = Required time:                         7.223
 
-    - Propagation time:                      6.596
+    - Propagation time:                      8.422
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.919
+    = Slack (non-critical) :                 -1.199
 
-    Number of logic level(s):                2
+    Number of logic level(s):                3
     Starting point:                          fsm_ctrl_inst1.counter_idle[3] / Q
-    Ending point:                            fsm_ctrl_inst1.counter_idle[0] / E
+    Ending point:                            fsm_ctrl_inst1.current_state[0] / D
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
-Instance / Net                                           Pin      Pin               Arrival     No. of    
-Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------
-fsm_ctrl_inst1.counter_idle[3]              SB_DFFER     Q        Out     0.796     0.796       -         
-counter_idle[3]                             Net          -        -       1.599     -           4         
-fsm_ctrl_inst1.counter_idle_RNI22KF1[3]     SB_LUT4      I0       In      -         2.395       -         
-fsm_ctrl_inst1.counter_idle_RNI22KF1[3]     SB_LUT4      O        Out     0.661     3.056       -         
-counter_idlelde_3                           Net          -        -       1.371     -           1         
-fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]     SB_LUT4      I0       In      -         4.427       -         
-fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]     SB_LUT4      O        Out     0.661     5.089       -         
-counter_idlee_0_i                           Net          -        -       1.507     -           10        
-fsm_ctrl_inst1.counter_idle[0]              SB_DFFER     E        In      -         6.596       -         
-==========================================================================================================
-Total path delay (propagation time + setup) of 6.596 is 2.119(32.1%) logic and 4.477(67.9%) route.
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                      Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[3]            SB_DFFR     Q        Out     0.796     0.796       -         
+counter_idle[3]                           Net         -        -       1.599     -           8         
+fsm_ctrl_inst1.current_state_RNO_2[0]     SB_LUT4     I2       In      -         2.395       -         
+fsm_ctrl_inst1.current_state_RNO_2[0]     SB_LUT4     O        Out     0.558     2.953       -         
+current_state_RNO_2[0]                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4     I2       In      -         4.324       -         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4     O        Out     0.558     4.882       -         
+N_93_0                                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4     I0       In      -         6.253       -         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4     O        Out     0.661     6.915       -         
+N_87_0                                    Net         -        -       1.507     -           1         
+fsm_ctrl_inst1.current_state[0]           SB_DFFR     D        In      -         8.422       -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 8.577 is 2.729(31.8%) logic and 5.848(68.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
-      Requested Period:                      5.677
-    - Setup time:                            0.000
+      Requested Period:                      7.378
+    - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.677
+    = Required time:                         7.223
 
-    - Propagation time:                      6.596
+    - Propagation time:                      8.422
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.919
+    = Slack (non-critical) :                 -1.199
 
-    Number of logic level(s):                2
-    Starting point:                          fsm_ctrl_inst1.counter_idle[3] / Q
-    Ending point:                            fsm_ctrl_inst1.counter_idle[9] / E
+    Number of logic level(s):                3
+    Starting point:                          fsm_ctrl_inst1.counter_idle[1] / Q
+    Ending point:                            fsm_ctrl_inst1.counter_idle[0] / D
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
-Instance / Net                                           Pin      Pin               Arrival     No. of    
-Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------
-fsm_ctrl_inst1.counter_idle[3]              SB_DFFER     Q        Out     0.796     0.796       -         
-counter_idle[3]                             Net          -        -       1.599     -           4         
-fsm_ctrl_inst1.counter_idle_RNI22KF1[3]     SB_LUT4      I0       In      -         2.395       -         
-fsm_ctrl_inst1.counter_idle_RNI22KF1[3]     SB_LUT4      O        Out     0.661     3.056       -         
-counter_idlelde_3                           Net          -        -       1.371     -           1         
-fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]     SB_LUT4      I0       In      -         4.427       -         
-fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]     SB_LUT4      O        Out     0.661     5.089       -         
-counter_idlee_0_i                           Net          -        -       1.507     -           10        
-fsm_ctrl_inst1.counter_idle[9]              SB_DFFER     E        In      -         6.596       -         
-==========================================================================================================
-Total path delay (propagation time + setup) of 6.596 is 2.119(32.1%) logic and 4.477(67.9%) route.
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                     Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[1]           SB_DFFR     Q        Out     0.796     0.796       -         
+counter_idle[1]                          Net         -        -       1.599     -           8         
+fsm_ctrl_inst1.counter_idle_RNO_1[0]     SB_LUT4     I0       In      -         2.395       -         
+fsm_ctrl_inst1.counter_idle_RNO_1[0]     SB_LUT4     O        Out     0.661     3.056       -         
+counter_idle_RNO_1[0]                    Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.counter_idle_RNO_0[0]     SB_LUT4     I2       In      -         4.427       -         
+fsm_ctrl_inst1.counter_idle_RNO_0[0]     SB_LUT4     O        Out     0.558     4.986       -         
+counter_idlee_0                          Net         -        -       1.371     -           1         
+fsm_ctrl_inst1.counter_idle_RNO[0]       SB_LUT4     I2       In      -         6.356       -         
+fsm_ctrl_inst1.counter_idle_RNO[0]       SB_LUT4     O        Out     0.558     6.915       -         
+counter_idle_0                           Net         -        -       1.507     -           1         
+fsm_ctrl_inst1.counter_idle[0]           SB_DFFR     D        In      -         8.422       -         
+======================================================================================================
+Total path delay (propagation time + setup) of 8.577 is 2.729(31.8%) logic and 5.848(68.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -607,10 +627,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 134MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 133MB peak: 134MB)
 
 ---------------------------------------
 Resource Usage Report for top 
@@ -618,14 +638,14 @@ Resource Usage Report for top
 Mapping to part: ice40lp8kcm81
 Cell usage:
 GND             2 uses
-SB_CARRY        9 uses
-SB_DFFER        84 uses
-SB_DFFES        30 uses
-SB_DFFR         9 uses
-SB_DFFS         10 uses
-SB_GB           2 uses
+SB_CARRY        4 uses
+SB_DFFER        124 uses
+SB_DFFES        84 uses
+SB_DFFR         13 uses
+SB_DFFS         1 use
+SB_GB           3 uses
 VCC             2 uses
-SB_LUT4         39 uses
+SB_LUT4         146 uses
 
 I/O ports: 4
 I/O primitives: 4
@@ -633,21 +653,21 @@ SB_GB_IO       1 use
 SB_IO          3 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   133 (1%)
+Register bits not including I/Os:   222 (2%)
 Total load per clock:
    top|CLK: 1
 
 @S |Mapping Summary:
-Total  LUTs: 39 (0%)
+Total  LUTs: 146 (1%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 39 = 39 
+Distribution of All Consumed Luts 146 = 146 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 27MB peak: 133MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 27MB peak: 134MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Mar 19 09:14:26 2025
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Wed Mar 19 11:23:32 2025
 
 ###########################################################]

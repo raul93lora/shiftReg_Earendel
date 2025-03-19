@@ -1,8 +1,10 @@
 
 fsm_encoding {7495491} sequential
 
-fsm_state_encoding {7495491} IDLE {0}
+fsm_state_encoding {7495491} IDLE {00}
 
-fsm_state_encoding {7495491} DYN_READ {1}
+fsm_state_encoding {7495491} DYN_READ {01}
 
-fsm_registers {7495491} {current_state[0]} 
+fsm_state_encoding {7495491} STATIC_READ {10}
+
+fsm_registers {7495491} {current_state[1]}  {current_state[0]} 

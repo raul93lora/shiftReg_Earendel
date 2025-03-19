@@ -1,2 +1,0 @@
-[VIC]
-fsm_ctrl_inst1.counter_idlelde_3_cascade_=ltout:in0

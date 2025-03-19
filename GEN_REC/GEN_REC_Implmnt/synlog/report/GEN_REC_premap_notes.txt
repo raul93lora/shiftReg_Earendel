@@ -39,4 +39,3 @@
 @N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":103:2:103:3|Removing sequential instance DYNCNF_1[15] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":103:2:103:3|Removing sequential instance DYNCNF_1[13:0] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: BN225 |Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap.
-@N: MO225 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":49:5:49:10|There are no possible illegal states for state machine current_state[1:0] (in view: work.fsm_ctrl(verilog)); safe FSM implementation is not required.

@@ -9,50 +9,98 @@ z2
 !i10f 100
 cModel Technology
 dC:/lscc/iCEcube2.2020.12/modeltech/win32loem
-vfsm
-!s110 1742213277
+vconfig_register_latched_dec
+Z0 !s110 1742379952
 !i10b 1
-!s100 b^olKPSka^KQlSH^dY<PS1
-Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ile5kO4n2`;[`BjWUS;U7C0
-Z1 dC:/Users/raul.lora/Documents/shiftReg_Earendel/simulation
-w1742213031
-Z2 8fsm_shiftRegs.v
-Z3 Ffsm_shiftRegs.v
-!i122 21
-L0 5 158
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OT;L;2020.3;71
+!s100 dCiUzQTjJZP`=En]n6Qi]3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IeT]l<kYNQ4J<BJ_00_;HS3
+Z2 dC:/Users/raul.lora/Documents/shiftReg_EarendelTest/simulation
+w1742313370
+8config_register_latched_dec.v
+Fconfig_register_latched_dec.v
+!i122 90
+L0 8 147
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OT;L;2020.3;71
 r1
 !s85 0
 31
-!s108 1742213277.000000
-Z6 !s107 fsm_shiftRegs.v|
-Z7 !s90 -reportprogress|300|fsm_shiftRegs.v|
+Z5 !s108 1742379952.000000
+Z6 !s107 config_register_latched_dec.v|fsm_ctrl.v|top.v|
+Z7 !s90 -reportprogress|300|top.v|fsm_ctrl.v|config_register_latched_dec.v|
 !s101 -O0
 !i113 1
 o-O0
 Z8 tCvgOpt 0
+vfsm
+!s110 1742213277
+!i10b 1
+!s100 b^olKPSka^KQlSH^dY<PS1
+R1
+Ile5kO4n2`;[`BjWUS;U7C0
+Z9 dC:/Users/raul.lora/Documents/shiftReg_Earendel/simulation
+w1742213031
+Z10 8fsm_shiftRegs.v
+Z11 Ffsm_shiftRegs.v
+!i122 21
+L0 5 158
+R3
+R4
+r1
+!s85 0
+31
+!s108 1742213277.000000
+Z12 !s107 fsm_shiftRegs.v|
+Z13 !s90 -reportprogress|300|fsm_shiftRegs.v|
+!s101 -O0
+!i113 1
+o-O0
+R8
+vfsm_ctrl
+!s110 1742380440
+!i10b 1
+!s100 mFcdMNKB^KjgAFzL_43J41
+R1
+I@X7]kWAAVJ4LMG`<ezL@R2
+R2
+w1742380422
+8fsm_ctrl.v
+Ffsm_ctrl.v
+!i122 91
+L0 4 139
+R3
+R4
+r1
+!s85 0
+31
+!s108 1742380440.000000
+!s107 fsm_ctrl.v|
+!s90 -reportprogress|300|fsm_ctrl.v|
+!s101 -O0
+!i113 1
+o-O0
+R8
 vfsm_shiftRegs
 !s110 1742288453
 !i10b 1
 !s100 Y6EiW_n5VJAzFPgGaQS1O2
-R0
-IM03Rkn=o>Sj>]56@_PZC>3
 R1
+IM03Rkn=o>Sj>]56@_PZC>3
+R9
 w1742285422
-R2
-R3
+R10
+R11
 !i122 68
 L0 5 155
+R3
 R4
-R5
 r1
 !s85 0
 31
 !s108 1742288453.000000
-R6
-R7
+R12
+R13
 !s101 -O0
 !i113 1
 o-O0
@@ -62,16 +110,16 @@ vfsm_shiftRegs_tb
 !s110 1742223446
 !i10b 1
 !s100 :?WmY;:Z;Q^1[;ldmO`Qo2
-R0
-I716To_DnMQWdO>7XMJLa<0
 R1
+I716To_DnMQWdO>7XMJLa<0
+R9
 w1742222231
-Z9 8fsm_shiftRegs_tb.v
-Z10 Ffsm_shiftRegs_tb.v
+Z14 8fsm_shiftRegs_tb.v
+Z15 Ffsm_shiftRegs_tb.v
 !i122 46
-Z11 L0 3 54
+Z16 L0 3 54
+R3
 R4
-R5
 r1
 !s85 0
 31
@@ -87,16 +135,16 @@ vfsm_tb
 !s110 1742213580
 !i10b 1
 !s100 PUUFjhT];?`_Q5a[k9[I=3
-R0
-I3coUaF3JV>V9><V]C6mX32
 R1
-w1742213560
+I3coUaF3JV>V9><V]C6mX32
 R9
-R10
+w1742213560
+R14
+R15
 !i122 22
-R11
+R16
+R3
 R4
-R5
 r1
 !s85 0
 31
@@ -111,16 +159,16 @@ vgenerator
 !s110 1742211084
 !i10b 1
 !s100 LPccJ9NV_GUUbNkZg4I<m3
-R0
-I_bk:AA<DR6;Wd7dbNWFLl0
 R1
+I_bk:AA<DR6;Wd7dbNWFLl0
+R9
 w1742210656
 8generator.v
 Fgenerator.v
 !i122 15
 L0 6 62
+R3
 R4
-R5
 r1
 !s85 0
 31
@@ -135,16 +183,16 @@ vgenerator_tb
 !s110 1742211699
 !i10b 1
 !s100 ;A>BY`>bIo42HQ8jH43nm0
-R0
-IDz@foB`knJii_S;fNzina2
 R1
+IDz@foB`knJii_S;fNzina2
+R9
 w1742211691
 8generator_tb.v
 Fgenerator_tb.v
 !i122 20
 L0 3 87
+R3
 R4
-R5
 r1
 !s85 0
 31
@@ -159,16 +207,16 @@ vreceptor
 !s110 1742208389
 !i10b 1
 !s100 FVhL;KF8;8ni18;2I]NF83
-R0
-IYPzm3ODQ68dlXgaN0_UJ31
 R1
+IYPzm3ODQ68dlXgaN0_UJ31
+R9
 w1742207414
 8receptor.v
 Freceptor.v
 !i122 9
 L0 7 34
+R3
 R4
-R5
 r1
 !s85 0
 31
@@ -183,16 +231,16 @@ vreceptor_tb
 !s110 1742208394
 !i10b 1
 !s100 D=IckAXc[i[ODicP1TLi10
-R0
-I?j6obRJKCmV`^23cc8oTZ1
 R1
+I?j6obRJKCmV`^23cc8oTZ1
+R9
 w1742208300
 8receptor_tb.v
 Freceptor_tb.v
 !i122 10
 L0 3 74
+R3
 R4
-R5
 r1
 !s85 0
 31
@@ -204,47 +252,47 @@ r1
 o-O0
 R8
 vtop
-!s110 1742288940
-!i10b 1
-!s100 oiT[X@lPAm1koelNGm;_92
 R0
-I2fGZl>54Qb1`UBDRYXIn_2
+!i10b 1
+!s100 `aNTeYJWDHnW<dA>@1Cn_0
 R1
-w1742288911
+IRoncg84H7j:3GBEZ6E^Ig2
+R2
+w1742378392
 8top.v
 Ftop.v
-!i122 71
-L0 5 71
+!i122 90
+L0 5 58
+R3
 R4
-R5
 r1
 !s85 0
 31
-!s108 1742288940.000000
-!s107 top.v|
-!s90 -reportprogress|300|top.v|
+R5
+R6
+R7
 !s101 -O0
 !i113 1
 o-O0
 R8
 vtop_tb
-!s110 1742286540
+!s110 1742379912
 !i10b 1
-!s100 UY4YIQJddXT5L?idlBglh1
-R0
-IG8X=07lBMImIQ=^?H9Rl@0
+!s100 F5]OmX?h8HS8^KC7ka[DD1
 R1
-w1742286530
+IJ4DGGQn<I1k9kEOUgOjka2
+R2
+w1742378935
 8top_tb.v
 Ftop_tb.v
-!i122 67
-L0 3 40
+!i122 89
+L0 3 46
+R3
 R4
-R5
 r1
 !s85 0
 31
-!s108 1742286540.000000
+!s108 1742379912.000000
 !s107 top_tb.v|
 !s90 -reportprogress|300|top_tb.v|
 !s101 -O0

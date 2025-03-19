@@ -15,7 +15,7 @@ module fsm_ctrl (
 	parameter SIZESRDYN = 16; 		// Dynamic shift register length
 
 	// Wait parameters definition
-	parameter N_CYCLES_IDLE = 1000; 		// Static shift register length 
+	parameter N_CYCLES_IDLE = 30; 		// Static shift register length 
 	parameter N_CYCLES_DYN_READ = 16; 		// Dynamic register length
 	parameter N_CYCLES_STATIC_READ = 89;		// Static register length
 
@@ -58,8 +58,8 @@ module fsm_ctrl (
     	always @(*) begin
         	case (current_state)
             		IDLE: next_state = (counter_idle == N_CYCLES_IDLE) ? DYN_READ : IDLE;				// Desde IDLE paso a DYN_READ después de la espera de N_CYCLES_IDLE
-            		DYN_READ: next_state = (counter_din == N_CYCLES_DYN_READ) ? STATIC_READ : DYN_READ;	// Desde DYN_READ paso a STATIC_READ después de la espera de N_CYCLES_DYN_READ
-            		STATIC_READ: next_state = IDLE;									// Vuelve a IDLE
+            		DYN_READ: next_state = (counter_din == N_CYCLES_DYN_READ-1) ? STATIC_READ : DYN_READ;		// Desde DYN_READ paso a STATIC_READ después de la espera de N_CYCLES_DYN_READ
+            		STATIC_READ: next_state = (counter_stat == N_CYCLES_STATIC_READ-1) ? IDLE : STATIC_READ;		// Desde STATIC_READ paso a IDLE después de la espera de N_CYCLES_STATIC_READ
             		default: next_state = IDLE;										// Default: Vuelve a IDLE
         	endcase
     	end

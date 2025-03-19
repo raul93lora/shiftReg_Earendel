@@ -4,14 +4,14 @@ Resource Usage Report for top
 Mapping to part: ice40lp8kcm81
 Cell usage:
 GND             2 uses
-SB_CARRY        9 uses
-SB_DFFER        84 uses
-SB_DFFES        30 uses
-SB_DFFR         9 uses
-SB_DFFS         10 uses
-SB_GB           2 uses
+SB_CARRY        4 uses
+SB_DFFER        124 uses
+SB_DFFES        84 uses
+SB_DFFR         13 uses
+SB_DFFS         1 use
+SB_GB           3 uses
 VCC             2 uses
-SB_LUT4         39 uses
+SB_LUT4         146 uses
 
 I/O ports: 4
 I/O primitives: 4
@@ -19,11 +19,11 @@ SB_GB_IO       1 use
 SB_IO          3 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   133 (1%)
+Register bits not including I/Os:   222 (2%)
 
 @S |Mapping Summary:
-Total  LUTs: 39 (0%)
+Total  LUTs: 146 (1%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 39 = 39 
+Distribution of All Consumed Luts 146 = 146 
 
