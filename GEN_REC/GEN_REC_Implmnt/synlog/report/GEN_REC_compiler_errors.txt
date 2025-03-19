@@ -1,2 +1,2 @@
-@E: CS164 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":43:8:43:21|Expecting wire for output connection, found SDO_signal_out
+@E: CL172 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":26:12:26:17|Only one always block can assign a given variable CLK_uC
 

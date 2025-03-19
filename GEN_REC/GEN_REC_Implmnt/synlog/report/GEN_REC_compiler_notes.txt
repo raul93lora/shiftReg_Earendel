@@ -3,7 +3,7 @@
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":8:7:8:33|Synthesizing module config_register_latched_dec in library work.
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":4:7:4:14|Synthesizing module fsm_ctrl in library work.
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Synthesizing module top in library work.
-@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":49:5:49:10|Trying to extract state machine for register current_state.
+@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":47:5:47:10|Trying to extract state machine for register current_state.
 @N|Running in 64-bit mode
 @N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
 @N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level

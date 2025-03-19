@@ -1,4 +1,4 @@
-# Wed Mar 19 11:23:29 2025
+# Wed Mar 19 17:17:50 2025
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -73,14 +73,13 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Clock Summary
 *****************
 
-Start                           Requested     Requested     Clock                      Clock                     Clock
-Clock                           Frequency     Period        Type                       Group                     Load 
-----------------------------------------------------------------------------------------------------------------------
-fsm_ctrl|SCLK_derived_clock     1.0 MHz       1000.000      derived (from top|CLK)     Autoconstr_clkgroup_0     104  
-top|CLK                         1.0 MHz       1000.000      inferred                   Autoconstr_clkgroup_0     119  
-======================================================================================================================
+Start       Requested     Requested     Clock        Clock                     Clock
+Clock       Frequency     Period        Type         Group                     Load 
+------------------------------------------------------------------------------------
+top|CLK     183.1 MHz     5.462         inferred     Autoconstr_clkgroup_0     229  
+====================================================================================
 
-@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":49:5:49:10|Found inferred clock top|CLK which controls 119 sequential elements including fsm_ctrl_inst1.current_state[2:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":66:1:66:6|Found inferred clock top|CLK which controls 229 sequential elements including config_register_latched_dec_inst1.STATSR[87:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap.
@@ -99,9 +98,9 @@ Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Mar 19 11:23:30 2025
+# Wed Mar 19 17:17:51 2025
 
 ###########################################################]

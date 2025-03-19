@@ -4,23 +4,22 @@
 */
 module top(
 	CLK,						// Reloj del sistema
-	CLK_uC,						// Reloj que viene desde el uC
 	RST_N,						// Reset asíncrono activo en bajo
 	SDO_signal_out					// Salida final de la señal
 );
 
 	// Parameters definition
-	parameter SIZESRSTAT = 89; 			// Static shift register length 
+	parameter SIZESRSTAT = 88; 			// Static shift register length 
 	parameter SIZESRDYN = 16; 			// Dynamic shift register length
+	parameter SIZEADDRMUX = 7;
 
 	// Ports definition
     	input wire CLK;
-	input wire CLK_uC;
-	wire SCLK;
     	input wire RST_N;
 	output wire SDO_signal_out;
 	wire SEL_REG;
 	wire MOSI;
+	wire CLK_uC;
 
 	// Pongo DYNLATCH y STATLATCH como wire, en vez de como output, ya que si no hay que asignar todos los bits de cada uno a los pines .pcf correspondientes 
 	wire [SIZESRDYN-1:0] DYNLATCH;
@@ -32,11 +31,14 @@ module top(
 	// Otros registros de enable
 	wire [15:0] STG2_EN;
 	wire [3:0] STG1_EN;
-	wire ref_elec_en;	
+	wire ref_elec_en;
+
+	// AMUXSEL
+	wire [2**SIZEADDRMUX-1:0] AMUXSEL;	
 
 	// Instancia del config_register_latched_dec
 	config_register_latched_dec config_register_latched_dec_inst1 (
-		.CLK (SCLK), 
+		.CLK (CLK), 
 		.RST_N (RST_N), 
 		.SEL (SEL_REG), 
 		.SDI (MOSI), 
@@ -53,7 +55,6 @@ module top(
 	fsm_ctrl fsm_ctrl_inst1 (
 		.CLK(CLK),
 		.CLK_uC(CLK_uC),
-		.SCLK(SCLK),
 		.RST_N(RST_N),
 		.SEL(SEL_REG),
 		.MOSI(MOSI)
