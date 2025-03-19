@@ -1,2 +1,2 @@
-@E: CS179 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":61:8:61:17|Assignment target signal_out must be a net type
+@E: CS164 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":43:8:43:21|Expecting wire for output connection, found SDO_signal_out
 

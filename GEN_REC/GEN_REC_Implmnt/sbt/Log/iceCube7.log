@@ -1,0 +1,896 @@
+11:44:46
+"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "GEN_REC_syn.prj" -log "GEN_REC_Implmnt/GEN_REC.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of GEN_REC_Implmnt/GEN_REC.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: NB-ADM-01
+
+# Tue Mar 18 11:45:02 2025
+
+#Implementation: GEN_REC_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\generator.v" (library work)
+@I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\receptor.v" (library work)
+@I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v" (library work)
+@I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v" (library work)
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module top
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\generator.v":6:7:6:15|Synthesizing module generator in library work.
+
+@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\generator.v":40:1:40:6|Feedback mux created for signal STATLATCH[87:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\generator.v":40:1:40:6|Feedback mux created for signal DYNLATCH[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v":4:7:4:19|Synthesizing module fsm_shiftRegs in library work.
+
+@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v":75:4:75:9|Feedback mux created for signal signal_out. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v":75:4:75:9|Feedback mux created for signal bit_sequence[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v":75:4:75:9|Register bit bit_sequence[0] is always 0.
+@W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v":75:4:75:9|Pruning register bit 0 of bit_sequence[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Synthesizing module top in library work.
+
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":17:22:17:31|Removing wire dynamicReg, as there is no assignment to it.
+@N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v":75:4:75:9|Register bit bit_sequence[1] is always 0.
+@W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v":75:4:75:9|Pruning register bit 1 of bit_sequence[15:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_shiftRegs.v":54:4:54:9|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar 18 11:45:02 2025
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar 18 11:45:03 2025
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar 18 11:45:03 2025
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_comp.srs changed - recompiling
+@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Mar 18 11:45:04 2025
+
+###########################################################]
+Pre-mapping Report
+
+# Tue Mar 18 11:45:04 2025
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt 
+Printing clock  summary report in "C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\generator.v":40:1:40:6|Removing sequential instance DYNLATCH[15:0] (in view: work.generator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\generator.v":40:1:40:6|Removing sequential instance STATLATCH[87:0] (in view: work.generator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\generator.v":40:1:40:6|Removing sequential instance REGDYN[15:0] (in view: work.generator(verilog)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\generator.v":40:1:40:6|Removing sequential instance REGSTAT[87:0] (in view: work.generator(verilog)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=32  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+
+Clock Summary
+*****************
+
+Start       Requested     Requested     Clock        Clock                     Clock
+Clock       Frequency     Period        Type         Group                     Load 
+------------------------------------------------------------------------------------
+top|CLK     299.8 MHz     3.336         inferred     Autoconstr_clkgroup_0     41   
+====================================================================================
+
+@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendeltest\generator.v":40:1:40:6|Found inferred clock top|CLK which controls 41 sequential elements including generator_inst1.signal_aux. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Encoding state machine current_state[4:0] (in view: work.fsm_shiftRegs(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Mar 18 11:45:04 2025
+
+###########################################################]
+Map & Optimize Report
+
+# Tue Mar 18 11:45:05 2025
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 100MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Encoding state machine current_state[4:0] (in view: work.fsm_shiftRegs(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+@N: MO231 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_shiftregs.v":137:4:137:9|Found counter in view:work.fsm_shiftRegs(verilog) instance counter2[7:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -1.56ns		  54 /        41
+   2		0h:00m:00s		    -1.56ns		  54 /        41
+
+   3		0h:00m:00s		    -1.56ns		  54 /        41
+
+
+@N: FX1016 :"c:\users\raul.lora\documents\shiftreg_earendeltest\top.v":6:1:6:3|SB_GB_IO inserted on the port CLK.
+@N: FX1017 :|SB_GB inserted on the net RST_N_c_i.
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 41 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       CLK_ibuf_gb_io      SB_GB_IO               41         enableDin_aux  
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 133MB)
+
+Writing Analyst data base C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 133MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.edf
+L-2016.09L+ice40
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 133MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+@W: MT420 |Found inferred clock top|CLK with period 5.74ns. Please declare a user-defined clock on object "p:CLK"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Mar 18 11:45:06 2025
+#
+
+
+Top view:               top
+Requested Frequency:    174.3 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.013
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+top|CLK            174.3 MHz     148.1 MHz     5.738         6.751         -1.013     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+top|CLK   top|CLK  |  5.738       -1.013  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: top|CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                         Starting                                               Arrival           
+Instance                                 Reference     Type        Pin     Net                  Time        Slack 
+                                         Clock                                                                    
+------------------------------------------------------------------------------------------------------------------
+fsm_shiftRegs_inst1.counter2[1]          top|CLK       SB_DFFR     Q       counter2[1]          0.796       -1.013
+fsm_shiftRegs_inst1.counter[0]           top|CLK       SB_DFFR     Q       counter[0]           0.796       -1.013
+fsm_shiftRegs_inst1.counter2[2]          top|CLK       SB_DFFR     Q       counter2[2]          0.796       -0.940
+fsm_shiftRegs_inst1.counter[1]           top|CLK       SB_DFFR     Q       counter[1]           0.796       -0.940
+fsm_shiftRegs_inst1.current_state[4]     top|CLK       SB_DFFR     Q       current_state[4]     0.796       -0.920
+fsm_shiftRegs_inst1.counter2[4]          top|CLK       SB_DFFR     Q       counter2[4]          0.796       -0.909
+fsm_shiftRegs_inst1.counterDYN[0]        top|CLK       SB_DFFR     Q       counterDYN[0]        0.796       -0.909
+fsm_shiftRegs_inst1.counterDYN[1]        top|CLK       SB_DFFR     Q       counterDYN[1]        0.796       -0.909
+fsm_shiftRegs_inst1.counter[3]           top|CLK       SB_DFFR     Q       counter[3]           0.796       -0.909
+fsm_shiftRegs_inst1.counter2[0]          top|CLK       SB_DFFR     Q       counter2[0]          0.796       -0.868
+==================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                         Starting                                                      Required           
+Instance                                 Reference     Type        Pin     Net                         Time         Slack 
+                                         Clock                                                                            
+--------------------------------------------------------------------------------------------------------------------------
+fsm_shiftRegs_inst1.current_state[0]     top|CLK       SB_DFFS     D       current_state_ns[0]         5.583        -1.013
+fsm_shiftRegs_inst1.current_state[2]     top|CLK       SB_DFFR     D       current_state_ns_0_i[2]     5.583        -1.013
+fsm_shiftRegs_inst1.counter2[0]          top|CLK       SB_DFFR     D       counter2_lm[0]              5.583        -0.920
+fsm_shiftRegs_inst1.counter2[1]          top|CLK       SB_DFFR     D       counter2_lm[1]              5.583        -0.920
+fsm_shiftRegs_inst1.counter2[2]          top|CLK       SB_DFFR     D       counter2_lm[2]              5.583        -0.920
+fsm_shiftRegs_inst1.counter2[3]          top|CLK       SB_DFFR     D       counter2_lm[3]              5.583        -0.920
+fsm_shiftRegs_inst1.counter2[4]          top|CLK       SB_DFFR     D       counter2_lm[4]              5.583        -0.920
+fsm_shiftRegs_inst1.counter2[5]          top|CLK       SB_DFFR     D       counter2_lm[5]              5.583        -0.920
+fsm_shiftRegs_inst1.counter2[6]          top|CLK       SB_DFFR     D       counter2_lm[6]              5.583        -0.920
+fsm_shiftRegs_inst1.current_state[1]     top|CLK       SB_DFFR     D       N_91_0                      5.583        -0.920
+==========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.738
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.583
+
+    - Propagation time:                      6.596
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.013
+
+    Number of logic level(s):                2
+    Starting point:                          fsm_shiftRegs_inst1.counter2[1] / Q
+    Ending point:                            fsm_shiftRegs_inst1.current_state[0] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+fsm_shiftRegs_inst1.counter2[1]                SB_DFFR     Q        Out     0.796     0.796       -         
+counter2[1]                                    Net         -        -       1.599     -           4         
+fsm_shiftRegs_inst1.current_state_RNO_0[0]     SB_LUT4     I0       In      -         2.395       -         
+fsm_shiftRegs_inst1.current_state_RNO_0[0]     SB_LUT4     O        Out     0.661     3.056       -         
+current_state_RNO_0[0]                         Net         -        -       1.371     -           1         
+fsm_shiftRegs_inst1.current_state_RNO[0]       SB_LUT4     I0       In      -         4.427       -         
+fsm_shiftRegs_inst1.current_state_RNO[0]       SB_LUT4     O        Out     0.661     5.089       -         
+current_state_ns[0]                            Net         -        -       1.507     -           1         
+fsm_shiftRegs_inst1.current_state[0]           SB_DFFS     D        In      -         6.596       -         
+============================================================================================================
+Total path delay (propagation time + setup) of 6.751 is 2.274(33.7%) logic and 4.477(66.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      5.738
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.583
+
+    - Propagation time:                      6.596
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.013
+
+    Number of logic level(s):                2
+    Starting point:                          fsm_shiftRegs_inst1.counter[0] / Q
+    Ending point:                            fsm_shiftRegs_inst1.current_state[2] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+fsm_shiftRegs_inst1.counter[0]               SB_DFFR     Q        Out     0.796     0.796       -         
+counter[0]                                   Net         -        -       1.599     -           5         
+fsm_shiftRegs_inst1.counter_RNIC589[1]       SB_LUT4     I0       In      -         2.395       -         
+fsm_shiftRegs_inst1.counter_RNIC589[1]       SB_LUT4     O        Out     0.661     3.056       -         
+N_123_1                                      Net         -        -       1.371     -           2         
+fsm_shiftRegs_inst1.current_state_RNO[2]     SB_LUT4     I0       In      -         4.427       -         
+fsm_shiftRegs_inst1.current_state_RNO[2]     SB_LUT4     O        Out     0.661     5.089       -         
+current_state_ns_0_i[2]                      Net         -        -       1.507     -           1         
+fsm_shiftRegs_inst1.current_state[2]         SB_DFFR     D        In      -         6.596       -         
+==========================================================================================================
+Total path delay (propagation time + setup) of 6.751 is 2.274(33.7%) logic and 4.477(66.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      5.738
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.583
+
+    - Propagation time:                      6.524
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.940
+
+    Number of logic level(s):                2
+    Starting point:                          fsm_shiftRegs_inst1.counter2[2] / Q
+    Ending point:                            fsm_shiftRegs_inst1.current_state[0] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+fsm_shiftRegs_inst1.counter2[2]                SB_DFFR     Q        Out     0.796     0.796       -         
+counter2[2]                                    Net         -        -       1.599     -           4         
+fsm_shiftRegs_inst1.current_state_RNO_0[0]     SB_LUT4     I1       In      -         2.395       -         
+fsm_shiftRegs_inst1.current_state_RNO_0[0]     SB_LUT4     O        Out     0.589     2.984       -         
+current_state_RNO_0[0]                         Net         -        -       1.371     -           1         
+fsm_shiftRegs_inst1.current_state_RNO[0]       SB_LUT4     I0       In      -         4.355       -         
+fsm_shiftRegs_inst1.current_state_RNO[0]       SB_LUT4     O        Out     0.661     5.017       -         
+current_state_ns[0]                            Net         -        -       1.507     -           1         
+fsm_shiftRegs_inst1.current_state[0]           SB_DFFS     D        In      -         6.524       -         
+============================================================================================================
+Total path delay (propagation time + setup) of 6.679 is 2.202(33.0%) logic and 4.477(67.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      5.738
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.583
+
+    - Propagation time:                      6.524
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.940
+
+    Number of logic level(s):                2
+    Starting point:                          fsm_shiftRegs_inst1.counter[1] / Q
+    Ending point:                            fsm_shiftRegs_inst1.current_state[2] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+fsm_shiftRegs_inst1.counter[1]               SB_DFFR     Q        Out     0.796     0.796       -         
+counter[1]                                   Net         -        -       1.599     -           4         
+fsm_shiftRegs_inst1.counter_RNIC589[1]       SB_LUT4     I1       In      -         2.395       -         
+fsm_shiftRegs_inst1.counter_RNIC589[1]       SB_LUT4     O        Out     0.589     2.984       -         
+N_123_1                                      Net         -        -       1.371     -           2         
+fsm_shiftRegs_inst1.current_state_RNO[2]     SB_LUT4     I0       In      -         4.355       -         
+fsm_shiftRegs_inst1.current_state_RNO[2]     SB_LUT4     O        Out     0.661     5.017       -         
+current_state_ns_0_i[2]                      Net         -        -       1.507     -           1         
+fsm_shiftRegs_inst1.current_state[2]         SB_DFFR     D        In      -         6.524       -         
+==========================================================================================================
+Total path delay (propagation time + setup) of 6.679 is 2.202(33.0%) logic and 4.477(67.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      5.738
+    - Setup time:                            0.155
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.583
+
+    - Propagation time:                      6.503
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.920
+
+    Number of logic level(s):                2
+    Starting point:                          fsm_shiftRegs_inst1.current_state[4] / Q
+    Ending point:                            fsm_shiftRegs_inst1.counter2[0] / D
+    The start point is clocked by            top|CLK [rising] on pin C
+    The end   point is clocked by            top|CLK [rising] on pin C
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                             Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+fsm_shiftRegs_inst1.current_state[4]             SB_DFFR     Q        Out     0.796     0.796       -         
+current_state[4]                                 Net         -        -       1.599     -           4         
+fsm_shiftRegs_inst1.current_state_RNIVA94[4]     SB_LUT4     I0       In      -         2.395       -         
+fsm_shiftRegs_inst1.current_state_RNIVA94[4]     SB_LUT4     O        Out     0.569     2.963       -         
+current_state_i[4]                               Net         -        -       1.371     -           8         
+fsm_shiftRegs_inst1.counter2_RNO[0]              SB_LUT4     I0       In      -         4.334       -         
+fsm_shiftRegs_inst1.counter2_RNO[0]              SB_LUT4     O        Out     0.661     4.996       -         
+counter2_lm[0]                                   Net         -        -       1.507     -           1         
+fsm_shiftRegs_inst1.counter2[0]                  SB_DFFR     D        In      -         6.503       -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 6.658 is 2.181(32.8%) logic and 4.477(67.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+---------------------------------------
+Resource Usage Report for top 
+
+Mapping to part: ice40lp8kcm81
+Cell usage:
+GND             2 uses
+SB_CARRY        7 uses
+SB_DFF          2 uses
+SB_DFFE         14 uses
+SB_DFFR         24 uses
+SB_DFFS         1 use
+SB_GB           1 use
+VCC             2 uses
+SB_LUT4         50 uses
+
+I/O ports: 4
+I/O primitives: 4
+SB_GB_IO       1 use
+SB_IO          3 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   41 (0%)
+Total load per clock:
+   top|CLK: 1
+
+@S |Mapping Summary:
+Total  LUTs: 50 (0%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 50 = 50 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 26MB peak: 133MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Mar 18 11:45:06 2025
+
+###########################################################]
+
+
+Synthesis exit by 0.
+Current Implementation GEN_REC_Implmnt its sbt path: C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 6 seconds
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\edifparser.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev" "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/GEN_REC.edf " "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist" "-pCM81" "-yC:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/sbt/constraint/top_pcf_sbt.pcf " -c --devicename iCE40LP8K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:30:22
+
+Parsing edif file: C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/GEN_REC.edf...
+Parsing constraint file: C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/sbt/constraint/top_pcf_sbt.pcf ...
+start to read sdc/scf file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/GEN_REC.scf
+sdc_reader OK C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/GEN_REC.scf
+Stored edif netlist at C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top...
+
+write Timing Constraint to C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: top
+
+EDF Parser run-time: 1 (sec)
+edif parser succeed.
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top" --outdir "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer" --device-file "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev" --package CM81 --deviceMarketName iCE40LP8K --sdc-file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib" --effort_level std --out-sdc-file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc"
+starting placerrunning placerExecuting : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top --outdir C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer --device-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev --package CM81 --deviceMarketName iCE40LP8K --sdc-file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib --effort_level std --out-sdc-file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:55:52
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev
+Package              - CM81
+Design database      - C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top
+SDC file             - C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer
+Timing library       - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top/BFPGA_DESIGN_ep
+I2065: Reading device file : C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	50
+    Number of DFFs      	:	41
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	7
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	3
+    Number of GBIOs     	:	1
+    Number of GBs       	:	1
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	4
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	0
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	4
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.1 (sec)
+
+Phase 3
+
+Design Statistics after Packing
+    Number of LUTs      	:	54
+    Number of DFFs      	:	41
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	7
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	34
+        LUT, DFF and CARRY	:	7
+    Combinational LogicCells
+        Only LUT         	:	13
+        CARRY Only       	:	0
+        LUT with CARRY   	:	0
+    LogicCells                  :	54/7680
+    PLBs                        :	8/960
+    BRAMs                       :	0/32
+    IOs and GBIOs               :	4/63
+    PLLs                        :	0/1
+
+
+I2088: Phase 3, elapsed time : 0.5 (sec)
+
+Phase 4
+I2088: Phase 4, elapsed time : 0.4 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.1 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 19.9 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	54
+    Number of DFFs      	:	41
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	7
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	3
+    Number of GBIOs     	:	1
+    Number of GBs       	:	1
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	54/7680
+    PLBs                        :	13/960
+    BRAMs                       :	0/32
+    IOs and GBIOs               :	4/63
+    PLLs                        :	0/1
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 1
+Clock: top|CLK | Frequency: 257.51 MHz | Target: 174.22 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 21.8 sec.
+
+placer succeed.
+starting IPExporterrunning IPExporterIPExporter succeed.
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\packer.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev" "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top" --package CM81 --outdir "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer" --DRC_only  --translator "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc" --dst_sdc_file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer\top_pk.sdc" --devicename iCE40LP8K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 145
+used logic cells: 54
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\packer.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev" "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top" --package CM81 --outdir "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer" --translator "C:\lscc\iCEcube2.2020.12\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc" --dst_sdc_file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer\top_pk.sdc" --devicename iCE40LP8K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:32:13
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 145
+used logic cells: 54
+Translating sdc file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc...
+Translated sdc file is C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer\top_pk.sdc
+Packer succeeded
+
+Packer run-time: 1 (sec)
+packer succeed.
+
+
+"C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev" "C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\sbt\netlist\oadb-top" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib" "C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\sbt\outputs\packer\top_pk.sdc" --outdir "C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\sbt\outputs\router" --sdf_file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\simulation_netlist\top_sbt.sdf" --pin_permutation
+starting routerrunning routerSJRouter....
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\sbt\netlist\oadb-top C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\sbt\outputs\packer\top_pk.sdc --outdir C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\sbt\outputs\router --sdf_file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\simulation_netlist\top_sbt.sdf --pin_permutation 
+Lattice Semiconductor Corporation  Router
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:44:15
+
+I1203: Reading Design top
+Read design time: 1
+I1202: Reading Architecture of device iCE40LP8K
+Read device time: 10
+I1209: Started routing
+I1223: Total Nets : 65 
+I1212: Iteration  1 :    26 unrouted : 0 seconds
+I1212: Iteration  2 :     2 unrouted : 0 seconds
+I1212: Iteration  3 :     3 unrouted : 0 seconds
+I1212: Iteration  4 :     2 unrouted : 0 seconds
+I1212: Iteration  5 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+Routing time: 1
+I1206: Completed routing
+I1204: Writing Design top
+Lib Closed
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 12 seconds
+router succeed.
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\netlister.exe" --verilog "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\simulation_netlist\top_sbt.v" --vhdl "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/sbt/outputs/simulation_netlist\top_sbt.vhd" --lib "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top" --view rt --device "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev" --splitio  --in-sdc-file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer\top_pk.sdc" --out-sdc-file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\netlister\top_sbt.sdc"
+starting netlistrunning netlistLattice Semiconductor Corporation  Verilog & VHDL Netlister
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:18:39
+
+Generating Verilog & VHDL netlist files ...
+Writing C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\simulation_netlist\top_sbt.v
+Writing C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/sbt/outputs/simulation_netlist\top_sbt.vhd
+Netlister succeeded.
+
+Netlister run-time: 1 (sec)
+netlist succeed.
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top" --lib-file "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib" --sdc-file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\netlister\top_sbt.sdc" --sdf-file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\simulation_netlist\top_sbt.sdf" --report-file "C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\sbt\outputs\timer\top_timing.rpt" --device-file "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev" --timing-summary
+starting timerrunning timerExecuting : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtimer.exe --des-lib C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top --lib-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib --sdc-file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\netlister\top_sbt.sdc --sdf-file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\simulation_netlist\top_sbt.sdf --report-file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\sbt\outputs\timer\top_timing.rpt --device-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev --timing-summary
+Lattice Semiconductor Corporation  Timer
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 17:41:47
+
+Timer run-time: 2 seconds
+timer succeed.
+timer succeeded.
+
+
+"C:/lscc/iCEcube2.2020.12/sbt_backend/bin/win32/opt\bitmap.exe" "C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev" --design "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top" --device_name iCE40LP8K --package CM81 --outdir "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on
+starting bitmaprunning bitmapLattice Semiconductor Corporation  Bit Stream Generator
+Release:        2020.12.27943
+Build Date:     Dec  9 2020 18:17:40
+
+Bit Stream File Size: 1080760 (1M 31K 440 Bits)
+Bit Stream Generator succeeded
+
+Bitmap run-time: 1 (sec)
+bitmap succeed.
+12:31:21

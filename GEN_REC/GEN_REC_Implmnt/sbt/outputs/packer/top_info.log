@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Mar 18 2025 11:06:37
+* File Generated:     Mar 19 2025 09:14:50
 
 * Purpose:            General info of design implementation
 
@@ -14,7 +14,7 @@
 
 * ******************************************************************************
 
-Command Line: C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\packer.exe  C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev  C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top  --package  CM81  --outdir  C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer  --translator  C:\lscc\iCEcube2.2020.12\sbt_backend\bin\sdc_translator.tcl  --src_sdc_file  C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc  --dst_sdc_file  C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer\top_pk.sdc  --devicename  iCE40LP8K  
+Command Line: C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\packer.exe  C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev  C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top  --package  CM81  --outdir  C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer  --translator  C:\lscc\iCEcube2.2020.12\sbt_backend\bin\sdc_translator.tcl  --src_sdc_file  C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc  --dst_sdc_file  C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\packer\top_pk.sdc  --devicename  iCE40LP8K  
 
 ***** Device Info *****
 Chip: iCE40LP8K
@@ -23,8 +23,8 @@ Size: 32 X 32
 
 ***** Design Utilization Info *****
 Design: top
-Used Logic Cell: 54/7680
-Used Logic Tile: 13/960
+Used Logic Cell: 144/7680
+Used Logic Tile: 25/960
 Used IO Cell:    4/256
 Used Bram Cell For iCE40: 0/32
 Used PLL For iCE40: 0/1
@@ -32,12 +32,12 @@ Ram Cascading Used: 0
 Lut Cascading Used: 1
 
 ***** Clock Info *****
-Clock Domain: CLK_c_g
+Clock Domain: CLK_0_c_g
 Clock Source: clk 
 Clock Driver: CLK_ibuf_gb_io (ICE_GB_IO)
 Driver Position: (0, 17, 0)
-Fanout to FF: 41
-Fanout to Tile: 12
+Fanout to FF: 133
+Fanout to Tile: 24
 
 
 ***** Placement Info *****
@@ -60,27 +60,27 @@ Logic cell utilization per tile
 20|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
 19|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
 18|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
-17|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
-16|   0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
-15|   0 0 0 0 0 0 0 0 0 0 0 2 7 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
-14|   0 0 0 0 0 0 0 0 0 0 0 2 3 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
-13|   0 0 0 0 0 0 0 0 0 0 2 5 8 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
-12|   0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
-11|   0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
+17|   6 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
+16|   8 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
+15|   6 7 5 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
+14|   8 2 2 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
+13|   8 8 8 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
+12|   8 7 5 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
+11|   1 5 6 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
 10|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  9|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  8|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  7|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  6|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  5|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
- 4|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
+ 4|   1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  3|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  2|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  1|   0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0   
  0|                                                                     
 
 Maximum number of Logic cells per logic tile: 8
-Average number of Logic cells per logic tile: 4.15
+Average number of Logic cells per logic tile: 5.76
 
 ***** Input Pin Density Info *****
 Number of input nets per logic tile
@@ -102,27 +102,27 @@ Number of input nets per logic tile
 20|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
 19|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
 18|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-17|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-16|     0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-15|     0  0  0  0  0  0  0  0  0  0  0  3 16 17  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-14|     0  0  0  0  0  0  0  0  0  0  0  6  6  9  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-13|     0  0  0  0  0  0  0  0  0  0  4  7  9  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-12|     0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-11|     0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+17|     6  5  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+16|     9  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+15|     5  8  5  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+14|    17  5  2  8  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+13|    16 17  8  8  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+12|     9  7  5  8  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+11|     1  5  6  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
 10|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  9|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  8|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  7|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  6|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  5|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
- 4|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+ 4|     1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  3|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  2|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  1|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  0|                                                                                                       
 
 Maximum number of input nets per logic tile: 17
-Average number of input nets per logic tile: 6.62
+Average number of input nets per logic tile: 7.00
 
 Number of input pins per logic tile
      .  .  .  .  +  .  .  .  .  1  .  .  .  .  +  .  .  .  .  2  .  .  .  .  +  .  .  .  .  3  .  .  .  . 
@@ -143,27 +143,27 @@ Number of input pins per logic tile
 20|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
 19|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
 18|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-17|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-16|     0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-15|     0  0  0  0  0  0  0  0  0  0  0  3 23 24  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-14|     0  0  0  0  0  0  0  0  0  0  0  6  8 16  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-13|     0  0  0  0  0  0  0  0  0  0  7 15 27 11  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-12|     0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
-11|     0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+17|     6  5  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+16|    16  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+15|     5  8  5  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+14|    26  6  2  8  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+13|    16 24  8  8  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+12|    16  7  5  8  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+11|     1  5  6  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
 10|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  9|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  8|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  7|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  6|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  5|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
- 4|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
+ 4|     1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  3|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  2|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  1|     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0    
  0|                                                                                                       
 
-Maximum number of input pins per logic tile: 27
-Average number of input pins per logic tile: 11.00
+Maximum number of input pins per logic tile: 26
+Average number of input pins per logic tile: 8.24
 
 ***** Run Time Info *****
 Run Time:  1

@@ -1,24 +1,23 @@
 Selecting top level module top
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":6:7:6:15|Synthesizing module generator in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":8:7:8:33|Synthesizing module config_register_latched_dec in library work.
 
-@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":40:1:40:6|Feedback mux created for signal STATLATCH[87:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v":40:1:40:6|Feedback mux created for signal DYNLATCH[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":4:7:4:19|Synthesizing module fsm_shiftRegs in library work.
+@W: CL118 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":103:2:103:3|Latch generated from always block for signal DYNCNF[15:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":93:2:93:3|Latch generated from always block for signal STATCNF[87:0]; possible missing assignment in an if or case statement.
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":4:7:4:14|Synthesizing module fsm_ctrl in library work.
 
-@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Feedback mux created for signal signal_out. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Feedback mux created for signal bit_sequence[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Register bit bit_sequence[0] is always 0.
-@W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Pruning register bit 0 of bit_sequence[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":5:7:5:9|Synthesizing module top in library work.
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":132:5:132:10|Pruning unused register counter_stat[6:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Pruning unused register counter_din[3:0]. Make sure that there are no unused intermediate registers.
+@W: CL265 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":68:1:68:6|Removing unused bit 88 of bit_sequence_stat[88:0]. Either assign all bits or reduce the width of the signal.
+@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Synthesizing module top in library work.
 
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v":17:22:17:31|Removing wire dynamicReg, as there is no assignment to it.
-@N: CL189 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Register bit bit_sequence[1] is always 0.
-@W: CL260 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":75:4:75:9|Pruning register bit 1 of bit_sequence[15:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v":54:4:54:9|Trying to extract state machine for register current_state.
+@W: CS263 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":44:12:44:18|Port-width mismatch for port STATCNF. The port definition is 88 bits, but the actual port connection bit width is 89. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":46:12:46:18|Port-width mismatch for port AMUXSEL. The port definition is 128 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":26:22:26:29|Removing wire DYNLATCH, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":27:23:27:31|Removing wire STATLATCH, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":35:6:35:16|Removing wire ref_elec_en, as there is no assignment to it.
+@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":49:5:49:10|Trying to extract state machine for register current_state.
 Extracted state machine for register current_state
-State machine has 5 reachable states with original encodings of:
+State machine has 2 reachable states with original encodings of:
    000
    001
-   010
-   011
-   100
+@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":68:1:68:6|Pruning unused register bit_sequence_stat[87:0]. Make sure that there are no unused intermediate registers.

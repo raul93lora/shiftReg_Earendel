@@ -1,24 +1,23 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
-#--  Project file C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\scratchproject.prs
+#--  Project file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\scratchproject.prs
 
 #project files
-add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_Earendel/generator.v"
-add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_Earendel/receptor.v"
-add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_Earendel/fsm_shiftRegs.v"
-add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_Earendel/top.v"
+add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/top.v"
+add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/config_register_latched_dec.v"
+add_file -verilog "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/fsm_ctrl.v"
 
 
 
 #implementation: "GEN_REC_Implmnt"
-impl -add C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt -type fpga
+impl -add C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt -type fpga
 
 #
 #implementation attributes
 
 set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/}
+set_option -include_path {C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/}
 
 #device options
 set_option -technology SBTiCE40
@@ -67,5 +66,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt/GEN_REC.edf"
+project -result_file "C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt/GEN_REC.edf"
 impl -active "GEN_REC_Implmnt"

@@ -1,11 +1,10 @@
 #-- Synopsys, Inc.
-#-- Project file C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_syn.prj
+#-- Project file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_syn.prj
 #project files
 
-add_file -verilog -lib work "../generator.v" 
-add_file -verilog -lib work "../receptor.v" 
-add_file -verilog -lib work "../fsm_shiftRegs.v" 
 add_file -verilog -lib work "../top.v" 
+add_file -verilog -lib work "../config_register_latched_dec.v" 
+add_file -verilog -lib work "../fsm_ctrl.v" 
 #implementation: "GEN_REC_Implmnt"
 impl -add GEN_REC_Implmnt -type fpga
 

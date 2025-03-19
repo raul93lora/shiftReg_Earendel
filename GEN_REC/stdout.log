@@ -4,7 +4,7 @@ Running in Lattice mode
 Starting:    C:\lscc\iCEcube2.2020.12\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\iCEcube2.2020.12\synpbase
 Hostname:    NB-ADM-01
-Date:        Tue Mar 18 11:05:53 2025
+Date:        Wed Mar 19 09:14:20 2025
 Version:     L-2016.09L+ice40
 
 Arguments:   -product synplify_pro -batch GEN_REC_syn.prj
@@ -14,58 +14,58 @@ ProductType: synplify_pro
 
 
 
-log file: "C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.srr"
+log file: "C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.srr"
 Running: GEN_REC_Implmnt in foreground
 
 Running GEN_REC_syn|GEN_REC_Implmnt
 
 Running: compile (Compile) on GEN_REC_syn|GEN_REC_Implmnt
-# Tue Mar 18 11:05:53 2025
+# Wed Mar 19 09:14:20 2025
 
 Running: compile_flow (Compile Process) on GEN_REC_syn|GEN_REC_Implmnt
-# Tue Mar 18 11:05:53 2025
+# Wed Mar 19 09:14:20 2025
 
 Running: compiler (Compile Input) on GEN_REC_syn|GEN_REC_Implmnt
-# Tue Mar 18 11:05:53 2025
-Copied C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_comp.srs to C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.srs
+# Wed Mar 19 09:14:20 2025
+Copied C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_comp.srs to C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.srs
 
 compiler completed
-# Tue Mar 18 11:05:54 2025
+# Wed Mar 19 09:14:22 2025
 
 Return Code: 0
-Run Time:00h:00m:01s
+Run Time:00h:00m:02s
 
 Running: multi_srs_gen (Multi-srs Generator) on GEN_REC_syn|GEN_REC_Implmnt
-# Tue Mar 18 11:05:54 2025
+# Wed Mar 19 09:14:22 2025
 
 multi_srs_gen completed
-# Tue Mar 18 11:05:55 2025
+# Wed Mar 19 09:14:22 2025
 
 Return Code: 0
-Run Time:00h:00m:01s
-Copied C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_mult.srs to C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.srs
+Run Time:00h:00m:00s
+Copied C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_mult.srs to C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.srs
 Complete: Compile Process on GEN_REC_syn|GEN_REC_Implmnt
 
 Running: premap (Pre-mapping) on GEN_REC_syn|GEN_REC_Implmnt
-# Tue Mar 18 11:05:55 2025
+# Wed Mar 19 09:14:22 2025
 
 premap completed with warnings
-# Tue Mar 18 11:05:57 2025
+# Wed Mar 19 09:14:24 2025
 
 Return Code: 1
 Run Time:00h:00m:02s
 Complete: Compile on GEN_REC_syn|GEN_REC_Implmnt
 
 Running: map (Map) on GEN_REC_syn|GEN_REC_Implmnt
-# Tue Mar 18 11:05:57 2025
+# Wed Mar 19 09:14:24 2025
 License granted for 4 parallel jobs
 
 Running: fpga_mapper (Map & Optimize) on GEN_REC_syn|GEN_REC_Implmnt
-# Tue Mar 18 11:05:57 2025
-Copied C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_m.srm to C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.srm
+# Wed Mar 19 09:14:24 2025
+Copied C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_m.srm to C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.srm
 
 fpga_mapper completed with warnings
-# Tue Mar 18 11:05:59 2025
+# Wed Mar 19 09:14:26 2025
 
 Return Code: 1
 Run Time:00h:00m:02s

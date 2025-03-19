@@ -3,68 +3,66 @@
 * TOP.v
 */
 module top(
-	CLK,			// Reloj del sistema
-	RST_N,			// Reset asíncrono activo en bajo
-	ENdin,			// Señal de salida que indica que se ha completado el registro dinamico
-	generated_signal	// Salida final de la señal
+	CLK,						// Reloj del sistema
+	CLK_uC,						// Reloj que viene desde el uC
+	RST_N,						// Reset asíncrono activo en bajo
+	SDO_signal_out					// Salida final de la señal
 );
 
 	// Parameters definition
-	parameter SIZESRSTAT = 88; 			// Static shift register length 
+	parameter SIZESRSTAT = 89; 			// Static shift register length 
 	parameter SIZESRDYN = 16; 			// Dynamic shift register length
-
-	// Pongo los registros de entrada como wire, habria que cambiarlo para recibirlo del uC
-	wire [SIZESRDYN-1:0] dynamicReg;    		// Valor dinámico 
-	wire [SIZESRSTAT-1:0] staticReg;    		// Valor estático
-
-	wire signal_out_fsm;				// Señal de 1 bit que sale de la maquina de estados
 
 	// Ports definition
     	input wire CLK;
+	input wire CLK_uC;
+	wire SCLK;
     	input wire RST_N;
-	wire SELDYN;
-	wire SELSTAT;
+	output wire SDO_signal_out;
+	wire SEL_REG;
+	wire MOSI;
 
 	// Pongo DYNLATCH y STATLATCH como wire, en vez de como output, ya que si no hay que asignar todos los bits de cada uno a los pines .pcf correspondientes 
 	wire [SIZESRDYN-1:0] DYNLATCH;
-	wire [SIZESRSTAT-1:0] STATLATCH;
-    	output wire generated_signal;
-	output wire ENdin;
-	wire enable_din;
-	reg enableDin_aux;
+	wire [SIZESRSTAT-1:0] STATLATCH;  
 
-	assign ENdin = enableDin_aux;
+	wire [SIZESRDYN-1:0] DYNCNF;
+	wire [SIZESRSTAT-1:0] STATCNF; 
 
-    	// Logica de transicion de estados (cambiar el estado)
-    	always @(posedge CLK) begin
-        	enableDin_aux <= enable_din;
-    	end
-    
-	// Instancias
-    	generator generator_inst1 (
-        	.CLK(CLK),
-        	.RST_N(RST_N),
-	 	.SELDYN (SELDYN),
-        	.SELSTAT (SELSTAT),
-		.DYNLATCH (DYNLATCH),
-		.STATLATCH (STATLATCH),
-		.signal_in (signal_out_fsm),
-        	.signal_out(generated_signal)
-    	);
+	// Otros registros de enable
+	wire [15:0] STG2_EN;
+	wire [3:0] STG1_EN;
+	wire ref_elec_en;	
 
-	// * Dependiendo de si David me da el LSb o MSb, hay que cambiar la manera de recibirlo
-	fsm_shiftRegs fsm_shiftRegs_inst1 (
-		.CLK(CLK),
-		.RST_N(RST_N),
-		.sel_dyn(SELDYN),
-		.sel_stat(SELSTAT),
-		.en_fin(enable_din),
-		.signal_out(signal_out_fsm)
+	// Instancia del config_register_latched_dec
+	config_register_latched_dec config_register_latched_dec_inst1 (
+		.CLK (SCLK), 
+		.RST_N (RST_N), 
+		.SEL (SEL_REG), 
+		.SDI (MOSI), 
+		.SDO (SDO_signal_out), 
+		.STATCNF (STATCNF), 
+		.DYNCNF (DYNCNF), 
+		.AMUXSEL (AMUXSEL),
+		.STG2_EN (STG2_EN),
+		.STG1_EN (STG1_EN),
+		.ref_elec_en (rf_elec_en)
 	);
 
-	// Mapping registers dynamic and static INPUTS -- this has to be changed to receive from uC -- serialized
-	//assign dynamicReg[SIZESRDYN-1:0] = 16'h1234;
-	assign staticReg[SIZESRSTAT-1:0] = 88'hABCDEF123456789ABCDEF1;
+	// * Dependiendo de si David me da el LSb o MSb, hay que cambiar la manera de recibirlo
+	fsm_ctrl fsm_ctrl_inst1 (
+		.CLK(CLK),
+		.CLK_uC(CLK_uC),
+		.SCLK(SCLK),
+		.RST_N(RST_N),
+		.SEL(SEL_REG),
+		.MOSI(MOSI)
+	);
 
 endmodule
+
+
+
+
+
 

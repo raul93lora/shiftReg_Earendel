@@ -1,4 +1,4 @@
-# Tue Mar 18 11:05:56 2025
+# Wed Mar 19 09:14:24 2025
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -7,8 +7,8 @@ Product Version L-2016.09L+ice40
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
 @A: MF827 |No constraint file specified.
-@L: C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt 
-Printing clock  summary report in "C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt" file 
+@L: C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt 
+Printing clock  summary report in "C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
@@ -23,52 +23,85 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
-@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendel\generator.v":40:1:40:6|Removing sequential instance DYNLATCH[15:0] (in view: work.generator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendel\generator.v":40:1:40:6|Removing sequential instance STATLATCH[87:0] (in view: work.generator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendel\generator.v":40:1:40:6|Removing sequential instance REGDYN[15:0] (in view: work.generator(verilog)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendel\generator.v":40:1:40:6|Removing sequential instance REGSTAT[87:0] (in view: work.generator(verilog)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[1:0] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[2] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[3] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[4] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[5] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[6] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[7] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[8] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[9] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[10] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[12:11] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[13] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[14] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[15] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[19:16] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[22:20] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[23] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[25:24] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[29:26] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[30] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[32:31] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[33] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[36:34] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[37] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[43:38] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[44] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[47:45] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[48] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[54:49] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[55] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[58:56] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[59] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[68:60] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[78:69] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":93:2:93:3|Removing sequential instance STATCNF_1[87:79] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":103:2:103:3|Removing sequential instance DYNCNF_1[14] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":103:2:103:3|Removing sequential instance DYNCNF_1[15] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v":103:2:103:3|Removing sequential instance DYNCNF_1[13:0] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=32  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
 
 
 
 Clock Summary
 *****************
 
-Start       Requested     Requested     Clock        Clock                     Clock
-Clock       Frequency     Period        Type         Group                     Load 
-------------------------------------------------------------------------------------
-top|CLK     299.8 MHz     3.336         inferred     Autoconstr_clkgroup_0     41   
-====================================================================================
+Start                           Requested     Requested     Clock                      Clock                     Clock
+Clock                           Frequency     Period        Type                       Group                     Load 
+----------------------------------------------------------------------------------------------------------------------
+fsm_ctrl|SCLK_derived_clock     1.0 MHz       1000.000      derived (from top|CLK)     Autoconstr_clkgroup_0     104  
+top|CLK                         1.0 MHz       1000.000      inferred                   Autoconstr_clkgroup_0     31   
+======================================================================================================================
 
-@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendel\generator.v":40:1:40:6|Found inferred clock top|CLK which controls 41 sequential elements including generator_inst1.signal_aux. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":49:5:49:10|Found inferred clock top|CLK which controls 31 sequential elements including fsm_ctrl_inst1.current_state[1:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap.
+@N: BN225 |Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
 
-Encoding state machine current_state[4:0] (in view: work.fsm_shiftRegs(verilog))
+Encoding state machine current_state[1:0] (in view: work.fsm_ctrl(verilog))
 original code -> new code
-   000 -> 00001
-   001 -> 00010
-   010 -> 00100
-   011 -> 01000
-   100 -> 10000
+   000 -> 0
+   001 -> 1
+@N: MO225 :"c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v":49:5:49:10|There are no possible illegal states for state machine current_state[1:0] (in view: work.fsm_ctrl(verilog)); safe FSM implementation is not required.
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Mar 18 11:05:57 2025
+# Wed Mar 19 09:14:24 2025
 
 ###########################################################]

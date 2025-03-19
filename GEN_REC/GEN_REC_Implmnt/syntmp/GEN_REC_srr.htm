@@ -1,20 +1,20 @@
 <html><body><samp><pre>
-<!@TC:1742292353>
+<!@TC:1742372060>
 #Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
 #install: C:\lscc\iCEcube2.2020.12\synpbase
 #OS: Windows 8 6.2
 #Hostname: NB-ADM-01
 
-# Tue Mar 18 11:05:53 2025
+# Wed Mar 19 09:14:20 2025
 
 #Implementation: GEN_REC_Implmnt
 
 <a name=compilerReport1></a>Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
-@N: : <!@TM:1742292353> | Running in 64-bit mode 
+@N: : <!@TM:1742372061> | Running in 64-bit mode 
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
 <a name=compilerReport2></a>Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
-@N: : <!@TM:1742292353> | Running in 64-bit mode 
+@N: : <!@TM:1742372061> | Running in 64-bit mode 
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
@@ -22,58 +22,53 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v" (library work)
-@I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\receptor.v" (library work)
-@I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v" (library work)
-@I::"C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v" (library work)
+@I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v" (library work)
+@I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v" (library work)
+@I::"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v" (library work)
 Verilog syntax check successful!
-File C:\Users\raul.lora\Documents\shiftReg_Earendel\receptor.v changed - recompiling
-File C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v changed - recompiling
-File C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v changed - recompiling
 Selecting top level module top
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v:6:7:6:16:@N:CG364:@XP_MSG">generator.v(6)</a><!@TM:1742292353> | Synthesizing module generator in library work.
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v:8:7:8:34:@N:CG364:@XP_MSG">config_register_latched_dec.v(8)</a><!@TM:1742372061> | Synthesizing module config_register_latched_dec in library work.
 
-@A:<a href="@A:CL282:@XP_HELP">CL282</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v:40:1:40:7:@A:CL282:@XP_MSG">generator.v(40)</a><!@TM:1742292353> | Feedback mux created for signal STATLATCH[87:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A:<a href="@A:CL282:@XP_HELP">CL282</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\generator.v:40:1:40:7:@A:CL282:@XP_MSG">generator.v(40)</a><!@TM:1742292353> | Feedback mux created for signal DYNLATCH[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v:4:7:4:20:@N:CG364:@XP_MSG">fsm_shiftRegs.v(4)</a><!@TM:1742292353> | Synthesizing module fsm_shiftRegs in library work.
+<font color=#A52A2A>@W:<a href="@W:CL118:@XP_HELP">CL118</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v:103:2:103:4:@W:CL118:@XP_MSG">config_register_latched_dec.v(103)</a><!@TM:1742372061> | Latch generated from always block for signal DYNCNF[15:0]; possible missing assignment in an if or case statement.</font>
+<font color=#A52A2A>@W:<a href="@W:CL118:@XP_HELP">CL118</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v:93:2:93:4:@W:CL118:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372061> | Latch generated from always block for signal STATCNF[87:0]; possible missing assignment in an if or case statement.</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v:4:7:4:15:@N:CG364:@XP_MSG">fsm_ctrl.v(4)</a><!@TM:1742372061> | Synthesizing module fsm_ctrl in library work.
 
-@A:<a href="@A:CL282:@XP_HELP">CL282</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v:75:4:75:10:@A:CL282:@XP_MSG">fsm_shiftRegs.v(75)</a><!@TM:1742292353> | Feedback mux created for signal signal_out. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A:<a href="@A:CL282:@XP_HELP">CL282</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v:75:4:75:10:@A:CL282:@XP_MSG">fsm_shiftRegs.v(75)</a><!@TM:1742292353> | Feedback mux created for signal bit_sequence[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v:75:4:75:10:@N:CL189:@XP_MSG">fsm_shiftRegs.v(75)</a><!@TM:1742292353> | Register bit bit_sequence[0] is always 0.
-<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v:75:4:75:10:@W:CL260:@XP_MSG">fsm_shiftRegs.v(75)</a><!@TM:1742292353> | Pruning register bit 0 of bit_sequence[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v:5:7:5:10:@N:CG364:@XP_MSG">top.v(5)</a><!@TM:1742292353> | Synthesizing module top in library work.
+<font color=#A52A2A>@W:<a href="@W:CL169:@XP_HELP">CL169</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v:132:5:132:11:@W:CL169:@XP_MSG">fsm_ctrl.v(132)</a><!@TM:1742372061> | Pruning unused register counter_stat[6:0]. Make sure that there are no unused intermediate registers.</font>
+<font color=#A52A2A>@W:<a href="@W:CL169:@XP_HELP">CL169</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v:121:5:121:11:@W:CL169:@XP_MSG">fsm_ctrl.v(121)</a><!@TM:1742372061> | Pruning unused register counter_din[3:0]. Make sure that there are no unused intermediate registers.</font>
+<font color=#A52A2A>@W:<a href="@W:CL265:@XP_HELP">CL265</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v:68:1:68:7:@W:CL265:@XP_MSG">fsm_ctrl.v(68)</a><!@TM:1742372061> | Removing unused bit 88 of bit_sequence_stat[88:0]. Either assign all bits or reduce the width of the signal.</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:5:7:5:10:@N:CG364:@XP_MSG">top.v(5)</a><!@TM:1742372061> | Synthesizing module top in library work.
 
-<font color=#A52A2A>@W:<a href="@W:CG360:@XP_HELP">CG360</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v:17:22:17:32:@W:CG360:@XP_MSG">top.v(17)</a><!@TM:1742292353> | Removing wire dynamicReg, as there is no assignment to it.</font>
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v:75:4:75:10:@N:CL189:@XP_MSG">fsm_shiftRegs.v(75)</a><!@TM:1742292353> | Register bit bit_sequence[1] is always 0.
-<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v:75:4:75:10:@W:CL260:@XP_MSG">fsm_shiftRegs.v(75)</a><!@TM:1742292353> | Pruning register bit 1 of bit_sequence[15:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
-@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\fsm_shiftRegs.v:54:4:54:10:@N:CL201:@XP_MSG">fsm_shiftRegs.v(54)</a><!@TM:1742292353> | Trying to extract state machine for register current_state.
+<font color=#A52A2A>@W:<a href="@W:CS263:@XP_HELP">CS263</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:44:12:44:19:@W:CS263:@XP_MSG">top.v(44)</a><!@TM:1742372061> | Port-width mismatch for port STATCNF. The port definition is 88 bits, but the actual port connection bit width is 89. Adjust either the definition or the instantiation of this port.</font>
+<font color=#A52A2A>@W:<a href="@W:CS263:@XP_HELP">CS263</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:46:12:46:19:@W:CS263:@XP_MSG">top.v(46)</a><!@TM:1742372061> | Port-width mismatch for port AMUXSEL. The port definition is 128 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</font>
+<font color=#A52A2A>@W:<a href="@W:CG360:@XP_HELP">CG360</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:26:22:26:30:@W:CG360:@XP_MSG">top.v(26)</a><!@TM:1742372061> | Removing wire DYNLATCH, as there is no assignment to it.</font>
+<font color=#A52A2A>@W:<a href="@W:CG360:@XP_HELP">CG360</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:27:23:27:32:@W:CG360:@XP_MSG">top.v(27)</a><!@TM:1742372061> | Removing wire STATLATCH, as there is no assignment to it.</font>
+<font color=#A52A2A>@W:<a href="@W:CG360:@XP_HELP">CG360</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:35:6:35:17:@W:CG360:@XP_MSG">top.v(35)</a><!@TM:1742372061> | Removing wire ref_elec_en, as there is no assignment to it.</font>
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v:49:5:49:11:@N:CL201:@XP_MSG">fsm_ctrl.v(49)</a><!@TM:1742372061> | Trying to extract state machine for register current_state.
 Extracted state machine for register current_state
-State machine has 5 reachable states with original encodings of:
+State machine has 2 reachable states with original encodings of:
    000
    001
-   010
-   011
-   100
+<font color=#A52A2A>@W:<a href="@W:CL169:@XP_HELP">CL169</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v:68:1:68:7:@W:CL169:@XP_MSG">fsm_ctrl.v(68)</a><!@TM:1742372061> | Pruning unused register bit_sequence_stat[87:0]. Make sure that there are no unused intermediate registers.</font>
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 11:05:53 2025
+# Wed Mar 19 09:14:20 2025
 
 ###########################################################]
 <a name=compilerReport3></a>Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
-@N: : <!@TM:1742292353> | Running in 64-bit mode 
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v:5:7:5:10:@N:NF107:@XP_MSG">top.v(5)</a><!@TM:1742292353> | Selected library: work cell: top view verilog as top level
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v:5:7:5:10:@N:NF107:@XP_MSG">top.v(5)</a><!@TM:1742292353> | Selected library: work cell: top view verilog as top level
+@N: : <!@TM:1742372061> | Running in 64-bit mode 
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:5:7:5:10:@N:NF107:@XP_MSG">top.v(5)</a><!@TM:1742372061> | Selected library: work cell: top view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:5:7:5:10:@N:NF107:@XP_MSG">top.v(5)</a><!@TM:1742372061> | Selected library: work cell: top view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 11:05:53 2025
+# Wed Mar 19 09:14:21 2025
 
 ###########################################################]
 @END
@@ -83,26 +78,26 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 11:05:53 2025
+# Wed Mar 19 09:14:21 2025
 
 ###########################################################]
 <a name=compilerReport4></a>Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
-@N: : <!@TM:1742292355> | Running in 64-bit mode 
-File C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_comp.srs changed - recompiling
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v:5:7:5:10:@N:NF107:@XP_MSG">top.v(5)</a><!@TM:1742292355> | Selected library: work cell: top view verilog as top level
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\top.v:5:7:5:10:@N:NF107:@XP_MSG">top.v(5)</a><!@TM:1742292355> | Selected library: work cell: top view verilog as top level
+@N: : <!@TM:1742372062> | Running in 64-bit mode 
+File C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_comp.srs changed - recompiling
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:5:7:5:10:@N:NF107:@XP_MSG">top.v(5)</a><!@TM:1742372062> | Selected library: work cell: top view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v:5:7:5:10:@N:NF107:@XP_MSG">top.v(5)</a><!@TM:1742372062> | Selected library: work cell: top view verilog as top level
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Mar 18 11:05:55 2025
+# Wed Mar 19 09:14:22 2025
 
 ###########################################################]
 Pre-mapping Report
 
-# Tue Mar 18 11:05:56 2025
+# Wed Mar 19 09:14:24 2025
 
 <a name=mapperReport5></a>Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -110,11 +105,11 @@ Product Version L-2016.09L+ice40
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1742292357> | No constraint file specified. 
-Linked File: <a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt:@XP_FILE">GEN_REC_scck.rpt</a>
-Printing clock  summary report in "C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt" file 
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1742292357> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1742292357> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1742372064> | No constraint file specified. 
+Linked File: <a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt:@XP_FILE">GEN_REC_scck.rpt</a>
+Printing clock  summary report in "C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_scck.rpt" file 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1742372064> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1742372064> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
@@ -127,58 +122,91 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\generator.v:40:1:40:7:@N:BN362:@XP_MSG">generator.v(40)</a><!@TM:1742292357> | Removing sequential instance DYNLATCH[15:0] (in view: work.generator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\generator.v:40:1:40:7:@N:BN362:@XP_MSG">generator.v(40)</a><!@TM:1742292357> | Removing sequential instance STATLATCH[87:0] (in view: work.generator(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\generator.v:40:1:40:7:@N:BN362:@XP_MSG">generator.v(40)</a><!@TM:1742292357> | Removing sequential instance REGDYN[15:0] (in view: work.generator(verilog)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\generator.v:40:1:40:7:@N:BN362:@XP_MSG">generator.v(40)</a><!@TM:1742292357> | Removing sequential instance REGSTAT[87:0] (in view: work.generator(verilog)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[1:0] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[2] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[3] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[4] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[5] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[6] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[7] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[8] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[9] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[10] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[12:11] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[13] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[14] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[15] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[19:16] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[22:20] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[23] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[25:24] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[29:26] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[30] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[32:31] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[33] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[36:34] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[37] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[43:38] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[44] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[47:45] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[48] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[54:49] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[55] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[58:56] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[59] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[68:60] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[78:69] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:93:2:93:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(93)</a><!@TM:1742372064> | Removing sequential instance STATCNF_1[87:79] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:103:2:103:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(103)</a><!@TM:1742372064> | Removing sequential instance DYNCNF_1[14] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.lats(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:103:2:103:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(103)</a><!@TM:1742372064> | Removing sequential instance DYNCNF_1[15] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\config_register_latched_dec.v:103:2:103:4:@N:BN362:@XP_MSG">config_register_latched_dec.v(103)</a><!@TM:1742372064> | Removing sequential instance DYNCNF_1[13:0] (in view: work.config_register_latched_dec(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 ICG Latch Removal Summary:
 Number of ICG latches removed:	0
 Number of ICG latches not removed:	0
 syn_allowed_resources : blockrams=32  set on top level netlist top
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
 
 
 
 <a name=mapperReport6></a>Clock Summary</a>
 *****************
 
-Start       Requested     Requested     Clock        Clock                     Clock
-Clock       Frequency     Period        Type         Group                     Load 
-------------------------------------------------------------------------------------
-top|CLK     299.8 MHz     3.336         inferred     Autoconstr_clkgroup_0     41   
-====================================================================================
+Start                           Requested     Requested     Clock                      Clock                     Clock
+Clock                           Frequency     Period        Type                       Group                     Load 
+----------------------------------------------------------------------------------------------------------------------
+fsm_ctrl|SCLK_derived_clock     1.0 MHz       1000.000      derived (from top|CLK)     Autoconstr_clkgroup_0     104  
+top|CLK                         1.0 MHz       1000.000      inferred                   Autoconstr_clkgroup_0     31   
+======================================================================================================================
 
-<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\generator.v:40:1:40:7:@W:MT529:@XP_MSG">generator.v(40)</a><!@TM:1742292357> | Found inferred clock top|CLK which controls 41 sequential elements including generator_inst1.signal_aux. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v:49:5:49:11:@W:MT529:@XP_MSG">fsm_ctrl.v(49)</a><!@TM:1742372064> | Found inferred clock top|CLK which controls 31 sequential elements including fsm_ctrl_inst1.current_state[1:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
 
 Finished Pre Mapping Phase.
-@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1742292357> | Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap. 
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1742372064> | Writing default property annotation file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap. 
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
 
-Encoding state machine current_state[4:0] (in view: work.fsm_shiftRegs(verilog))
+Encoding state machine current_state[1:0] (in view: work.fsm_ctrl(verilog))
 original code -> new code
-   000 -> 00001
-   001 -> 00010
-   010 -> 00100
-   011 -> 01000
-   100 -> 10000
+   000 -> 0
+   001 -> 1
+@N:<a href="@N:MO225:@XP_HELP">MO225</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v:49:5:49:11:@N:MO225:@XP_MSG">fsm_ctrl.v(49)</a><!@TM:1742372064> | There are no possible illegal states for state machine current_state[1:0] (in view: work.fsm_ctrl(verilog)); safe FSM implementation is not required.
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Mar 18 11:05:57 2025
+# Wed Mar 19 09:14:24 2025
 
 ###########################################################]
 Map & Optimize Report
 
-# Tue Mar 18 11:05:57 2025
+# Wed Mar 19 09:14:24 2025
 
 <a name=mapperReport7></a>Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -186,8 +214,8 @@ Product Version L-2016.09L+ice40
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1742292359> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1742292359> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1742372066> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1742372066> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
 
@@ -208,23 +236,22 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 Available hyper_sources - for debug and ip models
 	None Found
 
-@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1742292359> | Auto Constrain mode is enabled 
+@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1742372066> | Auto Constrain mode is enabled 
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
-Encoding state machine current_state[4:0] (in view: work.fsm_shiftRegs(verilog))
+Encoding state machine current_state[1:0] (in view: work.fsm_ctrl(verilog))
 original code -> new code
-   000 -> 00001
-   001 -> 00010
-   010 -> 00100
-   011 -> 01000
-   100 -> 10000
-@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\fsm_shiftregs.v:137:4:137:10:@N:MO231:@XP_MSG">fsm_shiftregs.v(137)</a><!@TM:1742292359> | Found counter in view:work.fsm_shiftRegs(verilog) instance counter2[7:0] 
+   000 -> 0
+   001 -> 1
+@N:<a href="@N:MO225:@XP_HELP">MO225</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v:49:5:49:11:@N:MO225:@XP_MSG">fsm_ctrl.v(49)</a><!@TM:1742372066> | There are no possible illegal states for state machine current_state[1:0] (in view: work.fsm_ctrl(verilog)); safe FSM implementation is not required.
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v:110:5:110:11:@N:MO231:@XP_MSG">fsm_ctrl.v(110)</a><!@TM:1742372066> | Found counter in view:work.fsm_ctrl(verilog) instance counter_idle[9:0] 
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\fsm_ctrl.v:68:1:68:7:@W:BN132:@XP_MSG">fsm_ctrl.v(68)</a><!@TM:1742372066> | Removing instance fsm_ctrl_inst1.bit_sequence_din[0] because it is equivalent to instance fsm_ctrl_inst1.SEL. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
 
 Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
@@ -233,10 +260,10 @@ Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
 
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
@@ -249,20 +276,23 @@ Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    -1.56ns		  54 /        41
-   2		0h:00m:00s		    -1.56ns		  54 /        41
-
-   3		0h:00m:00s		    -1.56ns		  54 /        41
-
-
-@N:<a href="@N:FX1016:@XP_HELP">FX1016</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendel\top.v:6:1:6:4:@N:FX1016:@XP_MSG">top.v(6)</a><!@TM:1742292359> | SB_GB_IO inserted on the port CLK.
-@N:<a href="@N:FX1017:@XP_HELP">FX1017</a> : <!@TM:1742292359> | SB_GB inserted on the net RST_N_c_i. 
-
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+   1		0h:00m:00s		    -1.56ns		  48 /       133
+   2		0h:00m:00s		    -1.56ns		  48 /       133
+   3		0h:00m:00s		    -0.81ns		  48 /       133
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 133MB)
 
+   4		0h:00m:00s		    -0.52ns		  48 /       133
+@N:<a href="@N:FX1016:@XP_HELP">FX1016</a> : <a href="c:\users\raul.lora\documents\shiftreg_earendeltest\top.v:6:1:6:4:@N:FX1016:@XP_MSG">top.v(6)</a><!@TM:1742372066> | SB_GB_IO inserted on the port CLK.
+@N:<a href="@N:FX1017:@XP_HELP">FX1017</a> : <!@TM:1742372066> | SB_GB inserted on the net RST_N_c_i. 
+@N:<a href="@N:FX1017:@XP_HELP">FX1017</a> : <!@TM:1742372066> | SB_GB inserted on the net N_215. 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
+
+@N:<a href="@N:MT611:@XP_HELP">MT611</a> : <!@TM:1742372066> | Automatically generated clock fsm_ctrl|SCLK_derived_clock is not used and is being removed 
 
 
 @S |Clock Optimization Summary
@@ -270,53 +300,53 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 
 <a name=clockReport8></a>#### START OF CLOCK OPTIMIZATION REPORT #####[</a>
 
-1 non-gated/non-generated clock tree(s) driving 41 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 133 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+104 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-=========================== Non-Gated/Non-Generated Clocks ============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
----------------------------------------------------------------------------------------
-<a href="@|S:CLK_ibuf_gb_io@|E:enableDin_aux@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001  @XP_NAMES_BY_PROP">ClockId0001 </a>       CLK_ibuf_gb_io      SB_GB_IO               41         enableDin_aux  
-=======================================================================================
+=================================== Non-Gated/Non-Generated Clocks ===================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance               
+------------------------------------------------------------------------------------------------------
+<a href="@|S:CLK_ibuf_gb_io@|E:fsm_ctrl_inst1.counter_idle[9]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001  @XP_NAMES_BY_PROP">ClockId0001 </a>       CLK_ibuf_gb_io      SB_GB_IO               133        fsm_ctrl_inst1.counter_idle[9]
+======================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 106MB peak: 133MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 133MB)
 
-Writing Analyst data base C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_m.srm
+Writing Analyst data base C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_m.srm
 
 Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 130MB peak: 133MB)
 
 Writing EDIF Netlist and constraint files
-@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1742292359> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
-@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1742292359> | Synopsys Constraint File capacitance units using default value of 1pF  
-@N:<a href="@N:FX1056:@XP_HELP">FX1056</a> : <!@TM:1742292359> | Writing EDF file: C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.edf 
+@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1742372066> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
+@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1742372066> | Synopsys Constraint File capacitance units using default value of 1pF  
+@N:<a href="@N:FX1056:@XP_HELP">FX1056</a> : <!@TM:1742372066> | Writing EDF file: C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.edf 
 L-2016.09L+ice40
 
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 133MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
 
-<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1742292359> | Found inferred clock top|CLK with period 5.74ns. Please declare a user-defined clock on object "p:CLK"</font> 
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1742372066> | Found inferred clock top|CLK with period 5.68ns. Please declare a user-defined clock on object "p:CLK"</font> 
 
 
 <a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
-# Timing Report written on Tue Mar 18 11:05:59 2025
+# Timing Report written on Wed Mar 19 09:14:26 2025
 #
 
 
 Top view:               top
-Requested Frequency:    174.3 MHz
+Requested Frequency:    176.2 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
-@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1742292359> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1742372066> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
 
-@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1742292359> | Clock constraints include only register-to-register paths associated with each individual clock. 
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1742372066> | Clock constraints include only register-to-register paths associated with each individual clock. 
 
 
 
@@ -324,12 +354,12 @@ Constraint File(s):
 *******************
 
 
-Worst slack in design: -1.013
+Worst slack in design: -1.002
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock                
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
 ------------------------------------------------------------------------------------------------------------------------
-top|CLK            174.3 MHz     148.1 MHz     5.738         6.751         -1.013     inferred     Autoconstr_clkgroup_0
+top|CLK            176.2 MHz     149.7 MHz     5.677         6.679         -1.002     inferred     Autoconstr_clkgroup_0
 ========================================================================================================================
 
 
@@ -343,7 +373,7 @@ Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  f
 ----------------------------------------------------------------------------------------------------------
 Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ----------------------------------------------------------------------------------------------------------
-top|CLK   top|CLK  |  5.738       -1.013  |  No paths    -      |  No paths    -      |  No paths    -    
+top|CLK   top|CLK  |  5.677       -1.002  |  No paths    -      |  No paths    -      |  No paths    -    
 ==========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -366,211 +396,211 @@ No IO constraint found
 <a name=startingSlack14></a>Starting Points with Worst Slack</a>
 ********************************
 
-                                         Starting                                               Arrival           
-Instance                                 Reference     Type        Pin     Net                  Time        Slack 
-                                         Clock                                                                    
-------------------------------------------------------------------------------------------------------------------
-fsm_shiftRegs_inst1.counter2[1]          top|CLK       SB_DFFR     Q       counter2[1]          0.796       -1.013
-fsm_shiftRegs_inst1.counter[0]           top|CLK       SB_DFFR     Q       counter[0]           0.796       -1.013
-fsm_shiftRegs_inst1.counter2[2]          top|CLK       SB_DFFR     Q       counter2[2]          0.796       -0.940
-fsm_shiftRegs_inst1.counter[1]           top|CLK       SB_DFFR     Q       counter[1]           0.796       -0.940
-fsm_shiftRegs_inst1.current_state[4]     top|CLK       SB_DFFR     Q       current_state[4]     0.796       -0.920
-fsm_shiftRegs_inst1.counter2[4]          top|CLK       SB_DFFR     Q       counter2[4]          0.796       -0.909
-fsm_shiftRegs_inst1.counterDYN[0]        top|CLK       SB_DFFR     Q       counterDYN[0]        0.796       -0.909
-fsm_shiftRegs_inst1.counterDYN[1]        top|CLK       SB_DFFR     Q       counterDYN[1]        0.796       -0.909
-fsm_shiftRegs_inst1.counter[3]           top|CLK       SB_DFFR     Q       counter[3]           0.796       -0.909
-fsm_shiftRegs_inst1.counter2[0]          top|CLK       SB_DFFR     Q       counter2[0]          0.796       -0.868
-==================================================================================================================
+                                   Starting                                               Arrival           
+Instance                           Reference     Type         Pin     Net                 Time        Slack 
+                                   Clock                                                                    
+------------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[3]     top|CLK       SB_DFFER     Q       counter_idle[3]     0.796       -1.002
+fsm_ctrl_inst1.counter_idle[0]     top|CLK       SB_DFFER     Q       counter_idle[0]     0.796       -0.971
+fsm_ctrl_inst1.counter_idle[5]     top|CLK       SB_DFFER     Q       counter_idle[5]     0.796       -0.929
+fsm_ctrl_inst1.counter_idle[1]     top|CLK       SB_DFFER     Q       counter_idle[1]     0.796       -0.898
+fsm_ctrl_inst1.counter_idle[6]     top|CLK       SB_DFFER     Q       counter_idle[6]     0.796       -0.898
+fsm_ctrl_inst1.counter_idle[4]     top|CLK       SB_DFFER     Q       counter_idle[4]     0.796       -0.878
+fsm_ctrl_inst1.counter_idle[2]     top|CLK       SB_DFFER     Q       counter_idle[2]     0.796       -0.867
+fsm_ctrl_inst1.counter_idle[7]     top|CLK       SB_DFFER     Q       counter_idle[7]     0.796       -0.816
+fsm_ctrl_inst1.counter_idle[8]     top|CLK       SB_DFFER     Q       counter_idle[8]     0.796       -0.805
+fsm_ctrl_inst1.counter_idle[9]     top|CLK       SB_DFFER     Q       counter_idle[9]     0.796       -0.774
+============================================================================================================
 
 
 <a name=endingSlack15></a>Ending Points with Worst Slack</a>
 ******************************
 
-                                         Starting                                                      Required           
-Instance                                 Reference     Type        Pin     Net                         Time         Slack 
-                                         Clock                                                                            
---------------------------------------------------------------------------------------------------------------------------
-fsm_shiftRegs_inst1.current_state[0]     top|CLK       SB_DFFS     D       current_state_ns[0]         5.583        -1.013
-fsm_shiftRegs_inst1.current_state[2]     top|CLK       SB_DFFR     D       current_state_ns_0_i[2]     5.583        -1.013
-fsm_shiftRegs_inst1.counter2[0]          top|CLK       SB_DFFR     D       counter2_lm[0]              5.583        -0.920
-fsm_shiftRegs_inst1.counter2[1]          top|CLK       SB_DFFR     D       counter2_lm[1]              5.583        -0.920
-fsm_shiftRegs_inst1.counter2[2]          top|CLK       SB_DFFR     D       counter2_lm[2]              5.583        -0.920
-fsm_shiftRegs_inst1.counter2[3]          top|CLK       SB_DFFR     D       counter2_lm[3]              5.583        -0.920
-fsm_shiftRegs_inst1.counter2[4]          top|CLK       SB_DFFR     D       counter2_lm[4]              5.583        -0.920
-fsm_shiftRegs_inst1.counter2[5]          top|CLK       SB_DFFR     D       counter2_lm[5]              5.583        -0.920
-fsm_shiftRegs_inst1.counter2[6]          top|CLK       SB_DFFR     D       counter2_lm[6]              5.583        -0.920
-fsm_shiftRegs_inst1.current_state[1]     top|CLK       SB_DFFR     D       N_91_0                      5.583        -0.920
-==========================================================================================================================
+                                    Starting                                                 Required           
+Instance                            Reference     Type         Pin     Net                   Time         Slack 
+                                    Clock                                                                       
+----------------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.current_state[0]     top|CLK       SB_DFFR      D       current_state         5.522        -1.002
+fsm_ctrl_inst1.counter_idle[0]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+fsm_ctrl_inst1.counter_idle[1]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+fsm_ctrl_inst1.counter_idle[2]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+fsm_ctrl_inst1.counter_idle[3]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+fsm_ctrl_inst1.counter_idle[4]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+fsm_ctrl_inst1.counter_idle[5]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+fsm_ctrl_inst1.counter_idle[6]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+fsm_ctrl_inst1.counter_idle[7]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+fsm_ctrl_inst1.counter_idle[8]      top|CLK       SB_DFFER     E       counter_idlee_0_i     5.677        -0.919
+================================================================================================================
 
 
 
 <a name=worstPaths16></a>Worst Path Information</a>
-<a href="C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.srr:srsfC:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\GEN_REC.srs:fp:24943:25933:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+<a href="C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.srr:srsfC:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.srs:fp:35472:36426:@XP_NAMES_GATE">View Worst Path in Analyst</a>
 ***********************
 
 
 Path information for path number 1: 
-      Requested Period:                      5.738
+      Requested Period:                      5.677
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.583
+    = Required time:                         5.522
 
-    - Propagation time:                      6.596
+    - Propagation time:                      6.524
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.013
+    = Slack (critical) :                     -1.002
 
     Number of logic level(s):                2
-    Starting point:                          fsm_shiftRegs_inst1.counter2[1] / Q
-    Ending point:                            fsm_shiftRegs_inst1.current_state[0] / D
+    Starting point:                          fsm_ctrl_inst1.counter_idle[3] / Q
+    Ending point:                            fsm_ctrl_inst1.current_state[0] / D
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
-Instance / Net                                             Pin      Pin               Arrival     No. of    
-Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------
-fsm_shiftRegs_inst1.counter2[1]                SB_DFFR     Q        Out     0.796     0.796       -         
-counter2[1]                                    Net         -        -       1.599     -           4         
-fsm_shiftRegs_inst1.current_state_RNO_0[0]     SB_LUT4     I0       In      -         2.395       -         
-fsm_shiftRegs_inst1.current_state_RNO_0[0]     SB_LUT4     O        Out     0.661     3.056       -         
-current_state_RNO_0[0]                         Net         -        -       1.371     -           1         
-fsm_shiftRegs_inst1.current_state_RNO[0]       SB_LUT4     I0       In      -         4.427       -         
-fsm_shiftRegs_inst1.current_state_RNO[0]       SB_LUT4     O        Out     0.661     5.089       -         
-current_state_ns[0]                            Net         -        -       1.507     -           1         
-fsm_shiftRegs_inst1.current_state[0]           SB_DFFS     D        In      -         6.596       -         
-============================================================================================================
-Total path delay (propagation time + setup) of 6.751 is 2.274(33.7%) logic and 4.477(66.3%) route.
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[3]            SB_DFFER     Q        Out     0.796     0.796       -         
+counter_idle[3]                           Net          -        -       1.599     -           4         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4      I0       In      -         2.395       -         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4      O        Out     0.661     3.056       -         
+current_state_11_0_a2_5                   Net          -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      I1       In      -         4.427       -         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      O        Out     0.589     5.017       -         
+current_state                             Net          -        -       1.507     -           1         
+fsm_ctrl_inst1.current_state[0]           SB_DFFR      D        In      -         6.524       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.679 is 2.202(33.0%) logic and 4.477(67.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
-      Requested Period:                      5.738
+      Requested Period:                      5.677
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.583
+    = Required time:                         5.522
 
-    - Propagation time:                      6.596
+    - Propagation time:                      6.492
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.013
+    = Slack (non-critical) :                 -0.971
 
     Number of logic level(s):                2
-    Starting point:                          fsm_shiftRegs_inst1.counter[0] / Q
-    Ending point:                            fsm_shiftRegs_inst1.current_state[2] / D
+    Starting point:                          fsm_ctrl_inst1.counter_idle[0] / Q
+    Ending point:                            fsm_ctrl_inst1.current_state[0] / D
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
-Instance / Net                                           Pin      Pin               Arrival     No. of    
-Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------
-fsm_shiftRegs_inst1.counter[0]               SB_DFFR     Q        Out     0.796     0.796       -         
-counter[0]                                   Net         -        -       1.599     -           5         
-fsm_shiftRegs_inst1.counter_RNIC589[1]       SB_LUT4     I0       In      -         2.395       -         
-fsm_shiftRegs_inst1.counter_RNIC589[1]       SB_LUT4     O        Out     0.661     3.056       -         
-N_123_1                                      Net         -        -       1.371     -           2         
-fsm_shiftRegs_inst1.current_state_RNO[2]     SB_LUT4     I0       In      -         4.427       -         
-fsm_shiftRegs_inst1.current_state_RNO[2]     SB_LUT4     O        Out     0.661     5.089       -         
-current_state_ns_0_i[2]                      Net         -        -       1.507     -           1         
-fsm_shiftRegs_inst1.current_state[2]         SB_DFFR     D        In      -         6.596       -         
-==========================================================================================================
-Total path delay (propagation time + setup) of 6.751 is 2.274(33.7%) logic and 4.477(66.3%) route.
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[0]            SB_DFFER     Q        Out     0.796     0.796       -         
+counter_idle[0]                           Net          -        -       1.599     -           3         
+fsm_ctrl_inst1.current_state_RNO_1[0]     SB_LUT4      I0       In      -         2.395       -         
+fsm_ctrl_inst1.current_state_RNO_1[0]     SB_LUT4      O        Out     0.661     3.056       -         
+current_state_11_0_a2_6                   Net          -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      I2       In      -         4.427       -         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      O        Out     0.558     4.986       -         
+current_state                             Net          -        -       1.507     -           1         
+fsm_ctrl_inst1.current_state[0]           SB_DFFR      D        In      -         6.492       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.648 is 2.171(32.7%) logic and 4.477(67.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
-      Requested Period:                      5.738
+      Requested Period:                      5.677
     - Setup time:                            0.155
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.583
+    = Required time:                         5.522
 
-    - Propagation time:                      6.524
+    - Propagation time:                      6.451
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.940
+    = Slack (non-critical) :                 -0.929
 
     Number of logic level(s):                2
-    Starting point:                          fsm_shiftRegs_inst1.counter2[2] / Q
-    Ending point:                            fsm_shiftRegs_inst1.current_state[0] / D
+    Starting point:                          fsm_ctrl_inst1.counter_idle[5] / Q
+    Ending point:                            fsm_ctrl_inst1.current_state[0] / D
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
-Instance / Net                                             Pin      Pin               Arrival     No. of    
-Name                                           Type        Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------
-fsm_shiftRegs_inst1.counter2[2]                SB_DFFR     Q        Out     0.796     0.796       -         
-counter2[2]                                    Net         -        -       1.599     -           4         
-fsm_shiftRegs_inst1.current_state_RNO_0[0]     SB_LUT4     I1       In      -         2.395       -         
-fsm_shiftRegs_inst1.current_state_RNO_0[0]     SB_LUT4     O        Out     0.589     2.984       -         
-current_state_RNO_0[0]                         Net         -        -       1.371     -           1         
-fsm_shiftRegs_inst1.current_state_RNO[0]       SB_LUT4     I0       In      -         4.355       -         
-fsm_shiftRegs_inst1.current_state_RNO[0]       SB_LUT4     O        Out     0.661     5.017       -         
-current_state_ns[0]                            Net         -        -       1.507     -           1         
-fsm_shiftRegs_inst1.current_state[0]           SB_DFFS     D        In      -         6.524       -         
-============================================================================================================
-Total path delay (propagation time + setup) of 6.679 is 2.202(33.0%) logic and 4.477(67.0%) route.
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[5]            SB_DFFER     Q        Out     0.796     0.796       -         
+counter_idle[5]                           Net          -        -       1.599     -           4         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4      I1       In      -         2.395       -         
+fsm_ctrl_inst1.current_state_RNO_0[0]     SB_LUT4      O        Out     0.589     2.984       -         
+current_state_11_0_a2_5                   Net          -        -       1.371     -           1         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      I1       In      -         4.355       -         
+fsm_ctrl_inst1.current_state_RNO[0]       SB_LUT4      O        Out     0.589     4.944       -         
+current_state                             Net          -        -       1.507     -           1         
+fsm_ctrl_inst1.current_state[0]           SB_DFFR      D        In      -         6.451       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 6.606 is 2.129(32.2%) logic and 4.477(67.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
-      Requested Period:                      5.738
-    - Setup time:                            0.155
+      Requested Period:                      5.677
+    - Setup time:                            0.000
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.583
+    = Required time:                         5.677
 
-    - Propagation time:                      6.524
+    - Propagation time:                      6.596
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.940
+    = Slack (non-critical) :                 -0.919
 
     Number of logic level(s):                2
-    Starting point:                          fsm_shiftRegs_inst1.counter[1] / Q
-    Ending point:                            fsm_shiftRegs_inst1.current_state[2] / D
+    Starting point:                          fsm_ctrl_inst1.counter_idle[3] / Q
+    Ending point:                            fsm_ctrl_inst1.counter_idle[0] / E
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
 Instance / Net                                           Pin      Pin               Arrival     No. of    
-Name                                         Type        Name     Dir     Delay     Time        Fan Out(s)
+Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
 ----------------------------------------------------------------------------------------------------------
-fsm_shiftRegs_inst1.counter[1]               SB_DFFR     Q        Out     0.796     0.796       -         
-counter[1]                                   Net         -        -       1.599     -           4         
-fsm_shiftRegs_inst1.counter_RNIC589[1]       SB_LUT4     I1       In      -         2.395       -         
-fsm_shiftRegs_inst1.counter_RNIC589[1]       SB_LUT4     O        Out     0.589     2.984       -         
-N_123_1                                      Net         -        -       1.371     -           2         
-fsm_shiftRegs_inst1.current_state_RNO[2]     SB_LUT4     I0       In      -         4.355       -         
-fsm_shiftRegs_inst1.current_state_RNO[2]     SB_LUT4     O        Out     0.661     5.017       -         
-current_state_ns_0_i[2]                      Net         -        -       1.507     -           1         
-fsm_shiftRegs_inst1.current_state[2]         SB_DFFR     D        In      -         6.524       -         
+fsm_ctrl_inst1.counter_idle[3]              SB_DFFER     Q        Out     0.796     0.796       -         
+counter_idle[3]                             Net          -        -       1.599     -           4         
+fsm_ctrl_inst1.counter_idle_RNI22KF1[3]     SB_LUT4      I0       In      -         2.395       -         
+fsm_ctrl_inst1.counter_idle_RNI22KF1[3]     SB_LUT4      O        Out     0.661     3.056       -         
+counter_idlelde_3                           Net          -        -       1.371     -           1         
+fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]     SB_LUT4      I0       In      -         4.427       -         
+fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]     SB_LUT4      O        Out     0.661     5.089       -         
+counter_idlee_0_i                           Net          -        -       1.507     -           10        
+fsm_ctrl_inst1.counter_idle[0]              SB_DFFER     E        In      -         6.596       -         
 ==========================================================================================================
-Total path delay (propagation time + setup) of 6.679 is 2.202(33.0%) logic and 4.477(67.0%) route.
+Total path delay (propagation time + setup) of 6.596 is 2.119(32.1%) logic and 4.477(67.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
-      Requested Period:                      5.738
-    - Setup time:                            0.155
+      Requested Period:                      5.677
+    - Setup time:                            0.000
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.583
+    = Required time:                         5.677
 
-    - Propagation time:                      6.503
+    - Propagation time:                      6.596
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -0.920
+    = Slack (non-critical) :                 -0.919
 
     Number of logic level(s):                2
-    Starting point:                          fsm_shiftRegs_inst1.current_state[4] / Q
-    Ending point:                            fsm_shiftRegs_inst1.counter2[0] / D
+    Starting point:                          fsm_ctrl_inst1.counter_idle[3] / Q
+    Ending point:                            fsm_ctrl_inst1.counter_idle[9] / E
     The start point is clocked by            top|CLK [rising] on pin C
     The end   point is clocked by            top|CLK [rising] on pin C
 
-Instance / Net                                               Pin      Pin               Arrival     No. of    
-Name                                             Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------
-fsm_shiftRegs_inst1.current_state[4]             SB_DFFR     Q        Out     0.796     0.796       -         
-current_state[4]                                 Net         -        -       1.599     -           4         
-fsm_shiftRegs_inst1.current_state_RNIVA94[4]     SB_LUT4     I0       In      -         2.395       -         
-fsm_shiftRegs_inst1.current_state_RNIVA94[4]     SB_LUT4     O        Out     0.569     2.963       -         
-current_state_i[4]                               Net         -        -       1.371     -           8         
-fsm_shiftRegs_inst1.counter2_RNO[0]              SB_LUT4     I0       In      -         4.334       -         
-fsm_shiftRegs_inst1.counter2_RNO[0]              SB_LUT4     O        Out     0.661     4.996       -         
-counter2_lm[0]                                   Net         -        -       1.507     -           1         
-fsm_shiftRegs_inst1.counter2[0]                  SB_DFFR     D        In      -         6.503       -         
-==============================================================================================================
-Total path delay (propagation time + setup) of 6.658 is 2.181(32.8%) logic and 4.477(67.2%) route.
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+fsm_ctrl_inst1.counter_idle[3]              SB_DFFER     Q        Out     0.796     0.796       -         
+counter_idle[3]                             Net          -        -       1.599     -           4         
+fsm_ctrl_inst1.counter_idle_RNI22KF1[3]     SB_LUT4      I0       In      -         2.395       -         
+fsm_ctrl_inst1.counter_idle_RNI22KF1[3]     SB_LUT4      O        Out     0.661     3.056       -         
+counter_idlelde_3                           Net          -        -       1.371     -           1         
+fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]     SB_LUT4      I0       In      -         4.427       -         
+fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]     SB_LUT4      O        Out     0.661     5.089       -         
+counter_idlee_0_i                           Net          -        -       1.507     -           10        
+fsm_ctrl_inst1.counter_idle[9]              SB_DFFER     E        In      -         6.596       -         
+==========================================================================================================
+Total path delay (propagation time + setup) of 6.596 is 2.119(32.1%) logic and 4.477(67.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -580,10 +610,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
 
 ---------------------------------------
 <a name=resourceUsage17></a>Resource Usage Report for top </a>
@@ -591,14 +621,14 @@ Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01
 Mapping to part: ice40lp8kcm81
 Cell usage:
 GND             2 uses
-SB_CARRY        7 uses
-SB_DFF          2 uses
-SB_DFFE         14 uses
-SB_DFFR         24 uses
-SB_DFFS         1 use
-SB_GB           1 use
+SB_CARRY        9 uses
+SB_DFFER        84 uses
+SB_DFFES        30 uses
+SB_DFFR         9 uses
+SB_DFFS         10 uses
+SB_GB           2 uses
 VCC             2 uses
-SB_LUT4         50 uses
+SB_LUT4         39 uses
 
 I/O ports: 4
 I/O primitives: 4
@@ -606,22 +636,22 @@ SB_GB_IO       1 use
 SB_IO          3 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   41 (0%)
+Register bits not including I/Os:   133 (1%)
 Total load per clock:
    top|CLK: 1
 
 @S |Mapping Summary:
-Total  LUTs: 50 (0%)
+Total  LUTs: 39 (0%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 50 = 50 
+Distribution of All Consumed Luts 39 = 39 
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 26MB peak: 133MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 27MB peak: 133MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Tue Mar 18 11:05:59 2025
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Mar 19 09:14:26 2025
 
 ###########################################################]
 

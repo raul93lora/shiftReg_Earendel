@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Mar 18 2025 11:06:01
+* File Generated:     Mar 19 2025 09:14:29
 
 * Purpose:            
 
@@ -14,20 +14,20 @@
 
 * ******************************************************************************
 
-Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top --outdir C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer --device-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev --package CM81 --deviceMarketName iCE40LP8K --sdc-file C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib --effort_level std --out-sdc-file C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top --outdir C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer --device-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev --package CM81 --deviceMarketName iCE40LP8K --sdc-file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib --effort_level std --out-sdc-file C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer\top_pl.sdc
 I2004: Option and Settings Summary
 =============================================================
 Device file          - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev
 Package              - CM81
-Design database      - C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top
-SDC file             - C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\Temp/sbt_temp.sdc
-Output directory     - C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer
+Design database      - C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top
+SDC file             - C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\outputs\placer
 Timing library       - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib
 Effort level         - std
 
 I2050: Starting reading inputs for placer
 =============================================================
-I2100: Reading design library: C:/Users/raul.lora/Documents/shiftReg_Earendel/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top/BFPGA_DESIGN_ep
+I2100: Reading design library: C:/Users/raul.lora/Documents/shiftReg_EarendelTest/GEN_REC/GEN_REC_Implmnt\sbt\netlist\oadb-top/BFPGA_DESIGN_ep
 I2065: Reading device file : C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev
 I2051: Reading of inputs for placer completed successfully
 
@@ -35,15 +35,15 @@ I2053: Starting placement of the design
 =============================================================
 
 Input Design Statistics
-    Number of LUTs      	:	50
-    Number of DFFs      	:	41
+    Number of LUTs      	:	39
+    Number of DFFs      	:	133
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	7
+    Number of Carrys    	:	9
     Number of RAMs      	:	0
     Number of ROMs      	:	0
     Number of IOs       	:	3
     Number of GBIOs     	:	1
-    Number of GBs       	:	1
+    Number of GBs       	:	2
     Number of WarmBoot  	:	0
     Number of PLLs      	:	0
 
@@ -52,7 +52,7 @@ Phase 1
 I2077: Start design legalization
 
 Design Legalization Statistics
-    Number of feedthru LUTs inserted to legalize input of DFFs     	:	4
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	104
     Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
     Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
     Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
@@ -61,7 +61,7 @@ Design Legalization Statistics
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
     Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
-    Total LUTs inserted                                            	:	4
+    Total LUTs inserted                                            	:	104
     Total CARRYs inserted                                          	:	0
 
 
@@ -75,53 +75,53 @@ I2088: Phase 2, elapsed time : 0.1 (sec)
 Phase 3
 
 Design Statistics after Packing
-    Number of LUTs      	:	54
-    Number of DFFs      	:	41
+    Number of LUTs      	:	144
+    Number of DFFs      	:	133
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	7
+    Number of Carrys    	:	9
 
 Device Utilization Summary after Packing
     Sequential LogicCells
-        LUT and DFF      	:	34
-        LUT, DFF and CARRY	:	7
+        LUT and DFF      	:	124
+        LUT, DFF and CARRY	:	9
     Combinational LogicCells
-        Only LUT         	:	13
+        Only LUT         	:	11
         CARRY Only       	:	0
         LUT with CARRY   	:	0
-    LogicCells                  :	54/7680
-    PLBs                        :	8/960
+    LogicCells                  :	144/7680
+    PLBs                        :	19/960
     BRAMs                       :	0/32
     IOs and GBIOs               :	4/63
     PLLs                        :	0/1
 
 
-I2088: Phase 3, elapsed time : 0.3 (sec)
+I2088: Phase 3, elapsed time : 0.4 (sec)
 
 Phase 4
 I2088: Phase 4, elapsed time : 0.3 (sec)
 
 Phase 5
-I2088: Phase 5, elapsed time : 0.1 (sec)
+I2088: Phase 5, elapsed time : 0.2 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 31.9 (sec)
+I2088: Phase 6, elapsed time : 16.9 (sec)
 
 Final Design Statistics
-    Number of LUTs      	:	54
-    Number of DFFs      	:	41
+    Number of LUTs      	:	144
+    Number of DFFs      	:	133
     Number of DFFs packed to IO	:	0
-    Number of Carrys    	:	7
+    Number of Carrys    	:	9
     Number of RAMs      	:	0
     Number of ROMs      	:	0
     Number of IOs       	:	3
     Number of GBIOs     	:	1
-    Number of GBs       	:	1
+    Number of GBs       	:	2
     Number of WarmBoot  	:	0
     Number of PLLs      	:	0
 
 Device Utilization Summary
-    LogicCells                  :	54/7680
-    PLBs                        :	13/960
+    LogicCells                  :	144/7680
+    PLBs                        :	25/960
     BRAMs                       :	0/32
     IOs and GBIOs               :	4/63
     PLLs                        :	0/1
@@ -140,7 +140,7 @@ analysis after routing.
                      Clock Summary 
 =====================================================================
 Number of clocks: 1
-Clock: top|CLK | Frequency: 257.51 MHz | Target: 174.22 MHz
+Clock: top|CLK | Frequency: 210.29 MHz | Target: 176.06 MHz
 
 =====================================================================
                      End of Clock Summary
@@ -148,5 +148,5 @@ Clock: top|CLK | Frequency: 257.51 MHz | Target: 174.22 MHz
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 33.1 sec.
+I2076: Placer run-time: 18.5 sec.
 

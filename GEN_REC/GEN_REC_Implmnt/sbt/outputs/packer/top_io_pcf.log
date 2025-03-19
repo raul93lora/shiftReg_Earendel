@@ -1,4 +1,4 @@
-OUTPUT generated_signal 	 location (30, 33, 1) 	 B8 	 
-INPUT  RST_N 	 location (33, 21, 1) 	 C9 	 
-OUTPUT ENdin 	 location (33, 4, 1) 	 A9 	 
+OUTPUT SDO_signal_out 	 location (0, 16, 0) 	 E4 	 
+INPUT  RST_N 	 location (0, 3, 0) 	 H2 	 
+INPUT  CLK_uC 	 location (0, 20, 0) 	 E1 	 
 INPUT  CLK 	 location (0, 17, 0) 	 D3 	 

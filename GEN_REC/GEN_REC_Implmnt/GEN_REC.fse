@@ -1,14 +1,8 @@
 
-fsm_encoding {7544541} onehot
+fsm_encoding {7495491} sequential
 
-fsm_state_encoding {7544541} IDLE {00001}
+fsm_state_encoding {7495491} IDLE {0}
 
-fsm_state_encoding {7544541} WAIT_1 {00010}
+fsm_state_encoding {7495491} DYN_READ {1}
 
-fsm_state_encoding {7544541} SEL_DYN {00100}
-
-fsm_state_encoding {7544541} DYN_LATCH {01000}
-
-fsm_state_encoding {7544541} WAIT_2 {10000}
-
-fsm_registers {7544541} {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 
+fsm_registers {7495491} {current_state[0]} 

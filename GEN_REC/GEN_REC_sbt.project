@@ -12,7 +12,7 @@ DesignCell=top
 SynthesisSDCFile=GEN_REC_Implmnt/GEN_REC.scf
 UserPinConstraintFile=
 UserSDCFile=
-PhysicalConstraintFile=GEN_REC_Implmnt/sbt/constraint/top_pcf_sbt.pcf
+PhysicalConstraintFile=
 BackendImplPathName=
 Devicevoltage=1.14
 DevicevoltagePerformance=+/-5%(datasheet default)
@@ -32,7 +32,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=GEN_REC
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../generator.v=work,../receptor.v=work,../fsm_shiftRegs.v=work,../top.v
+ProjectVFiles=../top.v=work,../config_register_latched_dec.v=work,../fsm_ctrl.v
 ProjectCFiles=
 CurImplementation=GEN_REC_Implmnt
 Implementations=GEN_REC_Implmnt

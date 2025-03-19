@@ -1,62 +1,163 @@
-ble_pack fsm_shiftRegs_inst1.counter2[0]_LC_15 {fsm_shiftRegs_inst1.counter2[0], fsm_shiftRegs_inst1.counter2_cry_c[0], fsm_shiftRegs_inst1.counter2_RNO[0]}
-ble_pack fsm_shiftRegs_inst1.counter2[1]_LC_16 {fsm_shiftRegs_inst1.counter2[1], fsm_shiftRegs_inst1.counter2_cry_c[1], fsm_shiftRegs_inst1.counter2_RNO[1]}
-ble_pack fsm_shiftRegs_inst1.counter2[2]_LC_17 {fsm_shiftRegs_inst1.counter2[2], fsm_shiftRegs_inst1.counter2_cry_c[2], fsm_shiftRegs_inst1.counter2_RNO[2]}
-ble_pack fsm_shiftRegs_inst1.counter2[3]_LC_18 {fsm_shiftRegs_inst1.counter2[3], fsm_shiftRegs_inst1.counter2_cry_c[3], fsm_shiftRegs_inst1.counter2_RNO[3]}
-ble_pack fsm_shiftRegs_inst1.counter2[4]_LC_19 {fsm_shiftRegs_inst1.counter2[4], fsm_shiftRegs_inst1.counter2_cry_c[4], fsm_shiftRegs_inst1.counter2_RNO[4]}
-ble_pack fsm_shiftRegs_inst1.counter2[5]_LC_20 {fsm_shiftRegs_inst1.counter2[5], fsm_shiftRegs_inst1.counter2_cry_c[5], fsm_shiftRegs_inst1.counter2_RNO[5]}
-ble_pack fsm_shiftRegs_inst1.counter2[6]_LC_21 {fsm_shiftRegs_inst1.counter2[6], fsm_shiftRegs_inst1.counter2_cry_c[6], fsm_shiftRegs_inst1.counter2_RNO[6]}
-ble_pack fsm_shiftRegs_inst1.counter2[7]_LC_22 {fsm_shiftRegs_inst1.counter2[7], fsm_shiftRegs_inst1.counter2_RNO[7]}
-clb_pack PLB_0 {fsm_shiftRegs_inst1.counter2[0]_LC_15, fsm_shiftRegs_inst1.counter2[1]_LC_16, fsm_shiftRegs_inst1.counter2[2]_LC_17, fsm_shiftRegs_inst1.counter2[3]_LC_18, fsm_shiftRegs_inst1.counter2[4]_LC_19, fsm_shiftRegs_inst1.counter2[5]_LC_20, fsm_shiftRegs_inst1.counter2[6]_LC_21, fsm_shiftRegs_inst1.counter2[7]_LC_22}
-ble_pack fsm_shiftRegs_inst1.counter2_RNITAO81[7]_LC_14 {fsm_shiftRegs_inst1.counter2_RNITAO81[7]}
-ble_pack fsm_shiftRegs_inst1.current_state[4]_LC_46 {fsm_shiftRegs_inst1.current_state[4], fsm_shiftRegs_inst1.current_state_RNO[4]}
-ble_pack fsm_shiftRegs_inst1.current_state_RNIVA94[4]_LC_36 {fsm_shiftRegs_inst1.current_state_RNIVA94[4]}
-ble_pack fsm_shiftRegs_inst1.current_state[0]_LC_37 {fsm_shiftRegs_inst1.current_state[0], fsm_shiftRegs_inst1.current_state_RNO[0]}
-ble_pack fsm_shiftRegs_inst1.current_state_RNO_0[0]_LC_38 {fsm_shiftRegs_inst1.current_state_RNO_0[0]}
-ble_pack fsm_shiftRegs_inst1.current_state_RNO_0[4]_LC_41 {fsm_shiftRegs_inst1.current_state_RNO_0[4]}
-ble_pack fsm_shiftRegs_inst1.sel_dyn_LC_47 {fsm_shiftRegs_inst1.sel_dyn, fsm_shiftRegs_inst1.sel_dyn_RNO}
-ble_pack generator_inst1.signal_aux_LC_49 {generator_inst1.signal_aux, generator_inst1.signal_aux_RNO}
-clb_pack PLB_1 {fsm_shiftRegs_inst1.counter2_RNITAO81[7]_LC_14, fsm_shiftRegs_inst1.current_state[4]_LC_46, fsm_shiftRegs_inst1.current_state_RNIVA94[4]_LC_36, fsm_shiftRegs_inst1.current_state[0]_LC_37, fsm_shiftRegs_inst1.current_state_RNO_0[0]_LC_38, fsm_shiftRegs_inst1.current_state_RNO_0[4]_LC_41, fsm_shiftRegs_inst1.sel_dyn_LC_47, generator_inst1.signal_aux_LC_49}
-ble_pack fsm_shiftRegs_inst1.counterDYN_RNO_0[3]_LC_24 {fsm_shiftRegs_inst1.counterDYN_RNO_0[3]}
-ble_pack fsm_shiftRegs_inst1.counterDYN[3]_LC_27 {fsm_shiftRegs_inst1.counterDYN[3], fsm_shiftRegs_inst1.counterDYN_RNO[3]}
-ble_pack fsm_shiftRegs_inst1.counterDYN[0]_LC_23 {fsm_shiftRegs_inst1.counterDYN[0], fsm_shiftRegs_inst1.counterDYN_RNO[0]}
-ble_pack fsm_shiftRegs_inst1.current_state_RNO_0[2]_LC_39 {fsm_shiftRegs_inst1.current_state_RNO_0[2]}
-ble_pack fsm_shiftRegs_inst1.current_state[2]_LC_44 {fsm_shiftRegs_inst1.current_state[2], fsm_shiftRegs_inst1.current_state_RNO[2]}
-ble_pack fsm_shiftRegs_inst1.current_state_RNO_0[3]_LC_40 {fsm_shiftRegs_inst1.current_state_RNO_0[3]}
-ble_pack fsm_shiftRegs_inst1.counterDYN[2]_LC_26 {fsm_shiftRegs_inst1.counterDYN[2], fsm_shiftRegs_inst1.counterDYN_RNO[2]}
-ble_pack fsm_shiftRegs_inst1.counterDYN[1]_LC_25 {fsm_shiftRegs_inst1.counterDYN[1], fsm_shiftRegs_inst1.counterDYN_RNO[1]}
-clb_pack PLB_2 {fsm_shiftRegs_inst1.counterDYN_RNO_0[3]_LC_24, fsm_shiftRegs_inst1.counterDYN[3]_LC_27, fsm_shiftRegs_inst1.counterDYN[0]_LC_23, fsm_shiftRegs_inst1.current_state_RNO_0[2]_LC_39, fsm_shiftRegs_inst1.current_state[2]_LC_44, fsm_shiftRegs_inst1.current_state_RNO_0[3]_LC_40, fsm_shiftRegs_inst1.counterDYN[2]_LC_26, fsm_shiftRegs_inst1.counterDYN[1]_LC_25}
-ble_pack fsm_shiftRegs_inst1.counter_RNO_0[2]_LC_30 {fsm_shiftRegs_inst1.counter_RNO_0[2]}
-ble_pack fsm_shiftRegs_inst1.counter[2]_LC_33 {fsm_shiftRegs_inst1.counter[2], fsm_shiftRegs_inst1.counter_RNO[2]}
-ble_pack fsm_shiftRegs_inst1.counter[0]_LC_29 {fsm_shiftRegs_inst1.counter[0], fsm_shiftRegs_inst1.counter_RNO[0]}
-ble_pack fsm_shiftRegs_inst1.counter_RNIC589[1]_LC_28 {fsm_shiftRegs_inst1.counter_RNIC589[1]}
-ble_pack fsm_shiftRegs_inst1.current_state[1]_LC_42 {fsm_shiftRegs_inst1.current_state[1], fsm_shiftRegs_inst1.current_state_RNO[1]}
-ble_pack fsm_shiftRegs_inst1.counter[1]_LC_32 {fsm_shiftRegs_inst1.counter[1], fsm_shiftRegs_inst1.counter_RNO[1]}
-ble_pack fsm_shiftRegs_inst1.counter_RNO_0[3]_LC_31 {fsm_shiftRegs_inst1.counter_RNO_0[3]}
-ble_pack fsm_shiftRegs_inst1.counter[3]_LC_34 {fsm_shiftRegs_inst1.counter[3], fsm_shiftRegs_inst1.counter_RNO[3]}
-clb_pack PLB_3 {fsm_shiftRegs_inst1.counter_RNO_0[2]_LC_30, fsm_shiftRegs_inst1.counter[2]_LC_33, fsm_shiftRegs_inst1.counter[0]_LC_29, fsm_shiftRegs_inst1.counter_RNIC589[1]_LC_28, fsm_shiftRegs_inst1.current_state[1]_LC_42, fsm_shiftRegs_inst1.counter[1]_LC_32, fsm_shiftRegs_inst1.counter_RNO_0[3]_LC_31, fsm_shiftRegs_inst1.counter[3]_LC_34}
-ble_pack fsm_shiftRegs_inst1.signal_out_LC_48 {fsm_shiftRegs_inst1.signal_out, fsm_shiftRegs_inst1.signal_out_RNO}
+ble_pack fsm_ctrl_inst1.counter_idle[0]_LC_25 {fsm_ctrl_inst1.counter_idle[0], fsm_ctrl_inst1.counter_idle_cry_c[0], fsm_ctrl_inst1.counter_idle_RNO[0]}
+ble_pack fsm_ctrl_inst1.counter_idle[1]_LC_26 {fsm_ctrl_inst1.counter_idle[1], fsm_ctrl_inst1.counter_idle_cry_c[1], fsm_ctrl_inst1.counter_idle_RNO[1]}
+ble_pack fsm_ctrl_inst1.counter_idle[2]_LC_27 {fsm_ctrl_inst1.counter_idle[2], fsm_ctrl_inst1.counter_idle_cry_c[2], fsm_ctrl_inst1.counter_idle_RNO[2]}
+ble_pack fsm_ctrl_inst1.counter_idle[3]_LC_28 {fsm_ctrl_inst1.counter_idle[3], fsm_ctrl_inst1.counter_idle_cry_c[3], fsm_ctrl_inst1.counter_idle_RNO[3]}
+ble_pack fsm_ctrl_inst1.counter_idle[4]_LC_29 {fsm_ctrl_inst1.counter_idle[4], fsm_ctrl_inst1.counter_idle_cry_c[4], fsm_ctrl_inst1.counter_idle_RNO[4]}
+ble_pack fsm_ctrl_inst1.counter_idle[5]_LC_30 {fsm_ctrl_inst1.counter_idle[5], fsm_ctrl_inst1.counter_idle_cry_c[5], fsm_ctrl_inst1.counter_idle_RNO[5]}
+ble_pack fsm_ctrl_inst1.counter_idle[6]_LC_31 {fsm_ctrl_inst1.counter_idle[6], fsm_ctrl_inst1.counter_idle_cry_c[6], fsm_ctrl_inst1.counter_idle_RNO[6]}
+ble_pack fsm_ctrl_inst1.counter_idle[7]_LC_32 {fsm_ctrl_inst1.counter_idle[7], fsm_ctrl_inst1.counter_idle_cry_c[7], fsm_ctrl_inst1.counter_idle_RNO[7]}
+clb_pack PLB_0 {fsm_ctrl_inst1.counter_idle[0]_LC_25, fsm_ctrl_inst1.counter_idle[1]_LC_26, fsm_ctrl_inst1.counter_idle[2]_LC_27, fsm_ctrl_inst1.counter_idle[3]_LC_28, fsm_ctrl_inst1.counter_idle[4]_LC_29, fsm_ctrl_inst1.counter_idle[5]_LC_30, fsm_ctrl_inst1.counter_idle[6]_LC_31, fsm_ctrl_inst1.counter_idle[7]_LC_32}
+ble_pack fsm_ctrl_inst1.counter_idle[8]_LC_33 {fsm_ctrl_inst1.counter_idle[8], fsm_ctrl_inst1.counter_idle_cry_c[8], fsm_ctrl_inst1.counter_idle_RNO[8]}
+ble_pack fsm_ctrl_inst1.counter_idle[9]_LC_34 {fsm_ctrl_inst1.counter_idle[9], fsm_ctrl_inst1.counter_idle_RNO[9]}
+clb_pack PLB_1 {fsm_ctrl_inst1.counter_idle[8]_LC_33, fsm_ctrl_inst1.counter_idle[9]_LC_34}
+ble_pack config_register_latched_dec_inst1.DYNSR_cnv[0]_LC_2 {config_register_latched_dec_inst1.DYNSR_cnv[0]}
+ble_pack fsm_ctrl_inst1.SEL_LC_6 {fsm_ctrl_inst1.SEL, fsm_ctrl_inst1.SEL_RNO}
+ble_pack config_register_latched_dec_inst1.STATSR_cnv[0]_LC_3 {config_register_latched_dec_inst1.STATSR_cnv[0]}
+ble_pack fsm_ctrl_inst1.SCLK_LC_5 {fsm_ctrl_inst1.SCLK, fsm_ctrl_inst1.SCLK_RNO}
+ble_pack fsm_ctrl_inst1.current_state[0]_LC_35 {fsm_ctrl_inst1.current_state[0], fsm_ctrl_inst1.current_state_RNO[0]}
+ble_pack fsm_ctrl_inst1.counter_idle_RNI6LIC1[9]_LC_23 {fsm_ctrl_inst1.counter_idle_RNI6LIC1[9]}
+ble_pack fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]_LC_24 {fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]}
+ble_pack fsm_ctrl_inst1.counter_idle_RNI22KF1[3]_LC_22 {fsm_ctrl_inst1.counter_idle_RNI22KF1[3]}
+clb_pack PLB_2 {config_register_latched_dec_inst1.DYNSR_cnv[0]_LC_2, fsm_ctrl_inst1.SEL_LC_6, config_register_latched_dec_inst1.STATSR_cnv[0]_LC_3, fsm_ctrl_inst1.SCLK_LC_5, fsm_ctrl_inst1.current_state[0]_LC_35, fsm_ctrl_inst1.counter_idle_RNI6LIC1[9]_LC_23, fsm_ctrl_inst1.counter_idle_RNI8N6S2[3]_LC_24, fsm_ctrl_inst1.counter_idle_RNI22KF1[3]_LC_22}
+ble_pack fsm_ctrl_inst1.current_state_RNO_0[0]_LC_36 {fsm_ctrl_inst1.current_state_RNO_0[0]}
+ble_pack fsm_ctrl_inst1.current_state_RNO_1[0]_LC_37 {fsm_ctrl_inst1.current_state_RNO_1[0]}
+ble_pack config_register_latched_dec_inst1.DYNSR_RNIQ2U9[15]_LC_1 {config_register_latched_dec_inst1.DYNSR_RNIQ2U9[15]}
+ble_pack config_register_latched_dec_inst1.DYNSR[15]_LC_46 {config_register_latched_dec_inst1.DYNSR[15], config_register_latched_dec_inst1.DYNSR_15_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[14]_LC_45 {config_register_latched_dec_inst1.DYNSR[14], config_register_latched_dec_inst1.DYNSR_14_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[13]_LC_44 {config_register_latched_dec_inst1.DYNSR[13], config_register_latched_dec_inst1.DYNSR_13_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[12]_LC_43 {config_register_latched_dec_inst1.DYNSR[12], config_register_latched_dec_inst1.DYNSR_12_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[11]_LC_42 {config_register_latched_dec_inst1.DYNSR[11], config_register_latched_dec_inst1.DYNSR_11_THRU_LUT4_0}
+clb_pack PLB_3 {fsm_ctrl_inst1.current_state_RNO_0[0]_LC_36, fsm_ctrl_inst1.current_state_RNO_1[0]_LC_37, config_register_latched_dec_inst1.DYNSR_RNIQ2U9[15]_LC_1, config_register_latched_dec_inst1.DYNSR[15]_LC_46, config_register_latched_dec_inst1.DYNSR[14]_LC_45, config_register_latched_dec_inst1.DYNSR[13]_LC_44, config_register_latched_dec_inst1.DYNSR[12]_LC_43, config_register_latched_dec_inst1.DYNSR[11]_LC_42}
+ble_pack fsm_ctrl_inst1.MOSI_LC_4 {fsm_ctrl_inst1.MOSI, fsm_ctrl_inst1.MOSI_RNO}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[15]_LC_13 {fsm_ctrl_inst1.bit_sequence_din[15], fsm_ctrl_inst1.bit_sequence_din_RNO[15]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[14]_LC_12 {fsm_ctrl_inst1.bit_sequence_din[14], fsm_ctrl_inst1.bit_sequence_din_RNO[14]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[13]_LC_11 {fsm_ctrl_inst1.bit_sequence_din[13], fsm_ctrl_inst1.bit_sequence_din_RNO[13]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[12]_LC_10 {fsm_ctrl_inst1.bit_sequence_din[12], fsm_ctrl_inst1.bit_sequence_din_RNO[12]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[11]_LC_9 {fsm_ctrl_inst1.bit_sequence_din[11], fsm_ctrl_inst1.bit_sequence_din_RNO[11]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[10]_LC_8 {fsm_ctrl_inst1.bit_sequence_din[10], fsm_ctrl_inst1.bit_sequence_din_RNO[10]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[9]_LC_21 {fsm_ctrl_inst1.bit_sequence_din[9], fsm_ctrl_inst1.bit_sequence_din_RNO[9]}
+clb_pack PLB_4 {fsm_ctrl_inst1.MOSI_LC_4, fsm_ctrl_inst1.bit_sequence_din[15]_LC_13, fsm_ctrl_inst1.bit_sequence_din[14]_LC_12, fsm_ctrl_inst1.bit_sequence_din[13]_LC_11, fsm_ctrl_inst1.bit_sequence_din[12]_LC_10, fsm_ctrl_inst1.bit_sequence_din[11]_LC_9, fsm_ctrl_inst1.bit_sequence_din[10]_LC_8, fsm_ctrl_inst1.bit_sequence_din[9]_LC_21}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[1]_LC_7 {fsm_ctrl_inst1.bit_sequence_din[1], fsm_ctrl_inst1.bit_sequence_din_RNO[1]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[2]_LC_14 {fsm_ctrl_inst1.bit_sequence_din[2], fsm_ctrl_inst1.bit_sequence_din_RNO[2]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[3]_LC_15 {fsm_ctrl_inst1.bit_sequence_din[3], fsm_ctrl_inst1.bit_sequence_din_RNO[3]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[4]_LC_16 {fsm_ctrl_inst1.bit_sequence_din[4], fsm_ctrl_inst1.bit_sequence_din_RNO[4]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[5]_LC_17 {fsm_ctrl_inst1.bit_sequence_din[5], fsm_ctrl_inst1.bit_sequence_din_RNO[5]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[6]_LC_18 {fsm_ctrl_inst1.bit_sequence_din[6], fsm_ctrl_inst1.bit_sequence_din_RNO[6]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[7]_LC_19 {fsm_ctrl_inst1.bit_sequence_din[7], fsm_ctrl_inst1.bit_sequence_din_RNO[7]}
+ble_pack fsm_ctrl_inst1.bit_sequence_din[8]_LC_20 {fsm_ctrl_inst1.bit_sequence_din[8], fsm_ctrl_inst1.bit_sequence_din_RNO[8]}
+clb_pack PLB_5 {fsm_ctrl_inst1.bit_sequence_din[1]_LC_7, fsm_ctrl_inst1.bit_sequence_din[2]_LC_14, fsm_ctrl_inst1.bit_sequence_din[3]_LC_15, fsm_ctrl_inst1.bit_sequence_din[4]_LC_16, fsm_ctrl_inst1.bit_sequence_din[5]_LC_17, fsm_ctrl_inst1.bit_sequence_din[6]_LC_18, fsm_ctrl_inst1.bit_sequence_din[7]_LC_19, fsm_ctrl_inst1.bit_sequence_din[8]_LC_20}
+ble_pack fsm_ctrl_inst1.current_state_RNO_2[0]_LC_38 {fsm_ctrl_inst1.current_state_RNO_2[0]}
 ble_pack RST_N_ibuf_RNIBJGC_LC_0 {RST_N_ibuf_RNIBJGC}
-ble_pack fsm_shiftRegs_inst1.current_state_RNI7RPG[1]_LC_35 {fsm_shiftRegs_inst1.current_state_RNI7RPG[1]}
-ble_pack fsm_shiftRegs_inst1.current_state_RNO_1[2]_LC_43 {fsm_shiftRegs_inst1.current_state_RNO_1[2]}
-ble_pack enableDin_aux_LC_50 {enableDin_aux, enableDin_aux_THRU_LUT4_0}
-clb_pack PLB_4 {fsm_shiftRegs_inst1.signal_out_LC_48, RST_N_ibuf_RNIBJGC_LC_0, fsm_shiftRegs_inst1.current_state_RNI7RPG[1]_LC_35, fsm_shiftRegs_inst1.current_state_RNO_1[2]_LC_43, enableDin_aux_LC_50}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[10]_LC_1 {fsm_shiftRegs_inst1.bit_sequence[10], fsm_shiftRegs_inst1.bit_sequence_RNO[10]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[11]_LC_2 {fsm_shiftRegs_inst1.bit_sequence[11], fsm_shiftRegs_inst1.bit_sequence_RNO[11]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[12]_LC_3 {fsm_shiftRegs_inst1.bit_sequence[12], fsm_shiftRegs_inst1.bit_sequence_RNO[12]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[13]_LC_4 {fsm_shiftRegs_inst1.bit_sequence[13], fsm_shiftRegs_inst1.bit_sequence_RNO[13]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[14]_LC_5 {fsm_shiftRegs_inst1.bit_sequence[14], fsm_shiftRegs_inst1.bit_sequence_RNO[14]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[15]_LC_6 {fsm_shiftRegs_inst1.bit_sequence[15], fsm_shiftRegs_inst1.bit_sequence_RNO[15]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[9]_LC_13 {fsm_shiftRegs_inst1.bit_sequence[9], fsm_shiftRegs_inst1.bit_sequence_RNO[9]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[8]_LC_12 {fsm_shiftRegs_inst1.bit_sequence[8], fsm_shiftRegs_inst1.bit_sequence_RNO[8]}
-clb_pack PLB_5 {fsm_shiftRegs_inst1.bit_sequence[10]_LC_1, fsm_shiftRegs_inst1.bit_sequence[11]_LC_2, fsm_shiftRegs_inst1.bit_sequence[12]_LC_3, fsm_shiftRegs_inst1.bit_sequence[13]_LC_4, fsm_shiftRegs_inst1.bit_sequence[14]_LC_5, fsm_shiftRegs_inst1.bit_sequence[15]_LC_6, fsm_shiftRegs_inst1.bit_sequence[9]_LC_13, fsm_shiftRegs_inst1.bit_sequence[8]_LC_12}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[3]_LC_7 {fsm_shiftRegs_inst1.bit_sequence[3], fsm_shiftRegs_inst1.bit_sequence_RNO[3]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[4]_LC_8 {fsm_shiftRegs_inst1.bit_sequence[4], fsm_shiftRegs_inst1.bit_sequence_RNO[4]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[5]_LC_9 {fsm_shiftRegs_inst1.bit_sequence[5], fsm_shiftRegs_inst1.bit_sequence_RNO[5]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[6]_LC_10 {fsm_shiftRegs_inst1.bit_sequence[6], fsm_shiftRegs_inst1.bit_sequence_RNO[6]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[7]_LC_11 {fsm_shiftRegs_inst1.bit_sequence[7], fsm_shiftRegs_inst1.bit_sequence_RNO[7]}
-ble_pack fsm_shiftRegs_inst1.bit_sequence[2]_LC_51 {fsm_shiftRegs_inst1.bit_sequence[2], fsm_shiftRegs_inst1.bit_sequence_2_THRU_LUT4_0}
-clb_pack PLB_6 {fsm_shiftRegs_inst1.bit_sequence[3]_LC_7, fsm_shiftRegs_inst1.bit_sequence[4]_LC_8, fsm_shiftRegs_inst1.bit_sequence[5]_LC_9, fsm_shiftRegs_inst1.bit_sequence[6]_LC_10, fsm_shiftRegs_inst1.bit_sequence[7]_LC_11, fsm_shiftRegs_inst1.bit_sequence[2]_LC_51}
-ble_pack fsm_shiftRegs_inst1.current_state[3]_LC_45 {fsm_shiftRegs_inst1.current_state[3], fsm_shiftRegs_inst1.current_state_RNO[3]}
-ble_pack fsm_shiftRegs_inst1.sel_stat_LC_53 {fsm_shiftRegs_inst1.sel_stat, fsm_shiftRegs_inst1.sel_stat_THRU_LUT4_0}
-ble_pack fsm_shiftRegs_inst1.en_fin_LC_52 {fsm_shiftRegs_inst1.en_fin, fsm_shiftRegs_inst1.en_fin_THRU_LUT4_0}
-clb_pack PLB_7 {fsm_shiftRegs_inst1.current_state[3]_LC_45, fsm_shiftRegs_inst1.sel_stat_LC_53, fsm_shiftRegs_inst1.en_fin_LC_52}
+ble_pack config_register_latched_dec_inst1.DYNSR[0]_LC_39 {config_register_latched_dec_inst1.DYNSR[0], config_register_latched_dec_inst1.DYNSR_0_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[1]_LC_40 {config_register_latched_dec_inst1.DYNSR[1], config_register_latched_dec_inst1.DYNSR_1_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[2]_LC_47 {config_register_latched_dec_inst1.DYNSR[2], config_register_latched_dec_inst1.DYNSR_2_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[3]_LC_48 {config_register_latched_dec_inst1.DYNSR[3], config_register_latched_dec_inst1.DYNSR_3_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[4]_LC_49 {config_register_latched_dec_inst1.DYNSR[4], config_register_latched_dec_inst1.DYNSR_4_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[5]_LC_50 {config_register_latched_dec_inst1.DYNSR[5], config_register_latched_dec_inst1.DYNSR_5_THRU_LUT4_0}
+clb_pack PLB_6 {fsm_ctrl_inst1.current_state_RNO_2[0]_LC_38, RST_N_ibuf_RNIBJGC_LC_0, config_register_latched_dec_inst1.DYNSR[0]_LC_39, config_register_latched_dec_inst1.DYNSR[1]_LC_40, config_register_latched_dec_inst1.DYNSR[2]_LC_47, config_register_latched_dec_inst1.DYNSR[3]_LC_48, config_register_latched_dec_inst1.DYNSR[4]_LC_49, config_register_latched_dec_inst1.DYNSR[5]_LC_50}
+ble_pack config_register_latched_dec_inst1.DYNSR[10]_LC_41 {config_register_latched_dec_inst1.DYNSR[10], config_register_latched_dec_inst1.DYNSR_10_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[9]_LC_54 {config_register_latched_dec_inst1.DYNSR[9], config_register_latched_dec_inst1.DYNSR_9_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[8]_LC_53 {config_register_latched_dec_inst1.DYNSR[8], config_register_latched_dec_inst1.DYNSR_8_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[7]_LC_52 {config_register_latched_dec_inst1.DYNSR[7], config_register_latched_dec_inst1.DYNSR_7_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.DYNSR[6]_LC_51 {config_register_latched_dec_inst1.DYNSR[6], config_register_latched_dec_inst1.DYNSR_6_THRU_LUT4_0}
+ble_pack LC_143 {CONSTANT_ONE_LUT4}
+clb_pack PLB_7 {config_register_latched_dec_inst1.DYNSR[10]_LC_41, config_register_latched_dec_inst1.DYNSR[9]_LC_54, config_register_latched_dec_inst1.DYNSR[8]_LC_53, config_register_latched_dec_inst1.DYNSR[7]_LC_52, config_register_latched_dec_inst1.DYNSR[6]_LC_51, LC_143}
+ble_pack config_register_latched_dec_inst1.STATSR[0]_LC_55 {config_register_latched_dec_inst1.STATSR[0], config_register_latched_dec_inst1.STATSR_0_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[1]_LC_56 {config_register_latched_dec_inst1.STATSR[1], config_register_latched_dec_inst1.STATSR_1_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[2]_LC_67 {config_register_latched_dec_inst1.STATSR[2], config_register_latched_dec_inst1.STATSR_2_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[3]_LC_78 {config_register_latched_dec_inst1.STATSR[3], config_register_latched_dec_inst1.STATSR_3_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[4]_LC_89 {config_register_latched_dec_inst1.STATSR[4], config_register_latched_dec_inst1.STATSR_4_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[5]_LC_100 {config_register_latched_dec_inst1.STATSR[5], config_register_latched_dec_inst1.STATSR_5_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[6]_LC_111 {config_register_latched_dec_inst1.STATSR[6], config_register_latched_dec_inst1.STATSR_6_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[7]_LC_122 {config_register_latched_dec_inst1.STATSR[7], config_register_latched_dec_inst1.STATSR_7_THRU_LUT4_0}
+clb_pack PLB_8 {config_register_latched_dec_inst1.STATSR[0]_LC_55, config_register_latched_dec_inst1.STATSR[1]_LC_56, config_register_latched_dec_inst1.STATSR[2]_LC_67, config_register_latched_dec_inst1.STATSR[3]_LC_78, config_register_latched_dec_inst1.STATSR[4]_LC_89, config_register_latched_dec_inst1.STATSR[5]_LC_100, config_register_latched_dec_inst1.STATSR[6]_LC_111, config_register_latched_dec_inst1.STATSR[7]_LC_122}
+ble_pack config_register_latched_dec_inst1.STATSR[10]_LC_57 {config_register_latched_dec_inst1.STATSR[10], config_register_latched_dec_inst1.STATSR_10_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[11]_LC_58 {config_register_latched_dec_inst1.STATSR[11], config_register_latched_dec_inst1.STATSR_11_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[12]_LC_59 {config_register_latched_dec_inst1.STATSR[12], config_register_latched_dec_inst1.STATSR_12_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[13]_LC_60 {config_register_latched_dec_inst1.STATSR[13], config_register_latched_dec_inst1.STATSR_13_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[14]_LC_61 {config_register_latched_dec_inst1.STATSR[14], config_register_latched_dec_inst1.STATSR_14_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[15]_LC_62 {config_register_latched_dec_inst1.STATSR[15], config_register_latched_dec_inst1.STATSR_15_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[16]_LC_63 {config_register_latched_dec_inst1.STATSR[16], config_register_latched_dec_inst1.STATSR_16_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[17]_LC_64 {config_register_latched_dec_inst1.STATSR[17], config_register_latched_dec_inst1.STATSR_17_THRU_LUT4_0}
+clb_pack PLB_9 {config_register_latched_dec_inst1.STATSR[10]_LC_57, config_register_latched_dec_inst1.STATSR[11]_LC_58, config_register_latched_dec_inst1.STATSR[12]_LC_59, config_register_latched_dec_inst1.STATSR[13]_LC_60, config_register_latched_dec_inst1.STATSR[14]_LC_61, config_register_latched_dec_inst1.STATSR[15]_LC_62, config_register_latched_dec_inst1.STATSR[16]_LC_63, config_register_latched_dec_inst1.STATSR[17]_LC_64}
+ble_pack config_register_latched_dec_inst1.STATSR[18]_LC_65 {config_register_latched_dec_inst1.STATSR[18], config_register_latched_dec_inst1.STATSR_18_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[19]_LC_66 {config_register_latched_dec_inst1.STATSR[19], config_register_latched_dec_inst1.STATSR_19_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[20]_LC_68 {config_register_latched_dec_inst1.STATSR[20], config_register_latched_dec_inst1.STATSR_20_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[21]_LC_69 {config_register_latched_dec_inst1.STATSR[21], config_register_latched_dec_inst1.STATSR_21_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[22]_LC_70 {config_register_latched_dec_inst1.STATSR[22], config_register_latched_dec_inst1.STATSR_22_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[23]_LC_71 {config_register_latched_dec_inst1.STATSR[23], config_register_latched_dec_inst1.STATSR_23_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[24]_LC_72 {config_register_latched_dec_inst1.STATSR[24], config_register_latched_dec_inst1.STATSR_24_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[25]_LC_73 {config_register_latched_dec_inst1.STATSR[25], config_register_latched_dec_inst1.STATSR_25_THRU_LUT4_0}
+clb_pack PLB_10 {config_register_latched_dec_inst1.STATSR[18]_LC_65, config_register_latched_dec_inst1.STATSR[19]_LC_66, config_register_latched_dec_inst1.STATSR[20]_LC_68, config_register_latched_dec_inst1.STATSR[21]_LC_69, config_register_latched_dec_inst1.STATSR[22]_LC_70, config_register_latched_dec_inst1.STATSR[23]_LC_71, config_register_latched_dec_inst1.STATSR[24]_LC_72, config_register_latched_dec_inst1.STATSR[25]_LC_73}
+ble_pack config_register_latched_dec_inst1.STATSR[26]_LC_74 {config_register_latched_dec_inst1.STATSR[26], config_register_latched_dec_inst1.STATSR_26_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[27]_LC_75 {config_register_latched_dec_inst1.STATSR[27], config_register_latched_dec_inst1.STATSR_27_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[28]_LC_76 {config_register_latched_dec_inst1.STATSR[28], config_register_latched_dec_inst1.STATSR_28_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[29]_LC_77 {config_register_latched_dec_inst1.STATSR[29], config_register_latched_dec_inst1.STATSR_29_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[30]_LC_79 {config_register_latched_dec_inst1.STATSR[30], config_register_latched_dec_inst1.STATSR_30_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[31]_LC_80 {config_register_latched_dec_inst1.STATSR[31], config_register_latched_dec_inst1.STATSR_31_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[32]_LC_81 {config_register_latched_dec_inst1.STATSR[32], config_register_latched_dec_inst1.STATSR_32_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[33]_LC_82 {config_register_latched_dec_inst1.STATSR[33], config_register_latched_dec_inst1.STATSR_33_THRU_LUT4_0}
+clb_pack PLB_11 {config_register_latched_dec_inst1.STATSR[26]_LC_74, config_register_latched_dec_inst1.STATSR[27]_LC_75, config_register_latched_dec_inst1.STATSR[28]_LC_76, config_register_latched_dec_inst1.STATSR[29]_LC_77, config_register_latched_dec_inst1.STATSR[30]_LC_79, config_register_latched_dec_inst1.STATSR[31]_LC_80, config_register_latched_dec_inst1.STATSR[32]_LC_81, config_register_latched_dec_inst1.STATSR[33]_LC_82}
+ble_pack config_register_latched_dec_inst1.STATSR[34]_LC_83 {config_register_latched_dec_inst1.STATSR[34], config_register_latched_dec_inst1.STATSR_34_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[35]_LC_84 {config_register_latched_dec_inst1.STATSR[35], config_register_latched_dec_inst1.STATSR_35_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[36]_LC_85 {config_register_latched_dec_inst1.STATSR[36], config_register_latched_dec_inst1.STATSR_36_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[37]_LC_86 {config_register_latched_dec_inst1.STATSR[37], config_register_latched_dec_inst1.STATSR_37_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[38]_LC_87 {config_register_latched_dec_inst1.STATSR[38], config_register_latched_dec_inst1.STATSR_38_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[39]_LC_88 {config_register_latched_dec_inst1.STATSR[39], config_register_latched_dec_inst1.STATSR_39_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[40]_LC_90 {config_register_latched_dec_inst1.STATSR[40], config_register_latched_dec_inst1.STATSR_40_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[41]_LC_91 {config_register_latched_dec_inst1.STATSR[41], config_register_latched_dec_inst1.STATSR_41_THRU_LUT4_0}
+clb_pack PLB_12 {config_register_latched_dec_inst1.STATSR[34]_LC_83, config_register_latched_dec_inst1.STATSR[35]_LC_84, config_register_latched_dec_inst1.STATSR[36]_LC_85, config_register_latched_dec_inst1.STATSR[37]_LC_86, config_register_latched_dec_inst1.STATSR[38]_LC_87, config_register_latched_dec_inst1.STATSR[39]_LC_88, config_register_latched_dec_inst1.STATSR[40]_LC_90, config_register_latched_dec_inst1.STATSR[41]_LC_91}
+ble_pack config_register_latched_dec_inst1.STATSR[42]_LC_92 {config_register_latched_dec_inst1.STATSR[42], config_register_latched_dec_inst1.STATSR_42_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[43]_LC_93 {config_register_latched_dec_inst1.STATSR[43], config_register_latched_dec_inst1.STATSR_43_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[44]_LC_94 {config_register_latched_dec_inst1.STATSR[44], config_register_latched_dec_inst1.STATSR_44_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[45]_LC_95 {config_register_latched_dec_inst1.STATSR[45], config_register_latched_dec_inst1.STATSR_45_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[46]_LC_96 {config_register_latched_dec_inst1.STATSR[46], config_register_latched_dec_inst1.STATSR_46_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[47]_LC_97 {config_register_latched_dec_inst1.STATSR[47], config_register_latched_dec_inst1.STATSR_47_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[48]_LC_98 {config_register_latched_dec_inst1.STATSR[48], config_register_latched_dec_inst1.STATSR_48_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[49]_LC_99 {config_register_latched_dec_inst1.STATSR[49], config_register_latched_dec_inst1.STATSR_49_THRU_LUT4_0}
+clb_pack PLB_13 {config_register_latched_dec_inst1.STATSR[42]_LC_92, config_register_latched_dec_inst1.STATSR[43]_LC_93, config_register_latched_dec_inst1.STATSR[44]_LC_94, config_register_latched_dec_inst1.STATSR[45]_LC_95, config_register_latched_dec_inst1.STATSR[46]_LC_96, config_register_latched_dec_inst1.STATSR[47]_LC_97, config_register_latched_dec_inst1.STATSR[48]_LC_98, config_register_latched_dec_inst1.STATSR[49]_LC_99}
+ble_pack config_register_latched_dec_inst1.STATSR[50]_LC_101 {config_register_latched_dec_inst1.STATSR[50], config_register_latched_dec_inst1.STATSR_50_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[51]_LC_102 {config_register_latched_dec_inst1.STATSR[51], config_register_latched_dec_inst1.STATSR_51_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[52]_LC_103 {config_register_latched_dec_inst1.STATSR[52], config_register_latched_dec_inst1.STATSR_52_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[53]_LC_104 {config_register_latched_dec_inst1.STATSR[53], config_register_latched_dec_inst1.STATSR_53_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[54]_LC_105 {config_register_latched_dec_inst1.STATSR[54], config_register_latched_dec_inst1.STATSR_54_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[55]_LC_106 {config_register_latched_dec_inst1.STATSR[55], config_register_latched_dec_inst1.STATSR_55_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[56]_LC_107 {config_register_latched_dec_inst1.STATSR[56], config_register_latched_dec_inst1.STATSR_56_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[57]_LC_108 {config_register_latched_dec_inst1.STATSR[57], config_register_latched_dec_inst1.STATSR_57_THRU_LUT4_0}
+clb_pack PLB_14 {config_register_latched_dec_inst1.STATSR[50]_LC_101, config_register_latched_dec_inst1.STATSR[51]_LC_102, config_register_latched_dec_inst1.STATSR[52]_LC_103, config_register_latched_dec_inst1.STATSR[53]_LC_104, config_register_latched_dec_inst1.STATSR[54]_LC_105, config_register_latched_dec_inst1.STATSR[55]_LC_106, config_register_latched_dec_inst1.STATSR[56]_LC_107, config_register_latched_dec_inst1.STATSR[57]_LC_108}
+ble_pack config_register_latched_dec_inst1.STATSR[58]_LC_109 {config_register_latched_dec_inst1.STATSR[58], config_register_latched_dec_inst1.STATSR_58_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[59]_LC_110 {config_register_latched_dec_inst1.STATSR[59], config_register_latched_dec_inst1.STATSR_59_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[60]_LC_112 {config_register_latched_dec_inst1.STATSR[60], config_register_latched_dec_inst1.STATSR_60_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[61]_LC_113 {config_register_latched_dec_inst1.STATSR[61], config_register_latched_dec_inst1.STATSR_61_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[62]_LC_114 {config_register_latched_dec_inst1.STATSR[62], config_register_latched_dec_inst1.STATSR_62_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[63]_LC_115 {config_register_latched_dec_inst1.STATSR[63], config_register_latched_dec_inst1.STATSR_63_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[64]_LC_116 {config_register_latched_dec_inst1.STATSR[64], config_register_latched_dec_inst1.STATSR_64_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[65]_LC_117 {config_register_latched_dec_inst1.STATSR[65], config_register_latched_dec_inst1.STATSR_65_THRU_LUT4_0}
+clb_pack PLB_15 {config_register_latched_dec_inst1.STATSR[58]_LC_109, config_register_latched_dec_inst1.STATSR[59]_LC_110, config_register_latched_dec_inst1.STATSR[60]_LC_112, config_register_latched_dec_inst1.STATSR[61]_LC_113, config_register_latched_dec_inst1.STATSR[62]_LC_114, config_register_latched_dec_inst1.STATSR[63]_LC_115, config_register_latched_dec_inst1.STATSR[64]_LC_116, config_register_latched_dec_inst1.STATSR[65]_LC_117}
+ble_pack config_register_latched_dec_inst1.STATSR[66]_LC_118 {config_register_latched_dec_inst1.STATSR[66], config_register_latched_dec_inst1.STATSR_66_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[67]_LC_119 {config_register_latched_dec_inst1.STATSR[67], config_register_latched_dec_inst1.STATSR_67_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[68]_LC_120 {config_register_latched_dec_inst1.STATSR[68], config_register_latched_dec_inst1.STATSR_68_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[69]_LC_121 {config_register_latched_dec_inst1.STATSR[69], config_register_latched_dec_inst1.STATSR_69_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[70]_LC_123 {config_register_latched_dec_inst1.STATSR[70], config_register_latched_dec_inst1.STATSR_70_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[71]_LC_124 {config_register_latched_dec_inst1.STATSR[71], config_register_latched_dec_inst1.STATSR_71_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[72]_LC_125 {config_register_latched_dec_inst1.STATSR[72], config_register_latched_dec_inst1.STATSR_72_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[73]_LC_126 {config_register_latched_dec_inst1.STATSR[73], config_register_latched_dec_inst1.STATSR_73_THRU_LUT4_0}
+clb_pack PLB_16 {config_register_latched_dec_inst1.STATSR[66]_LC_118, config_register_latched_dec_inst1.STATSR[67]_LC_119, config_register_latched_dec_inst1.STATSR[68]_LC_120, config_register_latched_dec_inst1.STATSR[69]_LC_121, config_register_latched_dec_inst1.STATSR[70]_LC_123, config_register_latched_dec_inst1.STATSR[71]_LC_124, config_register_latched_dec_inst1.STATSR[72]_LC_125, config_register_latched_dec_inst1.STATSR[73]_LC_126}
+ble_pack config_register_latched_dec_inst1.STATSR[74]_LC_127 {config_register_latched_dec_inst1.STATSR[74], config_register_latched_dec_inst1.STATSR_74_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[75]_LC_128 {config_register_latched_dec_inst1.STATSR[75], config_register_latched_dec_inst1.STATSR_75_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[76]_LC_129 {config_register_latched_dec_inst1.STATSR[76], config_register_latched_dec_inst1.STATSR_76_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[77]_LC_130 {config_register_latched_dec_inst1.STATSR[77], config_register_latched_dec_inst1.STATSR_77_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[78]_LC_131 {config_register_latched_dec_inst1.STATSR[78], config_register_latched_dec_inst1.STATSR_78_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[79]_LC_132 {config_register_latched_dec_inst1.STATSR[79], config_register_latched_dec_inst1.STATSR_79_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[80]_LC_134 {config_register_latched_dec_inst1.STATSR[80], config_register_latched_dec_inst1.STATSR_80_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[81]_LC_135 {config_register_latched_dec_inst1.STATSR[81], config_register_latched_dec_inst1.STATSR_81_THRU_LUT4_0}
+clb_pack PLB_17 {config_register_latched_dec_inst1.STATSR[74]_LC_127, config_register_latched_dec_inst1.STATSR[75]_LC_128, config_register_latched_dec_inst1.STATSR[76]_LC_129, config_register_latched_dec_inst1.STATSR[77]_LC_130, config_register_latched_dec_inst1.STATSR[78]_LC_131, config_register_latched_dec_inst1.STATSR[79]_LC_132, config_register_latched_dec_inst1.STATSR[80]_LC_134, config_register_latched_dec_inst1.STATSR[81]_LC_135}
+ble_pack config_register_latched_dec_inst1.STATSR[8]_LC_133 {config_register_latched_dec_inst1.STATSR[8], config_register_latched_dec_inst1.STATSR_8_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[9]_LC_142 {config_register_latched_dec_inst1.STATSR[9], config_register_latched_dec_inst1.STATSR_9_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[82]_LC_136 {config_register_latched_dec_inst1.STATSR[82], config_register_latched_dec_inst1.STATSR_82_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[83]_LC_137 {config_register_latched_dec_inst1.STATSR[83], config_register_latched_dec_inst1.STATSR_83_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[84]_LC_138 {config_register_latched_dec_inst1.STATSR[84], config_register_latched_dec_inst1.STATSR_84_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[85]_LC_139 {config_register_latched_dec_inst1.STATSR[85], config_register_latched_dec_inst1.STATSR_85_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[86]_LC_140 {config_register_latched_dec_inst1.STATSR[86], config_register_latched_dec_inst1.STATSR_86_THRU_LUT4_0}
+ble_pack config_register_latched_dec_inst1.STATSR[87]_LC_141 {config_register_latched_dec_inst1.STATSR[87], config_register_latched_dec_inst1.STATSR_87_THRU_LUT4_0}
+clb_pack PLB_18 {config_register_latched_dec_inst1.STATSR[8]_LC_133, config_register_latched_dec_inst1.STATSR[9]_LC_142, config_register_latched_dec_inst1.STATSR[82]_LC_136, config_register_latched_dec_inst1.STATSR[83]_LC_137, config_register_latched_dec_inst1.STATSR[84]_LC_138, config_register_latched_dec_inst1.STATSR[85]_LC_139, config_register_latched_dec_inst1.STATSR[86]_LC_140, config_register_latched_dec_inst1.STATSR[87]_LC_141}

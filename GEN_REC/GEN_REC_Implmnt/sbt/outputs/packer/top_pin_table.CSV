@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Mar 18 2025 11:06:37
+* File Generated:     Mar 19 2025 09:14:49
 
 * Purpose:            Detailed IO and package pin info
 
@@ -27,7 +27,7 @@ A5, VCCIO_0, not used, , , , , , topBank
 A6, PIO, not used, , , , , , topBank
 A7, PIO, not used, , , , , , topBank
 A8, PIO, not used, , , , , , topBank
-A9, PIO, ENdin, Output, , SB_LVCMOS, No Pull Up, Simple Output, rightBank
+A9, PIO, not used, , , , , , rightBank
 B1, PIO, not used, , , , , , leftBank
 B2, PIO, not used, , , , , , leftBank
 B3, PIO, not used, , , , , , topBank
@@ -35,7 +35,7 @@ B4, PIO, not used, , , , , , topBank
 B5, PIO, not used, , , , , , topBank
 B6, PIO, not used, , , , , , topBank
 B7, PIO, not used, , , , , , topBank
-B8, PIO, generated_signal, Output, , SB_LVCMOS, No Pull Up, Simple Output, topBank
+B8, PIO, not used, , , , , , topBank
 B9, PIO, not used, , , , , , rightBank
 C1, PIO, not used, , , , , , leftBank
 C2, PIO, not used, , , , , , leftBank
@@ -45,7 +45,7 @@ C5, PIO_GBIN, not used, , , , , , topBank
 C6, VCCIO_1, not used, , , , , , rightBank
 C7, VPP_DIRECT, not used, , , , , , UnknownBank
 C8, VPP_PUMP, not used, , , , , , UnknownBank
-C9, PIO, RST_N, Input, , SB_LVCMOS, No Pull Up, Simple Input, rightBank
+C9, PIO, not used, , , , , , rightBank
 D1, PIO, not used, , , , , , leftBank
 D2, PIO, not used, , , , , , leftBank
 D3, PIO_GBIN, CLK, Input, glb Buff, SB_LVCMOS, No Pull Up, Simple Input, leftBank
@@ -55,10 +55,10 @@ D6, PIO, not used, , , , , , rightBank
 D7, PIO, not used, , , , , , rightBank
 D8, PIO_GBIN, not used, , , , , , rightBank
 D9, PIO, not used, , , , , , rightBank
-E1, PIO, not used, , , , , , leftBank
+E1, PIO, CLK_uC, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
 E2, PIO, not used, , , , , , leftBank
 E3, PIO_GBIN, not used, , , , , , leftBank
-E4, PIO, not used, , , , , , leftBank
+E4, PIO, SDO_signal_out, Output, , SB_LVCMOS, No Pull Up, Simple Output, leftBank
 E5, PIO, not used, , , , , , topBank
 E6, CDONE, not used, , , , , , bottomBank
 E7, PIO, not used, , , , , , rightBank
@@ -83,7 +83,7 @@ G7, SPI_SCK, not used, , , , , , bottomBank
 G8, PIO, not used, , , , , , rightBank
 G9, PIO, not used, , , , , , rightBank
 H1, PIO, not used, , , , , , bottomBank
-H2, PIO, not used, , , , , , leftBank
+H2, PIO, RST_N, Input, , SB_LVCMOS, No Pull Up, Simple Input, leftBank
 H3, VCCIO_3, not used, , , , , , leftBank
 H4, PIO_GBIN, not used, , , , , , bottomBank
 H5, PIO, not used, , , , , , bottomBank

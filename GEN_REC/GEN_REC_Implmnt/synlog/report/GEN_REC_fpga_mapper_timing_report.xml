@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\raul.lora\Documents\shiftReg_Earendel\GEN_REC\GEN_REC_Implmnt\synlog\GEN_REC_fpga_mapper.srr</data>
+<data>C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synlog\GEN_REC_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -16,8 +16,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 </row>
 <row>
 <data>top|CLK</data>
-<data>174.3 MHz</data>
-<data>148.1 MHz</data>
-<data>-1.013</data>
+<data>176.2 MHz</data>
+<data>149.7 MHz</data>
+<data>-1.002</data>
 </row>
 </report_table>
