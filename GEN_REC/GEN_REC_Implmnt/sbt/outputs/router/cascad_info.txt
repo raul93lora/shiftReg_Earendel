@@ -1,6 +1,2 @@
 [VIC]
-fsm_ctrl_inst1.N_105_cascade_=ltout:in0
-fsm_ctrl_inst1.counter_idlelde_0_a3_0_cascade_=ltout:in0
-fsm_ctrl_inst1.current_state_ns_i_a3_0_4_1_cascade_=ltout:in3
-fsm_ctrl_inst1.current_state_ns_i_a3_0_5_1_cascade_=ltout:in3
-fsm_ctrl_inst1.un1_counter_statlt5_0_cascade_=ltout:in3
+SEL_c_iclk_cascade_=ltout:in0

@@ -1,2 +1,2 @@
-@E: CG300 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":68:10:68:63|posedge and negedge of the same signal not allowed
+@E: CG791 :"C:\Users\raul.lora\Documents\sr_Earendel\top.v":69:24:69:24|Could not resolve hierarchical name 'DNYNCF[12]'.
 

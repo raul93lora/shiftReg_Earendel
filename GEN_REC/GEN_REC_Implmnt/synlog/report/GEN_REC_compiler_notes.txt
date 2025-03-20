@@ -1,11 +1,9 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":8:7:8:33|Synthesizing module config_register_latched_dec in library work.
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":4:7:4:14|Synthesizing module fsm_ctrl in library work.
-@N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Synthesizing module top in library work.
-@N: CL135 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":119:1:119:6|Found sequential shift CLK_uC with address depth of 4 words and data bit width of 1.
-@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":53:5:53:10|Trying to extract state machine for register current_state.
+@N: CG364 :"C:\Users\raul.lora\Documents\sr_Earendel\config_register_latched_dec.v":8:7:8:33|Synthesizing module config_register_latched_dec in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\sr_Earendel\top.v":5:7:5:9|Synthesizing module top in library work.
+@N: CL159 :"C:\Users\raul.lora\Documents\sr_Earendel\top.v":6:1:6:3|Input CLK is unused.
 @N|Running in 64-bit mode
-@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
-@N: NF107 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\raul.lora\Documents\sr_Earendel\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"C:\Users\raul.lora\Documents\sr_Earendel\top.v":5:7:5:9|Selected library: work cell: top view verilog as top level
 

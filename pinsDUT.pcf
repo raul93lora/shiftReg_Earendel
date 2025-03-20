@@ -7,13 +7,19 @@
 set_io --warn-noport generated_signal B8
 
 # BANK 1
-set_io --warn-noport RST_N C9
+set_io --warn-noport RST_N A7   
 
-set_io --warn-noport enDin A9
+set_io --warn-noport SEL A9
+
+set_io --warn-noport SDI A8
+
+set_io --warn-noport SDO_signal_out H9
+
+set_io --warn-noport CLK_uC A6		// Reloj 
 
 
 # BANK 3
-set_io --warn-noport CLK B2		// Reloj por defecto --> 16MHz
+set_io --warn-noport CLK B2		// Reloj 
 
 
 

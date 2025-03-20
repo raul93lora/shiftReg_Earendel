@@ -1,2 +1,11 @@
-@W: MT420 |Found inferred clock top|CLK with period 7.10ns. Please declare a user-defined clock on object "p:CLK"
-@W: MT420 |Found inferred clock top|CLK_fast with period 3.84ns. Please declare a user-defined clock on object "p:CLK_fast"
+@W: BN137 :|Found combinational loop during mapping at net s15_c
+@W: BN137 :|Found combinational loop during mapping at net s14_c
+@W: BN137 :|Found combinational loop during mapping at net s13_c
+@W: BN137 :|Found combinational loop during mapping at net s12_c
+@W: MT453 |clock period is too long for clock top|CLK_uC, changing period from 10000000.0 to 20000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 5000000.0 ns to 10000.0 ns. 
+@W: BN137 :|Found combinational loop during mapping at net config_register_latched_dec_inst1.s12_c
+@W: BN137 :|Found combinational loop during mapping at net config_register_latched_dec_inst1.s13_c
+@W: BN137 :|Found combinational loop during mapping at net config_register_latched_dec_inst1.s14_c
+@W: BN137 :|Found combinational loop during mapping at net config_register_latched_dec_inst1.s15_c
+@W: MT420 |Found inferred clock top|CLK_uC with period 2.99ns. Please declare a user-defined clock on object "p:CLK_uC"
+@W: MT420 |Found inferred clock top|SEL with period 1000.00ns. Please declare a user-defined clock on object "p:SEL"

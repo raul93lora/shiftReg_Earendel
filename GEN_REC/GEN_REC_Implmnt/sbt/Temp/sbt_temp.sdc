@@ -1,8 +1,8 @@
 ####---- CreateClock list ----2
-create_clock  -period 3.84 -waveform {0.00 1.92} -name {top|CLK_fast} [get_ports {CLK_fast}] 
-create_clock  -period 7.10 -waveform {0.00 3.55} -name {top|CLK} [get_ports {CLK}] 
+create_clock  -period 1000.00 -waveform {0.00 500.00} -name {top|SEL} [get_ports {SEL}] 
+create_clock  -period 2.99 -waveform {0.00 1.50} -name {top|CLK_uC} [get_ports {CLK_uC}] 
 
 ####---- SetFalsePath list ----2
-set_false_path  -from [get_clocks {top|CLK_fast}]  -to [get_clocks {top|CLK}]
-set_false_path  -from [get_clocks {top|CLK}]  -to [get_clocks {top|CLK_fast}]
+set_false_path  -from [get_clocks {top|SEL}]  -to [get_clocks {top|CLK_uC}]
+set_false_path  -from [get_clocks {top|CLK_uC}]  -to [get_clocks {top|SEL}]
 

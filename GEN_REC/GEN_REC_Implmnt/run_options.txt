@@ -1,13 +1,12 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
-#--  Project file C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\run_options.txt
-#--  Written on Thu Mar 20 12:45:15 2025
+#--  Project file C:\Users\raul.lora\Documents\sr_Earendel\GEN_REC\GEN_REC_Implmnt\run_options.txt
+#--  Written on Thu Mar 20 13:30:41 2025
 
 
 #project files
 add_file -verilog "../top.v"
 add_file -verilog "../config_register_latched_dec.v"
-add_file -verilog "../fsm_ctrl.v"
 
 
 

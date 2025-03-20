@@ -1,2 +1,1 @@
-CKID0001:@|S:CLK_ibuf_gb_io@|E:fsm_ctrl_inst1.counter_idle[4]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:CLK_fast_ibuf_gb_io@|E:fsm_ctrl_inst1.CLK_uC[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0001:@|S:CLK_uC_ibuf_gb_io@|E:config_register_latched_dec_inst1.DYNSR[15]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 

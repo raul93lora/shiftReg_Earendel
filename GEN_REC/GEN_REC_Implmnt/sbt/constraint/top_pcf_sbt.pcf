@@ -4,7 +4,7 @@
 
 # Version:            2020.12.27943
 
-# File Generated:     Mar 18 2025 09:12:29
+# File Generated:     Mar 20 2025 13:11:29
 
 # Family & Device:    iCE40LP8K
 
@@ -12,8 +12,14 @@
 
 # ##############################################################################
 
-###IOSet List 3
-set_io ENdin A9
-set_io RST_N C9
-set_io generated_signal B8
+###IOSet List 4
+set_io RST_N A7
+set_io SDI A8
+set_io SDO_signal_out H9
+set_io SEL A9
+set_io CLK_uC A6
 
+set_io s15 C2
+set_io s14 D2
+set_io s13 E2
+set_io s12 H1

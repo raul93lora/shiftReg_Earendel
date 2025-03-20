@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:31:51
 
-* File Generated:     Mar 20 2025 12:45:58
+* File Generated:     Mar 20 2025 13:31:05
 
 * Purpose:            General info of design implementation
 
@@ -17,7 +17,7 @@
 Synthesis/Placement Summary:
 ----------------------------
     Status:  Successful
-    Runtime: 0 seconds
+    Runtime: 1 seconds
 
 Device Info:
 ------------
@@ -27,59 +27,62 @@ Device Info:
 
 Design statistics:
 ------------------
-    FFs:                  233
-    LUTs:                 250
+    FFs:                  104
+    LUTs:                 112
     RAMs:                 0
-    IOBs:                 4
-    GBs:                  5
+    IOBs:                 9
+    GBs:                  3
     PLLs:                 0
     Warm Boots:           0
 
 Logic Resource Utilization:
 ---------------------------
-    Total Logic Cells: 250/7680
-        Combinational Logic Cells: 17       out of   7680      0.221354%
-        Sequential Logic Cells:    233      out of   7680      3.03385%
-        Logic Tiles:               64       out of   960       6.66667%
+    Total Logic Cells: 112/7680
+        Combinational Logic Cells: 8        out of   7680      0.104167%
+        Sequential Logic Cells:    104      out of   7680      1.35417%
+        Logic Tiles:               21       out of   960       2.1875%
     Registers: 
-        Logic Registers:           233      out of   7680      3.03385%
+        Logic Registers:           104      out of   7680      1.35417%
         IO Registers:              0        out of   1280      0
     Block RAMs:                    0        out of   32        0%
     Warm Boots:                    0        out of   1         0%
     Pins:
-        Input Pins:                3        out of   63        4.7619%
-        Output Pins:               1        out of   63        1.5873%
+        Input Pins:                4        out of   63        6.34921%
+        Output Pins:               5        out of   63        7.93651%
         InOut Pins:                0        out of   63        0%
-    Global Buffers:                5        out of   8         62.5%
+    Global Buffers:                3        out of   8         37.5%
     PLLs:                          0        out of   1         0%
 
 IO Bank Utilization:
 --------------------
     Bank 3: 3        out of   18        16.6667%
-    Bank 1: 0        out of   15        0%
-    Bank 0: 1        out of   17        5.88235%
-    Bank 2: 0        out of   13        0%
+    Bank 1: 2        out of   15        13.3333%
+    Bank 0: 3        out of   17        17.6471%
+    Bank 2: 1        out of   13        7.69231%
 
 Detailed I/O Info:
 ------------------
     Input Pins: 
     Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name     
     ----------  ---------  -----------  -------  -------  -----------    -----------     
-    C4          Input      SB_LVCMOS    No       0        Simple Input   CLK             
-    D3          Input      SB_LVCMOS    No       3        Simple Input   CLK_fast        
-    E4          Input      SB_LVCMOS    No       3        Simple Input   RST_N           
+    A6          Input      SB_LVCMOS    No       0        Simple Input   CLK_uC          
+    A7          Input      SB_LVCMOS    No       0        Simple Input   RST_N           
+    A8          Input      SB_LVCMOS    No       0        Simple Input   SDI             
+    A9          Input      SB_LVCMOS    No       1        Simple Input   SEL             
 
     Output Pins: 
     Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name     
     ----------  ---------  -----------  -------  -------  -----------    -----------     
-    H2          Output     SB_LVCMOS    No       3        Simple Output  SDO_signal_out  
+    C2          Output     SB_LVCMOS    No       3        Simple Output  s15             
+    D2          Output     SB_LVCMOS    No       3        Simple Output  s14             
+    E2          Output     SB_LVCMOS    No       3        Simple Output  s13             
+    H1          Output     SB_LVCMOS    No       2        Simple Output  s12             
+    H9          Output     SB_LVCMOS    No       1        Simple Output  SDO_signal_out  
 
 Detailed Global Buffer Info:
 ----------------------------
-    Buffer Number  IO Bank  Driven By  Fanout  Signal Name                         
-    -------------  -------  ---------  ------  -----------                         
-    7              0        IO         125     CLK_c_g                             
-    4              3        IO         109     CLK_fast_0_c_g                      
-    3              3                   88      fsm_ctrl_inst1.current_state_i_g_0  
-    6              3                   233     RST_N_c_i_g                         
-    1              0                   88      N_224_g                             
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name    
+    -------------  -------  ---------  ------  -----------    
+    4              0                   104     CLK_uC_c_g     
+    6              3                   108     RST_N_c_i_g    
+    3              3                   88      SEL_c_iso_i_g  
