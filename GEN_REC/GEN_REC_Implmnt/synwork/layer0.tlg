@@ -5,21 +5,20 @@ Selecting top level module top
 @W: CL118 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":93:2:93:3|Latch generated from always block for signal STATCNF[87:0]; possible missing assignment in an if or case statement.
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":4:7:4:14|Synthesizing module fsm_ctrl in library work.
 
-@W: CL265 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":84:1:84:6|Removing unused bit 88 of bit_sequence_stat[88:0]. Either assign all bits or reduce the width of the signal.
+@W: CL265 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":129:1:129:6|Removing unused bit 88 of bit_sequence_stat[88:0]. Either assign all bits or reduce the width of the signal.
 @N: CG364 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":5:7:5:9|Synthesizing module top in library work.
 
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":25:22:25:29|Removing wire DYNLATCH, as there is no assignment to it.
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":26:23:26:31|Removing wire STATLATCH, as there is no assignment to it.
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":34:6:34:16|Removing wire ref_elec_en, as there is no assignment to it.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":74:1:74:6|Optimizing register bit CLK_uC to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Pruning register bits 9 to 5 of counter_idle[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":74:1:74:6|Pruning unused register CLK_uC. Make sure that there are no unused intermediate registers.
-@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":47:5:47:10|Trying to extract state machine for register current_state.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":27:22:27:29|Removing wire DYNLATCH, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":28:23:28:31|Removing wire STATLATCH, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":36:6:36:16|Removing wire ref_elec_en, as there is no assignment to it.
+@N: CL135 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":119:1:119:6|Found sequential shift CLK_uC with address depth of 4 words and data bit width of 1.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Pruning register bits 9 to 5 of counter_idle[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":53:5:53:10|Trying to extract state machine for register current_state.
 Extracted state machine for register current_state
 State machine has 3 reachable states with original encodings of:
    000

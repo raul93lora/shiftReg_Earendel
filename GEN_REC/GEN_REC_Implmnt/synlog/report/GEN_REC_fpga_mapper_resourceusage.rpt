@@ -7,23 +7,23 @@ GND             2 uses
 SB_CARRY        10 uses
 SB_DFFER        136 uses
 SB_DFFES        84 uses
-SB_DFFR         7 uses
+SB_DFFR         12 uses
 SB_DFFS         1 use
 SB_GB           3 uses
 VCC             2 uses
-SB_LUT4         136 uses
+SB_LUT4         139 uses
 
-I/O ports: 3
-I/O primitives: 3
-SB_GB_IO       1 use
+I/O ports: 4
+I/O primitives: 4
+SB_GB_IO       2 uses
 SB_IO          2 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   228 (2%)
+Register bits not including I/Os:   233 (3%)
 
 @S |Mapping Summary:
-Total  LUTs: 136 (1%)
+Total  LUTs: 139 (1%)
 
 Distribution of All Consumed LUTs = LUT4 
-Distribution of All Consumed Luts 136 = 136 
+Distribution of All Consumed Luts 139 = 139 
 

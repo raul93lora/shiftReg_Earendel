@@ -1,15 +1,13 @@
 @W: CL118 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":103:2:103:3|Latch generated from always block for signal DYNCNF[15:0]; possible missing assignment in an if or case statement.
 @W: CL118 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\config_register_latched_dec.v":93:2:93:3|Latch generated from always block for signal STATCNF[87:0]; possible missing assignment in an if or case statement.
-@W: CL265 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":84:1:84:6|Removing unused bit 88 of bit_sequence_stat[88:0]. Either assign all bits or reduce the width of the signal.
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":25:22:25:29|Removing wire DYNLATCH, as there is no assignment to it.
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":26:23:26:31|Removing wire STATLATCH, as there is no assignment to it.
-@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":34:6:34:16|Removing wire ref_elec_en, as there is no assignment to it.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":74:1:74:6|Optimizing register bit CLK_uC to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Optimizing register bit counter_idle[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL279 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":121:5:121:10|Pruning register bits 9 to 5 of counter_idle[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL169 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":74:1:74:6|Pruning unused register CLK_uC. Make sure that there are no unused intermediate registers.
+@W: CL265 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":129:1:129:6|Removing unused bit 88 of bit_sequence_stat[88:0]. Either assign all bits or reduce the width of the signal.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":27:22:27:29|Removing wire DYNLATCH, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":28:23:28:31|Removing wire STATLATCH, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v":36:6:36:16|Removing wire ref_elec_en, as there is no assignment to it.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Optimizing register bit counter_idle[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\fsm_ctrl.v":166:5:166:10|Pruning register bits 9 to 5 of counter_idle[9:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 

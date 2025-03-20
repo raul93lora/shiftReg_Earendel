@@ -5,15 +5,16 @@
 
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 228 clock pin(s) of sequential element(s)
+2 non-gated/non-generated clock tree(s) driving 233 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+104 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-=================================== Non-Gated/Non-Generated Clocks ===================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance               
-------------------------------------------------------------------------------------------------------
-@K:CKID0001       CLK_ibuf_gb_io      SB_GB_IO               228        fsm_ctrl_inst1.counter_idle[4]
-======================================================================================================
+===================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element         Drive Element Type     Fanout     Sample Instance               
+----------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK_ibuf_gb_io          SB_GB_IO               124        fsm_ctrl_inst1.counter_idle[4]
+@K:CKID0002       CLK_fast_ibuf_gb_io     SB_GB_IO               109        fsm_ctrl_inst1.CLK_uC[0]      
+==========================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

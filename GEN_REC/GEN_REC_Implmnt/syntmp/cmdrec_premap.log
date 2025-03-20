@@ -1,13 +1,13 @@
 C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt   -part iCE40LP8K  -package CM81    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synlog\report\GEN_REC_premap.xml  -oedif  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.edf  -conchk_prepass  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_cck.rpt   -autoconstraint  -freq 1.000   C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_prem.srd  -qsap  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap  -devicelib  C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v  -ologparam  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\syntmp\GEN_REC.plg  -osyn  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_prem.srd  -prjdir  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\  -prjname  GEN_REC_syn  -log  C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synlog\GEN_REC_premap.srr 
 rc:1 success:1 runtime:1
 file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.edf|io:o|time:0|size:0|exec:0
-file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_cck.rpt|io:o|time:1742401071|size:2108|exec:0
-file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_mult.srs|io:i|time:1742401070|size:3008|exec:0
-file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_prem.srd|io:o|time:1742401071|size:10651|exec:0
-file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap|io:o|time:1742401071|size:936|exec:0
+file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC_cck.rpt|io:o|time:1742471119|size:3024|exec:0
+file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_mult.srs|io:i|time:1742471118|size:2909|exec:0
+file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_prem.srd|io:o|time:1742471119|size:12657|exec:0
+file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\GEN_REC.sap|io:o|time:1742471119|size:1306|exec:0
 file:C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v|io:i|time:1731922780|size:224837|exec:0
-file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\syntmp\GEN_REC.plg|io:o|time:1742401070|size:0|exec:0
-file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_prem.srd|io:o|time:1742401071|size:10651|exec:0
-file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synlog\GEN_REC_premap.srr|io:o|time:1742401071|size:14217|exec:0
+file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\syntmp\GEN_REC.plg|io:o|time:1742471119|size:0|exec:0
+file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synwork\GEN_REC_prem.srd|io:o|time:1742471119|size:12657|exec:0
+file:C:\Users\raul.lora\Documents\shiftReg_EarendelTest\GEN_REC\GEN_REC_Implmnt\synlog\GEN_REC_premap.srr|io:o|time:1742471119|size:15003|exec:0
 file:C:\lscc\iCEcube2.2020.12\synpbase\bin\m_generic.exe|io:i|time:1731922774|size:17853440|exec:1
 file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\m_generic.exe|io:i|time:1731922777|size:32355840|exec:1

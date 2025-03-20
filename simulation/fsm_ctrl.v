@@ -3,6 +3,7 @@
 */
 module fsm_ctrl (
 	CLK,		// Reloj del sistema
+	CLK_fast,	// Reloj del sistema más rápido
 	CLK_uC,		// Reloj que activo/desactivo
 	RST_N,		// Reset activo bajo
 	SEL,		// Señal de seleccon de registro estatico o dinamico
@@ -10,8 +11,8 @@ module fsm_ctrl (
 );
 
 	// Size parameters definition
-	parameter SIZESRSTAT = 88; 		// Static shift register length 
-	parameter SIZESRDYN = 16; 		// Dynamic shift register length
+	parameter SIZESRSTAT = 88; 			// Static shift register length 
+	parameter SIZESRDYN = 16; 			// Dynamic shift register length
 
 	// Wait parameters definition
 	parameter N_CYCLES_IDLE = 30; 		// Static shift register length 
@@ -20,17 +21,21 @@ module fsm_ctrl (
 
     	// Ports definition
     	input wire CLK;
+	input wire CLK_fast;
 	input wire RST_N;
 	output reg SEL;
 	output reg MOSI;
 	output reg CLK_uC;
-	reg toggle_clk_uC;  // Registro interno para alternar el clock
+	reg toggle_clk_uC1;  				// Registro interno para alternar el clock
+	reg toggle_clk_uC2;  				// Registro interno para alternar el clock
+	reg toggle_clk_uC3;  				// Registro interno para alternar el clock
+	reg toggle_clk_uC4;  				// Registro interno para alternar el clock
+	
 
     	// Parameters definition -- Definicion de los estados (3 estados)
     	parameter IDLE = 3'b000;
     	parameter DYN_READ = 3'b001;
-	parameter CLK_uC_WAIT = 3'b010;
-    	parameter STATIC_READ = 3'b011;
+    	parameter STATIC_READ = 3'b010;
 
     	// Contadores para esperar en IDLE, DYN_READ y STATIC_READ
     	reg [9:0] counter_idle; 						// Contador de 10 bits (hasta 1024 ciclos)
@@ -58,26 +63,64 @@ module fsm_ctrl (
         	case (current_state)
             		IDLE: next_state = (counter_idle == N_CYCLES_IDLE) ? DYN_READ : IDLE;				// Desde IDLE paso a DYN_READ después de la espera de N_CYCLES_IDLE
             		DYN_READ: next_state = (counter_din == N_CYCLES_DYN_READ-1) ? STATIC_READ : DYN_READ;		// Desde DYN_READ paso a STATIC_READ después de la espera de N_CYCLES_DYN_READ
-            		CLK_uC_WAIT: next_state = STATIC_READ;
-			STATIC_READ: next_state = (counter_stat == N_CYCLES_STATIC_READ-1) ? IDLE : STATIC_READ;	// Desde STATIC_READ paso a IDLE después de la espera de N_CYCLES_STATIC_READ
+            		STATIC_READ: next_state = (counter_stat == N_CYCLES_STATIC_READ-1) ? IDLE : STATIC_READ;	// Desde STATIC_READ paso a IDLE después de la espera de N_CYCLES_STATIC_READ
             		default: next_state = IDLE;										// Default: Vuelve a IDLE
         	endcase
     	end
 
-	// Asignación combinacional de CLK_uC para evitar dividir la frecuencia
-	always @(*) begin
-    		if (current_state == DYN_READ || current_state == STATIC_READ) begin
-        		toggle_clk_uC = CLK;  		// Sigue a CLK en estos estados
-    		end else begin
-        		toggle_clk_uC = 0;     		// Se mantiene en 0 en otros estados
-    		end
+	// Asignación SECUENCIAL de CLK_uC para evitar dividir la frecuencia
+	always @(posedge CLK_fast or negedge RST_N) begin
+		if(!RST_N) begin
+			toggle_clk_uC1 <= 0;
+		end else if (current_state == DYN_READ || current_state == STATIC_READ) begin
+			toggle_clk_uC1 <= CLK;
+		end
 	end
 
-	always @(negedge CLK or negedge RST_N) begin
+	// Retrasamos dos ciclos CLK_uC
+	always @(posedge CLK_fast or negedge RST_N) begin
+		if(!RST_N) begin
+			toggle_clk_uC2 <= 0;
+		end else begin
+			toggle_clk_uC2 <= toggle_clk_uC1;
+		end
+	end
+
+	// Retrasamos tres ciclos CLK_uC
+	always @(posedge CLK_fast or negedge RST_N) begin
+		if(!RST_N) begin
+			toggle_clk_uC3 <= 0;
+		end else begin
+			toggle_clk_uC3 <= toggle_clk_uC2;
+		end
+	end
+
+/*
+	// Retrasamos tres ciclos CLK_uC
+	always @(posedge CLK_fast or negedge RST_N) begin
 		if(!RST_N) begin
 			CLK_uC <= 0;
 		end else begin
-			CLK_uC <= toggle_clk_uC;
+			CLK_uC <= toggle_clk_uC3;
+		end
+	end
+*/
+
+	// Retrasamos tres ciclos CLK_uC
+	always @(posedge CLK_fast or negedge RST_N) begin
+		if(!RST_N) begin
+			toggle_clk_uC4 <= 0;
+		end else begin
+			toggle_clk_uC4 <= toggle_clk_uC3;
+		end
+	end
+
+	// Retrasamos cuatro ciclos CLK_uC
+	always @(posedge CLK_fast or negedge RST_N) begin
+		if(!RST_N) begin
+			CLK_uC <= 0;
+		end else begin
+			CLK_uC <= toggle_clk_uC4;
 		end
 	end
 
@@ -92,29 +135,25 @@ module fsm_ctrl (
 		end else begin
             	case (current_state)
 			IDLE: begin
-				SEL <= 1;
+				SEL <= 0;
 				MOSI <= 0;
 				bit_sequence_din <= 16'hABCD; 
 				bit_sequence_stat <= 88'h123456789ABCDEF1234567;
 			end
 			DYN_READ: begin
-				SEL <= 0;
+				SEL <= 1;
                     		// Desplazamos la secuencia y actualizamos la señal de salida
                     		MOSI <= bit_sequence_din[SIZESRDYN-1]; 					// El bit más significativo de la secuencia
                     		bit_sequence_din <= {bit_sequence_din[SIZESRDYN-2:0], 1'b0};  		// Desplazamos la secuencia a la izquierda
                	end
-			CLK_uC_WAIT: begin
-				// Un estado de espera solamente para que la señal de reloj CLK_uC acabe correctamente
-				SEL <= 0;    // Led doy valor 0 pero en realidad da igual
-			end
                	STATIC_READ: begin
-				SEL <= 1;
+				SEL <= 0;
                     		// Desplazamos la secuencia y actualizamos la señal de salida
                     		MOSI <= bit_sequence_stat[SIZESRSTAT-1]; 					// El bit más significativo de la secuencia							
                     		bit_sequence_stat <= {bit_sequence_stat[SIZESRSTAT-2:0], 1'b0};  		// Desplazamos la secuencia a la izquierda
                	end
                	default: begin
-				SEL <= 1;
+				SEL <= 0;
 				MOSI <= 0;
 				bit_sequence_din <= 16'hABCD; 
 				bit_sequence_stat <= 88'h123456789ABCDEF1234567;
@@ -151,7 +190,7 @@ module fsm_ctrl (
             		counter_stat <= 0; 							  		// Reset del contador
         	end else if (current_state == STATIC_READ && counter_stat < N_CYCLES_STATIC_READ) begin
             		counter_stat <= counter_stat + 1; 						// Incrementar el contador en STATIC_READ
-        	end else if (current_state != IDLE) begin
+        	end else if (current_state != STATIC_READ) begin
             		counter_stat <= 0; 									// Reset del contador cuando no estamos en STATIC_READ
         	end
     	end

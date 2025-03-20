@@ -5,9 +5,9 @@
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\umr_capim.v":1731922782
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_objects.v":1731922782
 #CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1731922782
-#CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_EarendelTest\\top.v":1742398682
+#CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_EarendelTest\\top.v":1742468492
 #CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_EarendelTest\\config_register_latched_dec.v":1742313370
-#CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_EarendelTest\\fsm_ctrl.v":1742401059
+#CUR:"C:\\Users\\raul.lora\\Documents\\shiftReg_EarendelTest\\fsm_ctrl.v":1742471111
 #numinternalfiles:5
 #defaultlanguage:verilog
 0			"C:\Users\raul.lora\Documents\shiftReg_EarendelTest\top.v" verilog

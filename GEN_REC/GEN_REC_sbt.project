@@ -32,7 +32,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=GEN_REC
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../top.v=work,../config_register_latched_dec.v=work,../fsm_ctrl.v
+ProjectVFiles=../top.v=work,../config_register_latched_dec.v=work,../fsm_ctrl.v=work
 ProjectCFiles=
 CurImplementation=GEN_REC_Implmnt
 Implementations=GEN_REC_Implmnt

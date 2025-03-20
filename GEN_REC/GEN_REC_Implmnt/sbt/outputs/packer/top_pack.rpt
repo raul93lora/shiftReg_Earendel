@@ -1,0 +1,85 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Mar 20 2025 12:45:58
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 0 seconds
+
+Device Info:
+------------
+    Device Family: iCE40
+    Device:        iCE40LP8K
+    Package:       CM81
+
+Design statistics:
+------------------
+    FFs:                  233
+    LUTs:                 250
+    RAMs:                 0
+    IOBs:                 4
+    GBs:                  5
+    PLLs:                 0
+    Warm Boots:           0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 250/7680
+        Combinational Logic Cells: 17       out of   7680      0.221354%
+        Sequential Logic Cells:    233      out of   7680      3.03385%
+        Logic Tiles:               64       out of   960       6.66667%
+    Registers: 
+        Logic Registers:           233      out of   7680      3.03385%
+        IO Registers:              0        out of   1280      0
+    Block RAMs:                    0        out of   32        0%
+    Warm Boots:                    0        out of   1         0%
+    Pins:
+        Input Pins:                3        out of   63        4.7619%
+        Output Pins:               1        out of   63        1.5873%
+        InOut Pins:                0        out of   63        0%
+    Global Buffers:                5        out of   8         62.5%
+    PLLs:                          0        out of   1         0%
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 3        out of   18        16.6667%
+    Bank 1: 0        out of   15        0%
+    Bank 0: 1        out of   17        5.88235%
+    Bank 2: 0        out of   13        0%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name     
+    ----------  ---------  -----------  -------  -------  -----------    -----------     
+    C4          Input      SB_LVCMOS    No       0        Simple Input   CLK             
+    D3          Input      SB_LVCMOS    No       3        Simple Input   CLK_fast        
+    E4          Input      SB_LVCMOS    No       3        Simple Input   RST_N           
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function    Signal Name     
+    ----------  ---------  -----------  -------  -------  -----------    -----------     
+    H2          Output     SB_LVCMOS    No       3        Simple Output  SDO_signal_out  
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name                         
+    -------------  -------  ---------  ------  -----------                         
+    7              0        IO         125     CLK_c_g                             
+    4              3        IO         109     CLK_fast_0_c_g                      
+    3              3                   88      fsm_ctrl_inst1.current_state_i_g_0  
+    6              3                   233     RST_N_c_i_g                         
+    1              0                   88      N_224_g                             

@@ -4,6 +4,7 @@
 */
 module top(
 	CLK,						// Reloj del sistema
+	CLK_fast,					// Reloj más rápido para generar la simulación correctamente
 	RST_N,						// Reset asíncrono activo en bajo
 	SDO_signal_out					// Salida final de la señal
 );
@@ -15,6 +16,7 @@ module top(
 
 	// Ports definition
     	input wire CLK;
+	input wire CLK_fast;
     	input wire RST_N;
 	output wire SDO_signal_out;
 	wire SEL_REG;
@@ -38,7 +40,7 @@ module top(
 
 	// Instancia del config_register_latched_dec
 	config_register_latched_dec config_register_latched_dec_inst1 (
-		.CLK (CLK), 
+		.CLK (CLK_uC), 
 		.RST_N (RST_N), 
 		.SEL (SEL_REG), 
 		.SDI (MOSI), 
@@ -54,6 +56,7 @@ module top(
 	// * Dependiendo de si David me da el LSb o MSb, hay que cambiar la manera de recibirlo
 	fsm_ctrl fsm_ctrl_inst1 (
 		.CLK(CLK),
+		.CLK_fast(CLK_fast),
 		.CLK_uC(CLK_uC),
 		.RST_N(RST_N),
 		.SEL(SEL_REG),

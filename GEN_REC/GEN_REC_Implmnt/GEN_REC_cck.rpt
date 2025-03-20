@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version maplat, Build 1612R, built Dec  5 2016
 # Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Wed Mar 19 17:17:51 2025
+# Written on Thu Mar 20 12:45:19 2025
 
 
 ##### DESIGN INFO #######################################################
@@ -24,10 +24,14 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting     Ending      |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
-------------------------------------------------------------------------------------------------------------------------------------
-top|CLK      top|CLK     |     5.462            |     No paths         |     No paths         |     No paths                         
-====================================================================================================================================
+Starting                            Ending                              |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top|CLK_fast                        top|CLK_fast                        |     1000.000         |     No paths         |     No paths         |     No paths                         
+top|CLK                             top|CLK_fast                        |     Diff grp         |     No paths         |     No paths         |     No paths                         
+top|CLK                             top|CLK                             |     4.929            |     No paths         |     No paths         |     No paths                         
+top|CLK                             fsm_ctrl|CLK_uC_1_derived_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+fsm_ctrl|CLK_uC_1_derived_clock     fsm_ctrl|CLK_uC_1_derived_clock     |     1000.000         |     No paths         |     No paths         |     No paths                         
+===================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 

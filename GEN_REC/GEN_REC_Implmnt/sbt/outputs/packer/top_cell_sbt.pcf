@@ -1,0 +1,385 @@
+ble_pack RST_N_ibuf_RNIBJGC_LC_1_16_0 { RST_N_ibuf_RNIBJGC }
+clb_pack LT_1_16 { RST_N_ibuf_RNIBJGC_LC_1_16_0 }
+set_location LT_1_16 1 16
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_22_LC_2_22_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[22], fsm_ctrl_inst1.bit_sequence_stat[22] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_21_LC_2_22_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[21], fsm_ctrl_inst1.bit_sequence_stat[21] }
+clb_pack LT_2_22 { fsm_ctrl_inst1.bit_sequence_stat_22_LC_2_22_0, fsm_ctrl_inst1.bit_sequence_stat_21_LC_2_22_7 }
+set_location LT_2_22 2 22
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_73_LC_3_18_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[73], fsm_ctrl_inst1.bit_sequence_stat[73] }
+clb_pack LT_3_18 { fsm_ctrl_inst1.bit_sequence_stat_73_LC_3_18_0 }
+set_location LT_3_18 3 18
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_72_LC_3_19_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[72], fsm_ctrl_inst1.bit_sequence_stat[72] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_28_LC_3_19_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[28], fsm_ctrl_inst1.bit_sequence_stat[28] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_29_LC_3_19_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[29], fsm_ctrl_inst1.bit_sequence_stat[29] }
+clb_pack LT_3_19 { fsm_ctrl_inst1.bit_sequence_stat_72_LC_3_19_2, fsm_ctrl_inst1.bit_sequence_stat_28_LC_3_19_4, fsm_ctrl_inst1.bit_sequence_stat_29_LC_3_19_6 }
+set_location LT_3_19 3 19
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_26_LC_3_20_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[26], fsm_ctrl_inst1.bit_sequence_stat[26] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_70_LC_3_20_1 { fsm_ctrl_inst1.bit_sequence_stat_RNO[70], fsm_ctrl_inst1.bit_sequence_stat[70] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_71_LC_3_20_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[71], fsm_ctrl_inst1.bit_sequence_stat[71] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_20_LC_3_20_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[20], fsm_ctrl_inst1.bit_sequence_stat[20] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_27_LC_3_20_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[27], fsm_ctrl_inst1.bit_sequence_stat[27] }
+clb_pack LT_3_20 { fsm_ctrl_inst1.bit_sequence_stat_26_LC_3_20_0, fsm_ctrl_inst1.bit_sequence_stat_70_LC_3_20_1, fsm_ctrl_inst1.bit_sequence_stat_71_LC_3_20_3, fsm_ctrl_inst1.bit_sequence_stat_20_LC_3_20_6, fsm_ctrl_inst1.bit_sequence_stat_27_LC_3_20_7 }
+set_location LT_3_20 3 20
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_69_LC_3_21_5 { fsm_ctrl_inst1.bit_sequence_stat_RNO[69], fsm_ctrl_inst1.bit_sequence_stat[69] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_25_LC_3_21_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[25], fsm_ctrl_inst1.bit_sequence_stat[25] }
+clb_pack LT_3_21 { fsm_ctrl_inst1.bit_sequence_stat_69_LC_3_21_5, fsm_ctrl_inst1.bit_sequence_stat_25_LC_3_21_6 }
+set_location LT_3_21 3 21
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_64_LC_3_22_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[64], fsm_ctrl_inst1.bit_sequence_stat[64] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_24_LC_3_22_1 { fsm_ctrl_inst1.bit_sequence_stat_RNO[24], fsm_ctrl_inst1.bit_sequence_stat[24] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_67_LC_3_22_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[67], fsm_ctrl_inst1.bit_sequence_stat[67] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_23_LC_3_22_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[23], fsm_ctrl_inst1.bit_sequence_stat[23] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_66_LC_3_22_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[66], fsm_ctrl_inst1.bit_sequence_stat[66] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_68_LC_3_22_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[68], fsm_ctrl_inst1.bit_sequence_stat[68] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_65_LC_3_22_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[65], fsm_ctrl_inst1.bit_sequence_stat[65] }
+clb_pack LT_3_22 { fsm_ctrl_inst1.bit_sequence_stat_64_LC_3_22_0, fsm_ctrl_inst1.bit_sequence_stat_24_LC_3_22_1, fsm_ctrl_inst1.bit_sequence_stat_67_LC_3_22_2, fsm_ctrl_inst1.bit_sequence_stat_23_LC_3_22_3, fsm_ctrl_inst1.bit_sequence_stat_66_LC_3_22_4, fsm_ctrl_inst1.bit_sequence_stat_68_LC_3_22_6, fsm_ctrl_inst1.bit_sequence_stat_65_LC_3_22_7 }
+set_location LT_3_22 3 22
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_83_LC_4_18_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[83], fsm_ctrl_inst1.bit_sequence_stat[83] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_84_LC_4_18_5 { fsm_ctrl_inst1.bit_sequence_stat_RNO[84], fsm_ctrl_inst1.bit_sequence_stat[84] }
+clb_pack LT_4_18 { fsm_ctrl_inst1.bit_sequence_stat_83_LC_4_18_0, fsm_ctrl_inst1.bit_sequence_stat_84_LC_4_18_5 }
+set_location LT_4_18 4 18
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_34_LC_4_19_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[34], fsm_ctrl_inst1.bit_sequence_stat[34] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_14_LC_4_19_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[14], fsm_ctrl_inst1.bit_sequence_stat[14] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_31_LC_4_19_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[31], fsm_ctrl_inst1.bit_sequence_stat[31] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_13_LC_4_19_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[13], fsm_ctrl_inst1.bit_sequence_stat[13] }
+clb_pack LT_4_19 { fsm_ctrl_inst1.bit_sequence_stat_34_LC_4_19_0, fsm_ctrl_inst1.bit_sequence_stat_14_LC_4_19_2, fsm_ctrl_inst1.bit_sequence_stat_31_LC_4_19_4, fsm_ctrl_inst1.bit_sequence_stat_13_LC_4_19_7 }
+set_location LT_4_19 4 19
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_30_LC_4_20_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[30], fsm_ctrl_inst1.bit_sequence_stat[30] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_12_LC_4_20_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[12], fsm_ctrl_inst1.bit_sequence_stat[12] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_11_LC_4_20_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[11], fsm_ctrl_inst1.bit_sequence_stat[11] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_10_LC_4_20_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[10], fsm_ctrl_inst1.bit_sequence_stat[10] }
+clb_pack LT_4_20 { fsm_ctrl_inst1.bit_sequence_stat_30_LC_4_20_3, fsm_ctrl_inst1.bit_sequence_stat_12_LC_4_20_4, fsm_ctrl_inst1.bit_sequence_stat_11_LC_4_20_6, fsm_ctrl_inst1.bit_sequence_stat_10_LC_4_20_7 }
+set_location LT_4_20 4 20
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_63_LC_4_21_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[63], fsm_ctrl_inst1.bit_sequence_stat[63] }
+clb_pack LT_4_21 { fsm_ctrl_inst1.bit_sequence_stat_63_LC_4_21_7 }
+set_location LT_4_21 4 21
+ble_pack fsm_ctrl_inst1.bit_sequence_din_14_LC_4_22_0 { fsm_ctrl_inst1.bit_sequence_din_RNO[14], fsm_ctrl_inst1.bit_sequence_din[14] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_15_LC_4_22_1 { fsm_ctrl_inst1.bit_sequence_din_RNO[15], fsm_ctrl_inst1.bit_sequence_din[15] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_12_LC_4_22_2 { fsm_ctrl_inst1.bit_sequence_din_RNO[12], fsm_ctrl_inst1.bit_sequence_din[12] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_13_LC_4_22_6 { fsm_ctrl_inst1.bit_sequence_din_RNO[13], fsm_ctrl_inst1.bit_sequence_din[13] }
+clb_pack LT_4_22 { fsm_ctrl_inst1.bit_sequence_din_14_LC_4_22_0, fsm_ctrl_inst1.bit_sequence_din_15_LC_4_22_1, fsm_ctrl_inst1.bit_sequence_din_12_LC_4_22_2, fsm_ctrl_inst1.bit_sequence_din_13_LC_4_22_6 }
+set_location LT_4_22 4 22
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_74_LC_5_18_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[74], fsm_ctrl_inst1.bit_sequence_stat[74] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_76_LC_5_18_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[76], fsm_ctrl_inst1.bit_sequence_stat[76] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_85_LC_5_18_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[85], fsm_ctrl_inst1.bit_sequence_stat[85] }
+clb_pack LT_5_18 { fsm_ctrl_inst1.bit_sequence_stat_74_LC_5_18_0, fsm_ctrl_inst1.bit_sequence_stat_76_LC_5_18_3, fsm_ctrl_inst1.bit_sequence_stat_85_LC_5_18_4 }
+set_location LT_5_18 5 18
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_82_LC_5_19_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[82], fsm_ctrl_inst1.bit_sequence_stat[82] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_75_LC_5_19_1 { fsm_ctrl_inst1.bit_sequence_stat_RNO[75], fsm_ctrl_inst1.bit_sequence_stat[75] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_15_LC_5_19_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[15], fsm_ctrl_inst1.bit_sequence_stat[15] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_32_LC_5_19_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[32], fsm_ctrl_inst1.bit_sequence_stat[32] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_1_LC_5_19_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[1], fsm_ctrl_inst1.bit_sequence_stat[1] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_33_LC_5_19_5 { fsm_ctrl_inst1.bit_sequence_stat_RNO[33], fsm_ctrl_inst1.bit_sequence_stat[33] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_2_LC_5_19_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[2], fsm_ctrl_inst1.bit_sequence_stat[2] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_81_LC_5_19_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[81], fsm_ctrl_inst1.bit_sequence_stat[81] }
+clb_pack LT_5_19 { fsm_ctrl_inst1.bit_sequence_stat_82_LC_5_19_0, fsm_ctrl_inst1.bit_sequence_stat_75_LC_5_19_1, fsm_ctrl_inst1.bit_sequence_stat_15_LC_5_19_2, fsm_ctrl_inst1.bit_sequence_stat_32_LC_5_19_3, fsm_ctrl_inst1.bit_sequence_stat_1_LC_5_19_4, fsm_ctrl_inst1.bit_sequence_stat_33_LC_5_19_5, fsm_ctrl_inst1.bit_sequence_stat_2_LC_5_19_6, fsm_ctrl_inst1.bit_sequence_stat_81_LC_5_19_7 }
+set_location LT_5_19 5 19
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_7_LC_5_20_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[7], fsm_ctrl_inst1.bit_sequence_stat[7] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_0_LC_5_20_1 { fsm_ctrl_inst1.current_state_RNI2HR8_1_fsm_ctrl_inst1.bit_sequence_stat_0_REP_LUT4_0, fsm_ctrl_inst1.bit_sequence_stat[0] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_19_LC_5_20_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[19], fsm_ctrl_inst1.bit_sequence_stat[19] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_8_LC_5_20_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[8], fsm_ctrl_inst1.bit_sequence_stat[8] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_62_LC_5_20_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[62], fsm_ctrl_inst1.bit_sequence_stat[62] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_3_LC_5_20_5 { fsm_ctrl_inst1.bit_sequence_stat_RNO[3], fsm_ctrl_inst1.bit_sequence_stat[3] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_9_LC_5_20_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[9], fsm_ctrl_inst1.bit_sequence_stat[9] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_61_LC_5_20_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[61], fsm_ctrl_inst1.bit_sequence_stat[61] }
+clb_pack LT_5_20 { fsm_ctrl_inst1.bit_sequence_stat_7_LC_5_20_0, fsm_ctrl_inst1.bit_sequence_stat_0_LC_5_20_1, fsm_ctrl_inst1.bit_sequence_stat_19_LC_5_20_2, fsm_ctrl_inst1.bit_sequence_stat_8_LC_5_20_3, fsm_ctrl_inst1.bit_sequence_stat_62_LC_5_20_4, fsm_ctrl_inst1.bit_sequence_stat_3_LC_5_20_5, fsm_ctrl_inst1.bit_sequence_stat_9_LC_5_20_6, fsm_ctrl_inst1.bit_sequence_stat_61_LC_5_20_7 }
+set_location LT_5_20 5 20
+ble_pack fsm_ctrl_inst1.bit_sequence_din_6_LC_5_21_1 { fsm_ctrl_inst1.bit_sequence_din_RNO[6], fsm_ctrl_inst1.bit_sequence_din[6] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_8_LC_5_21_2 { fsm_ctrl_inst1.bit_sequence_din_RNO[8], fsm_ctrl_inst1.bit_sequence_din[8] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_10_LC_5_21_3 { fsm_ctrl_inst1.bit_sequence_din_RNO[10], fsm_ctrl_inst1.bit_sequence_din[10] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_11_LC_5_21_4 { fsm_ctrl_inst1.bit_sequence_din_RNO[11], fsm_ctrl_inst1.bit_sequence_din[11] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_9_LC_5_21_5 { fsm_ctrl_inst1.bit_sequence_din_RNO[9], fsm_ctrl_inst1.bit_sequence_din[9] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_7_LC_5_21_6 { fsm_ctrl_inst1.bit_sequence_din_RNO[7], fsm_ctrl_inst1.bit_sequence_din[7] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_5_LC_5_21_7 { fsm_ctrl_inst1.bit_sequence_din_RNO[5], fsm_ctrl_inst1.bit_sequence_din[5] }
+clb_pack LT_5_21 { fsm_ctrl_inst1.bit_sequence_din_6_LC_5_21_1, fsm_ctrl_inst1.bit_sequence_din_8_LC_5_21_2, fsm_ctrl_inst1.bit_sequence_din_10_LC_5_21_3, fsm_ctrl_inst1.bit_sequence_din_11_LC_5_21_4, fsm_ctrl_inst1.bit_sequence_din_9_LC_5_21_5, fsm_ctrl_inst1.bit_sequence_din_7_LC_5_21_6, fsm_ctrl_inst1.bit_sequence_din_5_LC_5_21_7 }
+set_location LT_5_21 5 21
+ble_pack fsm_ctrl_inst1.current_state_RNI2HR8_1_LC_5_22_0 { fsm_ctrl_inst1.current_state_RNI2HR8[1] }
+ble_pack fsm_ctrl_inst1.counter_stat_RNIPO4_3_LC_5_22_1 { fsm_ctrl_inst1.counter_stat_RNIPO4[3] }
+ble_pack fsm_ctrl_inst1.counter_stat_RNIO659_6_LC_5_22_2 { fsm_ctrl_inst1.counter_stat_RNIO659[6] }
+clb_pack LT_5_22 { fsm_ctrl_inst1.current_state_RNI2HR8_1_LC_5_22_0, fsm_ctrl_inst1.counter_stat_RNIPO4_3_LC_5_22_1, fsm_ctrl_inst1.counter_stat_RNIO659_6_LC_5_22_2 }
+set_location LT_5_22 5 22
+ble_pack fsm_ctrl_inst1.bit_sequence_din_4_LC_5_23_0 { fsm_ctrl_inst1.bit_sequence_din_RNO[4], fsm_ctrl_inst1.bit_sequence_din[4] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_0_LC_5_23_1 { fsm_ctrl_inst1.current_state_RNI1GR8_0_fsm_ctrl_inst1.bit_sequence_din_0_REP_LUT4_0, fsm_ctrl_inst1.bit_sequence_din[0] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_2_LC_5_23_2 { fsm_ctrl_inst1.bit_sequence_din_RNO[2], fsm_ctrl_inst1.bit_sequence_din[2] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_3_LC_5_23_3 { fsm_ctrl_inst1.bit_sequence_din_RNO[3], fsm_ctrl_inst1.bit_sequence_din[3] }
+ble_pack fsm_ctrl_inst1.bit_sequence_din_1_LC_5_23_4 { fsm_ctrl_inst1.bit_sequence_din_RNO[1], fsm_ctrl_inst1.bit_sequence_din[1] }
+clb_pack LT_5_23 { fsm_ctrl_inst1.bit_sequence_din_4_LC_5_23_0, fsm_ctrl_inst1.bit_sequence_din_0_LC_5_23_1, fsm_ctrl_inst1.bit_sequence_din_2_LC_5_23_2, fsm_ctrl_inst1.bit_sequence_din_3_LC_5_23_3, fsm_ctrl_inst1.bit_sequence_din_1_LC_5_23_4 }
+set_location LT_5_23 5 23
+ble_pack config_register_latched_dec_inst1.DYNSR_4_LC_5_24_0 { config_register_latched_dec_inst1.DYNSR_4_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[4] }
+ble_pack config_register_latched_dec_inst1.DYNSR_3_LC_5_24_1 { config_register_latched_dec_inst1.DYNSR_3_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[3] }
+ble_pack config_register_latched_dec_inst1.DYNSR_7_LC_5_24_2 { config_register_latched_dec_inst1.DYNSR_7_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[7] }
+ble_pack config_register_latched_dec_inst1.DYNSR_5_LC_5_24_3 { config_register_latched_dec_inst1.DYNSR_5_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[5] }
+ble_pack config_register_latched_dec_inst1.DYNSR_6_LC_5_24_4 { config_register_latched_dec_inst1.DYNSR_6_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[6] }
+ble_pack config_register_latched_dec_inst1.DYNSR_2_LC_5_24_5 { config_register_latched_dec_inst1.DYNSR_2_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[2] }
+ble_pack config_register_latched_dec_inst1.DYNSR_9_LC_5_24_6 { config_register_latched_dec_inst1.DYNSR_9_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[9] }
+ble_pack config_register_latched_dec_inst1.DYNSR_8_LC_5_24_7 { config_register_latched_dec_inst1.DYNSR_8_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[8] }
+clb_pack LT_5_24 { config_register_latched_dec_inst1.DYNSR_4_LC_5_24_0, config_register_latched_dec_inst1.DYNSR_3_LC_5_24_1, config_register_latched_dec_inst1.DYNSR_7_LC_5_24_2, config_register_latched_dec_inst1.DYNSR_5_LC_5_24_3, config_register_latched_dec_inst1.DYNSR_6_LC_5_24_4, config_register_latched_dec_inst1.DYNSR_2_LC_5_24_5, config_register_latched_dec_inst1.DYNSR_9_LC_5_24_6, config_register_latched_dec_inst1.DYNSR_8_LC_5_24_7 }
+set_location LT_5_24 5 24
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_77_LC_6_17_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[77], fsm_ctrl_inst1.bit_sequence_stat[77] }
+clb_pack LT_6_17 { fsm_ctrl_inst1.bit_sequence_stat_77_LC_6_17_7 }
+set_location LT_6_17 6 17
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_59_LC_6_18_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[59], fsm_ctrl_inst1.bit_sequence_stat[59] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_56_LC_6_18_1 { fsm_ctrl_inst1.bit_sequence_stat_RNO[56], fsm_ctrl_inst1.bit_sequence_stat[56] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_54_LC_6_18_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[54], fsm_ctrl_inst1.bit_sequence_stat[54] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_58_LC_6_18_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[58], fsm_ctrl_inst1.bit_sequence_stat[58] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_53_LC_6_18_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[53], fsm_ctrl_inst1.bit_sequence_stat[53] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_78_LC_6_18_5 { fsm_ctrl_inst1.bit_sequence_stat_RNO[78], fsm_ctrl_inst1.bit_sequence_stat[78] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_57_LC_6_18_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[57], fsm_ctrl_inst1.bit_sequence_stat[57] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_55_LC_6_18_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[55], fsm_ctrl_inst1.bit_sequence_stat[55] }
+clb_pack LT_6_18 { fsm_ctrl_inst1.bit_sequence_stat_59_LC_6_18_0, fsm_ctrl_inst1.bit_sequence_stat_56_LC_6_18_1, fsm_ctrl_inst1.bit_sequence_stat_54_LC_6_18_2, fsm_ctrl_inst1.bit_sequence_stat_58_LC_6_18_3, fsm_ctrl_inst1.bit_sequence_stat_53_LC_6_18_4, fsm_ctrl_inst1.bit_sequence_stat_78_LC_6_18_5, fsm_ctrl_inst1.bit_sequence_stat_57_LC_6_18_6, fsm_ctrl_inst1.bit_sequence_stat_55_LC_6_18_7 }
+set_location LT_6_18 6 18
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_5_LC_6_19_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[5], fsm_ctrl_inst1.bit_sequence_stat[5] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_48_LC_6_19_1 { fsm_ctrl_inst1.bit_sequence_stat_RNO[48], fsm_ctrl_inst1.bit_sequence_stat[48] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_49_LC_6_19_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[49], fsm_ctrl_inst1.bit_sequence_stat[49] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_47_LC_6_19_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[47], fsm_ctrl_inst1.bit_sequence_stat[47] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_60_LC_6_19_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[60], fsm_ctrl_inst1.bit_sequence_stat[60] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_86_LC_6_19_5 { fsm_ctrl_inst1.bit_sequence_stat_RNO[86], fsm_ctrl_inst1.bit_sequence_stat[86] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_35_LC_6_19_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[35], fsm_ctrl_inst1.bit_sequence_stat[35] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_80_LC_6_19_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[80], fsm_ctrl_inst1.bit_sequence_stat[80] }
+clb_pack LT_6_19 { fsm_ctrl_inst1.bit_sequence_stat_5_LC_6_19_0, fsm_ctrl_inst1.bit_sequence_stat_48_LC_6_19_1, fsm_ctrl_inst1.bit_sequence_stat_49_LC_6_19_2, fsm_ctrl_inst1.bit_sequence_stat_47_LC_6_19_3, fsm_ctrl_inst1.bit_sequence_stat_60_LC_6_19_4, fsm_ctrl_inst1.bit_sequence_stat_86_LC_6_19_5, fsm_ctrl_inst1.bit_sequence_stat_35_LC_6_19_6, fsm_ctrl_inst1.bit_sequence_stat_80_LC_6_19_7 }
+set_location LT_6_19 6 19
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_4_LC_6_20_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[4], fsm_ctrl_inst1.bit_sequence_stat[4] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_43_LC_6_20_1 { fsm_ctrl_inst1.bit_sequence_stat_RNO[43], fsm_ctrl_inst1.bit_sequence_stat[43] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_45_LC_6_20_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[45], fsm_ctrl_inst1.bit_sequence_stat[45] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_17_LC_6_20_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[17], fsm_ctrl_inst1.bit_sequence_stat[17] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_16_LC_6_20_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[16], fsm_ctrl_inst1.bit_sequence_stat[16] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_6_LC_6_20_5 { fsm_ctrl_inst1.bit_sequence_stat_RNO[6], fsm_ctrl_inst1.bit_sequence_stat[6] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_46_LC_6_20_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[46], fsm_ctrl_inst1.bit_sequence_stat[46] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_44_LC_6_20_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[44], fsm_ctrl_inst1.bit_sequence_stat[44] }
+clb_pack LT_6_20 { fsm_ctrl_inst1.bit_sequence_stat_4_LC_6_20_0, fsm_ctrl_inst1.bit_sequence_stat_43_LC_6_20_1, fsm_ctrl_inst1.bit_sequence_stat_45_LC_6_20_2, fsm_ctrl_inst1.bit_sequence_stat_17_LC_6_20_3, fsm_ctrl_inst1.bit_sequence_stat_16_LC_6_20_4, fsm_ctrl_inst1.bit_sequence_stat_6_LC_6_20_5, fsm_ctrl_inst1.bit_sequence_stat_46_LC_6_20_6, fsm_ctrl_inst1.bit_sequence_stat_44_LC_6_20_7 }
+set_location LT_6_20 6 20
+ble_pack fsm_ctrl_inst1.counter_stat_0_LC_6_21_0 { fsm_ctrl_inst1.counter_stat_RNO[0], fsm_ctrl_inst1.counter_stat[0], fsm_ctrl_inst1.counter_stat_cry_c[0] }
+ble_pack fsm_ctrl_inst1.counter_stat_1_LC_6_21_1 { fsm_ctrl_inst1.counter_stat_RNO[1], fsm_ctrl_inst1.counter_stat[1], fsm_ctrl_inst1.counter_stat_cry_c[1] }
+ble_pack fsm_ctrl_inst1.counter_stat_2_LC_6_21_2 { fsm_ctrl_inst1.counter_stat_RNO[2], fsm_ctrl_inst1.counter_stat[2], fsm_ctrl_inst1.counter_stat_cry_c[2] }
+ble_pack fsm_ctrl_inst1.counter_stat_3_LC_6_21_3 { fsm_ctrl_inst1.counter_stat_RNO[3], fsm_ctrl_inst1.counter_stat[3], fsm_ctrl_inst1.counter_stat_cry_c[3] }
+ble_pack fsm_ctrl_inst1.counter_stat_4_LC_6_21_4 { fsm_ctrl_inst1.counter_stat_RNO[4], fsm_ctrl_inst1.counter_stat[4], fsm_ctrl_inst1.counter_stat_cry_c[4] }
+ble_pack fsm_ctrl_inst1.counter_stat_5_LC_6_21_5 { fsm_ctrl_inst1.counter_stat_RNO[5], fsm_ctrl_inst1.counter_stat[5], fsm_ctrl_inst1.counter_stat_cry_c[5] }
+ble_pack fsm_ctrl_inst1.counter_stat_6_LC_6_21_6 { fsm_ctrl_inst1.counter_stat_RNO[6], fsm_ctrl_inst1.counter_stat[6] }
+clb_pack LT_6_21 { fsm_ctrl_inst1.counter_stat_0_LC_6_21_0, fsm_ctrl_inst1.counter_stat_1_LC_6_21_1, fsm_ctrl_inst1.counter_stat_2_LC_6_21_2, fsm_ctrl_inst1.counter_stat_3_LC_6_21_3, fsm_ctrl_inst1.counter_stat_4_LC_6_21_4, fsm_ctrl_inst1.counter_stat_5_LC_6_21_5, fsm_ctrl_inst1.counter_stat_6_LC_6_21_6 }
+set_location LT_6_21 6 21
+ble_pack fsm_ctrl_inst1.current_state_0_LC_6_22_1 { fsm_ctrl_inst1.current_state_RNO[0], fsm_ctrl_inst1.current_state[0] }
+ble_pack fsm_ctrl_inst1.current_state_RNO_1_1_LC_6_22_2 { fsm_ctrl_inst1.current_state_RNO_1[1] }
+ble_pack fsm_ctrl_inst1.current_state_RNO_0_1_LC_6_22_3 { fsm_ctrl_inst1.current_state_RNO_0[1] }
+ble_pack fsm_ctrl_inst1.current_state_1_LC_6_22_4 { fsm_ctrl_inst1.current_state_RNO[1], fsm_ctrl_inst1.current_state[1] }
+clb_pack LT_6_22 { fsm_ctrl_inst1.current_state_0_LC_6_22_1, fsm_ctrl_inst1.current_state_RNO_1_1_LC_6_22_2, fsm_ctrl_inst1.current_state_RNO_0_1_LC_6_22_3, fsm_ctrl_inst1.current_state_1_LC_6_22_4 }
+set_location LT_6_22 6 22
+ble_pack config_register_latched_dec_inst1.DYNSR_0_LC_6_23_0 { config_register_latched_dec_inst1.DYNSR_0_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[0] }
+ble_pack config_register_latched_dec_inst1.DYNSR_1_LC_6_23_1 { config_register_latched_dec_inst1.DYNSR_1_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[1] }
+ble_pack config_register_latched_dec_inst1.DYNSR_10_LC_6_23_2 { config_register_latched_dec_inst1.DYNSR_10_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[10] }
+ble_pack config_register_latched_dec_inst1.DYNSR_11_LC_6_23_3 { config_register_latched_dec_inst1.DYNSR_11_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[11] }
+ble_pack config_register_latched_dec_inst1.DYNSR_12_LC_6_23_4 { config_register_latched_dec_inst1.DYNSR_12_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[12] }
+ble_pack config_register_latched_dec_inst1.DYNSR_13_LC_6_23_5 { config_register_latched_dec_inst1.DYNSR_13_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[13] }
+ble_pack config_register_latched_dec_inst1.DYNSR_14_LC_6_23_6 { config_register_latched_dec_inst1.DYNSR_14_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[14] }
+ble_pack config_register_latched_dec_inst1.DYNSR_15_LC_6_23_7 { config_register_latched_dec_inst1.DYNSR_15_THRU_LUT4_0, config_register_latched_dec_inst1.DYNSR[15] }
+clb_pack LT_6_23 { config_register_latched_dec_inst1.DYNSR_0_LC_6_23_0, config_register_latched_dec_inst1.DYNSR_1_LC_6_23_1, config_register_latched_dec_inst1.DYNSR_10_LC_6_23_2, config_register_latched_dec_inst1.DYNSR_11_LC_6_23_3, config_register_latched_dec_inst1.DYNSR_12_LC_6_23_4, config_register_latched_dec_inst1.DYNSR_13_LC_6_23_5, config_register_latched_dec_inst1.DYNSR_14_LC_6_23_6, config_register_latched_dec_inst1.DYNSR_15_LC_6_23_7 }
+set_location LT_6_23 6 23
+ble_pack config_register_latched_dec_inst1.DYNSR_cnv_0_LC_6_24_0 { config_register_latched_dec_inst1.DYNSR_cnv[0] }
+ble_pack fsm_ctrl_inst1.CLK_uC_0_LC_6_24_1 { fsm_ctrl_inst1.CLK_uC_0_THRU_LUT4_0, fsm_ctrl_inst1.CLK_uC[0] }
+clb_pack LT_6_24 { config_register_latched_dec_inst1.DYNSR_cnv_0_LC_6_24_0, fsm_ctrl_inst1.CLK_uC_0_LC_6_24_1 }
+set_location LT_6_24 6 24
+ble_pack fsm_ctrl_inst1.toggle_clk_uC4_0_LC_6_25_6 { fsm_ctrl_inst1.toggle_clk_uC4_0_THRU_LUT4_0, fsm_ctrl_inst1.toggle_clk_uC4[0] }
+ble_pack config_register_latched_dec_inst1.STATSR_cnv_0_LC_6_25_7 { config_register_latched_dec_inst1.STATSR_cnv[0] }
+clb_pack LT_6_25 { fsm_ctrl_inst1.toggle_clk_uC4_0_LC_6_25_6, config_register_latched_dec_inst1.STATSR_cnv_0_LC_6_25_7 }
+set_location LT_6_25 6 25
+ble_pack fsm_ctrl_inst1.counter_idle_RNIMLJF1_4_LC_6_26_2 { fsm_ctrl_inst1.counter_idle_RNIMLJF1[4] }
+ble_pack fsm_ctrl_inst1.current_state_RNIPMA12_0_LC_6_26_3 { fsm_ctrl_inst1.current_state_RNIPMA12[0] }
+clb_pack LT_6_26 { fsm_ctrl_inst1.counter_idle_RNIMLJF1_4_LC_6_26_2, fsm_ctrl_inst1.current_state_RNIPMA12_0_LC_6_26_3 }
+set_location LT_6_26 6 26
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_79_LC_7_18_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[79], fsm_ctrl_inst1.bit_sequence_stat[79] }
+clb_pack LT_7_18 { fsm_ctrl_inst1.bit_sequence_stat_79_LC_7_18_2 }
+set_location LT_7_18 7 18
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_52_LC_7_19_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[52], fsm_ctrl_inst1.bit_sequence_stat[52] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_38_LC_7_19_1 { fsm_ctrl_inst1.bit_sequence_stat_RNO[38], fsm_ctrl_inst1.bit_sequence_stat[38] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_36_LC_7_19_2 { fsm_ctrl_inst1.bit_sequence_stat_RNO[36], fsm_ctrl_inst1.bit_sequence_stat[36] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_50_LC_7_19_3 { fsm_ctrl_inst1.bit_sequence_stat_RNO[50], fsm_ctrl_inst1.bit_sequence_stat[50] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_37_LC_7_19_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[37], fsm_ctrl_inst1.bit_sequence_stat[37] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_51_LC_7_19_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[51], fsm_ctrl_inst1.bit_sequence_stat[51] }
+clb_pack LT_7_19 { fsm_ctrl_inst1.bit_sequence_stat_52_LC_7_19_0, fsm_ctrl_inst1.bit_sequence_stat_38_LC_7_19_1, fsm_ctrl_inst1.bit_sequence_stat_36_LC_7_19_2, fsm_ctrl_inst1.bit_sequence_stat_50_LC_7_19_3, fsm_ctrl_inst1.bit_sequence_stat_37_LC_7_19_4, fsm_ctrl_inst1.bit_sequence_stat_51_LC_7_19_7 }
+set_location LT_7_19 7 19
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_40_LC_7_20_0 { fsm_ctrl_inst1.bit_sequence_stat_RNO[40], fsm_ctrl_inst1.bit_sequence_stat[40] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_39_LC_7_20_1 { fsm_ctrl_inst1.bit_sequence_stat_RNO[39], fsm_ctrl_inst1.bit_sequence_stat[39] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_87_LC_7_20_4 { fsm_ctrl_inst1.bit_sequence_stat_RNO[87], fsm_ctrl_inst1.bit_sequence_stat[87] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_18_LC_7_20_5 { fsm_ctrl_inst1.bit_sequence_stat_RNO[18], fsm_ctrl_inst1.bit_sequence_stat[18] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_42_LC_7_20_6 { fsm_ctrl_inst1.bit_sequence_stat_RNO[42], fsm_ctrl_inst1.bit_sequence_stat[42] }
+ble_pack fsm_ctrl_inst1.bit_sequence_stat_41_LC_7_20_7 { fsm_ctrl_inst1.bit_sequence_stat_RNO[41], fsm_ctrl_inst1.bit_sequence_stat[41] }
+clb_pack LT_7_20 { fsm_ctrl_inst1.bit_sequence_stat_40_LC_7_20_0, fsm_ctrl_inst1.bit_sequence_stat_39_LC_7_20_1, fsm_ctrl_inst1.bit_sequence_stat_87_LC_7_20_4, fsm_ctrl_inst1.bit_sequence_stat_18_LC_7_20_5, fsm_ctrl_inst1.bit_sequence_stat_42_LC_7_20_6, fsm_ctrl_inst1.bit_sequence_stat_41_LC_7_20_7 }
+set_location LT_7_20 7 20
+ble_pack fsm_ctrl_inst1.current_state_RNI1GR8_0_LC_7_21_7 { fsm_ctrl_inst1.current_state_RNI1GR8[0] }
+clb_pack LT_7_21 { fsm_ctrl_inst1.current_state_RNI1GR8_0_LC_7_21_7 }
+set_location LT_7_21 7 21
+ble_pack fsm_ctrl_inst1.SEL_LC_7_22_0 { fsm_ctrl_inst1.SEL_THRU_LUT4_0, fsm_ctrl_inst1.SEL }
+ble_pack fsm_ctrl_inst1.MOSI_LC_7_22_2 { fsm_ctrl_inst1.MOSI_RNO, fsm_ctrl_inst1.MOSI }
+clb_pack LT_7_22 { fsm_ctrl_inst1.SEL_LC_7_22_0, fsm_ctrl_inst1.MOSI_LC_7_22_2 }
+set_location LT_7_22 7 22
+ble_pack fsm_ctrl_inst1.counter_din_RNI6L3H1_3_LC_7_23_0 { fsm_ctrl_inst1.counter_din_RNI6L3H1[3] }
+ble_pack fsm_ctrl_inst1.counter_din_0_LC_7_23_1 { fsm_ctrl_inst1.counter_din_RNO[0], fsm_ctrl_inst1.counter_din[0] }
+ble_pack fsm_ctrl_inst1.counter_din_RNO_0_3_LC_7_23_2 { fsm_ctrl_inst1.counter_din_RNO_0[3] }
+ble_pack fsm_ctrl_inst1.counter_din_3_LC_7_23_3 { fsm_ctrl_inst1.counter_din_RNO[3], fsm_ctrl_inst1.counter_din[3] }
+ble_pack fsm_ctrl_inst1.counter_din_2_LC_7_23_4 { fsm_ctrl_inst1.counter_din_RNO[2], fsm_ctrl_inst1.counter_din[2] }
+ble_pack fsm_ctrl_inst1.counter_din_1_LC_7_23_5 { fsm_ctrl_inst1.counter_din_RNO[1], fsm_ctrl_inst1.counter_din[1] }
+ble_pack config_register_latched_dec_inst1.DYNSR_RNIQ2U9_15_LC_7_23_7 { config_register_latched_dec_inst1.DYNSR_RNIQ2U9[15] }
+clb_pack LT_7_23 { fsm_ctrl_inst1.counter_din_RNI6L3H1_3_LC_7_23_0, fsm_ctrl_inst1.counter_din_0_LC_7_23_1, fsm_ctrl_inst1.counter_din_RNO_0_3_LC_7_23_2, fsm_ctrl_inst1.counter_din_3_LC_7_23_3, fsm_ctrl_inst1.counter_din_2_LC_7_23_4, fsm_ctrl_inst1.counter_din_1_LC_7_23_5, config_register_latched_dec_inst1.DYNSR_RNIQ2U9_15_LC_7_23_7 }
+set_location LT_7_23 7 23
+ble_pack fsm_ctrl_inst1.current_state_RNO_1_0_LC_7_24_0 { fsm_ctrl_inst1.current_state_RNO_1[0] }
+ble_pack fsm_ctrl_inst1.current_state_RNO_0_0_LC_7_24_1 { fsm_ctrl_inst1.current_state_RNO_0[0] }
+ble_pack fsm_ctrl_inst1.current_state_RNI31NH_0_LC_7_24_6 { fsm_ctrl_inst1.current_state_RNI31NH[0] }
+clb_pack LT_7_24 { fsm_ctrl_inst1.current_state_RNO_1_0_LC_7_24_0, fsm_ctrl_inst1.current_state_RNO_0_0_LC_7_24_1, fsm_ctrl_inst1.current_state_RNI31NH_0_LC_7_24_6 }
+set_location LT_7_24 7 24
+ble_pack fsm_ctrl_inst1.counter_idle_0_LC_7_25_0 { fsm_ctrl_inst1.counter_idle_RNO[0], fsm_ctrl_inst1.counter_idle[0], fsm_ctrl_inst1.counter_idle_cry_c[0] }
+ble_pack fsm_ctrl_inst1.counter_idle_1_LC_7_25_1 { fsm_ctrl_inst1.counter_idle_RNO[1], fsm_ctrl_inst1.counter_idle[1], fsm_ctrl_inst1.counter_idle_cry_c[1] }
+ble_pack fsm_ctrl_inst1.counter_idle_2_LC_7_25_2 { fsm_ctrl_inst1.counter_idle_RNO[2], fsm_ctrl_inst1.counter_idle[2], fsm_ctrl_inst1.counter_idle_cry_c[2] }
+ble_pack fsm_ctrl_inst1.counter_idle_3_LC_7_25_3 { fsm_ctrl_inst1.counter_idle_RNO[3], fsm_ctrl_inst1.counter_idle[3], fsm_ctrl_inst1.counter_idle_cry_c[3] }
+ble_pack fsm_ctrl_inst1.counter_idle_4_LC_7_25_4 { fsm_ctrl_inst1.counter_idle_RNO[4], fsm_ctrl_inst1.counter_idle[4] }
+clb_pack LT_7_25 { fsm_ctrl_inst1.counter_idle_0_LC_7_25_0, fsm_ctrl_inst1.counter_idle_1_LC_7_25_1, fsm_ctrl_inst1.counter_idle_2_LC_7_25_2, fsm_ctrl_inst1.counter_idle_3_LC_7_25_3, fsm_ctrl_inst1.counter_idle_4_LC_7_25_4 }
+set_location LT_7_25 7 25
+ble_pack fsm_ctrl_inst1.toggle_clk_uC3_0_LC_7_26_1 { fsm_ctrl_inst1.toggle_clk_uC3_0_THRU_LUT4_0, fsm_ctrl_inst1.toggle_clk_uC3[0] }
+ble_pack fsm_ctrl_inst1.toggle_clk_uC2_0_LC_7_26_3 { fsm_ctrl_inst1.toggle_clk_uC2_0_THRU_LUT4_0, fsm_ctrl_inst1.toggle_clk_uC2[0] }
+ble_pack fsm_ctrl_inst1.toggle_clk_uC1_LC_7_26_7 { fsm_ctrl_inst1.toggle_clk_uC1_RNO, fsm_ctrl_inst1.toggle_clk_uC1 }
+clb_pack LT_7_26 { fsm_ctrl_inst1.toggle_clk_uC3_0_LC_7_26_1, fsm_ctrl_inst1.toggle_clk_uC2_0_LC_7_26_3, fsm_ctrl_inst1.toggle_clk_uC1_LC_7_26_7 }
+set_location LT_7_26 7 26
+ble_pack config_register_latched_dec_inst1.STATSR_87_LC_9_23_1 { config_register_latched_dec_inst1.STATSR_87_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[87] }
+clb_pack LT_9_23 { config_register_latched_dec_inst1.STATSR_87_LC_9_23_1 }
+set_location LT_9_23 9 23
+ble_pack config_register_latched_dec_inst1.STATSR_0_LC_9_24_4 { config_register_latched_dec_inst1.STATSR_0_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[0] }
+ble_pack config_register_latched_dec_inst1.STATSR_85_LC_9_24_5 { config_register_latched_dec_inst1.STATSR_85_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[85] }
+ble_pack config_register_latched_dec_inst1.STATSR_86_LC_9_24_6 { config_register_latched_dec_inst1.STATSR_86_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[86] }
+clb_pack LT_9_24 { config_register_latched_dec_inst1.STATSR_0_LC_9_24_4, config_register_latched_dec_inst1.STATSR_85_LC_9_24_5, config_register_latched_dec_inst1.STATSR_86_LC_9_24_6 }
+set_location LT_9_24 9 24
+ble_pack config_register_latched_dec_inst1.STATSR_3_LC_10_24_1 { config_register_latched_dec_inst1.STATSR_3_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[3] }
+ble_pack config_register_latched_dec_inst1.STATSR_1_LC_10_24_4 { config_register_latched_dec_inst1.STATSR_1_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[1] }
+ble_pack config_register_latched_dec_inst1.STATSR_4_LC_10_24_5 { config_register_latched_dec_inst1.STATSR_4_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[4] }
+ble_pack config_register_latched_dec_inst1.STATSR_2_LC_10_24_6 { config_register_latched_dec_inst1.STATSR_2_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[2] }
+ble_pack config_register_latched_dec_inst1.STATSR_84_LC_10_24_7 { config_register_latched_dec_inst1.STATSR_84_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[84] }
+clb_pack LT_10_24 { config_register_latched_dec_inst1.STATSR_3_LC_10_24_1, config_register_latched_dec_inst1.STATSR_1_LC_10_24_4, config_register_latched_dec_inst1.STATSR_4_LC_10_24_5, config_register_latched_dec_inst1.STATSR_2_LC_10_24_6, config_register_latched_dec_inst1.STATSR_84_LC_10_24_7 }
+set_location LT_10_24 10 24
+ble_pack config_register_latched_dec_inst1.STATSR_83_LC_11_24_0 { config_register_latched_dec_inst1.STATSR_83_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[83] }
+ble_pack config_register_latched_dec_inst1.STATSR_5_LC_11_24_3 { config_register_latched_dec_inst1.STATSR_5_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[5] }
+clb_pack LT_11_24 { config_register_latched_dec_inst1.STATSR_83_LC_11_24_0, config_register_latched_dec_inst1.STATSR_5_LC_11_24_3 }
+set_location LT_11_24 11 24
+ble_pack config_register_latched_dec_inst1.STATSR_6_LC_12_24_0 { config_register_latched_dec_inst1.STATSR_6_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[6] }
+ble_pack config_register_latched_dec_inst1.STATSR_82_LC_12_24_4 { config_register_latched_dec_inst1.STATSR_82_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[82] }
+clb_pack LT_12_24 { config_register_latched_dec_inst1.STATSR_6_LC_12_24_0, config_register_latched_dec_inst1.STATSR_82_LC_12_24_4 }
+set_location LT_12_24 12 24
+ble_pack config_register_latched_dec_inst1.STATSR_7_LC_12_25_4 { config_register_latched_dec_inst1.STATSR_7_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[7] }
+clb_pack LT_12_25 { config_register_latched_dec_inst1.STATSR_7_LC_12_25_4 }
+set_location LT_12_25 12 25
+ble_pack config_register_latched_dec_inst1.STATSR_8_LC_12_26_1 { config_register_latched_dec_inst1.STATSR_8_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[8] }
+clb_pack LT_12_26 { config_register_latched_dec_inst1.STATSR_8_LC_12_26_1 }
+set_location LT_12_26 12 26
+ble_pack config_register_latched_dec_inst1.STATSR_10_LC_12_27_0 { config_register_latched_dec_inst1.STATSR_10_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[10] }
+ble_pack config_register_latched_dec_inst1.STATSR_9_LC_12_27_1 { config_register_latched_dec_inst1.STATSR_9_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[9] }
+ble_pack config_register_latched_dec_inst1.STATSR_12_LC_12_27_3 { config_register_latched_dec_inst1.STATSR_12_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[12] }
+ble_pack config_register_latched_dec_inst1.STATSR_11_LC_12_27_7 { config_register_latched_dec_inst1.STATSR_11_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[11] }
+clb_pack LT_12_27 { config_register_latched_dec_inst1.STATSR_10_LC_12_27_0, config_register_latched_dec_inst1.STATSR_9_LC_12_27_1, config_register_latched_dec_inst1.STATSR_12_LC_12_27_3, config_register_latched_dec_inst1.STATSR_11_LC_12_27_7 }
+set_location LT_12_27 12 27
+ble_pack config_register_latched_dec_inst1.STATSR_79_LC_13_24_0 { config_register_latched_dec_inst1.STATSR_79_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[79] }
+ble_pack config_register_latched_dec_inst1.STATSR_80_LC_13_24_1 { config_register_latched_dec_inst1.STATSR_80_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[80] }
+ble_pack config_register_latched_dec_inst1.STATSR_81_LC_13_24_6 { config_register_latched_dec_inst1.STATSR_81_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[81] }
+clb_pack LT_13_24 { config_register_latched_dec_inst1.STATSR_79_LC_13_24_0, config_register_latched_dec_inst1.STATSR_80_LC_13_24_1, config_register_latched_dec_inst1.STATSR_81_LC_13_24_6 }
+set_location LT_13_24 13 24
+ble_pack config_register_latched_dec_inst1.STATSR_78_LC_13_25_1 { config_register_latched_dec_inst1.STATSR_78_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[78] }
+ble_pack config_register_latched_dec_inst1.STATSR_77_LC_13_25_4 { config_register_latched_dec_inst1.STATSR_77_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[77] }
+clb_pack LT_13_25 { config_register_latched_dec_inst1.STATSR_78_LC_13_25_1, config_register_latched_dec_inst1.STATSR_77_LC_13_25_4 }
+set_location LT_13_25 13 25
+ble_pack config_register_latched_dec_inst1.STATSR_15_LC_13_27_0 { config_register_latched_dec_inst1.STATSR_15_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[15] }
+ble_pack config_register_latched_dec_inst1.STATSR_14_LC_13_27_1 { config_register_latched_dec_inst1.STATSR_14_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[14] }
+ble_pack config_register_latched_dec_inst1.STATSR_13_LC_13_27_4 { config_register_latched_dec_inst1.STATSR_13_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[13] }
+ble_pack config_register_latched_dec_inst1.STATSR_16_LC_13_27_7 { config_register_latched_dec_inst1.STATSR_16_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[16] }
+clb_pack LT_13_27 { config_register_latched_dec_inst1.STATSR_15_LC_13_27_0, config_register_latched_dec_inst1.STATSR_14_LC_13_27_1, config_register_latched_dec_inst1.STATSR_13_LC_13_27_4, config_register_latched_dec_inst1.STATSR_16_LC_13_27_7 }
+set_location LT_13_27 13 27
+ble_pack config_register_latched_dec_inst1.STATSR_74_LC_14_26_2 { config_register_latched_dec_inst1.STATSR_74_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[74] }
+ble_pack config_register_latched_dec_inst1.STATSR_75_LC_14_26_3 { config_register_latched_dec_inst1.STATSR_75_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[75] }
+ble_pack config_register_latched_dec_inst1.STATSR_76_LC_14_26_6 { config_register_latched_dec_inst1.STATSR_76_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[76] }
+clb_pack LT_14_26 { config_register_latched_dec_inst1.STATSR_74_LC_14_26_2, config_register_latched_dec_inst1.STATSR_75_LC_14_26_3, config_register_latched_dec_inst1.STATSR_76_LC_14_26_6 }
+set_location LT_14_26 14 26
+ble_pack config_register_latched_dec_inst1.STATSR_73_LC_14_27_2 { config_register_latched_dec_inst1.STATSR_73_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[73] }
+ble_pack config_register_latched_dec_inst1.STATSR_17_LC_14_27_3 { config_register_latched_dec_inst1.STATSR_17_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[17] }
+clb_pack LT_14_27 { config_register_latched_dec_inst1.STATSR_73_LC_14_27_2, config_register_latched_dec_inst1.STATSR_17_LC_14_27_3 }
+set_location LT_14_27 14 27
+ble_pack config_register_latched_dec_inst1.STATSR_69_LC_14_28_0 { config_register_latched_dec_inst1.STATSR_69_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[69] }
+ble_pack config_register_latched_dec_inst1.STATSR_71_LC_14_28_2 { config_register_latched_dec_inst1.STATSR_71_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[71] }
+ble_pack config_register_latched_dec_inst1.STATSR_72_LC_14_28_3 { config_register_latched_dec_inst1.STATSR_72_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[72] }
+ble_pack config_register_latched_dec_inst1.STATSR_68_LC_14_28_4 { config_register_latched_dec_inst1.STATSR_68_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[68] }
+ble_pack config_register_latched_dec_inst1.STATSR_70_LC_14_28_5 { config_register_latched_dec_inst1.STATSR_70_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[70] }
+ble_pack config_register_latched_dec_inst1.STATSR_66_LC_14_28_6 { config_register_latched_dec_inst1.STATSR_66_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[66] }
+ble_pack config_register_latched_dec_inst1.STATSR_67_LC_14_28_7 { config_register_latched_dec_inst1.STATSR_67_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[67] }
+clb_pack LT_14_28 { config_register_latched_dec_inst1.STATSR_69_LC_14_28_0, config_register_latched_dec_inst1.STATSR_71_LC_14_28_2, config_register_latched_dec_inst1.STATSR_72_LC_14_28_3, config_register_latched_dec_inst1.STATSR_68_LC_14_28_4, config_register_latched_dec_inst1.STATSR_70_LC_14_28_5, config_register_latched_dec_inst1.STATSR_66_LC_14_28_6, config_register_latched_dec_inst1.STATSR_67_LC_14_28_7 }
+set_location LT_14_28 14 28
+ble_pack config_register_latched_dec_inst1.STATSR_65_LC_14_29_0 { config_register_latched_dec_inst1.STATSR_65_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[65] }
+ble_pack config_register_latched_dec_inst1.STATSR_63_LC_14_29_1 { config_register_latched_dec_inst1.STATSR_63_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[63] }
+ble_pack config_register_latched_dec_inst1.STATSR_62_LC_14_29_3 { config_register_latched_dec_inst1.STATSR_62_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[62] }
+ble_pack config_register_latched_dec_inst1.STATSR_61_LC_14_29_4 { config_register_latched_dec_inst1.STATSR_61_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[61] }
+ble_pack config_register_latched_dec_inst1.STATSR_64_LC_14_29_6 { config_register_latched_dec_inst1.STATSR_64_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[64] }
+clb_pack LT_14_29 { config_register_latched_dec_inst1.STATSR_65_LC_14_29_0, config_register_latched_dec_inst1.STATSR_63_LC_14_29_1, config_register_latched_dec_inst1.STATSR_62_LC_14_29_3, config_register_latched_dec_inst1.STATSR_61_LC_14_29_4, config_register_latched_dec_inst1.STATSR_64_LC_14_29_6 }
+set_location LT_14_29 14 29
+ble_pack config_register_latched_dec_inst1.STATSR_18_LC_15_27_2 { config_register_latched_dec_inst1.STATSR_18_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[18] }
+ble_pack config_register_latched_dec_inst1.STATSR_19_LC_15_27_7 { config_register_latched_dec_inst1.STATSR_19_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[19] }
+clb_pack LT_15_27 { config_register_latched_dec_inst1.STATSR_18_LC_15_27_2, config_register_latched_dec_inst1.STATSR_19_LC_15_27_7 }
+set_location LT_15_27 15 27
+ble_pack config_register_latched_dec_inst1.STATSR_56_LC_15_28_0 { config_register_latched_dec_inst1.STATSR_56_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[56] }
+clb_pack LT_15_28 { config_register_latched_dec_inst1.STATSR_56_LC_15_28_0 }
+set_location LT_15_28 15 28
+ble_pack config_register_latched_dec_inst1.STATSR_57_LC_15_29_0 { config_register_latched_dec_inst1.STATSR_57_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[57] }
+ble_pack config_register_latched_dec_inst1.STATSR_60_LC_15_29_2 { config_register_latched_dec_inst1.STATSR_60_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[60] }
+ble_pack config_register_latched_dec_inst1.STATSR_58_LC_15_29_6 { config_register_latched_dec_inst1.STATSR_58_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[58] }
+ble_pack config_register_latched_dec_inst1.STATSR_59_LC_15_29_7 { config_register_latched_dec_inst1.STATSR_59_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[59] }
+clb_pack LT_15_29 { config_register_latched_dec_inst1.STATSR_57_LC_15_29_0, config_register_latched_dec_inst1.STATSR_60_LC_15_29_2, config_register_latched_dec_inst1.STATSR_58_LC_15_29_6, config_register_latched_dec_inst1.STATSR_59_LC_15_29_7 }
+set_location LT_15_29 15 29
+ble_pack config_register_latched_dec_inst1.STATSR_51_LC_16_27_0 { config_register_latched_dec_inst1.STATSR_51_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[51] }
+ble_pack config_register_latched_dec_inst1.STATSR_50_LC_16_27_4 { config_register_latched_dec_inst1.STATSR_50_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[50] }
+ble_pack config_register_latched_dec_inst1.STATSR_49_LC_16_27_6 { config_register_latched_dec_inst1.STATSR_49_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[49] }
+clb_pack LT_16_27 { config_register_latched_dec_inst1.STATSR_51_LC_16_27_0, config_register_latched_dec_inst1.STATSR_50_LC_16_27_4, config_register_latched_dec_inst1.STATSR_49_LC_16_27_6 }
+set_location LT_16_27 16 27
+ble_pack config_register_latched_dec_inst1.STATSR_54_LC_16_28_1 { config_register_latched_dec_inst1.STATSR_54_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[54] }
+ble_pack config_register_latched_dec_inst1.STATSR_53_LC_16_28_3 { config_register_latched_dec_inst1.STATSR_53_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[53] }
+ble_pack config_register_latched_dec_inst1.STATSR_55_LC_16_28_4 { config_register_latched_dec_inst1.STATSR_55_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[55] }
+ble_pack config_register_latched_dec_inst1.STATSR_52_LC_16_28_5 { config_register_latched_dec_inst1.STATSR_52_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[52] }
+ble_pack config_register_latched_dec_inst1.STATSR_20_LC_16_28_7 { config_register_latched_dec_inst1.STATSR_20_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[20] }
+clb_pack LT_16_28 { config_register_latched_dec_inst1.STATSR_54_LC_16_28_1, config_register_latched_dec_inst1.STATSR_53_LC_16_28_3, config_register_latched_dec_inst1.STATSR_55_LC_16_28_4, config_register_latched_dec_inst1.STATSR_52_LC_16_28_5, config_register_latched_dec_inst1.STATSR_20_LC_16_28_7 }
+set_location LT_16_28 16 28
+ble_pack config_register_latched_dec_inst1.STATSR_21_LC_16_29_0 { config_register_latched_dec_inst1.STATSR_21_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[21] }
+ble_pack config_register_latched_dec_inst1.STATSR_35_LC_16_29_1 { config_register_latched_dec_inst1.STATSR_35_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[35] }
+ble_pack config_register_latched_dec_inst1.STATSR_33_LC_16_29_3 { config_register_latched_dec_inst1.STATSR_33_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[33] }
+ble_pack config_register_latched_dec_inst1.STATSR_34_LC_16_29_6 { config_register_latched_dec_inst1.STATSR_34_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[34] }
+clb_pack LT_16_29 { config_register_latched_dec_inst1.STATSR_21_LC_16_29_0, config_register_latched_dec_inst1.STATSR_35_LC_16_29_1, config_register_latched_dec_inst1.STATSR_33_LC_16_29_3, config_register_latched_dec_inst1.STATSR_34_LC_16_29_6 }
+set_location LT_16_29 16 29
+ble_pack config_register_latched_dec_inst1.STATSR_22_LC_16_30_0 { config_register_latched_dec_inst1.STATSR_22_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[22] }
+ble_pack config_register_latched_dec_inst1.STATSR_24_LC_16_30_2 { config_register_latched_dec_inst1.STATSR_24_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[24] }
+ble_pack config_register_latched_dec_inst1.STATSR_30_LC_16_30_3 { config_register_latched_dec_inst1.STATSR_30_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[30] }
+ble_pack config_register_latched_dec_inst1.STATSR_31_LC_16_30_5 { config_register_latched_dec_inst1.STATSR_31_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[31] }
+ble_pack config_register_latched_dec_inst1.STATSR_23_LC_16_30_6 { config_register_latched_dec_inst1.STATSR_23_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[23] }
+ble_pack config_register_latched_dec_inst1.STATSR_32_LC_16_30_7 { config_register_latched_dec_inst1.STATSR_32_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[32] }
+clb_pack LT_16_30 { config_register_latched_dec_inst1.STATSR_22_LC_16_30_0, config_register_latched_dec_inst1.STATSR_24_LC_16_30_2, config_register_latched_dec_inst1.STATSR_30_LC_16_30_3, config_register_latched_dec_inst1.STATSR_31_LC_16_30_5, config_register_latched_dec_inst1.STATSR_23_LC_16_30_6, config_register_latched_dec_inst1.STATSR_32_LC_16_30_7 }
+set_location LT_16_30 16 30
+ble_pack config_register_latched_dec_inst1.STATSR_25_LC_16_31_0 { config_register_latched_dec_inst1.STATSR_25_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[25] }
+ble_pack config_register_latched_dec_inst1.STATSR_27_LC_16_31_1 { config_register_latched_dec_inst1.STATSR_27_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[27] }
+ble_pack config_register_latched_dec_inst1.STATSR_26_LC_16_31_2 { config_register_latched_dec_inst1.STATSR_26_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[26] }
+ble_pack config_register_latched_dec_inst1.STATSR_29_LC_16_31_4 { config_register_latched_dec_inst1.STATSR_29_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[29] }
+ble_pack config_register_latched_dec_inst1.STATSR_28_LC_16_31_7 { config_register_latched_dec_inst1.STATSR_28_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[28] }
+clb_pack LT_16_31 { config_register_latched_dec_inst1.STATSR_25_LC_16_31_0, config_register_latched_dec_inst1.STATSR_27_LC_16_31_1, config_register_latched_dec_inst1.STATSR_26_LC_16_31_2, config_register_latched_dec_inst1.STATSR_29_LC_16_31_4, config_register_latched_dec_inst1.STATSR_28_LC_16_31_7 }
+set_location LT_16_31 16 31
+ble_pack config_register_latched_dec_inst1.STATSR_48_LC_17_27_1 { config_register_latched_dec_inst1.STATSR_48_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[48] }
+ble_pack config_register_latched_dec_inst1.STATSR_43_LC_17_27_2 { config_register_latched_dec_inst1.STATSR_43_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[43] }
+ble_pack config_register_latched_dec_inst1.STATSR_46_LC_17_27_3 { config_register_latched_dec_inst1.STATSR_46_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[46] }
+ble_pack config_register_latched_dec_inst1.STATSR_42_LC_17_27_4 { config_register_latched_dec_inst1.STATSR_42_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[42] }
+ble_pack config_register_latched_dec_inst1.STATSR_44_LC_17_27_5 { config_register_latched_dec_inst1.STATSR_44_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[44] }
+ble_pack config_register_latched_dec_inst1.STATSR_45_LC_17_27_6 { config_register_latched_dec_inst1.STATSR_45_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[45] }
+ble_pack config_register_latched_dec_inst1.STATSR_47_LC_17_27_7 { config_register_latched_dec_inst1.STATSR_47_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[47] }
+clb_pack LT_17_27 { config_register_latched_dec_inst1.STATSR_48_LC_17_27_1, config_register_latched_dec_inst1.STATSR_43_LC_17_27_2, config_register_latched_dec_inst1.STATSR_46_LC_17_27_3, config_register_latched_dec_inst1.STATSR_42_LC_17_27_4, config_register_latched_dec_inst1.STATSR_44_LC_17_27_5, config_register_latched_dec_inst1.STATSR_45_LC_17_27_6, config_register_latched_dec_inst1.STATSR_47_LC_17_27_7 }
+set_location LT_17_27 17 27
+ble_pack config_register_latched_dec_inst1.STATSR_41_LC_17_28_1 { config_register_latched_dec_inst1.STATSR_41_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[41] }
+ble_pack config_register_latched_dec_inst1.STATSR_40_LC_17_28_2 { config_register_latched_dec_inst1.STATSR_40_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[40] }
+ble_pack config_register_latched_dec_inst1.STATSR_38_LC_17_28_3 { config_register_latched_dec_inst1.STATSR_38_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[38] }
+ble_pack config_register_latched_dec_inst1.STATSR_39_LC_17_28_5 { config_register_latched_dec_inst1.STATSR_39_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[39] }
+clb_pack LT_17_28 { config_register_latched_dec_inst1.STATSR_41_LC_17_28_1, config_register_latched_dec_inst1.STATSR_40_LC_17_28_2, config_register_latched_dec_inst1.STATSR_38_LC_17_28_3, config_register_latched_dec_inst1.STATSR_39_LC_17_28_5 }
+set_location LT_17_28 17 28
+ble_pack config_register_latched_dec_inst1.STATSR_36_LC_17_29_4 { config_register_latched_dec_inst1.STATSR_36_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[36] }
+ble_pack config_register_latched_dec_inst1.STATSR_37_LC_17_29_6 { config_register_latched_dec_inst1.STATSR_37_THRU_LUT4_0, config_register_latched_dec_inst1.STATSR[37] }
+clb_pack LT_17_29 { config_register_latched_dec_inst1.STATSR_36_LC_17_29_4, config_register_latched_dec_inst1.STATSR_37_LC_17_29_6 }
+set_location LT_17_29 17 29
+set_location fsm_ctrl_inst1.current_state_RNI1GR8_0[0] 0 17
+set_location RST_N_ibuf_RNIBJGC_0 0 16
+set_location N_224_g_gb 17 33
+set_io SDO_signal_out H2
+set_io RST_N E4
+set_io CLK_fast D3
+set_io CLK C4

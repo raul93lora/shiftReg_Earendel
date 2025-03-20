@@ -9,26 +9,26 @@ Part:			ICE40LP8KCM81 (Lattice)
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     228                100 %                
+FLOPS     233                100 %                
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top:	228 (59.07 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top:	233 (58.99 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       136                100 %                
+LUTS       139                100 %                
 CARRYS     10                 100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block top:	146 (37.82 % Utilization)
+Total COMBINATIONAL LOGIC in the block top:	149 (37.72 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     6                  100 %                
+PADS     7                  100 %                
 =================================================
-Total IO PADS in the block top:	6 (1.55 % Utilization)
+Total IO PADS in the block top:	7 (1.77 % Utilization)
 
 ---------------------------------------------------------------------------------
 ########   Utilization report for  cell:   config_register_latched_dec   ########
@@ -38,17 +38,17 @@ Instance path:   top.config_register_latched_dec
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     104                45.6 %               
+FLOPS     104                44.6 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top.config_register_latched_dec:	104 (26.94 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.config_register_latched_dec:	104 (26.33 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-LUTS     1                  0.7350 %             
+LUTS     3                  2.16 %               
 =================================================
-Total COMBINATIONAL LOGIC in the block top.config_register_latched_dec:	1 (0.26 % Utilization)
+Total COMBINATIONAL LOGIC in the block top.config_register_latched_dec:	3 (0.76 % Utilization)
 
 --------------------------------------------------------------
 ########   Utilization report for  cell:   fsm_ctrl   ########
@@ -58,26 +58,26 @@ Instance path:   top.fsm_ctrl
 SEQUENTIAL ELEMENTS
 Name      Total elements     Utilization     Notes
 --------------------------------------------------
-FLOPS     124                54.4 %               
+FLOPS     129                55.4 %               
 ==================================================
-Total SEQUENTIAL ELEMENTS in the block top.fsm_ctrl:	124 (32.12 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.fsm_ctrl:	129 (32.66 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name       Total elements     Utilization     Notes
 ---------------------------------------------------
-LUTS       134                98.5 %               
+LUTS       135                97.1 %               
 CARRYS     10                 100 %                
 ===================================================
-Total COMBINATIONAL LOGIC in the block top.fsm_ctrl:	144 (37.31 % Utilization)
+Total COMBINATIONAL LOGIC in the block top.fsm_ctrl:	145 (36.71 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-PADS     2                  33.3 %               
+PADS     1                  14.3 %               
 =================================================
-Total IO PADS in the block top.fsm_ctrl:	2 (0.52 % Utilization)
+Total IO PADS in the block top.fsm_ctrl:	1 (0.25 % Utilization)
 
 
 ##### END OF AREA REPORT #####]
