@@ -4,7 +4,6 @@
 
 add_file -verilog -lib work "../top.v" 
 add_file -verilog -lib work "../config_register_latched_dec.v" 
-add_file -verilog -lib work "../fsm_ctrl.v" 
 #implementation: "GEN_REC_Implmnt"
 impl -add GEN_REC_Implmnt -type fpga
 

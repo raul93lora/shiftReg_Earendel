@@ -3,13 +3,13 @@ DeviceFamily=iCE40
 Device=LP8K
 DevicePackage=CM81
 DevicePower=
-NetlistFile=GEN_REC_Implmnt/GEN_REC.edf
+NetlistFile=
 AdditionalEDIFFile=
 IPEDIFFile=
-DesignLib=GEN_REC_Implmnt/sbt/netlist/oadb-top
-DesignView=_rt
-DesignCell=top
-SynthesisSDCFile=GEN_REC_Implmnt/GEN_REC.scf
+DesignLib=
+DesignView=
+DesignCell=
+SynthesisSDCFile=
 UserPinConstraintFile=
 UserSDCFile=
 PhysicalConstraintFile=
@@ -32,7 +32,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=GEN_REC
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=../top.v=work,../config_register_latched_dec.v=work,../fsm_ctrl.v=work
+ProjectVFiles=../top.v=work,../config_register_latched_dec.v=work
 ProjectCFiles=
 CurImplementation=GEN_REC_Implmnt
 Implementations=GEN_REC_Implmnt
