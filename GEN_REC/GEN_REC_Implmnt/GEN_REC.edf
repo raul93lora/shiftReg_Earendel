@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2025 3 20 13 30 45)
+      (timeStamp 2025 3 20 16 47 8)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09L+ice40, mapper maplat, Build 1612R"))
      )
@@ -143,10 +143,10 @@
     (cell config_register_latched_dec (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
-           (port DYNSR_RNIN0JN_0_0 (direction OUTPUT))
-           (port DYNSR_RNIMVIN_0_0 (direction OUTPUT))
-           (port DYNSR_RNILUIN_0_0 (direction OUTPUT))
-           (port DYNSR_RNIKTIN_0_0 (direction OUTPUT))
+           (port DYNSR_RNI4RKN_0_0 (direction OUTPUT))
+           (port DYNSR_RNI3QKN_0_0 (direction OUTPUT))
+           (port DYNSR_RNI2PKN_0_0 (direction OUTPUT))
+           (port DYNSR_RNI1OKN_0_0 (direction OUTPUT))
            (port SEL_c_iso_i_g (direction INPUT))
            (port CLK_uC_c_g (direction INPUT))
            (port SDI_c (direction INPUT))
@@ -156,19 +156,19 @@
            (port SEL_c (direction INPUT))
          )
          (contents
-          (instance (rename STATSR_RNI93TI_87 "STATSR_RNI93TI[87]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
+          (instance (rename DYNSR_RNI93TI_15 "DYNSR_RNI93TI[15]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "D8D8"))
           )
-          (instance (rename DYNSR_RNIN0JN_15 "DYNSR_RNIN0JN[15]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
+          (instance (rename DYNSR_RNI4RKN_3 "DYNSR_RNI4RKN[3]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "00E4"))
           )
-          (instance (rename DYNSR_RNIMVIN_14 "DYNSR_RNIMVIN[14]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
-           (property LUT_INIT (string "FFE4"))
-          )
-          (instance (rename DYNSR_RNILUIN_13 "DYNSR_RNILUIN[13]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
+          (instance (rename DYNSR_RNI3QKN_2 "DYNSR_RNI3QKN[2]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "00E4"))
           )
-          (instance (rename DYNSR_RNIKTIN_12 "DYNSR_RNIKTIN[12]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
+          (instance (rename DYNSR_RNI2PKN_1 "DYNSR_RNI2PKN[1]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
+           (property LUT_INIT (string "00E4"))
+          )
+          (instance (rename DYNSR_RNI1OKN_0 "DYNSR_RNI1OKN[0]") (viewRef PRIM (cellRef SB_LUT4 (libraryRef sb_ice)))
            (property LUT_INIT (string "00E4"))
           )
           (instance (rename STATSR_0 "STATSR[0]") (viewRef PRIM (cellRef SB_DFFER (libraryRef sb_ice)))
@@ -381,25 +381,25 @@
           )
           (instance GND (viewRef PRIM (cellRef GND (libraryRef sb_ice)))          )
           (instance VCC (viewRef PRIM (cellRef VCC (libraryRef sb_ice)))          )
-          (net (rename dynsr_rniktin_0_0 "DYNSR_RNIKTIN_0_0") (joined
-           (portRef O (instanceRef DYNSR_RNIKTIN_12))
-           (portRef DYNSR_RNIKTIN_0_0)
-           (portRef I1 (instanceRef DYNSR_RNIKTIN_12))
+          (net (rename dynsr_rni1okn_0_0 "DYNSR_RNI1OKN_0_0") (joined
+           (portRef O (instanceRef DYNSR_RNI1OKN_0))
+           (portRef DYNSR_RNI1OKN_0_0)
+           (portRef I1 (instanceRef DYNSR_RNI1OKN_0))
           ))
-          (net (rename dynsr_rniluin_0_0 "DYNSR_RNILUIN_0_0") (joined
-           (portRef O (instanceRef DYNSR_RNILUIN_13))
-           (portRef DYNSR_RNILUIN_0_0)
-           (portRef I1 (instanceRef DYNSR_RNILUIN_13))
+          (net (rename dynsr_rni2pkn_0_0 "DYNSR_RNI2PKN_0_0") (joined
+           (portRef O (instanceRef DYNSR_RNI2PKN_1))
+           (portRef DYNSR_RNI2PKN_0_0)
+           (portRef I1 (instanceRef DYNSR_RNI2PKN_1))
           ))
-          (net (rename dynsr_rnimvin_0_0 "DYNSR_RNIMVIN_0_0") (joined
-           (portRef O (instanceRef DYNSR_RNIMVIN_14))
-           (portRef DYNSR_RNIMVIN_0_0)
-           (portRef I1 (instanceRef DYNSR_RNIMVIN_14))
+          (net (rename dynsr_rni3qkn_0_0 "DYNSR_RNI3QKN_0_0") (joined
+           (portRef O (instanceRef DYNSR_RNI3QKN_2))
+           (portRef DYNSR_RNI3QKN_0_0)
+           (portRef I1 (instanceRef DYNSR_RNI3QKN_2))
           ))
-          (net (rename dynsr_rnin0jn_0_0 "DYNSR_RNIN0JN_0_0") (joined
-           (portRef O (instanceRef DYNSR_RNIN0JN_15))
-           (portRef DYNSR_RNIN0JN_0_0)
-           (portRef I1 (instanceRef DYNSR_RNIN0JN_15))
+          (net (rename dynsr_rni4rkn_0_0 "DYNSR_RNI4RKN_0_0") (joined
+           (portRef O (instanceRef DYNSR_RNI4RKN_3))
+           (portRef DYNSR_RNI4RKN_0_0)
+           (portRef I1 (instanceRef DYNSR_RNI4RKN_3))
           ))
           (net (rename sel_c "SEL_c") (joined
            (portRef SEL_c)
@@ -419,31 +419,35 @@
            (portRef E (instanceRef DYNSR_2))
            (portRef E (instanceRef DYNSR_1))
            (portRef E (instanceRef DYNSR_0))
-           (portRef I0 (instanceRef STATSR_RNI93TI_87))
+           (portRef I0 (instanceRef DYNSR_RNI93TI_15))
           ))
           (net (rename DYNSRZ0Z_15 "DYNSR[15]") (joined
            (portRef Q (instanceRef DYNSR_15))
-           (portRef I2 (instanceRef DYNSR_RNIN0JN_15))
-           (portRef I1 (instanceRef STATSR_RNI93TI_87))
+           (portRef I1 (instanceRef DYNSR_RNI93TI_15))
           ))
           (net (rename STATSRZ0Z_87 "STATSR[87]") (joined
            (portRef Q (instanceRef STATSR_87))
-           (portRef I2 (instanceRef STATSR_RNI93TI_87))
+           (portRef I2 (instanceRef DYNSR_RNI93TI_15))
           ))
           (net (rename GNDZ0 "GND") (joined
            (portRef Y (instanceRef GND))
-           (portRef I3 (instanceRef STATSR_RNI93TI_87))
+           (portRef I3 (instanceRef DYNSR_RNI93TI_15))
           ))
           (net (rename sdo_signal_out_c "SDO_signal_out_c") (joined
-           (portRef O (instanceRef STATSR_RNI93TI_87))
+           (portRef O (instanceRef DYNSR_RNI93TI_15))
            (portRef SDO_signal_out_c)
           ))
           (net (rename sel_c_iclk "SEL_c_iclk") (joined
            (portRef SEL_c_iclk)
-           (portRef I0 (instanceRef DYNSR_RNIKTIN_12))
-           (portRef I0 (instanceRef DYNSR_RNILUIN_13))
-           (portRef I0 (instanceRef DYNSR_RNIMVIN_14))
-           (portRef I0 (instanceRef DYNSR_RNIN0JN_15))
+           (portRef I0 (instanceRef DYNSR_RNI1OKN_0))
+           (portRef I0 (instanceRef DYNSR_RNI2PKN_1))
+           (portRef I0 (instanceRef DYNSR_RNI3QKN_2))
+           (portRef I0 (instanceRef DYNSR_RNI4RKN_3))
+          ))
+          (net (rename DYNSRZ0Z_3 "DYNSR[3]") (joined
+           (portRef Q (instanceRef DYNSR_3))
+           (portRef D (instanceRef DYNSR_4))
+           (portRef I2 (instanceRef DYNSR_RNI4RKN_3))
           ))
           (net (rename rst_n_c_i_g "RST_N_c_i_g") (joined
            (portRef RST_N_c_i_g)
@@ -551,25 +555,25 @@
            (portRef S (instanceRef STATSR_2))
            (portRef R (instanceRef STATSR_1))
            (portRef R (instanceRef STATSR_0))
-           (portRef I3 (instanceRef DYNSR_RNIKTIN_12))
-           (portRef I3 (instanceRef DYNSR_RNILUIN_13))
-           (portRef I3 (instanceRef DYNSR_RNIMVIN_14))
-           (portRef I3 (instanceRef DYNSR_RNIN0JN_15))
+           (portRef I3 (instanceRef DYNSR_RNI1OKN_0))
+           (portRef I3 (instanceRef DYNSR_RNI2PKN_1))
+           (portRef I3 (instanceRef DYNSR_RNI3QKN_2))
+           (portRef I3 (instanceRef DYNSR_RNI4RKN_3))
           ))
-          (net (rename DYNSRZ0Z_14 "DYNSR[14]") (joined
-           (portRef Q (instanceRef DYNSR_14))
-           (portRef D (instanceRef DYNSR_15))
-           (portRef I2 (instanceRef DYNSR_RNIMVIN_14))
+          (net (rename DYNSRZ0Z_2 "DYNSR[2]") (joined
+           (portRef Q (instanceRef DYNSR_2))
+           (portRef D (instanceRef DYNSR_3))
+           (portRef I2 (instanceRef DYNSR_RNI3QKN_2))
           ))
-          (net (rename DYNSRZ0Z_13 "DYNSR[13]") (joined
-           (portRef Q (instanceRef DYNSR_13))
-           (portRef D (instanceRef DYNSR_14))
-           (portRef I2 (instanceRef DYNSR_RNILUIN_13))
+          (net (rename DYNSRZ0Z_1 "DYNSR[1]") (joined
+           (portRef Q (instanceRef DYNSR_1))
+           (portRef D (instanceRef DYNSR_2))
+           (portRef I2 (instanceRef DYNSR_RNI2PKN_1))
           ))
-          (net (rename DYNSRZ0Z_12 "DYNSR[12]") (joined
-           (portRef Q (instanceRef DYNSR_12))
-           (portRef D (instanceRef DYNSR_13))
-           (portRef I2 (instanceRef DYNSR_RNIKTIN_12))
+          (net (rename DYNSRZ0Z_0 "DYNSR[0]") (joined
+           (portRef Q (instanceRef DYNSR_0))
+           (portRef D (instanceRef DYNSR_1))
+           (portRef I2 (instanceRef DYNSR_RNI1OKN_0))
           ))
           (net (rename STATSRZ0Z_0 "STATSR[0]") (joined
            (portRef Q (instanceRef STATSR_0))
@@ -1122,22 +1126,6 @@
            (portRef Q (instanceRef STATSR_86))
            (portRef D (instanceRef STATSR_87))
           ))
-          (net (rename DYNSRZ0Z_0 "DYNSR[0]") (joined
-           (portRef Q (instanceRef DYNSR_0))
-           (portRef D (instanceRef DYNSR_1))
-          ))
-          (net (rename DYNSRZ0Z_1 "DYNSR[1]") (joined
-           (portRef Q (instanceRef DYNSR_1))
-           (portRef D (instanceRef DYNSR_2))
-          ))
-          (net (rename DYNSRZ0Z_2 "DYNSR[2]") (joined
-           (portRef Q (instanceRef DYNSR_2))
-           (portRef D (instanceRef DYNSR_3))
-          ))
-          (net (rename DYNSRZ0Z_3 "DYNSR[3]") (joined
-           (portRef Q (instanceRef DYNSR_3))
-           (portRef D (instanceRef DYNSR_4))
-          ))
           (net (rename DYNSRZ0Z_4 "DYNSR[4]") (joined
            (portRef Q (instanceRef DYNSR_4))
            (portRef D (instanceRef DYNSR_5))
@@ -1169,6 +1157,18 @@
           (net (rename DYNSRZ0Z_11 "DYNSR[11]") (joined
            (portRef Q (instanceRef DYNSR_11))
            (portRef D (instanceRef DYNSR_12))
+          ))
+          (net (rename DYNSRZ0Z_12 "DYNSR[12]") (joined
+           (portRef Q (instanceRef DYNSR_12))
+           (portRef D (instanceRef DYNSR_13))
+          ))
+          (net (rename DYNSRZ0Z_13 "DYNSR[13]") (joined
+           (portRef Q (instanceRef DYNSR_13))
+           (portRef D (instanceRef DYNSR_14))
+          ))
+          (net (rename DYNSRZ0Z_14 "DYNSR[14]") (joined
+           (portRef Q (instanceRef DYNSR_14))
+           (portRef D (instanceRef DYNSR_15))
           ))
           (net (rename VCCZ0 "VCC") (joined
            (portRef Y (instanceRef VCC))
@@ -1334,20 +1334,20 @@
            (portRef GLOBAL_BUFFER_OUTPUT (instanceRef SEL_ibuf_RNI96K9_1))
            (portRef SEL_c_iso_i_g (instanceRef config_register_latched_dec_inst1))
           ))
-          (net (rename DYNSR_RNIN0JN_0_15 "DYNSR_RNIN0JN_0[15]") (joined
-           (portRef DYNSR_RNIN0JN_0_0 (instanceRef config_register_latched_dec_inst1))
+          (net (rename DYNSR_RNI4RKN_0_3 "DYNSR_RNI4RKN_0[3]") (joined
+           (portRef DYNSR_RNI4RKN_0_0 (instanceRef config_register_latched_dec_inst1))
            (portRef D_OUT_0 (instanceRef s15_obuf))
           ))
-          (net (rename DYNSR_RNIMVIN_0_14 "DYNSR_RNIMVIN_0[14]") (joined
-           (portRef DYNSR_RNIMVIN_0_0 (instanceRef config_register_latched_dec_inst1))
+          (net (rename DYNSR_RNI3QKN_0_2 "DYNSR_RNI3QKN_0[2]") (joined
+           (portRef DYNSR_RNI3QKN_0_0 (instanceRef config_register_latched_dec_inst1))
            (portRef D_OUT_0 (instanceRef s14_obuf))
           ))
-          (net (rename DYNSR_RNILUIN_0_13 "DYNSR_RNILUIN_0[13]") (joined
-           (portRef DYNSR_RNILUIN_0_0 (instanceRef config_register_latched_dec_inst1))
+          (net (rename DYNSR_RNI2PKN_0_1 "DYNSR_RNI2PKN_0[1]") (joined
+           (portRef DYNSR_RNI2PKN_0_0 (instanceRef config_register_latched_dec_inst1))
            (portRef D_OUT_0 (instanceRef s13_obuf))
           ))
-          (net (rename DYNSR_RNIKTIN_0_12 "DYNSR_RNIKTIN_0[12]") (joined
-           (portRef DYNSR_RNIKTIN_0_0 (instanceRef config_register_latched_dec_inst1))
+          (net (rename DYNSR_RNI1OKN_0_0 "DYNSR_RNI1OKN_0[0]") (joined
+           (portRef DYNSR_RNI1OKN_0_0 (instanceRef config_register_latched_dec_inst1))
            (portRef D_OUT_0 (instanceRef s12_obuf))
           ))
          )

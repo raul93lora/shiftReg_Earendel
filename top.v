@@ -63,10 +63,10 @@ module top(
 	);
 
 	// Asignaciones para la salida
-	assign s15 = DYNCNF[15];
-	assign s14 = DYNCNF[14];
-	assign s13 = DYNCNF[13];
-	assign s12 = DYNCNF[12];
+	assign s15 = DYNCNF[3];
+	assign s14 = DYNCNF[2];
+	assign s13 = DYNCNF[1];
+	assign s12 = DYNCNF[0];
 
 endmodule
 

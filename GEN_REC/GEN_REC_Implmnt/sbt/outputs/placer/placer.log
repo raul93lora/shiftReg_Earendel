@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Mar 20 2025 13:30:47
+* File Generated:     Mar 20 2025 16:47:12
 
 * Purpose:            
 
@@ -74,16 +74,16 @@ Phase 2
 I2088: Phase 2, elapsed time : 0.1 (sec)
 
 Phase 3
-Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNIKTIN[12]_LC_3", in the clock network. Converting the timing arc to positive-unate
-Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNILUIN[13]_LC_4", in the clock network. Converting the timing arc to positive-unate
-Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNIMVIN[14]_LC_5", in the clock network. Converting the timing arc to positive-unate
-Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNIN0JN[15]_LC_6", in the clock network. Converting the timing arc to positive-unate
-Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.STATSR_RNI93TI[87]_LC_7", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNI1OKN[0]_LC_3", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNI2PKN[1]_LC_4", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNI3QKN[2]_LC_5", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNI4RKN[3]_LC_6", in the clock network. Converting the timing arc to positive-unate
+Warning-1034: Found non-unate timing arc, from pin "in0" to pin "lcout" of instance "config_register_latched_dec_inst1.DYNSR_RNI93TI[15]_LC_7", in the clock network. Converting the timing arc to positive-unate
 Warning-1034: Found non-unate timing arc, from pin "PACKAGEPIN" to pin "DIN0" of instance "CLK_uC_ibuf_gb_io", in the clock network. Converting the timing arc to positive-unate
-Warning-1035: Removing timing arc from pin "config_register_latched_dec_inst1.DYNSR_RNIKTIN[12]_LC_3/in1" to pin "config_register_latched_dec_inst1.DYNSR_RNIKTIN[12]_LC_3/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "config_register_latched_dec_inst1.DYNSR_RNILUIN[13]_LC_4/in1" to pin "config_register_latched_dec_inst1.DYNSR_RNILUIN[13]_LC_4/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "config_register_latched_dec_inst1.DYNSR_RNIMVIN[14]_LC_5/in1" to pin "config_register_latched_dec_inst1.DYNSR_RNIMVIN[14]_LC_5/lcout" to break the combinatorial loop
-Warning-1035: Removing timing arc from pin "config_register_latched_dec_inst1.DYNSR_RNIN0JN[15]_LC_6/in1" to pin "config_register_latched_dec_inst1.DYNSR_RNIN0JN[15]_LC_6/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "config_register_latched_dec_inst1.DYNSR_RNI1OKN[0]_LC_3/in1" to pin "config_register_latched_dec_inst1.DYNSR_RNI1OKN[0]_LC_3/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "config_register_latched_dec_inst1.DYNSR_RNI2PKN[1]_LC_4/in1" to pin "config_register_latched_dec_inst1.DYNSR_RNI2PKN[1]_LC_4/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "config_register_latched_dec_inst1.DYNSR_RNI3QKN[2]_LC_5/in1" to pin "config_register_latched_dec_inst1.DYNSR_RNI3QKN[2]_LC_5/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "config_register_latched_dec_inst1.DYNSR_RNI4RKN[3]_LC_6/in1" to pin "config_register_latched_dec_inst1.DYNSR_RNI4RKN[3]_LC_6/lcout" to break the combinatorial loop
 
 Design Statistics after Packing
     Number of LUTs      	:	112
@@ -106,16 +106,16 @@ Device Utilization Summary after Packing
     PLLs                        :	0/1
 
 
-I2088: Phase 3, elapsed time : 0.3 (sec)
+I2088: Phase 3, elapsed time : 0.5 (sec)
 
 Phase 4
-I2088: Phase 4, elapsed time : 0.3 (sec)
+I2088: Phase 4, elapsed time : 0.4 (sec)
 
 Phase 5
-I2088: Phase 5, elapsed time : 0.2 (sec)
+I2088: Phase 5, elapsed time : 0.1 (sec)
 
 Phase 6
-I2088: Phase 6, elapsed time : 14.2 (sec)
+I2088: Phase 6, elapsed time : 28.2 (sec)
 
 Final Design Statistics
     Number of LUTs      	:	112
@@ -132,7 +132,7 @@ Final Design Statistics
 
 Device Utilization Summary
     LogicCells                  :	112/7680
-    PLBs                        :	21/960
+    PLBs                        :	17/960
     BRAMs                       :	0/32
     IOs and GBIOs               :	9/63
     PLLs                        :	0/1
@@ -160,5 +160,5 @@ Clock: top|SEL | Frequency: N/A | Target: 1.00 MHz
 
 I2054: Placement of design completed successfully
 
-I2076: Placer run-time: 15.5 sec.
+I2076: Placer run-time: 30.2 sec.
 

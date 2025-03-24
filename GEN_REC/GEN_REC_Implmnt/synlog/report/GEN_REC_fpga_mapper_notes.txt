@@ -1,10 +1,6 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MT206 |Auto Constrain mode is enabled
-@N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[0] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[1] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[2] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[3] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[4] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[5] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[6] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
@@ -13,6 +9,8 @@
 @N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[9] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[10] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[11] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[12] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\raul.lora\documents\sr_earendel\config_register_latched_dec.v":103:2:103:3|Removing sequential instance config_register_latched_dec_inst1.DYNCNF_1[13] (in view: work.top(verilog)) of type view:PrimLib.latr(prim) because it does not drive other instances.
 @N: FX1016 :"c:\users\raul.lora\documents\sr_earendel\top.v":7:1:7:6|SB_GB_IO inserted on the port CLK_uC.
 @N: FX1017 :|SB_GB inserted on the net RST_N_c_i.
 @N: FX1017 :|SB_GB inserted on the net SEL_c_iso_i.
